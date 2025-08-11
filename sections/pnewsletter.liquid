@@ -1,20 +1,22 @@
 
 <!-- pnewsletter-1.liquid  -->
 {% style %}
-  .close-newsletter {
-  color: #fff !important; /* Make icon white */
-  border: 2px solid #fff; /* White border */
-  border-radius: 50%; /* Rounded circle */
-  padding: 5px; /* Space inside circle */
+ button.close.close-newsletter {
+  color: #fff !important; /* White icon */
+  border: 2px solid #fff !important;
+  border-radius: 50%;
+  padding: 5px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  background: transparent !important;
 }
 
-.close-newsletter:hover {
-  color: #fff !important; /* Keep white on hover */
-  background-color: rgba(255, 255, 255, 0.2); /* Optional: subtle hover background */
+button.close.close-newsletter:hover {
+  color: #fff !important;
+  background-color: rgba(255, 255, 255, 0.2) !important;
 }
+
 
 {% endstyle %}
 {%- if section.settings.pnewletter_enable -%}
