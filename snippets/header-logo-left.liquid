@@ -1,5 +1,10 @@
 
-
+{% style %}
+  .icon-humbeger-btn {
+     display: none !important;
+  }
+   
+{% endstyle %}
   <div class="{{ container }}">
     <div class="d-flex align-items-center">
     <div class="d-flex d-lg-none toggle-menu-mobile align-items-center">
@@ -11,7 +16,7 @@
     <div class="d-flex align-items-center justify-content-center justify-content-lg-start col-logo ">
       <div class="px-lg-0 px-2 d-flex align-items-center">
         {%- if layout_header == 'logo-left-navigation-center' or layout_header == 'logo-left-navigation-left' or layout_header == 'logo-left-navigation-right' and enable_menu_vertical and sl_menu_vertical == 'click-menu' -%}
-            <div class="site-nav__item d-none d-lg-flex">
+            <div class="site-nav__item d-none d-lg-flex icon-humbeger-btn">
               <button class="pl-0 pr-4 site-nav__link btn site-click-menu">
                 <svg aria-hidden="true" fill="none" focusable="false" width="24" class="icon-humbeger" viewBox="0 0 24 24">
                   <path d="M1 19h22M1 12h22M1 5h22" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"></path>

@@ -1,4 +1,14 @@
-<div class="{{ container }}">
+{% style %}
+  .icon-humbeger-btn {
+     display: none !important;
+  }
+  @media (min-width: 992px) {
+    .icon-humbeger-btn {
+      display: block !important;
+    }
+  }
+{% endstyle %}
+<div class="{{ container }}">  
 <div class="header-top__wrap d-flex py-lg-3 py-2 w-100">
   <div class="d-flex d-lg-none toggle-menu-mobile align-items-center">
     {%- render 'button-toggle-menu-mobile' -%}
@@ -9,7 +19,7 @@
     <div class="d-flex align-items-center justify-content-center justify-content-lg-start col-logo ">
         <div class="pl-lg-0 ml-lg-0 d-flex align-items-center">
         {%- if enable_menu_vertical and sl_menu_vertical == 'click-menu' -%}
-          <div class="site-nav__item d-none d-lg-flex">
+          <div class="site-nav__item d-none d-lg-flex icon-humbeger-btn">
             <button class="pl-0 pr-4 site-nav__link btn site-click-menu">
               <svg aria-hidden="true" fill="none" focusable="false" width="24" class="icon-humbeger" viewBox="0 0 24 24">
                 <path d="M1 19h22M1 12h22M1 5h22" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"></path>
