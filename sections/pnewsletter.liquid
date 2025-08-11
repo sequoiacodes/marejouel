@@ -1,28 +1,6 @@
 
 <!-- pnewsletter-1.liquid  -->
-{% style %}
-.modal-header  .close:before{
-  background-color:white !important;
-  
-}
- button.close.close-newsletter {
-  border: 2px solid #fff !important;
-  width:20px;
-  height:20px; 
-  border-radius: 50%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: transparent !important;
-}
 
-button.close.close-newsletter:hover {
-  color: #fff !important;
-  background-color: rgba(255, 255, 255, 0.2) !important;
-}
-
-
-{% endstyle %}
 {%- if section.settings.pnewletter_enable -%}
   {%- liquid
     assign pnew_style = section.settings.pnew_style
