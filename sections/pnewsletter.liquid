@@ -1,9 +1,25 @@
 
 <!-- pnewsletter-1.liquid  -->
+{% style %}
+  .bg-pnewsletter {
+    position: absolute;
+    border:2px solid white;
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   border-radius: 50%;
+  }
+{% endstyle %}
 {%- if section.settings.pnewletter_enable -%}
   {%- liquid
     assign pnew_style = section.settings.pnew_style
     assign pnewletter_title = section.settings.pnewletter_title
+    assign pnewsletter_logo = section.settings.pnewsletter_logo
     assign pnewletter_description =  section.settings.pnewletter_description
     assign image_right = true
     assign pnewletter_bgimage = section.settings.pnewletter_bgimage 
@@ -22,20 +38,22 @@
     <div class="modal-dialog modal-dialog--newsletter modal-dialog-centered" role="document">
       <div class="modal-content modal-content--newsletter">
         <div class="modal-header p-0">
-          <button type="button" class="close close-newsletter" data-dismiss="modal" aria-label="close" >{%- render 'icon-close' -%}</button>
+          <div class="bg-pnewsletter">
+            <button type="button" class="close close-newsletter" data-dismiss="modal" aria-label="close" >{%- render 'icon-close' -%}</button>
+          </div>
         </div>
         {%- liquid
           case pnew_style 
             when 'pnew_style-1' 
-              render 'pnew-1' , pnewletter_title: pnewletter_title, pnewletter_description: pnewletter_description, pnew_size_heading: pnew_size_heading, button: button, pnewletter_description_sub: pnewletter_description_sub, subtitle: subtitle 
+              render 'pnew-1' , pnewletter_title: pnewletter_title,pnewsletter_logo: pnewsletter_logo, pnewletter_description: pnewletter_description, pnew_size_heading: pnew_size_heading, button: button, pnewletter_description_sub: pnewletter_description_sub, subtitle: subtitle 
             when 'pnew_style-2' 
-                render 'pnew-1' , pnewletter_title: pnewletter_title, pnewletter_description: pnewletter_description, image_right: image_right, pnew_size_heading: pnew_size_heading, button: button , pnewletter_description_sub: pnewletter_description_sub, subtitle: subtitle 
+                render 'pnew-1' , pnewletter_title: pnewletter_title, pnewsletter_logo: pnewsletter_logo, pnewletter_description: pnewletter_description, image_right: image_right, pnew_size_heading: pnew_size_heading, button: button , pnewletter_description_sub: pnewletter_description_sub, subtitle: subtitle 
             when 'pnew_style-3' 
-                render 'pnew-2' , pnewletter_title: pnewletter_title, pnewletter_description: pnewletter_description, pnew_size_heading: pnew_size_heading, button: button , pnewletter_description_sub: pnewletter_description_sub, subtitle: subtitle
+                render 'pnew-2' , pnewletter_title: pnewletter_title, pnewsletter_logo: pnewsletter_logo, pnewletter_description: pnewletter_description, pnew_size_heading: pnew_size_heading, button: button , pnewletter_description_sub: pnewletter_description_sub, subtitle: subtitle
             when 'pnew_style-4' 
-                render 'pnew-3' , pnewletter_title: pnewletter_title, pnewletter_description: pnewletter_description, pnewletter_bgimage: pnewletter_bgimage, pnew_size_heading: pnew_size_heading, button: button, , pnewletter_description_sub: pnewletter_description_sub, subtitle: subtitle
+                render 'pnew-3' , pnewletter_title: pnewletter_title, pnewsletter_logo: pnewsletter_logo, pnewletter_description: pnewletter_description, pnewletter_bgimage: pnewletter_bgimage, pnew_size_heading: pnew_size_heading, button: button, , pnewletter_description_sub: pnewletter_description_sub, subtitle: subtitle
             else 
-            render 'pnew-1' , pnewletter_title: pnewletter_title, pnewletter_description: pnewletter_description, pnew_size_heading: pnew_size_heading, button: button , pnewletter_description_sub: pnewletter_description_sub, subtitle: subtitle
+            render 'pnew-1' , pnewletter_title: pnewletter_title, pnewsletter_logo: pnewsletter_logo, pnewletter_description: pnewletter_description, pnew_size_heading: pnew_size_heading, button: button , pnewletter_description_sub: pnewletter_description_sub, subtitle: subtitle
           endcase 
         -%}
       </div>
@@ -54,9 +72,13 @@
   .popup-newsletter--title{
     line-height: 1.2;
   }
-  .popup-newsletter--title,.close-newsletter,.close-newsletter:hover{
+  .popup-newsletter--title{
       color:{{ section.settings.pnewletter_title_cl }};
   }
+  .popup-newsletter--subtitle {
+  color: {{ section.settings.pnewletter_subtitle_cl }};
+}
+
   .popup-newsletter--description{
       color:{{ section.settings.pnewletter_description_cl }}
   }
@@ -210,6 +232,15 @@
     },
     {
       "type": "header",
+      "content": "Logo"
+    },
+    {
+      "type": "image_picker",
+      "id": "pnewsletter_logo",
+      "label": "Newsletter Logo"
+    },
+    {
+      "type": "header",
       "content": "Sub Title"
     },
     {
@@ -218,6 +249,12 @@
       "label": "Sub Title",
       "default": "FIRST TIMER?"
     },
+    {
+    "type": "color",
+    "id": "pnewletter_subtitle_cl",
+    "label": "Subtitle Color"
+    },
+
     {
       "type": "header",
       "content": "Title"
