@@ -1,5 +1,10 @@
 
 <!-- pnewsletter-1.liquid  -->
+{% style %}
+  .close-newsletter{
+    color:white !important;
+  }
+{% endstyle %}
 {%- if section.settings.pnewletter_enable -%}
   {%- liquid
     assign pnew_style = section.settings.pnew_style
