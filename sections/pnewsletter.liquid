@@ -58,6 +58,10 @@
   .popup-newsletter--title,.close-newsletter,.close-newsletter:hover{
       color:{{ section.settings.pnewletter_title_cl }};
   }
+  .popup-newsletter--subtitle {
+  color: {{ section.settings.pnewletter_subtitle_cl }};
+}
+
   .popup-newsletter--description{
       color:{{ section.settings.pnewletter_description_cl }}
   }
@@ -228,6 +232,12 @@
       "label": "Sub Title",
       "default": "FIRST TIMER?"
     },
+    {
+    "type": "color",
+    "id": "pnewletter_subtitle_cl",
+    "label": "Subtitle Color"
+    },
+
     {
       "type": "header",
       "content": "Title"
