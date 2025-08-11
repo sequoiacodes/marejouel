@@ -28,15 +28,15 @@
         {%- liquid
           case pnew_style 
             when 'pnew_style-1' 
-              render 'pnew-1' , pnewletter_title: pnewletter_title, pnewletter_description: pnewletter_description, pnew_size_heading: pnew_size_heading, button: button, pnewletter_description_sub: pnewletter_description_sub, subtitle: subtitle 
+              render 'pnew-1' , pnewletter_title: pnewletter_title,pnewsletter_logo: pnewsletter_logo, pnewletter_description: pnewletter_description, pnew_size_heading: pnew_size_heading, button: button, pnewletter_description_sub: pnewletter_description_sub, subtitle: subtitle 
             when 'pnew_style-2' 
-                render 'pnew-1' , pnewletter_title: pnewletter_title, pnewletter_description: pnewletter_description, image_right: image_right, pnew_size_heading: pnew_size_heading, button: button , pnewletter_description_sub: pnewletter_description_sub, subtitle: subtitle 
+                render 'pnew-1' , pnewletter_title: pnewletter_title, pnewsletter_logo: pnewsletter_logo, pnewletter_description: pnewletter_description, image_right: image_right, pnew_size_heading: pnew_size_heading, button: button , pnewletter_description_sub: pnewletter_description_sub, subtitle: subtitle 
             when 'pnew_style-3' 
-                render 'pnew-2' , pnewletter_title: pnewletter_title, pnewletter_description: pnewletter_description, pnew_size_heading: pnew_size_heading, button: button , pnewletter_description_sub: pnewletter_description_sub, subtitle: subtitle
+                render 'pnew-2' , pnewletter_title: pnewletter_title, pnewsletter_logo: pnewsletter_logo, pnewletter_description: pnewletter_description, pnew_size_heading: pnew_size_heading, button: button , pnewletter_description_sub: pnewletter_description_sub, subtitle: subtitle
             when 'pnew_style-4' 
-                render 'pnew-3' , pnewletter_title: pnewletter_title, pnewletter_description: pnewletter_description, pnewletter_bgimage: pnewletter_bgimage, pnew_size_heading: pnew_size_heading, button: button, , pnewletter_description_sub: pnewletter_description_sub, subtitle: subtitle
+                render 'pnew-3' , pnewletter_title: pnewletter_title, pnewsletter_logo: pnewsletter_logo, pnewletter_description: pnewletter_description, pnewletter_bgimage: pnewletter_bgimage, pnew_size_heading: pnew_size_heading, button: button, , pnewletter_description_sub: pnewletter_description_sub, subtitle: subtitle
             else 
-            render 'pnew-1' , pnewletter_title: pnewletter_title, pnewletter_description: pnewletter_description, pnew_size_heading: pnew_size_heading, button: button , pnewletter_description_sub: pnewletter_description_sub, subtitle: subtitle
+            render 'pnew-1' , pnewletter_title: pnewletter_title, pnewsletter_logo: pnewsletter_logo, pnewletter_description: pnewletter_description, pnew_size_heading: pnew_size_heading, button: button , pnewletter_description_sub: pnewletter_description_sub, subtitle: subtitle
           endcase 
         -%}
       </div>
@@ -208,6 +208,15 @@
       "type": "image_picker",
       "id": "pnewletter_bgimage",
       "label": "Image"
+    },
+    {
+      "type": "header",
+      "content": "Logo"
+    },
+    {
+      "type": "image_picker",
+      "id": "pnewsletter_logo",
+      "label": "Newsletter Logo"
     },
     {
       "type": "header",
