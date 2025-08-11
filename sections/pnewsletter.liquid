@@ -1,6 +1,22 @@
 
 <!-- pnewsletter-1.liquid  -->
+{% style %}
+  .close-newsletter {
+  color: #fff !important; /* Make icon white */
+  border: 2px solid #fff; /* White border */
+  border-radius: 50%; /* Rounded circle */
+  padding: 5px; /* Space inside circle */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.close-newsletter:hover {
+  color: #fff !important; /* Keep white on hover */
+  background-color: rgba(255, 255, 255, 0.2); /* Optional: subtle hover background */
+}
+
+{% endstyle %}
 {%- if section.settings.pnewletter_enable -%}
   {%- liquid
     assign pnew_style = section.settings.pnew_style
@@ -56,10 +72,7 @@
   .popup-newsletter--title{
     line-height: 1.2;
   }
- .close-newsletter,.close-newsletter:hover{
-      color:{{ section.settings.close_newsletter_cl }};
-  }
-  .popup-newsletter--title{
+  .popup-newsletter--title,.close-newsletter,.close-newsletter:hover{
       color:{{ section.settings.pnewletter_title_cl }};
   }
   .popup-newsletter--subtitle {
@@ -225,15 +238,6 @@
       "type": "image_picker",
       "id": "pnewsletter_logo",
       "label": "Newsletter Logo"
-    },
-     {
-    "type": "header",
-    "content": "Close"
-    },
-    {
-    "type": "color",
-    "id": "close_newsletter_cl",
-    "label": "Cross Color"
     },
     {
       "type": "header",
