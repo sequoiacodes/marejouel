@@ -235,7 +235,7 @@
         "setwidth": "container",
         "bgsection": "#f090ee",
         "gradient_bg": "linear-gradient(133deg, rgba(250, 220, 54, 0.24), rgba(254, 98, 146, 0.45) 36%, rgba(250, 220, 54, 0) 98%)",
-        "title_color": "rgba(0,0,0,0)",
+        "title_color": "#000000",
         "title_top": "SUMMER INSPIRATION",
         "title": "THE DI MARE COLLECTION",
         "text": "<p>Summer is here and it's time to make a statement! Explore the Di Mare Collection—where elegance meets effortless style. Make waves this season with our latest swimwear pieces designed to empower you and celebrate your unique beauty.<br/><br/></p>",
@@ -307,14 +307,14 @@
         "166012224636496bd8-0": {
           "type": "collection",
           "settings": {
-            "title": "MEN",
+            "title": "SWIM TOPS",
             "collection": "men"
           }
         },
         "166012224636496bd8-1": {
           "type": "collection",
           "settings": {
-            "title": "WOMEN",
+            "title": "BUTTOND",
             "collection": "women"
           }
         }
@@ -329,8 +329,8 @@
         "bgsection": "#ffffff",
         "title_top": "",
         "title": "Best Sellers",
-        "des": "Each collection is exclusively made in small batches to create as little as possible.",
-        "align-heading": "center",
+        "des": "Our Most Loved Pieces.",
+        "align-heading": "left",
         "style_tab": "line",
         "enable_carousel": false,
         "arrows": true,
@@ -339,8 +339,8 @@
         "infinite": true,
         "rows": "1",
         "spaceBetween": 30,
-        "limit": 6,
-        "show": 3,
+        "limit": 4,
+        "show": 4,
         "buttonall": "All Products",
         "buttonall_link": "shopify://collections/all",
         "style_btn": "btn-theme",
@@ -1029,6 +1029,14 @@
     "1754983258383c7797": {
       "type": "_blocks",
       "settings": {}
+    },
+    "17549951131679c44e": {
+      "type": "_blocks",
+      "settings": {}
+    },
+    "1754995195a452d753": {
+      "type": "_blocks",
+      "settings": {}
     }
   },
   "order": [
@@ -1054,6 +1062,8 @@
     "1660925094098c539e",
     "16485444103c52f5e9",
     "1754982989162cadcb",
-    "1754983258383c7797"
+    "1754983258383c7797",
+    "17549951131679c44e",
+    "1754995195a452d753"
   ]
 }
