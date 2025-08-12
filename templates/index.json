@@ -9,6 +9,97 @@
  */
 {
   "sections": {
+    "2eb6b70b-dbd5-4aeb-ab9b-4433f8269284": {
+      "type": "grid-banner",
+      "blocks": {
+        "f6585105-a5a9-4ca8-a581-c7ec165acad9": {
+          "type": "banner",
+          "settings": {
+            "width": "4",
+            "image": "shopify://shop_images/collection1.jpg",
+            "image_mobile": "shopify://shop_images/collection1.jpg",
+            "subtitle": "premium",
+            "title": "Luxury",
+            "size_text": "h3",
+            "description": "",
+            "bg_color": "#ffffff",
+            "colordef": "#ffffff",
+            "opacity_bg": 0,
+            "style_btn": "btn-theme btn-white",
+            "button_text": "shop now",
+            "button_link": "",
+            "vertical": "bottom",
+            "horizontal": "center",
+            "text_align": "center"
+          }
+        },
+        "template--19549173121344__2eb6b70b-dbd5-4aeb-ab9b-4433f8269284-16873413239b09d17a-0": {
+          "type": "banner",
+          "settings": {
+            "width": "4",
+            "image": "shopify://shop_images/collection2.png",
+            "image_mobile": "shopify://shop_images/collection2.png",
+            "subtitle": "must have",
+            "title": "high summer",
+            "size_text": "h3",
+            "description": "",
+            "bg_color": "#ffffff",
+            "colordef": "#ffffff",
+            "opacity_bg": 0,
+            "style_btn": "btn-theme btn-white",
+            "button_text": "shop now",
+            "button_link": "#",
+            "vertical": "bottom",
+            "horizontal": "center",
+            "text_align": "center"
+          }
+        },
+        "template--19549173121344__2eb6b70b-dbd5-4aeb-ab9b-4433f8269284-16873413239b09d17a-1": {
+          "type": "banner",
+          "settings": {
+            "width": "4",
+            "image": "shopify://shop_images/collection3_b803877a-cfb3-4435-afb2-b5733017f0d8.png",
+            "image_mobile": "shopify://shop_images/collection3_b803877a-cfb3-4435-afb2-b5733017f0d8.png",
+            "subtitle": "Handge",
+            "title": "jacket",
+            "size_text": "h3",
+            "description": "",
+            "bg_color": "#ffffff",
+            "colordef": "#ffffff",
+            "opacity_bg": 0,
+            "style_btn": "btn-theme btn-white",
+            "button_text": "shop now",
+            "button_link": "",
+            "vertical": "bottom",
+            "horizontal": "center",
+            "text_align": "center"
+          }
+        }
+      },
+      "block_order": [
+        "f6585105-a5a9-4ca8-a581-c7ec165acad9",
+        "template--19549173121344__2eb6b70b-dbd5-4aeb-ab9b-4433f8269284-16873413239b09d17a-0",
+        "template--19549173121344__2eb6b70b-dbd5-4aeb-ab9b-4433f8269284-16873413239b09d17a-1"
+      ],
+      "settings": {
+        "animation": "",
+        "setwidth": "container",
+        "bgsection": "#ffffff",
+        "title_top": "Dive Into Elegance with Our Curated Collections",
+        "title": "featured collections",
+        "des": "",
+        "align-heading": "left",
+        "no_gutter": false,
+        "show_overlay": true,
+        "gradient_overlay": true,
+        "bg_overlay": "#000000",
+        "opacity_overlay": 0.6,
+        "paddingsection": "60px 0px 40px 0px",
+        "paddingmobile": "40px 0px 40px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
     "ea0a2867-55f8-4a4d-b69a-54b7fd3f3edc": {
       "type": "featured-collections-5",
       "blocks": {
@@ -151,91 +242,6 @@
         "text": "",
         "align-heading": "center",
         "paddingsection": "80px 0px 0px 0px",
-        "paddingmobile": "40px 0px 40px 0px",
-        "marginsection": "0px 0px 0px 0px",
-        "marginmobile": "0px 0px 0px 0px"
-      }
-    },
-    "2eb6b70b-dbd5-4aeb-ab9b-4433f8269284": {
-      "type": "grid-banner",
-      "blocks": {
-        "f6585105-a5a9-4ca8-a581-c7ec165acad9": {
-          "type": "banner",
-          "settings": {
-            "width": "4",
-            "subtitle": "premium",
-            "title": "Luxury",
-            "size_text": "h3",
-            "description": "",
-            "bg_color": "#ffffff",
-            "colordef": "#ffffff",
-            "opacity_bg": 0,
-            "style_btn": "btn-theme btn-white",
-            "button_text": "shop now",
-            "button_link": "",
-            "vertical": "bottom",
-            "horizontal": "center",
-            "text_align": "center"
-          }
-        },
-        "template--19549173121344__2eb6b70b-dbd5-4aeb-ab9b-4433f8269284-16873413239b09d17a-0": {
-          "type": "banner",
-          "settings": {
-            "width": "4",
-            "subtitle": "must have",
-            "title": "high summer",
-            "size_text": "h3",
-            "description": "",
-            "bg_color": "#ffffff",
-            "colordef": "#ffffff",
-            "opacity_bg": 0,
-            "style_btn": "btn-theme btn-white",
-            "button_text": "shop now",
-            "button_link": "#",
-            "vertical": "bottom",
-            "horizontal": "center",
-            "text_align": "center"
-          }
-        },
-        "template--19549173121344__2eb6b70b-dbd5-4aeb-ab9b-4433f8269284-16873413239b09d17a-1": {
-          "type": "banner",
-          "settings": {
-            "width": "4",
-            "subtitle": "Handge",
-            "title": "jacket",
-            "size_text": "h3",
-            "description": "",
-            "bg_color": "#ffffff",
-            "colordef": "#ffffff",
-            "opacity_bg": 0,
-            "style_btn": "btn-theme btn-white",
-            "button_text": "shop now",
-            "button_link": "",
-            "vertical": "bottom",
-            "horizontal": "center",
-            "text_align": "center"
-          }
-        }
-      },
-      "block_order": [
-        "f6585105-a5a9-4ca8-a581-c7ec165acad9",
-        "template--19549173121344__2eb6b70b-dbd5-4aeb-ab9b-4433f8269284-16873413239b09d17a-0",
-        "template--19549173121344__2eb6b70b-dbd5-4aeb-ab9b-4433f8269284-16873413239b09d17a-1"
-      ],
-      "settings": {
-        "animation": "",
-        "setwidth": "container",
-        "bgsection": "#ffffff",
-        "title_top": "dfdsf",
-        "title": "hello",
-        "des": "dfsdfdsafsf",
-        "align-heading": "right",
-        "no_gutter": false,
-        "show_overlay": true,
-        "gradient_overlay": true,
-        "bg_overlay": "#000000",
-        "opacity_overlay": 0.6,
-        "paddingsection": "60px 0px 40px 0px",
         "paddingmobile": "40px 0px 40px 0px",
         "marginsection": "0px 0px 0px 0px",
         "marginmobile": "0px 0px 0px 0px"
@@ -1053,10 +1059,10 @@
     }
   },
   "order": [
+    "2eb6b70b-dbd5-4aeb-ab9b-4433f8269284",
     "ea0a2867-55f8-4a4d-b69a-54b7fd3f3edc",
     "8d3646ae-af4d-47b1-b4c0-f529c93a012e",
     "8f7efc88-8555-4d5d-984d-bfed30a488ff",
-    "2eb6b70b-dbd5-4aeb-ab9b-4433f8269284",
     "16601928830ceb6d9f",
     "cbb9eed3-bb8e-4d0c-befd-efb97ca27a01",
     "7f1588c7-fcd8-4960-af12-6c22080eb14c",
