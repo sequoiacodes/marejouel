@@ -4,17 +4,29 @@
     <link rel="preload" href="https://cdn.shopify.com/s/files/1/0951/2996/0767/files/Rumble_Brave_f1532df5-5539-434f-85b4-9b0aa7611378.woff2?v=1754985561" as="font" type="font/woff2" crossorigin>
 
 <style>
-@font-face {
-  font-family: "Rumble Brave";
-  src: url("https://cdn.shopify.com/s/files/1/0951/2996/0767/files/Rumble_Brave_f1532df5-5539-434f-85b4-9b0aa7611378.woff2?v=1754985561") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
+<!-- Preload Rumble Brave font -->
+<link rel="preload" href="https://cdn.shopify.com/s/files/1/0951/2996/0767/files/Rumble_Brave_f1532df5-5539-434f-85b4-9b0aa7611378.woff2?v=1754985561" as="font" type="font/woff2" crossorigin>
 
-h2 {
-  font-family: "Rumble Brave", serif !important;
-}
+<style>
+  @font-face {
+    font-family: "Rumble Brave";
+    src: url("https://cdn.shopify.com/s/files/1/0951/2996/0767/files/Rumble_Brave_f1532df5-5539-434f-85b4-9b0aa7611378.woff2?v=1754985561") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  /* Override global font variable */
+  :root {
+    --g-font-1: "Rumble Brave", serif;
+  }
+
+  /* Apply to all elements using .font-family-1 */
+  .font-family-1 {
+    font-family: var(--g-font-1) !important;
+  }
+</style>
+
 </style>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
