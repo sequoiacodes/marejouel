@@ -708,7 +708,7 @@
           "slideshow_height_mobile": "500",
           "setwidth": "container",
           "slideshow_mobile": true,
-          "autorotate": true,
+          "autorotate": false,
           "autorotate_speed": 5,
           "anim_slideshow": "fade",
           "e_arrow": false,
