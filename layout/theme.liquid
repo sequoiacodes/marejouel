@@ -1,6 +1,24 @@
 <!doctype html>
 <html class="no-js " lang="{{ shop.locale }}">
   <head>
+    <link rel="preload" href="https://your-font-url.woff2" as="font" type="font/woff2" crossorigin>
+
+<style>
+@font-face {
+  font-family: "CustomFont";
+  src: url("https://your-font-url.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+h1, h2, h3, h4, h5, h6,
+p, span, div, ul, ol, li,
+a, button, input, select, option,
+label, legend, textarea, small {
+  font-family: "CustomFont", sans-serif !important;
+}
+</style>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
