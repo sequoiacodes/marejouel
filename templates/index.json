@@ -83,7 +83,7 @@
       ],
       "settings": {
         "animation": "",
-        "setwidth": "container",
+        "setwidth": "container-fluid",
         "bgsection": "#ffffff",
         "title_top": "Dive Into Elegance with Our Curated Collections",
         "title": "featured collections",
@@ -200,53 +200,6 @@
         "marginmobile": "0px 0px 0px 0px"
       }
     },
-    "8f7efc88-8555-4d5d-984d-bfed30a488ff": {
-      "type": "rich-text",
-      "blocks": {
-        "f40f1347-8306-4cbc-ae72-cb572d7f2152": {
-          "type": "heading",
-          "settings": {
-            "title": "From relaxed shirting to jumpsuits and wrap dresses, there’s many a timeless staple to choose from.",
-            "size_text": "h4"
-          }
-        },
-        "1564e714-c789-48c7-b569-15aa4f7877c0": {
-          "type": "paragraph",
-          "settings": {
-            "subtext": "This store is a demonstration of a luxury brand."
-          }
-        },
-        "805f536e-ee6a-4186-812e-9d1e6988e011": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button": "all collection",
-            "link": "shopify://collections/all",
-            "style_btn": "btn-underline"
-          }
-        }
-      },
-      "block_order": [
-        "f40f1347-8306-4cbc-ae72-cb572d7f2152",
-        "1564e714-c789-48c7-b569-15aa4f7877c0",
-        "805f536e-ee6a-4186-812e-9d1e6988e011"
-      ],
-      "settings": {
-        "animation": "fade-up",
-        "setwidth": "container",
-        "bgsection": "#ffffff",
-        "gradient_bg": "",
-        "title_color": "rgba(0,0,0,0)",
-        "title_top": "",
-        "title": "",
-        "text": "",
-        "align-heading": "center",
-        "paddingsection": "80px 0px 0px 0px",
-        "paddingmobile": "40px 0px 40px 0px",
-        "marginsection": "0px 0px 0px 0px",
-        "marginmobile": "0px 0px 0px 0px"
-      }
-    },
     "16601928830ceb6d9f": {
       "type": "product-list-swiper",
       "settings": {
@@ -258,9 +211,9 @@
         "des": "These pieces can be easily mixed and matched to create totally different looks.",
         "align-heading": "center",
         "collection": "women",
-        "limit": 10,
-        "perviewDesktop": 4,
-        "spaceBetween": 30,
+        "limit": 6,
+        "perviewDesktop": 6,
+        "spaceBetween": 8,
         "nowrap": false,
         "arrows": true,
         "scrollbar": false,
@@ -269,6 +222,26 @@
         "style_btn": "btn-theme",
         "paddingsection": "40px 0px 80px 0px",
         "paddingmobile": "32px 0px 0px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
+    "rich_text_BheE9q": {
+      "type": "rich-text",
+      "custom_css": [],
+      "name": "Rich text",
+      "settings": {
+        "animation": "",
+        "setwidth": "container",
+        "bgsection": "#f090ee",
+        "gradient_bg": "linear-gradient(133deg, rgba(250, 220, 54, 0.24), rgba(254, 98, 146, 0.45) 36%, rgba(250, 220, 54, 0) 98%)",
+        "title_color": "rgba(0,0,0,0)",
+        "title_top": "SUMMER INSPIRATION",
+        "title": "THE DI MARE COLLECTION",
+        "text": "<p>Summer is here and it's time to make a statement! Explore the Di Mare Collection—where elegance meets effortless style. Make waves this season with our latest swimwear pieces designed to empower you and celebrate your unique beauty.<br/><br/></p>",
+        "align-heading": "center",
+        "paddingsection": "0px 0px 0px 0px",
+        "paddingmobile": "40px 0px 40px 0px",
         "marginsection": "0px 0px 0px 0px",
         "marginmobile": "0px 0px 0px 0px"
       }
@@ -366,8 +339,8 @@
         "infinite": true,
         "rows": "1",
         "spaceBetween": 30,
-        "limit": 4,
-        "show": 4,
+        "limit": 6,
+        "show": 3,
         "buttonall": "All Products",
         "buttonall_link": "shopify://collections/all",
         "style_btn": "btn-theme",
@@ -1062,8 +1035,8 @@
     "2eb6b70b-dbd5-4aeb-ab9b-4433f8269284",
     "ea0a2867-55f8-4a4d-b69a-54b7fd3f3edc",
     "8d3646ae-af4d-47b1-b4c0-f529c93a012e",
-    "8f7efc88-8555-4d5d-984d-bfed30a488ff",
     "16601928830ceb6d9f",
+    "rich_text_BheE9q",
     "cbb9eed3-bb8e-4d0c-befd-efb97ca27a01",
     "7f1588c7-fcd8-4960-af12-6c22080eb14c",
     "166012224636496bd8",
