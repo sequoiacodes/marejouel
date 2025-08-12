@@ -12,7 +12,7 @@
     "container": 1200,
     "gutter": 30,
     "slideshow": "slideshow-1",
-    "sectionheading": "heading-1",
+    "sectionheading": "heading-2",
     "loading": "border",
     "favicon": "shopify://shop_images/ico.png",
     "meta_description": "Pose Shopify Template with multiple layouts and styles allows you to create different structures and satisfies any specific requirements for different kinds of business.",
@@ -2358,7 +2358,7 @@
       "pnewsletter": {
         "type": "pnewsletter",
         "settings": {
-          "pnewletter_enable": true,
+          "pnewletter_enable": false,
           "pnew_style": "pnew_style-4",
           "pnew-width": 560,
           "pnew-height": 600,
