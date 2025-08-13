@@ -196,13 +196,13 @@
         "des": "",
         "align-heading": "left",
         "layout": "grid",
-        "col": "col-1-5",
-        "enable_padding": true,
+        "col": "col-lg-2",
+        "enable_padding": false,
         "size_image_col": "portrait",
         "size_title": "h4",
         "paddingsection": "0px 0px 0px 0px",
         "paddingmobile": "5px 0px 5px 0px",
-        "marginsection": "0px 0px 0px 0px",
+        "marginsection": "0px 0px 0px 35px",
         "marginmobile": "0px 0px 0px 0px"
       }
     },
