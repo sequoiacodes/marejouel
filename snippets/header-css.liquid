@@ -241,6 +241,21 @@ article,aside,figcaption,figure,footer,header,hgroup,main,nav,section{display:bl
       --g-slide-font-lineheight: {{ settings.slide_font_lineheight }};
       --g-slide-font-transform: {{ settings.slide_font_transform }};
 
+      --g-toptitle-font-size: 18px;
+      --g-toptitle-font-size-small: 12px;
+
+      --g-btn-font-size: 16px;
+      --g-btn-font-size-small: 12px;
+
+      --g-btn-padding-x: 24px;
+      --g-btn-padding-y: 12px;
+      --g-btn-padding-x-small: 20px;
+      --g-btn-padding-y-small: 10px;
+
+      --g-fz2-font-size: {{ settings.fz2_font_size | default: 28 }}px;
+      --g-fz2-font-size-tablet: {{ settings.fz2_font_size_tablet | default: 24 }}px;
+      --g-fz2-font-size-mobile: {{ settings.fz2_font_size_mobile | default: 20 }}px;
+
       --g-p-font_family : var({{ settings.font_family_product }});
       --g-p-font-size: {{ settings.font_size_product }}px;
       --g-p-font-weight: {{ settings.font_weight_product }};

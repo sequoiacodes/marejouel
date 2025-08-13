@@ -36,11 +36,15 @@
     "font_family_google": "",
     "font_family2": "inter_n4",
     "font_family2_google": "",
-    "slide_font_size": 40,
+    "slide_font_size": 72,
+    "slide_font_size_mobile": 32,
     "slide_font_weight": "400",
     "slide_font_transform": "uppercase",
     "slide_font_lineheight": "1.5",
-    "slide_font_spacing": "0.2",
+    "slide_font_spacing": "0",
+    "fz2_font_size": 28,
+    "fz2_font_size_tablet": 18,
+    "fz2_font_size_mobile": 14,
     "h1_font_size": 38,
     "h1_font_weight": "400",
     "h1_font_transform": "uppercase",
@@ -54,11 +58,11 @@
     "h3_font_size": 24,
     "h3_font_weight": "400",
     "h3_font_transform": "uppercase",
-    "h3_font_lineheight": "1.4",
+    "h3_font_lineheight": "1",
     "h3_font_spacing": "0.2",
     "h4_font_size": 20,
     "h4_font_transform": "uppercase",
-    "h4_font_lineheight": "1.4",
+    "h4_font_lineheight": "1",
     "h4_font_spacing": "0.2",
     "h5_font_size": 16,
     "h5_font_weight": "500",
@@ -699,10 +703,7 @@
             }
           }
         },
-        "block_order": [
-          "1561259906467",
-          "1561259904381"
-        ],
+        "block_order": ["1561259906467", "1561259904381"],
         "settings": {
           "enable_slideshow": true,
           "setwidthout": "full",
@@ -1251,10 +1252,7 @@
             }
           }
         },
-        "block_order": [
-          "1583425647500",
-          "1584978388262"
-        ],
+        "block_order": ["1583425647500", "1584978388262"],
         "settings": {
           "enable_slideshow": true,
           "slideshow_height": "large",
@@ -1339,10 +1337,7 @@
             }
           }
         },
-        "block_order": [
-          "1590405549465",
-          "1590404620420"
-        ],
+        "block_order": ["1590405549465", "1590404620420"],
         "settings": {
           "enable_slideshow": true,
           "slideshow_height_adapt": "750",
@@ -1415,11 +1410,7 @@
             }
           }
         },
-        "block_order": [
-          "1587653901780",
-          "1587655482100",
-          "1587655514774"
-        ],
+        "block_order": ["1587653901780", "1587655482100", "1587655514774"],
         "settings": {
           "animation": "fade-up",
           "setwidth": "container",
@@ -1455,10 +1446,7 @@
             }
           }
         },
-        "block_order": [
-          "1587654247564",
-          "1598174967044"
-        ],
+        "block_order": ["1587654247564", "1598174967044"],
         "settings": {
           "animation": "",
           "setwidth": "container",
@@ -1501,11 +1489,7 @@
             }
           }
         },
-        "block_order": [
-          "1587655794959",
-          "1587655905045",
-          "1587655928022"
-        ],
+        "block_order": ["1587655794959", "1587655905045", "1587655928022"],
         "settings": {
           "animation": "fade-up",
           "setwidth": "container",
@@ -2029,10 +2013,7 @@
             }
           }
         },
-        "block_order": [
-          "1660549743ee977a7b-1",
-          "1660549743ee977a7b-0"
-        ],
+        "block_order": ["1660549743ee977a7b-1", "1660549743ee977a7b-0"],
         "settings": {
           "animation": "fade-up",
           "setwidth": "full",
@@ -3036,10 +3017,7 @@
               }
             }
           },
-          "block_order": [
-            "1561109015407",
-            "1561109039640"
-          ],
+          "block_order": ["1561109015407", "1561109039640"],
           "settings": {
             "display_type": "selected",
             "layout": "list",
@@ -3093,10 +3071,7 @@
               }
             }
           },
-          "block_order": [
-            "1561259906467",
-            "1561259904381"
-          ],
+          "block_order": ["1561259906467", "1561259904381"],
           "settings": {
             "autorotate": false,
             "autorotate_speed": 5
