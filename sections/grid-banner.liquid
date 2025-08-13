@@ -1,11 +1,11 @@
 <!-- grid-banner.liquid -->
 
 <style>
-  .heading-collection{
+  {% comment %} .heading-collection{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  }
+  } {% endcomment %}
   {%- if section.settings.show_overlay %}
     {% assign hex2rgb_hex = section.settings.bg_overlay %}
     .customstyle{{ section.id }} .banner-theme .banner-overlay{
