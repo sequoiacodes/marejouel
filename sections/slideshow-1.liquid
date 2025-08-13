@@ -276,6 +276,16 @@ html:not(.no-js) .slideshow.slick-initialized .slideshow__slide{
   letter-spacing: var(--g-slide-font-spacing);
   text-transform: var(--g-slide-font-transform);
 }
+}
+.fz-2 {
+  font-size: 28px; 
+font-family: "Gilda Display";
+
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: capitalize;
+}
 @media (min-width:992px) {
   .mega-subtitle{
     line-height: 1.5;
@@ -285,6 +295,15 @@ html:not(.no-js) .slideshow.slick-initialized .slideshow__slide{
   .slideshow__title {
     font-size:var(--g-slide-font-size-mobile);
   }
+  .fz-2 {
+ 
+font-family: "Gilda Display";
+  font-size: calc(var(--g-fz2_font_size) +0px);
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: capitalize;
+}
 }
 
 {%- unless section.settings.slideshow_mobile -%}
@@ -301,13 +320,14 @@ html:not(.no-js) .slideshow.slick-initialized .slideshow__slide{
 
 .slideshow__title--mobile {
   margin-bottom: 0;
-  font-size: calc(var(--g-font-size) + 30px);
+  font-size: calc(var(--g-fz2_font_size_mobile) +0px);
   font-weight: 400;
 }
 
 .slideshow__title--mobile~.slideshow__subtitle--mobile {
+
   margin-top: 7px;
-  font-size: var(--g-font-size);
+  font-size: var(--g-fz2_font_size_mobile);
 }
 
 .slideshow__subtitle--mobile,.slideshow__title--mobile {
@@ -591,7 +611,7 @@ html:not(.no-js) .slideshow.slick-initialized .slideshow__slide{
               <div class="d-inline-block text-{% if text_horizontal_alignment == 'right' %}left{% else %}{{text_horizontal_alignment}}{% endif %} ">
               <ul class="list-unstyled"  >
                 {%- unless block.settings.slide_toptitle == blank -%}
-                <li class="mb-3">
+                <li class="">
                   <p class="slideshow__toptitle subtop" style="color:{{ block.settings.slide_toptitle_color }}">
                     {{ block.settings.slide_toptitle }}
                   </p>
@@ -605,7 +625,7 @@ html:not(.no-js) .slideshow.slick-initialized .slideshow__slide{
                 </li>
                 {%- endunless -%}
                 {%- unless block.settings.subheading == blank -%}
-                <li class="mb-lg-5">
+                <li class="mb-lg-5 mb-3">
                   <div class="mega-subtitle slideshow__subtitle  d-lg-block fz-2" style="color:{{ block.settings.subheading_color }}">
                     {{ block.settings.subheading }}
                   </div>
