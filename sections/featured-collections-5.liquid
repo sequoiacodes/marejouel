@@ -19,15 +19,15 @@
 }
 .collection-grid{
   {% if section.settings.enable_padding == true %}
-    row-gap:var(--g-gutter);
+    {% comment %} row-gap:var(--g-gutter); {% endcomment %}
   {% endif %}
 }
 .collection-collage{
 display:grid;
 grid-template-columns: 1fr 1fr;
 {% if section.settings.enable_padding == true %}
-  column-gap: 2px;
-  row-gap:var(--g-gutter);
+  column-gap: 1px;
+  {% comment %} row-gap:var(--g-gutter); {% endcomment %}
 {% endif %}
 }
 
