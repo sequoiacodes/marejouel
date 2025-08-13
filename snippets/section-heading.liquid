@@ -2,6 +2,7 @@
 {%- if settings.sectionheading == 'heading-1' -%}
   {%- if section.settings.title_top != blank -%}
     <div class="subtop text-{{ section.settings.align-heading }} text-top {% if section.settings.title != blank %} mb-2 {% else %} mb-4 {% endif %}" data-aos="{{ section.settings.animation }}" data-aos-duration="300">{{ section.settings.title_top }}</div>
+     <a class="" href="#">Shop the collection</a>
   {%- endif -%}
   {%- if section.settings.title != blank -%}
   <h3 class="section-title-1 text-{{ section.settings.align-heading }}  {% if section.settings.des != blank %} mb-2 {% else %} mb-5 {% endif %}" data-aos="{{ section.settings.animation }}" data-aos-duration="500">
