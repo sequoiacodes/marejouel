@@ -197,7 +197,7 @@
         "align-heading": "left",
         "layout": "grid",
         "col": "col-lg-2",
-        "enable_padding": false,
+        "enable_padding": true,
         "size_image_col": "portrait",
         "size_title": "h4",
         "paddingsection": "0px 0px 0px 0px",
