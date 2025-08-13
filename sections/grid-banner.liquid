@@ -1,11 +1,7 @@
 <!-- grid-banner.liquid -->
 
 <style>
-  {% comment %} .heading-collection{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  } {% endcomment %}
+ 
   {%- if section.settings.show_overlay %}
     {% assign hex2rgb_hex = section.settings.bg_overlay %}
     .customstyle{{ section.id }} .banner-theme .banner-overlay{
@@ -30,7 +26,8 @@
 <div class="{{ section.settings.setwidth }}">
   <div class="section-block">
    <div class="heading-collection">
-     {%- render 'section-heading' -%}
+    {% assign collect_btn = true %}
+     {%- render 'section-heading', btn:collect_btn -%}
     
    </div>
     <div class="row {% if section.settings.no_gutter %}no-gutters{% endif %}">
