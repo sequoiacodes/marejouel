@@ -157,6 +157,8 @@
     "sold_cl": "#d1512d",
     "select_product_option_display": "list",
     "color_circle": false,
+    "enable_button_hover": true,
+    "enable_button_shadow": false,
     "text_transform_btn": "uppercase",
     "font_weight_button": "500",
     "base_size_button": 12,

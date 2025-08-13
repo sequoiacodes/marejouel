@@ -1,0 +1,527 @@
+{% doc %}
+  @prompt
+    Create a featured collections section with a detailed header area that includes a subtitle text above the main section title, followed by collection cards in a grid layout. The header should have a subtitle like "DIVE INTO ELEGANCE WITH OUR CURATED COLLECTIONS" positioned above the main "FEATURED COLLECTIONS" title. Each collection card should display with background images, left-aligned overlay text including collection titles and "Shop Now" buttons. Include customizable settings for both the subtitle and main title, collection selection, and styling options.
+
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-featured-collections-{{ ai_gen_id }} {
+    padding: {{ block.settings.section_padding_top }}px 0 {{ block.settings.section_padding_bottom }}px;
+    background-color: {{ block.settings.background_color }};
+  }
+
+  .ai-featured-collections-container-{{ ai_gen_id }} {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .ai-featured-collections-header-{{ ai_gen_id }} {
+    text-align: center;
+    margin-bottom: {{ block.settings.header_spacing }}px;
+  }
+
+  .ai-featured-collections-subtitle-{{ ai_gen_id }} {
+    font-size: {{ block.settings.subtitle_size }}px;
+    color: {{ block.settings.subtitle_color }};
+    margin: 0 0 {{ block.settings.subtitle_spacing }}px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+
+  .ai-featured-collections-title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.title_size }}px;
+    color: {{ block.settings.title_color }};
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+  }
+
+  .ai-featured-collections-grid-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: {{ block.settings.grid_gap }}px;
+    margin-top: {{ block.settings.header_spacing }}px;
+  }
+
+  .ai-featured-collections-card-{{ ai_gen_id }} {
+    position: relative;
+    height: {{ block.settings.card_height }}px;
+    border-radius: {{ block.settings.card_border_radius }}px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  .ai-featured-collections-card-{{ ai_gen_id }}:hover {
+    transform: scale({{ block.settings.image_scale_hover | divided_by: 100.0 }});
+  }
+
+  .ai-featured-collections-image-{{ ai_gen_id }} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .ai-featured-collections-image-placeholder-{{ ai_gen_id }} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-featured-collections-image-placeholder-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+    max-width: 200px;
+    max-height: 200px;
+    opacity: 0.3;
+  }
+
+  .ai-featured-collections-overlay-{{ ai_gen_id }} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      135deg,
+      rgba(0, 0, 0, {{ block.settings.overlay_opacity | divided_by: 100.0 }}) 0%,
+      rgba(0, 0, 0, {{ block.settings.overlay_opacity | divided_by: 200.0 }}) 100%
+    );
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: {{ block.settings.content_padding }}px;
+  }
+
+  .ai-featured-collections-content-{{ ai_gen_id }} {
+    color: {{ block.settings.card_text_color }};
+    text-align: left;
+  }
+
+  .ai-featured-collections-card-title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.card_title_size }}px;
+    font-weight: 600;
+    margin: 0 0 {{ block.settings.title_button_spacing }}px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .ai-featured-collections-button-{{ ai_gen_id }} {
+    display: inline-block;
+    padding: {{ block.settings.button_padding_vertical }}px {{ block.settings.button_padding_horizontal }}px;
+    background-color: {{ block.settings.button_color }};
+    color: {{ block.settings.button_text_color }};
+    text-decoration: none;
+    border-radius: {{ block.settings.button_border_radius }}px;
+    font-size: {{ block.settings.button_text_size }}px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+  }
+
+  .ai-featured-collections-button-{{ ai_gen_id }}:hover {
+    background-color: {{ block.settings.button_hover_color }};
+    color: {{ block.settings.button_hover_text_color }};
+    transform: translateY(-2px);
+  }
+
+  @media screen and (max-width: 768px) {
+    .ai-featured-collections-grid-{{ ai_gen_id }} {
+      grid-template-columns: 1fr;
+      gap: {{ block.settings.grid_gap | times: 0.75 }}px;
+    }
+
+    .ai-featured-collections-card-{{ ai_gen_id }} {
+      height: {{ block.settings.card_height | times: 0.8 }}px;
+    }
+
+    .ai-featured-collections-subtitle-{{ ai_gen_id }} {
+      font-size: {{ block.settings.subtitle_size | times: 0.8 }}px;
+    }
+
+    .ai-featured-collections-title-{{ ai_gen_id }} {
+      font-size: {{ block.settings.title_size | times: 0.8 }}px;
+    }
+
+    .ai-featured-collections-card-title-{{ ai_gen_id }} {
+      font-size: {{ block.settings.card_title_size | times: 0.9 }}px;
+    }
+  }
+{% endstyle %}
+
+<div class="ai-featured-collections-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-featured-collections-container-{{ ai_gen_id }}">
+    <div class="ai-featured-collections-header-{{ ai_gen_id }}">
+      {% if block.settings.subtitle != blank %}
+        <p class="ai-featured-collections-subtitle-{{ ai_gen_id }}">{{ block.settings.subtitle }}</p>
+      {% endif %}
+      {% if block.settings.title != blank %}
+        <h2 class="ai-featured-collections-title-{{ ai_gen_id }}">{{ block.settings.title }}</h2>
+      {% endif %}
+    </div>
+
+    <div class="ai-featured-collections-grid-{{ ai_gen_id }}">
+      {% for i in (1..6) %}
+        {% assign collection_key = 'collection_' | append: i %}
+        {% assign collection = block.settings[collection_key] %}
+        {% if collection != blank %}
+          <a href="{{ collection.url }}" class="ai-featured-collections-card-{{ ai_gen_id }}">
+            {% if collection.featured_image %}
+              <img
+                src="{{ collection.featured_image | image_url: width: 600 }}"
+                alt="{{ collection.featured_image.alt | escape }}"
+                class="ai-featured-collections-image-{{ ai_gen_id }}"
+                loading="lazy"
+                width="600"
+                height="{{ block.settings.card_height }}"
+              >
+            {% else %}
+              <div class="ai-featured-collections-image-placeholder-{{ ai_gen_id }}">
+                {{ 'collection-1' | placeholder_svg_tag }}
+              </div>
+            {% endif %}
+            
+            <div class="ai-featured-collections-overlay-{{ ai_gen_id }}">
+              <div class="ai-featured-collections-content-{{ ai_gen_id }}">
+                <h3 class="ai-featured-collections-card-title-{{ ai_gen_id }}">{{ collection.title }}</h3>
+                <span class="ai-featured-collections-button-{{ ai_gen_id }}">
+                  {{ block.settings.button_text }}
+                </span>
+              </div>
+            </div>
+          </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Featured collections",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Header content"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Dive into elegance with our curated collections"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Main title",
+      "default": "Featured Collections"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text",
+      "default": "Shop Now"
+    },
+    {
+      "type": "header",
+      "content": "Collections"
+    },
+    {
+      "type": "collection",
+      "id": "collection_1",
+      "label": "Collection 1"
+    },
+    {
+      "type": "collection",
+      "id": "collection_2",
+      "label": "Collection 2"
+    },
+    {
+      "type": "collection",
+      "id": "collection_3",
+      "label": "Collection 3"
+    },
+    {
+      "type": "collection",
+      "id": "collection_4",
+      "label": "Collection 4"
+    },
+    {
+      "type": "collection",
+      "id": "collection_5",
+      "label": "Collection 5"
+    },
+    {
+      "type": "collection",
+      "id": "collection_6",
+      "label": "Collection 6"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "header_spacing",
+      "min": 20,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "label": "Header spacing",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "grid_gap",
+      "min": 10,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "label": "Grid gap",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "card_height",
+      "min": 200,
+      "max": 500,
+      "step": 20,
+      "unit": "px",
+      "label": "Card height",
+      "default": 300
+    },
+    {
+      "type": "header",
+      "content": "Header style"
+    },
+    {
+      "type": "range",
+      "id": "subtitle_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Subtitle size",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "subtitle_spacing",
+      "min": 5,
+      "max": 30,
+      "step": 5,
+      "unit": "px",
+      "label": "Subtitle spacing",
+      "default": 15
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "min": 24,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "label": "Title size",
+      "default": 36
+    },
+    {
+      "type": "color",
+      "id": "subtitle_color",
+      "label": "Subtitle color",
+      "default": "#666666"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Card style"
+    },
+    {
+      "type": "range",
+      "id": "card_border_radius",
+      "min": 0,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "label": "Card border radius",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "image_scale_hover",
+      "min": 100,
+      "max": 110,
+      "step": 1,
+      "unit": "%",
+      "label": "Hover scale",
+      "default": 105
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "min": 0,
+      "max": 80,
+      "step": 5,
+      "unit": "%",
+      "label": "Overlay opacity",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "content_padding",
+      "min": 20,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "label": "Content padding",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "card_title_size",
+      "min": 16,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "label": "Card title size",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "title_button_spacing",
+      "min": 10,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "label": "Title button spacing",
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "card_text_color",
+      "label": "Card text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Button style"
+    },
+    {
+      "type": "range",
+      "id": "button_padding_vertical",
+      "min": 8,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "label": "Vertical padding",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "button_padding_horizontal",
+      "min": 16,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Horizontal padding",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "button_border_radius",
+      "min": 0,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "label": "Button border radius",
+      "default": 4
+    },
+    {
+      "type": "range",
+      "id": "button_text_size",
+      "min": 12,
+      "max": 18,
+      "step": 1,
+      "unit": "px",
+      "label": "Button text size",
+      "default": 14
+    },
+    {
+      "type": "color",
+      "id": "button_color",
+      "label": "Button color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button text color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_color",
+      "label": "Button hover color",
+      "default": "#f0f0f0"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_text_color",
+      "label": "Button hover text color",
+      "default": "#000000"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Featured collections"
+    }
+  ],
+  "tag": null
+}
+{% endschema %}
