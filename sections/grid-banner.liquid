@@ -1,6 +1,11 @@
 <!-- grid-banner.liquid -->
 
 <style>
+  .heading-collection{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  }
   {%- if section.settings.show_overlay %}
     {% assign hex2rgb_hex = section.settings.bg_overlay %}
     .customstyle{{ section.id }} .banner-theme .banner-overlay{
@@ -24,8 +29,9 @@
   {%- render 'style-section' -%}
 <div class="{{ section.settings.setwidth }}">
   <div class="section-block">
-   <div>
+   <div class="heading-collection">
      {%- render 'section-heading' -%}
+     <a class="" href="#">Shop the collection</a>
    </div>
     <div class="row {% if section.settings.no_gutter %}no-gutters{% endif %}">
       {%- for block in section.blocks -%}
