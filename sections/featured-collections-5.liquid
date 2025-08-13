@@ -26,7 +26,7 @@
 display:grid;
 grid-template-columns: 1fr 1fr;
 {% if section.settings.enable_padding == true %}
-  column-gap: var(--g-gutter);
+  column-gap: 2px;
   row-gap:var(--g-gutter);
 {% endif %}
 }
@@ -472,9 +472,9 @@ grid-template-columns: 1fr 1fr;
           "label": "2"
         },
           {
-    "value": "col-lg-2",
-    "label": "6"
-  }
+          "value": "col-lg-2",
+          "label": "6"
+        }
       ]
     },
     {
