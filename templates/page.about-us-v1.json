@@ -117,53 +117,64 @@
         "marginmobile": "0px 0px 0px 0px"
       }
     },
-    "d72bcc8c-88fe-4415-96f0-06511b070083": {
-      "type": "image-content-6",
+    "1755080004b4c406fb": {
+      "type": "_blocks",
       "blocks": {
-        "template--16716887458110__d72bcc8c-88fe-4415-96f0-06511b070083-16666725974cf35e4d-0": {
-          "type": "image_block",
+        "ai_gen_block_d8b630c_KJmQr4": {
+          "type": "ai_gen_block_d8b630c",
           "settings": {
-            "style_content": "default",
-            "w_image": 40,
-            "pos_image": 78,
-            "e_image": "right",
-            "enable_video": false,
-            "text_circle": "New Fashion style store",
-            "video_url": "https://www.youtube.com/watch?v=Yghmzsr3S14&ab_channel=Kandra"
-          }
-        },
-        "template--16716887458110__d72bcc8c-88fe-4415-96f0-06511b070083-16666725974cf35e4d-1": {
-          "type": "text_block",
-          "settings": {
-            "bgtext": "#ffffff",
-            "subtitle": "Our story fashion",
-            "title": "Was Launched  in 1920",
-            "size_text": "h2",
-            "text": "",
-            "answer_content": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "button": "discover now",
-            "link": "",
-            "style_btn": "btn-underline",
-            "align": "left"
-          }
+            "image_position": "left",
+            "max_width": 1200,
+            "content_gap": 40,
+            "background_color": "#ffffff",
+            "padding_top": 45,
+            "padding_bottom": 20,
+            "padding_horizontal": 20,
+            "image": "shopify://shop_images/about-us-img.png",
+            "image_width": 50,
+            "image_height": 400,
+            "image_border_radius": 0,
+            "subheading": "about us",
+            "heading": "Who We are",
+            "body_text": "Mare Jouel is a sustainable swimwear brand committed to ethical fashion and ocean conservation. Inspired by Colombia’s rich culture and biodiversity, we offer bikinis and cover-ups made from sustainable materials and ethically produced. Each piece is designed not only to enhance the natural beauty of the wearer but also to help preserve the marine environment. We incorporate vibrant and unique patterns, eco- friendly accessories, and transparent practices that ensure a positive impact on both local communities and the environment. With Mare Jouel, every fashion choice is a contribution to a more sustainable future.",
+            "text_alignment": "justify",
+            "text_padding_vertical": 40,
+            "text_padding_horizontal": 20,
+            "subheading_font_size": 16,
+            "subheading_color": "#666666",
+            "subheading_font_weight": "400",
+            "subheading_line_height": 1.4,
+            "subheading_letter_spacing": 0,
+            "subheading_text_transform": "uppercase",
+            "subheading_margin_bottom": 10,
+            "heading_font_size": 36,
+            "heading_color": "#000000",
+            "heading_font_weight": "700",
+            "heading_line_height": 1.2,
+            "heading_letter_spacing": 0,
+            "heading_text_transform": "none",
+            "heading_margin_bottom": 20,
+            "body_font_size": 16,
+            "body_color": "#333333",
+            "body_font_weight": "400",
+            "body_line_height": 1.6,
+            "body_letter_spacing": 0,
+            "body_text_transform": "none",
+            "mobile_image_height": 300,
+            "mobile_gap": 20,
+            "mobile_text_padding": 20,
+            "mobile_text_alignment": "left",
+            "mobile_subheading_font_size": 14,
+            "mobile_heading_font_size": 28,
+            "mobile_body_font_size": 14
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "template--16716887458110__d72bcc8c-88fe-4415-96f0-06511b070083-16666725974cf35e4d-0",
-        "template--16716887458110__d72bcc8c-88fe-4415-96f0-06511b070083-16666725974cf35e4d-1"
+        "ai_gen_block_d8b630c_KJmQr4"
       ],
-      "settings": {
-        "animation": "fade",
-        "setwidth": "container",
-        "bgsection": "#ffffff",
-        "size": "60-40",
-        "enable_padding": true,
-        "align_center": true,
-        "paddingsection": "100px 0px 100px 0px",
-        "paddingmobile": "60px 0px 60px 0px",
-        "marginsection": "0px 0px 0px 0px",
-        "marginmobile": "0px 0px 0px 0px"
-      }
+      "settings": {}
     },
     "895c09e5-5c6d-4c4d-8492-727381e40aa0": {
       "type": "service",
@@ -233,51 +244,6 @@
         "infinite": false,
         "paddingsection": "30px 0px 30px 0px",
         "paddingmobile": "30px 0px 10px 0px",
-        "marginsection": "0px 0px 0px 0px",
-        "marginmobile": "0px 0px 0px 0px"
-      }
-    },
-    "24a28133-2e01-4361-8b00-ad164f72336f": {
-      "type": "image-content",
-      "blocks": {
-        "template--16716887458110__24a28133-2e01-4361-8b00-ad164f72336f-1666686767d1a98887-1": {
-          "type": "text_block",
-          "settings": {
-            "width": "100%",
-            "bgtext": "#ffffff",
-            "title_color": "rgba(0,0,0,0)",
-            "subtitle": "Our Mission",
-            "title": "Your Style is  Our Inspiration",
-            "size_text": "h2",
-            "text": "<div class=\"pr-lg-5 mr-lg-4\">\n<p>Need a little newness in your life? We've got you covered. Bringing you \nthe latest drop of more killer clothes, versatile accessories, stand-out \nfootwear, and much, much more. Update those lifesaving essentials \nor bag a knock-out, night-out number.</p>\n      <div class=\"mt-5 pt-4 px-lg-5\">\n        <img class=\"lazyload\" loading=\"lazy\" data-src=\"https://cdn.shopify.com/s/files/1/0781/3637/7664/files/sh4.jpg?v=1687509464\">\n      </div>\n    \n</div>",
-            "answer_content": "",
-            "style_btn": "btn-underline btn-underline-white",
-            "button": "",
-            "link": "",
-            "enable_padding": false,
-            "align": "left"
-          }
-        },
-        "template--16716887458110__24a28133-2e01-4361-8b00-ad164f72336f-1666686767d1a98887-0": {
-          "type": "image_block",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "template--16716887458110__24a28133-2e01-4361-8b00-ad164f72336f-1666686767d1a98887-1",
-        "template--16716887458110__24a28133-2e01-4361-8b00-ad164f72336f-1666686767d1a98887-0"
-      ],
-      "settings": {
-        "animation": "fade",
-        "setwidth": "container",
-        "bgsection": "#ffffff",
-        "rangebg": 0,
-        "bgbefore": "rgba(0,0,0,0)",
-        "bg_pos": "left",
-        "enable_padding": true,
-        "align_center": false,
-        "paddingsection": "100px 0px 100px 0px",
-        "paddingmobile": "60px 0px 60px 0px",
         "marginsection": "0px 0px 0px 0px",
         "marginmobile": "0px 0px 0px 0px"
       }
@@ -453,9 +419,8 @@
     "main",
     "b2ef3f00-5f4f-4e93-8187-3970a28a8f9e",
     "scrolling_text_XgfLiY",
-    "d72bcc8c-88fe-4415-96f0-06511b070083",
+    "1755080004b4c406fb",
     "895c09e5-5c6d-4c4d-8492-727381e40aa0",
-    "24a28133-2e01-4361-8b00-ad164f72336f",
     "559f6024-64db-446e-a9dc-976582972dce",
     "abb14abe-2a33-4a6b-aaa1-d36d5422d78d",
     "a035e328-7cfe-4cf0-81d0-e2f5f0188740",
