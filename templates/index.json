@@ -156,6 +156,16 @@
             "opacity_overlay": 0.2
           }
         },
+        "collection_3tRrL9": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "color": "#ffffff",
+            "enable_gradient": false,
+            "bg_overlay": "#222222",
+            "opacity_overlay": 0.2
+          }
+        },
         "template--19549173121344__ea0a2867-55f8-4a4d-b69a-54b7fd3f3edc-1687342987fde68e6d-3": {
           "type": "collection",
           "disabled": true,
@@ -174,23 +184,24 @@
         "template--19549173121344__ea0a2867-55f8-4a4d-b69a-54b7fd3f3edc-1687342987fde68e6d-2",
         "collection_EKf3aR",
         "collection_V7EhW4",
+        "collection_3tRrL9",
         "template--19549173121344__ea0a2867-55f8-4a4d-b69a-54b7fd3f3edc-1687342987fde68e6d-3"
       ],
       "settings": {
         "animation": "fade-up",
         "setwidth": "full",
         "bgsection": "#ffffff",
-        "title_top": "Nepal",
-        "title": "Hello",
-        "des": "hello",
+        "title_top": "Let’s find the perfect swimsuit for you!",
+        "title": "shop by categories",
+        "des": "",
         "align-heading": "center",
         "layout": "grid",
         "col": "col-1-5",
         "enable_padding": true,
-        "size_image_col": "auto",
+        "size_image_col": "portrait",
         "size_title": "h4",
         "paddingsection": "0px 0px 0px 0px",
-        "paddingmobile": "40px 0px 40px 0px",
+        "paddingmobile": "5px 0px 5px 0px",
         "marginsection": "0px 0px 0px 0px",
         "marginmobile": "0px 0px 0px 0px"
       }
