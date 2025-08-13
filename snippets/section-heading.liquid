@@ -1,6 +1,13 @@
 <!-- section-heading.liquid - Apply for all section title -->
+ <style>
+   .heading-top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  } 
+ </style>
 {%- if settings.sectionheading == 'heading-1' -%}
-  <div>
+  <div class="headind-top">
     <div>
     {%- if section.settings.title_top != blank -%}
       <div class="subtop text-{{ section.settings.align-heading }} text-top {% if section.settings.title != blank %} mb-2 {% else %} mb-4 {% endif %}" data-aos="{{ section.settings.animation }}" data-aos-duration="300">{{ section.settings.title_top }}</div>
