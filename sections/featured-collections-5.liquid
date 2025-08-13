@@ -102,8 +102,7 @@ grid-template-columns: 1fr 1fr;
       {%- render 'style-section' -%}
         <div class="section-block" >
           <div class="{{ section.settings.setwidth }}">
-            555555555
-            {%- render 'section-heading' -%}
+            {%- render 'section-heading', btn: true, collection_url: collections.first.url -%}
                 <div class="collection-grid {{ class }} row {% if section.settings.enable_padding == false %} mx-0 {% endif %}" id="collection-grid-{{ section.id }}">
                   {%- for block in section.blocks -%}
                     {%-liquid
