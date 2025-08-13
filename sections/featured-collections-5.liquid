@@ -114,7 +114,7 @@ grid-template-columns: 1fr 1fr;
                     
                   <div class="collect-grid-{{ block.id }} 
                     {% if layout == 'grid' %} {{ section.settings.col }} {%- else -%} collage-item {% endif %}
-                    {% if section.settings.enable_padding == false %} px-0 {% endif %}
+                    {% if section.settings.enable_padding == false %} px-1 {% endif %}
                     {% if forloop.index == 1 %} collage-item-big {% endif %}
                     " {{ block.shopify_attributes }}>
                     <style>
