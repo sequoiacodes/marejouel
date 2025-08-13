@@ -17,9 +17,8 @@
   position: relative;
 }
 .mega-subtitle .slideshow__subtitle {
-  font-size: 20px;
+font-size: 20px;
   line-height: 1.5;
-  background:red;
   font-weight: 400;
 }
 
@@ -272,38 +271,19 @@ html:not(.no-js) .slideshow.slick-initialized .slideshow__slide{
 
 .slideshow__title {
   font-weight: var(--g-slide-font-weight);
-  font-size: var(--g-slide-font-size);
-  line-height: var(--g-slide-font-lineheight);
-  letter-spacing: var(--g-slide-font-spacing);
+  font-size: 72px;
+  line-height: revert;
+  letter-spacing:normal;
   text-transform: var(--g-slide-font-transform);
-}
-
-.slideshow__toptitle,
-.slideshow__text-content .slideshow__toptitle {
-  font-size: 18px !important;
-}
-
-/* Responsive font sizes for slideshow top title */
-@media (max-width: 779px) {
-  .slideshow__toptitle,
-  .slideshow__text-content .slideshow__toptitle {
-    font-size: 12px !important;
-  }
 }
 @media (min-width:992px) {
   .mega-subtitle{
     line-height: 1.5;
   }
 }
-@media (max-width:990px) and (min-width:750px) {
+@media (max-width:990px) {
   .slideshow__title {
-    font-size: 42px;
-  }
-}
-
-@media (max-width:749px) {
-  .slideshow__title {
-    font-size: var(--g-slide-font-size-mobile);
+    font-size:var(--g-slide-font-size-mobile);
   }
 }
 
@@ -348,12 +328,10 @@ html:not(.no-js) .slideshow.slick-initialized .slideshow__slide{
   column-gap:24px;
 }
 
-
 @media only screen and (min-width:750px) {
   {% comment %} .slideshow__btn-wrapper--push {
     margin-top: 50px;
   } {% endcomment %}
-  
 }
 
 
@@ -608,12 +586,12 @@ html:not(.no-js) .slideshow.slick-initialized .slideshow__slide{
 
         <div class="slideshow__text-wrap slideshow__text-wrap--desktop">
           <div class="slideshow__text-content slideshow__text-content--vertical-{{ text_vertical_alignment }} text-{{ text_horizontal_alignment }}">
-            <div class="{{ section.settings.setwidth }} custom-text" data-aos="fade" data-aos-anchor-placement="top-bottom"  data-aos-once="true">
+            <div class="{{ section.settings.setwidth }}" data-aos="fade" data-aos-anchor-placement="top-bottom"  data-aos-once="true">
               
               <div class="d-inline-block text-{% if text_horizontal_alignment == 'right' %}left{% else %}{{text_horizontal_alignment}}{% endif %} ">
               <ul class="list-unstyled"  >
                 {%- unless block.settings.slide_toptitle == blank -%}
-                <li class="">
+                <li class="mb-3">
                   <p class="slideshow__toptitle subtop" style="color:{{ block.settings.slide_toptitle_color }}">
                     {{ block.settings.slide_toptitle }}
                   </p>

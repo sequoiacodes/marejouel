@@ -1,9 +1,17 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
       "type": "main-page",
-      "settings": {
-      }
+      "settings": {}
     },
     "b2ef3f00-5f4f-4e93-8187-3970a28a8f9e": {
       "type": "parallax-banner",
@@ -11,14 +19,14 @@
         "template--19549173514560__b2ef3f00-5f4f-4e93-8187-3970a28a8f9e-sub_title-1": {
           "type": "sub_title",
           "settings": {
-            "subtitle": "fashion luxury"
+            "subtitle": "Mare Jouel Swimwear"
           }
         },
         "template--19549173514560__b2ef3f00-5f4f-4e93-8187-3970a28a8f9e-heading-1": {
           "type": "heading",
           "settings": {
-            "title": "OFFERING THE LATEST  <br> STYLES & INSPIRATION   <br>FOR ALL",
-            "size_text": "h1"
+            "title": "Empowering Women Through Sustainable, Handcrafted Swimwear",
+            "size_text": "h2"
           }
         }
       },
@@ -27,11 +35,11 @@
         "template--19549173514560__b2ef3f00-5f4f-4e93-8187-3970a28a8f9e-heading-1"
       ],
       "settings": {
-        "animation": "fade",
+        "animation": "",
         "setwidth": "full",
         "bgsection": "#ffffff",
         "parrallax_enable": true,
-        "image": "shopify:\/\/shop_images\/Desktop-Header-UK-ROW-JP.jpg",
+        "image": "shopify://shop_images/4956fa1058c78b25524cdfd8c434fd7476926b3b.jpg",
         "height_section": "650",
         "height_section_mobile": "450",
         "align": "center",
@@ -41,9 +49,72 @@
         "title_color": "#ffffff",
         "bg_overlay": "#000000",
         "gradient_bg": "",
-        "opacity_bg_overlay": 0.4,
+        "opacity_bg_overlay": 0.6,
         "paddingsection": "0px 0px 0px 0px",
         "marginsection": "0px 0px 0px 0px"
+      }
+    },
+    "scrolling_text_XgfLiY": {
+      "type": "scrolling-text",
+      "blocks": {
+        "item_An8Q66": {
+          "type": "item",
+          "settings": {
+            "code": "as beautiful as a jewel",
+            "image": "shopify://shop_images/Property_1_black-logo.png"
+          }
+        },
+        "item_qJtWg4": {
+          "type": "item",
+          "settings": {
+            "code": "as beautiful as a jewel",
+            "image": "shopify://shop_images/Property_1_black-logo.png"
+          }
+        },
+        "item_EBHVr9": {
+          "type": "item",
+          "settings": {
+            "code": "as beautiful as a jewel",
+            "image": "shopify://shop_images/Property_1_black-logo.png"
+          }
+        },
+        "item_yQcQwJ": {
+          "type": "item",
+          "settings": {
+            "code": "as beautiful as a jewel",
+            "image": "shopify://shop_images/Property_1_black-logo.png"
+          }
+        },
+        "item_3rN69T": {
+          "type": "item",
+          "settings": {
+            "code": "as beautiful as a jewel",
+            "image": "shopify://shop_images/Property_1_black-logo.png"
+          }
+        }
+      },
+      "block_order": [
+        "item_An8Q66",
+        "item_qJtWg4",
+        "item_EBHVr9",
+        "item_yQcQwJ",
+        "item_3rN69T"
+      ],
+      "name": "Scrolling Text",
+      "settings": {
+        "animation": "",
+        "size_text": "h3",
+        "text_style": "solid",
+        "size_icon": 16,
+        "speed": 18,
+        "scroll_type": "from-right",
+        "background": "#e55b5b",
+        "gradient_bg": "linear-gradient(90deg, rgba(255, 199, 134, 0.8) 3.37%, rgba(255, 128, 108, 0.8) 51.44%, rgba(255, 193, 230, 1) 100%)",
+        "text": "#000000",
+        "paddingsection": "36px 0px 36px 0px",
+        "paddingmobile": "40px 0px 40px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
       }
     },
     "d72bcc8c-88fe-4415-96f0-06511b070083": {
@@ -56,11 +127,9 @@
             "w_image": 40,
             "pos_image": 78,
             "e_image": "right",
-            "image": "shopify:\/\/shop_images\/sh3.jpg",
-            "image2": "shopify:\/\/shop_images\/360068397_1013387863151157_7248019384487355137_n.jpg",
             "enable_video": false,
             "text_circle": "New Fashion style store",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=Yghmzsr3S14&ab_channel=Kandra"
+            "video_url": "https://www.youtube.com/watch?v=Yghmzsr3S14&ab_channel=Kandra"
           }
         },
         "template--16716887458110__d72bcc8c-88fe-4415-96f0-06511b070083-16666725974cf35e4d-1": {
@@ -71,7 +140,7 @@
             "title": "Was Launched  in 1920",
             "size_text": "h2",
             "text": "",
-            "answer_content": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "answer_content": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "button": "discover now",
             "link": "",
             "style_btn": "btn-underline",
@@ -105,7 +174,7 @@
             "bgblock": "rgba(0,0,0,0)",
             "title": "Free shipping",
             "description": "Estimated 3-5 days",
-            "icon": "<svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-truck\" viewbox=\"0 0 82 82\"><path d=\"M7.238 68.717H1.867V2.12H58.4v16.736h3.886c9.755 0 17.663 7.908 17.663 17.663v32.199h-5.917M55.781 68.717H25.487\"><\/path><path d=\"M58.334 42.124h15.068v-4.27c0-6.82-5.53-12.35-12.351-12.35h-2.718v16.62M73.909 70.236a9.125 9.125 0 1 0-18.013-2.931 9.125 9.125 0 0 0 18.013 2.93ZM25.367 70.235a9.125 9.125 0 1 0-18.012-2.931 9.125 9.125 0 0 0 7.54 10.471 9.125 9.125 0 0 0 10.472-7.54Z\"><\/path><path d=\"M13.723 77.507c-3.966.658-7.937 1.51-11.857 2.593M60.373 76.736c-10.512-1.212-24.298-1.969-38.645-.451M79.768 80.121s-4.96-1.222-12.975-2.395\"><\/path><\/svg>"
+            "icon": "<svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-truck\" viewbox=\"0 0 82 82\"><path d=\"M7.238 68.717H1.867V2.12H58.4v16.736h3.886c9.755 0 17.663 7.908 17.663 17.663v32.199h-5.917M55.781 68.717H25.487\"></path><path d=\"M58.334 42.124h15.068v-4.27c0-6.82-5.53-12.35-12.351-12.35h-2.718v16.62M73.909 70.236a9.125 9.125 0 1 0-18.013-2.931 9.125 9.125 0 0 0 18.013 2.93ZM25.367 70.235a9.125 9.125 0 1 0-18.012-2.931 9.125 9.125 0 0 0 7.54 10.471 9.125 9.125 0 0 0 10.472-7.54Z\"></path><path d=\"M13.723 77.507c-3.966.658-7.937 1.51-11.857 2.593M60.373 76.736c-10.512-1.212-24.298-1.969-38.645-.451M79.768 80.121s-4.96-1.222-12.975-2.395\"></path></svg>"
           }
         },
         "8fb6874d-8c42-405c-9da3-134f7a8a0c73": {
@@ -114,7 +183,7 @@
             "bgblock": "rgba(0,0,0,0)",
             "title": "The Beach Club",
             "description": "Be rewarded every time",
-            "icon": "<svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-plant-based\" viewbox=\"0 0 82 82\"><path d=\"M41 20.701V80M56.735 26.294c0 8.703-7.045 15.758-15.735 15.758s-15.735-7.055-15.735-15.758C25.265 14.719 41 2 41 2s15.735 12.719 15.735 24.294ZM30.479 46.972c6.145 6.154 6.145 16.132 0 22.285-6.145 6.154-16.107 6.154-22.252 0C.054 61.072 2.2 40.936 2.2 40.936s20.106-2.149 28.279 6.036Z\"><\/path><path d=\"M41 77.861S27.525 60.403 10.092 50.177M51.412 46.972c-6.145 6.154-6.145 16.132 0 22.285 6.145 6.153 16.107 6.154 22.252 0 8.173-8.185 6.027-28.321 6.027-28.321s-20.106-2.149-28.279 6.036Z\"><\/path><path d=\"M40.891 77.861s13.475-17.458 30.908-27.684\"><\/path><\/svg>"
+            "icon": "<svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-plant-based\" viewbox=\"0 0 82 82\"><path d=\"M41 20.701V80M56.735 26.294c0 8.703-7.045 15.758-15.735 15.758s-15.735-7.055-15.735-15.758C25.265 14.719 41 2 41 2s15.735 12.719 15.735 24.294ZM30.479 46.972c6.145 6.154 6.145 16.132 0 22.285-6.145 6.154-16.107 6.154-22.252 0C.054 61.072 2.2 40.936 2.2 40.936s20.106-2.149 28.279 6.036Z\"></path><path d=\"M41 77.861S27.525 60.403 10.092 50.177M51.412 46.972c-6.145 6.154-6.145 16.132 0 22.285 6.145 6.153 16.107 6.154 22.252 0 8.173-8.185 6.027-28.321 6.027-28.321s-20.106-2.149-28.279 6.036Z\"></path><path d=\"M40.891 77.861s13.475-17.458 30.908-27.684\"></path></svg>"
           }
         },
         "16485444103c52f5e9-1": {
@@ -123,7 +192,7 @@
             "bgblock": "rgba(0,0,0,0)",
             "title": "Instant Refunds",
             "description": "Return money within 30 days",
-            "icon": "<svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-package\" viewbox=\"0 0 82 82\"><path d=\"M80 21v39L41 80 2 60V21L41 2l39 19Z\"><\/path><path d=\"m2 21 39 20 38.571-19.807M41 41.478v38.338\"><\/path><path d=\"m27.715 8.643 38.409 19.473v17.543l-11.617 6.067V33.83L16.098 14.355\"><\/path><\/svg>"
+            "icon": "<svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-package\" viewbox=\"0 0 82 82\"><path d=\"M80 21v39L41 80 2 60V21L41 2l39 19Z\"></path><path d=\"m2 21 39 20 38.571-19.807M41 41.478v38.338\"></path><path d=\"m27.715 8.643 38.409 19.473v17.543l-11.617 6.067V33.83L16.098 14.355\"></path></svg>"
           }
         },
         "16485444103c52f5e9-2": {
@@ -132,7 +201,7 @@
             "bgblock": "rgba(0,0,0,0)",
             "title": "Wear Now",
             "description": "Pay in easy instalments.",
-            "icon": "<svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-shield\" viewbox=\"0 0 64 64\"><defs><style>.a{fill:none;stroke:#000;stroke-width:2px}<\/style><\/defs><path class=\"a\" d=\"M21.18 31.69L28.54 39l15.91-15.88\"><\/path><path class=\"a\" d=\"M53 12.54v15.24a31.41 31.41 0 0 1-3.7 14.95A25.46 25.46 0 0 1 32 56a25.46 25.46 0 0 1-17.3-13.27A31.41 31.41 0 0 1 11 27.78V12.54C24.88 13.67 32 8 32 8s7.12 5.67 21 4.54z\"><\/path><\/svg>"
+            "icon": "<svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-shield\" viewbox=\"0 0 64 64\"><defs><style>.a{fill:none;stroke:#000;stroke-width:2px}</style></defs><path class=\"a\" d=\"M21.18 31.69L28.54 39l15.91-15.88\"></path><path class=\"a\" d=\"M53 12.54v15.24a31.41 31.41 0 0 1-3.7 14.95A25.46 25.46 0 0 1 32 56a25.46 25.46 0 0 1-17.3-13.27A31.41 31.41 0 0 1 11 27.78V12.54C24.88 13.67 32 8 32 8s7.12 5.67 21 4.54z\"></path></svg>"
           }
         }
       },
@@ -180,7 +249,7 @@
             "subtitle": "Our Mission",
             "title": "Your Style is  Our Inspiration",
             "size_text": "h2",
-            "text": "<div class=\"pr-lg-5 mr-lg-4\">\n<p>Need a little newness in your life? We've got you covered. Bringing you \nthe latest drop of more killer clothes, versatile accessories, stand-out \nfootwear, and much, much more. Update those lifesaving essentials \nor bag a knock-out, night-out number.<\/p>\n      <div class=\"mt-5 pt-4 px-lg-5\">\n        <img class=\"lazyload\" loading=\"lazy\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0781\/3637\/7664\/files\/sh4.jpg?v=1687509464\">\n      <\/div>\n    \n<\/div>",
+            "text": "<div class=\"pr-lg-5 mr-lg-4\">\n<p>Need a little newness in your life? We've got you covered. Bringing you \nthe latest drop of more killer clothes, versatile accessories, stand-out \nfootwear, and much, much more. Update those lifesaving essentials \nor bag a knock-out, night-out number.</p>\n      <div class=\"mt-5 pt-4 px-lg-5\">\n        <img class=\"lazyload\" loading=\"lazy\" data-src=\"https://cdn.shopify.com/s/files/1/0781/3637/7664/files/sh4.jpg?v=1687509464\">\n      </div>\n    \n</div>",
             "answer_content": "",
             "style_btn": "btn-underline btn-underline-white",
             "button": "",
@@ -191,9 +260,7 @@
         },
         "template--16716887458110__24a28133-2e01-4361-8b00-ad164f72336f-1666686767d1a98887-0": {
           "type": "image_block",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/sh1.jpg"
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -287,44 +354,40 @@
         "template--16716887458110__abb14abe-2a33-4a6b-aaa1-d36d5422d78d-1666689151286d1fe7-0": {
           "type": "member",
           "settings": {
-            "image": "shopify:\/\/shop_images\/team-img6.jpg",
             "name": "Abdul Khalek",
             "position": "CEO & Founder",
-            "twitter": "https:\/\/twitter.com\/",
-            "google": "https:\/\/plus.google.com",
-            "facebook": "https:\/\/www.facebook.com\/",
-            "linkedin": "https:\/\/www.linkedin.com\/"
+            "twitter": "https://twitter.com/",
+            "google": "https://plus.google.com",
+            "facebook": "https://www.facebook.com/",
+            "linkedin": "https://www.linkedin.com/"
           }
         },
         "template--16716887458110__abb14abe-2a33-4a6b-aaa1-d36d5422d78d-1666689151286d1fe7-1": {
           "type": "member",
           "settings": {
-            "image": "shopify:\/\/shop_images\/team-img7.jpg",
             "name": "Vera Duncan",
             "position": "Producer",
-            "twitter": "https:\/\/twitter.com\/",
-            "google": "https:\/\/plus.google.com",
-            "facebook": "https:\/\/www.facebook.com\/",
-            "linkedin": "https:\/\/www.linkedin.com\/"
+            "twitter": "https://twitter.com/",
+            "google": "https://plus.google.com",
+            "facebook": "https://www.facebook.com/",
+            "linkedin": "https://www.linkedin.com/"
           }
         },
         "template--16716887458110__abb14abe-2a33-4a6b-aaa1-d36d5422d78d-1666689151286d1fe7-2": {
           "type": "member",
           "settings": {
-            "image": "shopify:\/\/shop_images\/team-img9.jpg",
             "name": "Michella Ore",
             "position": "Developer",
-            "twitter": "https:\/\/twitter.com\/",
-            "google": "https:\/\/plus.google.com",
-            "facebook": "https:\/\/www.facebook.com\/",
-            "linkedin": "https:\/\/www.linkedin.com\/"
+            "twitter": "https://twitter.com/",
+            "google": "https://plus.google.com",
+            "facebook": "https://www.facebook.com/",
+            "linkedin": "https://www.linkedin.com/"
           }
         },
         "da71da3f-22ff-40d5-be4f-f445f70629e5": {
           "type": "member",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/company-team-member-3.webp",
             "name": "John Smith",
             "position": "CEO",
             "twitter": "#",
@@ -360,12 +423,12 @@
       "type": "map",
       "settings": {
         "heading": "Our store",
-        "address": "<p>123 Fake St.<br\/>Toronto, Canada<\/p><p>Mon - Fri, 10am - 9pm<br\/>Saturday, 11am - 9pm<br\/>Sunday, 11am - 5pm<\/p>",
+        "address": "<p>123 Fake St.<br/>Toronto, Canada</p><p>Mon - Fri, 10am - 9pm<br/>Saturday, 11am - 9pm<br/>Sunday, 11am - 5pm</p>",
         "map_address": "301 Front St W, Toronto",
         "button_text": "Get directions",
         "show_pin": true,
         "api_key": "",
-        "map_code": "<div class=\"mapouter\"><div class=\"gmap_canvas\">\n<iframe width=\"600\" height=\"500\" id=\"gmap_canvas\" src=\"https:\/\/maps.google.com\/maps?q=CN%20Tower,%20301%20Front%20St%20W,%20Toronto,%20ON%20M5V%202T6,%20Canada&t=&z=13&ie=UTF8&iwloc=&output=embed\" frameborder=\"0\" scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\" loading=\"lazy\" allowfullscreen><\/iframe><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}<\/style>\n<a href=\"https:\/\/www.embedgooglemap.net\">google maps code generator<\/a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}<\/style>\n<\/div><\/div>",
+        "map_code": "<div class=\"mapouter\"><div class=\"gmap_canvas\">\n<iframe width=\"600\" height=\"500\" id=\"gmap_canvas\" src=\"https://maps.google.com/maps?q=CN%20Tower,%20301%20Front%20St%20W,%20Toronto,%20ON%20M5V%202T6,%20Canada&t=&z=13&ie=UTF8&iwloc=&output=embed\" frameborder=\"0\" scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\" loading=\"lazy\" allowfullscreen></iframe><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style>\n<a href=\"https://www.embedgooglemap.net\">google maps code generator</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style>\n</div></div>",
         "background_image_position": "center center"
       }
     },
@@ -378,7 +441,7 @@
         "title": "Send us an email",
         "des": "",
         "align-heading": "center",
-        "answer_content": "<p>This site is protected by reCAPTCHA and the Google <a href=\"https:\/\/policies.google.com\/privacy\">Privacy Policy<\/a> and <a href=\"https:\/\/policies.google.com\/terms\">Terms of Service<\/a> apply.<\/p>",
+        "answer_content": "<p>This site is protected by reCAPTCHA and the Google <a href=\"https://policies.google.com/privacy\">Privacy Policy</a> and <a href=\"https://policies.google.com/terms\">Terms of Service</a> apply.</p>",
         "paddingsection": "100px 0px 100px 0px",
         "paddingmobile": "40px 0px 40px 0px",
         "marginsection": "0px 0px 0px 0px",
@@ -389,6 +452,7 @@
   "order": [
     "main",
     "b2ef3f00-5f4f-4e93-8187-3970a28a8f9e",
+    "scrolling_text_XgfLiY",
     "d72bcc8c-88fe-4415-96f0-06511b070083",
     "895c09e5-5c6d-4c4d-8492-727381e40aa0",
     "24a28133-2e01-4361-8b00-ad164f72336f",
