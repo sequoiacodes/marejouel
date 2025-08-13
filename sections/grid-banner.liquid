@@ -26,7 +26,7 @@
 <div class="{{ section.settings.setwidth }}">
   <div class="section-block">
   <div class="heading-collection">
-     {%- render 'section-heading', btn: true, collection_url: collections.first.url -%}
+     {%- render 'section-heading', btn: false, collection_url: collections.first.url -%}
 </div>
     <div class="row {% if section.settings.no_gutter %}no-gutters{% endif %}">
       {%- for block in section.blocks -%}
