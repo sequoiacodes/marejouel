@@ -17,7 +17,7 @@
   position: relative;
 }
 .mega-subtitle .slideshow__subtitle {
-font-size: 20px;
+  /* Use inherited/responsive size (e.g., .fz-2) */
   line-height: 1.5;
   font-weight: 400;
 }
@@ -271,9 +271,9 @@ html:not(.no-js) .slideshow.slick-initialized .slideshow__slide{
 
 .slideshow__title {
   font-weight: var(--g-slide-font-weight);
-  font-size: 72px;
-  line-height: revert;
-  letter-spacing:normal;
+  font-size: var(--g-slide-font-size);
+  line-height: var(--g-slide-font-lineheight);
+  letter-spacing: var(--g-slide-font-spacing);
   text-transform: var(--g-slide-font-transform);
 }
 @media (min-width:992px) {
