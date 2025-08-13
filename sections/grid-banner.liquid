@@ -27,7 +27,7 @@
   <div class="section-block">
    <div class="heading-collection">
    
-     {%- render 'section-heading', btn:true -%}
+     {%- render 'section-heading', btn: true, collection_url: collections.first.url -%}
     
    </div>
     <div class="row {% if section.settings.no_gutter %}no-gutters{% endif %}">
