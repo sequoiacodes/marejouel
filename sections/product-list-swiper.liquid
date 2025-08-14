@@ -1,13 +1,13 @@
 <!-- product-list-swiper.liquid -->
 {% style %}
-  .posrelative{
+  .posrelative_arr{
     position: relative;
      /* example height */
 
   color: white;
   overflow: hidden;
   }
-  .posabsolute{
+  .posabsolute_arr{
     position: absolute;
   inset: 0;               /* shorthand for top:0; right:0; bottom:0; left:0; */
  
@@ -17,12 +17,12 @@
   justify-content: space-between;
 
   }
-  .content {
+  .content_arr {
   position: relative;
   z-index: 2; /* place content above the overlay */
   padding: 20px;
 }
-.logo-1{
+.logo-1_arr{
   display:flex;
   justify-content: center;
   align-items:center;
@@ -30,7 +30,7 @@
   background:red;
  
 }
-.logo-11{
+.logo-11_arr{
   padding-left:10%;
 }
 
@@ -84,10 +84,10 @@
           >
           <div class="posrelative swiper-wrapper">
             /* CUSTOM CSS FOR BG  */
-            <div class="posabsolute">
-              <div class="logo-1 logo-11">
+            <div class="posabsolute_arr">
+              <div class="logo-1_arr logo-11_arr">
                 <img
-                  class="image-content__image lazyload scale-in"
+                  class="image-content__image_arr lazyload scale-in"
                   src="{{ 'looooogo.png' | asset_url }}" 
                   alt="Logo"
                   loading="lazy"
