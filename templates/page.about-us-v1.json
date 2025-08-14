@@ -309,6 +309,58 @@
       ],
       "settings": {}
     },
+    "17551551517178b39c": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_183994c_6wX7Ai": {
+          "type": "ai_gen_block_183994c",
+          "settings": {
+            "subtitle": "LET'S HEAR FROM OUR CLIENTS",
+            "title": "TESTIMONIALS",
+            "header_alignment": "flex-start",
+            "header_padding_top": 40,
+            "header_padding_bottom": 0,
+            "header_padding_horizontal": 55,
+            "background_image": "shopify://shop_images/270a27fd96f5836be62a5d746436c77547f2f5c7.png",
+            "overlay_opacity": 20,
+            "backdrop_blur": 3,
+            "testimonial_1_text": "“ Absolutely loved it. the fit, the quality and the color. this is a slim fit jean like none other and the only one i will buy. ”",
+            "testimonial_1_author": "-Joey B.",
+            "testimonial_1_rating": 5,
+            "testimonial_1_image": "shopify://shop_images/image_65504cc8-2bef-444c-8e58-ecb72c8c25a5.png",
+            "testimonial_2_text": "Outstanding customer service and an amazing product. The attention to detail is remarkable and it exceeded all my expectations. Highly recommended!",
+            "testimonial_2_author": "Michael Chen",
+            "testimonial_2_rating": 5,
+            "testimonial_3_text": "I've been using this for months now and it's become an essential part of my life. The craftsmanship is superb and it delivers exactly what was promised.",
+            "testimonial_3_author": "Emma Rodriguez",
+            "testimonial_3_rating": 4,
+            "nav_button_color": "#000000",
+            "nav_button_hover_color": "#ffffff",
+            "subtitle_color": "#000000",
+            "title_color": "#000000",
+            "testimonial_text_color": "#333333",
+            "author_text_color": "#000000",
+            "quote_color": "#e0e0e0",
+            "star_color": "#ffd700",
+            "star_empty_color": "#e0e0e0",
+            "subtitle_size": 14,
+            "title_size": 36,
+            "testimonial_text_size": 18,
+            "author_text_size": 16,
+            "star_size": 20,
+            "section_padding_top": 50,
+            "section_padding_bottom": 35,
+            "border_radius": 14,
+            "image_border_radius": 2
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_183994c_6wX7Ai"
+      ],
+      "settings": {}
+    },
     "895c09e5-5c6d-4c4d-8492-727381e40aa0": {
       "type": "service",
       "blocks": {
@@ -381,99 +433,8 @@
         "marginmobile": "0px 0px 0px 0px"
       }
     },
-    "17551551517178b39c": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_183994c_6wX7Ai": {
-          "type": "ai_gen_block_183994c",
-          "settings": {
-            "subtitle": "LET'S HEAR FROM OUR CLIENTS",
-            "title": "TESTIMONIALS",
-            "header_alignment": "flex-start",
-            "header_padding_top": 40,
-            "header_padding_bottom": 0,
-            "header_padding_horizontal": 55,
-            "background_image": "shopify://shop_images/270a27fd96f5836be62a5d746436c77547f2f5c7.png",
-            "overlay_opacity": 20,
-            "backdrop_blur": 3,
-            "testimonial_1_text": "“ Absolutely loved it. the fit, the quality and the color. this is a slim fit jean like none other and the only one i will buy. ”",
-            "testimonial_1_author": "-Joey B.",
-            "testimonial_1_rating": 5,
-            "testimonial_1_image": "shopify://shop_images/image_65504cc8-2bef-444c-8e58-ecb72c8c25a5.png",
-            "testimonial_2_text": "Outstanding customer service and an amazing product. The attention to detail is remarkable and it exceeded all my expectations. Highly recommended!",
-            "testimonial_2_author": "Michael Chen",
-            "testimonial_2_rating": 5,
-            "testimonial_3_text": "I've been using this for months now and it's become an essential part of my life. The craftsmanship is superb and it delivers exactly what was promised.",
-            "testimonial_3_author": "Emma Rodriguez",
-            "testimonial_3_rating": 4,
-            "nav_button_color": "#000000",
-            "nav_button_hover_color": "#ffffff",
-            "subtitle_color": "#000000",
-            "title_color": "#000000",
-            "testimonial_text_color": "#333333",
-            "author_text_color": "#000000",
-            "quote_color": "#e0e0e0",
-            "star_color": "#ffd700",
-            "star_empty_color": "#e0e0e0",
-            "subtitle_size": 14,
-            "title_size": 36,
-            "testimonial_text_size": 18,
-            "author_text_size": 16,
-            "star_size": 20,
-            "section_padding_top": 50,
-            "section_padding_bottom": 35,
-            "border_radius": 14,
-            "image_border_radius": 2
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_183994c_6wX7Ai"
-      ],
-      "settings": {}
-    },
     "175516095374c60626": {
       "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_b5f9b68_qrkT4r": {
-          "type": "ai_gen_block_b5f9b68",
-          "settings": {
-            "button_text": "Donate Now",
-            "donation_amount": "",
-            "donation_link": "",
-            "open_new_tab": true,
-            "alignment": "center",
-            "button_background_color": "#999999",
-            "button_hover_background_color": "#d73f0f",
-            "button_text_color": "#ffffff",
-            "button_hover_text_color": "#ffffff",
-            "border_width": 0,
-            "border_color": "#007acc",
-            "border_hover_color": "#005999",
-            "border_radius": 8,
-            "font_size": 16,
-            "font_weight": "600",
-            "text_transform": "none",
-            "letter_spacing": 0,
-            "button_padding_vertical": 16,
-            "button_padding_horizontal": 32,
-            "container_padding": 20,
-            "show_icon": true,
-            "icon_style": "heart",
-            "icon_size": 20,
-            "hover_lift": 2,
-            "shadow_horizontal": 0,
-            "shadow_vertical": 2,
-            "shadow_blur": 4,
-            "shadow_opacity": 0.1
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_b5f9b68_qrkT4r"
-      ],
       "settings": {}
     }
   },
