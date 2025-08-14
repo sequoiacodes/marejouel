@@ -32,11 +32,32 @@
       {%- endif -%}
     }
   }
+  .text_image_relative{
+  position:relative;
+  }
+  .text_image_absolute{
+     position: absolute;
+      inset: 0;               /* shorthand for top:0; right:0; bottom:0; left:0; */
+      pointer-events: none;   /* so clicks go through the overlay */
+      z-index: 5;
+      display:flex;
+      justify-content: center;
+  }
 </style>
 <div class="customstyle{{ section.id }} position-relative" data-aos="{{ section.settings.animation }}">
   {%- render 'style-section' -%}
-<div class="{{ section.settings.setwidth }}">
-  AAAAAA
+<div class="text_image_relative {{ section.settings.setwidth }}">
+      {% comment %} div for back ground  {% endcomment %}
+       <div class="text_image_absolute">
+           <img
+              class="image_arr lazyload scale-in"
+              src="{{ 'arrive_bg.png' | asset_url }}" 
+              alt="Logo"
+              loading="lazy"
+              height="auto"
+              width="auto"
+            />
+       </div>
   <div class="section-block">
     <div class="subtop text-left text-top mb-2 aos-init aos-animate">
     About Us
