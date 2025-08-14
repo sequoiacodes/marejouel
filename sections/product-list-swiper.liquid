@@ -47,15 +47,17 @@
           data-space-between="{{ section.settings.spaceBetween }}"
           >
           <div class="swiper-wrapper">
+            start
             {%- assign collection = collections[section.settings.collection] -%}
             {%- assign limit = section.settings.limit -%}
             {%- if collection != blank -%}
+
             {%- for product in collection.products limit: limit -%}
-            <div class="productlist-item swiper-slide">start
+            <div class="productlist-item swiper-slide">
                 <div data-aos="{{ section.settings.animation }}"  data-aos-delay="{{ forloop.index | times: 100 }}">
                   {%- render 'product-card', product: product -%}
                  
-                </div>end
+                </div>
             </div>
             {%- endfor -%}
             {%- else -%}
@@ -67,6 +69,7 @@
             </div>
             {%- endfor -%}
             {%- endif -%}
+            end
             </div>
             
             {%- if section.settings.scrollbar -%}
