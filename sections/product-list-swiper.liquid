@@ -1,41 +1,4 @@
 <!-- product-list-swiper.liquid -->
-{% style %}
-  .posrelative_arr{
-    position: relative;
-     /* example height */
-
-  color: white;
-  overflow: hidden;
-  }
-  .posabsolute_arr{
-    position: absolute;
-  inset: 0;               /* shorthand for top:0; right:0; bottom:0; left:0; */
- 
-  pointer-events: none;   /* so clicks go through the overlay */
-  z-index: 1;
-  display:flex;
-  justify-content: space-between;
-
-  }
-  .content_arr {
-  position: relative;
-  z-index: 2; /* place content above the overlay */
-  padding: 20px;
-}
-.logo-1_arr{
-  width:100%;
-  display:flex;
-  justify-content: center;
-  align-items:center;
-  opacity:0.3;
-  background:red;
- 
-}
-.logo-11_arr{
-  padding-left:10%;
-}
-
-{% endstyle %
 {%-liquid
   assign buttonall = section.settings.buttonall
   assign buttonall_link = section.settings.buttonall_link
@@ -83,22 +46,8 @@
           data-perview-desktop="{{ section.settings.perviewDesktop }}"
           data-space-between="{{ section.settings.spaceBetween }}"
           >
-          <div class="posrelative swiper-wrapper">
-            /* CUSTOM CSS FOR BG  */
-            <div class="posabsolute_arr">
-              <div class="logo-1_arr logo-11_arr">
-                <img
-                  class="image-content__image_arr lazyload scale-in"
-                  src="{{ 'looooogo.png' | asset_url }}" 
-                  alt="Logo"
-                  loading="lazy"
-                  height="100"
-                  width="100"
-                />
-              </div>
-           </div> 
-           
-           /* CUSTOM CSS END FOR BG  */
+          <div class="swiper-wrapper">
+            
             {%- assign collection = collections[section.settings.collection] -%}
             {%- assign limit = section.settings.limit -%}
             {%- if collection != blank -%}
