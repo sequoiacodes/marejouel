@@ -1,6 +1,921 @@
+{% doc %}
+  @prompt
+    Create a "New Arrivals" product showcase section for the home page that displays products from a specific collection. Include the same hover effects as the existing product pages where product images change on hover. Design should match the clean swimwear aesthetic with product titles, prices, and a grid layout. Add a collection picker setting so merchants can choose which collection to display. Include customizable section title, grid columns, and styling options. Make it fully responsive and include a "View All" button that links to the full collection page.
+
+{% enddoc %}
+{% assign ai_gen_id = section.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-new-arrivals-{{ ai_gen_id }} {
+    padding: {{ section.settings.section_padding_top }}px 0 {{ section.settings.section_padding_bottom }}px;
+    background-color: {{ section.settings.background_color }};
+  }
+
+  .ai-new-arrivals-container-{{ ai_gen_id }} {
+    max-width: {{ settings.container }}px;
+    margin: 0 auto;
+    padding: 0 {{ settings.gutter }}px;
+  }
+
+  .ai-new-arrivals-header-{{ ai_gen_id }} {
+    text-align: {{ section.settings.text_alignment }};
+    margin-bottom: {{ section.settings.header_spacing }}px;
+  }
+
+  .ai-new-arrivals-title-{{ ai_gen_id }} {
+    color: {{ section.settings.title_color }};
+    font-size: {{ section.settings.title_size }}px;
+    margin: 0 0 {{ section.settings.title_spacing }}px;
+    text-transform: {{ section.settings.title_transform }};
+    letter-spacing: {{ section.settings.title_letter_spacing }}em;
+  }
+
+  .ai-new-arrivals-subtitle-{{ ai_gen_id }} {
+    color: {{ section.settings.subtitle_color }};
+    font-size: {{ section.settings.subtitle_size }}px;
+    margin: 0;
+  }
+
+  .ai-new-arrivals-grid-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: repeat({{ section.settings.columns_desktop }}, 1fr);
+    gap: {{ section.settings.grid_gap }}px;
+    margin-bottom: {{ section.settings.grid_bottom_spacing }}px;
+  }
+
+  .ai-new-arrivals-product-{{ ai_gen_id }} {
+    position: relative;
+    text-align: {{ section.settings.product_text_alignment }};
+  }
+
+  .ai-new-arrivals-product-image-wrapper-{{ ai_gen_id }} {
+    position: relative;
+    overflow: hidden;
+    background-color: #f8f8f8;
+    border-radius: {{ section.settings.image_border_radius }}px;
+    margin-bottom: {{ section.settings.image_spacing }}px;
+    aspect-ratio: {{ section.settings.image_aspect_ratio }};
+  }
+
+  .ai-new-arrivals-product-image-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+  }
+
+  .ai-new-arrivals-product-image-secondary-{{ ai_gen_id }} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .ai-new-arrivals-product-{{ ai_gen_id }}:hover .ai-new-arrivals-product-image-secondary-{{ ai_gen_id }} {
+    opacity: 1;
+  }
+
+  .ai-new-arrivals-product-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f8f8;
+  }
+
+  .ai-new-arrivals-product-placeholder-{{ ai_gen_id }} svg {
+    width: 60%;
+    height: 60%;
+    opacity: 0.3;
+  }
+
+  .ai-new-arrivals-product-info-{{ ai_gen_id }} {
+    padding: 0;
+  }
+
+  .ai-new-arrivals-product-title-{{ ai_gen_id }} {
+    color: {{ section.settings.product_title_color }};
+    font-size: {{ section.settings.product_title_size }}px;
+    margin: 0 0 {{ section.settings.product_title_spacing }}px;
+    text-transform: {{ section.settings.product_title_transform }};
+    letter-spacing: {{ section.settings.product_title_letter_spacing }}em;
+    line-height: 1.3;
+  }
+
+  .ai-new-arrivals-product-title-{{ ai_gen_id }} a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .ai-new-arrivals-product-title-{{ ai_gen_id }} a:hover {
+    color: {{ section.settings.product_title_hover_color }};
+  }
+
+  .ai-new-arrivals-product-vendor-{{ ai_gen_id }} {
+    color: {{ section.settings.product_vendor_color }};
+    font-size: {{ section.settings.product_vendor_size }}px;
+    margin: 0 0 {{ section.settings.product_vendor_spacing }}px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  .ai-new-arrivals-product-price-{{ ai_gen_id }} {
+    color: {{ section.settings.product_price_color }};
+    font-size: {{ section.settings.product_price_size }}px;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  .ai-new-arrivals-product-price-compare-{{ ai_gen_id }} {
+    color: {{ section.settings.product_compare_price_color }};
+    text-decoration: line-through;
+    margin-right: 8px;
+    opacity: 0.7;
+  }
+
+  .ai-new-arrivals-view-all-wrapper-{{ ai_gen_id }} {
+    text-align: {{ section.settings.button_alignment }};
+  }
+
+  .ai-new-arrivals-view-all-{{ ai_gen_id }} {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: {{ section.settings.button_padding_vertical }}px {{ section.settings.button_padding_horizontal }}px;
+    background-color: {{ section.settings.button_background_color }};
+    color: {{ section.settings.button_text_color }};
+    text-decoration: none;
+    border-radius: {{ section.settings.button_border_radius }}px;
+    font-size: {{ section.settings.button_font_size }}px;
+    text-transform: {{ section.settings.button_text_transform }};
+    letter-spacing: {{ section.settings.button_letter_spacing }}em;
+    transition: all 0.3s ease;
+    border: {{ section.settings.button_border_width }}px solid {{ section.settings.button_border_color }};
+  }
+
+  .ai-new-arrivals-view-all-{{ ai_gen_id }}:hover {
+    background-color: {{ section.settings.button_hover_background_color }};
+    color: {{ section.settings.button_hover_text_color }};
+    border-color: {{ section.settings.button_hover_border_color }};
+  }
+
+  @media screen and (max-width: 989px) {
+    .ai-new-arrivals-grid-{{ ai_gen_id }} {
+      grid-template-columns: repeat({{ section.settings.columns_tablet }}, 1fr);
+    }
+
+    .ai-new-arrivals-title-{{ ai_gen_id }} {
+      font-size: {{ section.settings.title_size | times: 0.8 }}px;
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-new-arrivals-grid-{{ ai_gen_id }} {
+      grid-template-columns: repeat({{ section.settings.columns_mobile }}, 1fr);
+    }
+
+    .ai-new-arrivals-{{ ai_gen_id }} {
+      padding: {{ section.settings.section_padding_top | times: 0.7 }}px 0 {{ section.settings.section_padding_bottom | times: 0.7 }}px;
+    }
+
+    .ai-new-arrivals-title-{{ ai_gen_id }} {
+      font-size: {{ section.settings.title_size | times: 0.7 }}px;
+    }
+
+    .ai-new-arrivals-product-title-{{ ai_gen_id }} {
+      font-size: {{ section.settings.product_title_size | times: 0.9 }}px;
+    }
+
+    .ai-new-arrivals-product-price-{{ ai_gen_id }} {
+      font-size: {{ section.settings.product_price_size | times: 0.9 }}px;
+    }
+  }
+{% endstyle %}
+
+<div class="ai-new-arrivals-{{ ai_gen_id }}" {{ section.shopify_attributes }}>
+  <div class="ai-new-arrivals-container-{{ ai_gen_id }}">
+    {% if section.settings.title != blank or section.settings.subtitle != blank %}
+      <div class="ai-new-arrivals-header-{{ ai_gen_id }}">
+        {% if section.settings.title != blank %}
+          <h2 class="ai-new-arrivals-title-{{ ai_gen_id }}">{{ section.settings.title }}</h2>
+        {% endif %}
+        {% if section.settings.subtitle != blank %}
+          <div class="ai-new-arrivals-subtitle-{{ ai_gen_id }}">{{ section.settings.subtitle }}</div>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    {% if section.settings.collection != blank %}
+      <div class="ai-new-arrivals-grid-{{ ai_gen_id }}">
+        {% for product in section.settings.collection.products limit: section.settings.products_to_show %}
+          <div class="ai-new-arrivals-product-{{ ai_gen_id }}">
+            <div class="ai-new-arrivals-product-image-wrapper-{{ ai_gen_id }}">
+              {% if product.featured_image %}
+                <img
+                  src="{{ product.featured_image | image_url: width: 600 }}"
+                  alt="{{ product.featured_image.alt | escape }}"
+                  class="ai-new-arrivals-product-image-{{ ai_gen_id }}"
+                  loading="lazy"
+                  width="{{ product.featured_image.width }}"
+                  height="{{ product.featured_image.height }}"
+                >
+                {% if product.images[1] and section.settings.enable_hover_image %}
+                  <img
+                    src="{{ product.images[1] | image_url: width: 600 }}"
+                    alt="{{ product.images[1].alt | escape }}"
+                    class="ai-new-arrivals-product-image-secondary-{{ ai_gen_id }}"
+                    loading="lazy"
+                    width="{{ product.images[1].width }}"
+                    height="{{ product.images[1].height }}"
+                  >
+                {% endif %}
+              {% else %}
+                <div class="ai-new-arrivals-product-placeholder-{{ ai_gen_id }}">
+                  {{ 'product-1' | placeholder_svg_tag }}
+                </div>
+              {% endif %}
+            </div>
+
+            <div class="ai-new-arrivals-product-info-{{ ai_gen_id }}">
+              {% if section.settings.show_vendor and product.vendor != blank %}
+                <div class="ai-new-arrivals-product-vendor-{{ ai_gen_id }}">{{ product.vendor }}</div>
+              {% endif %}
+
+              <h3 class="ai-new-arrivals-product-title-{{ ai_gen_id }}">
+                <a href="{{ product.url }}">{{ product.title }}</a>
+              </h3>
+
+              {% if section.settings.show_price %}
+                <div class="ai-new-arrivals-product-price-{{ ai_gen_id }}">
+                  {% if product.compare_at_price > product.price %}
+                    <span class="ai-new-arrivals-product-price-compare-{{ ai_gen_id }}">
+                      {{ product.compare_at_price | money }}
+                    </span>
+                  {% endif %}
+                  {{ product.price | money }}
+                </div>
+              {% endif %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+
+      {% if section.settings.show_view_all_button and section.settings.collection != blank %}
+        <div class="ai-new-arrivals-view-all-wrapper-{{ ai_gen_id }}">
+          <a href="{{ section.settings.collection.url }}" class="ai-new-arrivals-view-all-{{ ai_gen_id }}">
+            {{ section.settings.view_all_text }}
+          </a>
+        </div>
+      {% endif %}
+    {% else %}
+      <div class="ai-new-arrivals-grid-{{ ai_gen_id }}">
+        {% for i in (1..section.settings.products_to_show) %}
+          <div class="ai-new-arrivals-product-{{ ai_gen_id }}">
+            <div class="ai-new-arrivals-product-image-wrapper-{{ ai_gen_id }}">
+              <div class="ai-new-arrivals-product-placeholder-{{ ai_gen_id }}">
+                {{ 'product-1' | placeholder_svg_tag }}
+              </div>
+            </div>
+            <div class="ai-new-arrivals-product-info-{{ ai_gen_id }}">
+              {% if section.settings.show_vendor %}
+                <div class="ai-new-arrivals-product-vendor-{{ ai_gen_id }}">Brand Name</div>
+              {% endif %}
+              <h3 class="ai-new-arrivals-product-title-{{ ai_gen_id }}">
+                <a href="#">Product Title</a>
+              </h3>
+              {% if section.settings.show_price %}
+                <div class="ai-new-arrivals-product-price-{{ ai_gen_id }}">$29.99</div>
+              {% endif %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</div>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "New arrivals showcase",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Collection"
+    },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Collection"
+    },
+    {
+      "type": "range",
+      "id": "products_to_show",
+      "min": 2,
+      "max": 12,
+      "step": 1,
+      "label": "Products to show",
+      "default": 8
+    },
+    {
+      "type": "header",
+      "content": "Section heading"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "label": "Heading",
+      "default": "New Arrivals"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "subtitle",
+      "label": "Subheading"
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "header",
+      "content": "Grid layout"
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "min": 2,
+      "max": 5,
+      "step": 1,
+      "label": "Columns on desktop",
+      "default": 4
+    },
+    {
+      "type": "select",
+      "id": "columns_tablet",
+      "label": "Columns on tablet",
+      "options": [
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "default": "3"
+    },
+    {
+      "type": "select",
+      "id": "columns_mobile",
+      "label": "Columns on mobile",
+      "options": [
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        }
+      ],
+      "default": "2"
+    },
+    {
+      "type": "range",
+      "id": "grid_gap",
+      "min": 10,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "label": "Grid gap",
+      "default": 30
+    },
+    {
+      "type": "header",
+      "content": "Product display"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_hover_image",
+      "label": "Enable hover image",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_vendor",
+      "label": "Show vendor",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_price",
+      "label": "Show price",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "image_aspect_ratio",
+      "label": "Image aspect ratio",
+      "options": [
+        {
+          "value": "1/1",
+          "label": "Square (1:1)"
+        },
+        {
+          "value": "3/4",
+          "label": "Portrait (3:4)"
+        },
+        {
+          "value": "4/5",
+          "label": "Portrait (4:5)"
+        },
+        {
+          "value": "16/9",
+          "label": "Landscape (16:9)"
+        }
+      ],
+      "default": "4/5"
+    },
+    {
+      "type": "select",
+      "id": "product_text_alignment",
+      "label": "Product text alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "header",
+      "content": "View all button"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_view_all_button",
+      "label": "Show view all button",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "view_all_text",
+      "label": "Button text",
+      "default": "View All"
+    },
+    {
+      "type": "select",
+      "id": "button_alignment",
+      "label": "Button alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Heading color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "subtitle_color",
+      "label": "Subheading color",
+      "default": "#666666"
+    },
+    {
+      "type": "color",
+      "id": "product_title_color",
+      "label": "Product title color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "product_title_hover_color",
+      "label": "Product title hover color",
+      "default": "#80270f"
+    },
+    {
+      "type": "color",
+      "id": "product_vendor_color",
+      "label": "Product vendor color",
+      "default": "#999999"
+    },
+    {
+      "type": "color",
+      "id": "product_price_color",
+      "label": "Product price color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "product_compare_price_color",
+      "label": "Compare price color",
+      "default": "#999999"
+    },
+    {
+      "type": "color",
+      "id": "button_background_color",
+      "label": "Button background",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_background_color",
+      "label": "Button hover background",
+      "default": "#80270f"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_text_color",
+      "label": "Button hover text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "button_border_color",
+      "label": "Button border",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_border_color",
+      "label": "Button hover border",
+      "default": "#80270f"
+    },
+    {
+      "type": "header",
+      "content": "Typography"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "min": 16,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "label": "Heading size",
+      "default": 32
+    },
+    {
+      "type": "select",
+      "id": "title_transform",
+      "label": "Heading transform",
+      "options": [
+        {
+          "value": "none",
+          "label": "None"
+        },
+        {
+          "value": "uppercase",
+          "label": "Uppercase"
+        },
+        {
+          "value": "lowercase",
+          "label": "Lowercase"
+        },
+        {
+          "value": "capitalize",
+          "label": "Capitalize"
+        }
+      ],
+      "default": "uppercase"
+    },
+    {
+      "type": "range",
+      "id": "title_letter_spacing",
+      "min": 0,
+      "max": 0.5,
+      "step": 0.1,
+      "unit": "em",
+      "label": "Heading letter spacing",
+      "default": 0.2
+    },
+    {
+      "type": "range",
+      "id": "subtitle_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Subheading size",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "product_title_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Product title size",
+      "default": 14
+    },
+    {
+      "type": "select",
+      "id": "product_title_transform",
+      "label": "Product title transform",
+      "options": [
+        {
+          "value": "none",
+          "label": "None"
+        },
+        {
+          "value": "uppercase",
+          "label": "Uppercase"
+        },
+        {
+          "value": "lowercase",
+          "label": "Lowercase"
+        },
+        {
+          "value": "capitalize",
+          "label": "Capitalize"
+        }
+      ],
+      "default": "uppercase"
+    },
+    {
+      "type": "range",
+      "id": "product_title_letter_spacing",
+      "min": 0,
+      "max": 0.3,
+      "step": 0.1,
+      "unit": "em",
+      "label": "Product title letter spacing",
+      "default": 0.1
+    },
+    {
+      "type": "range",
+      "id": "product_vendor_size",
+      "min": 10,
+      "max": 16,
+      "step": 1,
+      "unit": "px",
+      "label": "Product vendor size",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "product_price_size",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Product price size",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "button_font_size",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Button font size",
+      "default": 14
+    },
+    {
+      "type": "select",
+      "id": "button_text_transform",
+      "label": "Button text transform",
+      "options": [
+        {
+          "value": "none",
+          "label": "None"
+        },
+        {
+          "value": "uppercase",
+          "label": "Uppercase"
+        },
+        {
+          "value": "lowercase",
+          "label": "Lowercase"
+        },
+        {
+          "value": "capitalize",
+          "label": "Capitalize"
+        }
+      ],
+      "default": "uppercase"
+    },
+    {
+      "type": "range",
+      "id": "button_letter_spacing",
+      "min": 0,
+      "max": 0.3,
+      "step": 0.1,
+      "unit": "em",
+      "label": "Button letter spacing",
+      "default": 0.2
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "header_spacing",
+      "min": 20,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "label": "Header bottom spacing",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "title_spacing",
+      "min": 5,
+      "max": 30,
+      "step": 5,
+      "unit": "px",
+      "label": "Title bottom spacing",
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "grid_bottom_spacing",
+      "min": 20,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "label": "Grid bottom spacing",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "image_spacing",
+      "min": 10,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "label": "Image bottom spacing",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "product_title_spacing",
+      "min": 5,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Product title spacing",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "product_vendor_spacing",
+      "min": 2,
+      "max": 15,
+      "step": 1,
+      "unit": "px",
+      "label": "Product vendor spacing",
+      "default": 6
+    },
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "range",
+      "id": "image_border_radius",
+      "min": 0,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "label": "Image border radius",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "button_border_radius",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "label": "Button border radius",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "button_border_width",
+      "min": 0,
+      "max": 3,
+      "step": 1,
+      "unit": "px",
+      "label": "Button border width",
+      "default": 1
+    },
+    {
+      "type": "range",
+      "id": "button_padding_vertical",
+      "min": 8,
+      "max": 24,
+      "step": 2,
+      "unit": "px",
+      "label": "Button vertical padding",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "button_padding_horizontal",
+      "min": 16,
+      "max": 48,
+      "step": 4,
+      "unit": "px",
+      "label": "Button horizontal padding",
+      "default": 32
+    }
+  ],
+  "presets": [
+    {
+      "name": "New arrivals showcase"
+    }
+  ]
+}
 {% endschema %}
