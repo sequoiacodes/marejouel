@@ -51,11 +51,11 @@
             {%- assign limit = section.settings.limit -%}
             {%- if collection != blank -%}
             {%- for product in collection.products limit: limit -%}
-            <div class="productlist-item swiper-slide">
+            <div class="productlist-item swiper-slide">start
                 <div data-aos="{{ section.settings.animation }}"  data-aos-delay="{{ forloop.index | times: 100 }}">
                   {%- render 'product-card', product: product -%}
                  
-                </div>
+                </div>end
             </div>
             {%- endfor -%}
             {%- else -%}
