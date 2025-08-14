@@ -117,7 +117,7 @@
         "template--19549173121344__ea0a2867-55f8-4a4d-b69a-54b7fd3f3edc-1687342987fde68e6d-1": {
           "type": "collection",
           "settings": {
-            "collection": "accessories",
+            "collection": "onepiece",
             "image": "shopify://shop_images/catagory2.png",
             "color": "#ffffff",
             "enable_gradient": false,
@@ -128,7 +128,7 @@
         "template--19549173121344__ea0a2867-55f8-4a4d-b69a-54b7fd3f3edc-1687342987fde68e6d-2": {
           "type": "collection",
           "settings": {
-            "collection": "men",
+            "collection": "trikini",
             "image": "shopify://shop_images/catagory3.png",
             "color": "#ffffff",
             "enable_gradient": false,
@@ -139,7 +139,7 @@
         "collection_EKf3aR": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "coverup",
             "image": "shopify://shop_images/catagory4.png",
             "color": "#ffffff",
             "enable_gradient": false,
@@ -150,7 +150,7 @@
         "collection_V7EhW4": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "t-shirt",
             "image": "shopify://shop_images/catagory5.png",
             "color": "#ffffff",
             "enable_gradient": false,
@@ -161,7 +161,7 @@
         "collection_3tRrL9": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "hat",
             "image": "shopify://shop_images/catagory6.png",
             "color": "#ffffff",
             "enable_gradient": false,
