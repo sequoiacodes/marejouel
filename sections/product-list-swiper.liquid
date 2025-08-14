@@ -1,4 +1,42 @@
 <!-- product-list-swiper.liquid -->
+{% style %}
+  .posrelative{
+    position: relative;
+     /* example height */
+
+  color: white;
+  overflow: hidden;
+  }
+  .posabsolute{
+    position: absolute;
+  inset: 0;               /* shorthand for top:0; right:0; bottom:0; left:0; */
+ 
+  pointer-events: none;   /* so clicks go through the overlay */
+  z-index: 1;
+  display:flex;
+  justify-content: space-between;
+
+  }
+  .content {
+  position: relative;
+  z-index: 2; /* place content above the overlay */
+  padding: 20px;
+}
+.logo-1{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  opacity:0.2;
+ 
+}
+.logo-11{
+  padding-left:10%;
+}
+.logo-2{
+  padding-left:10%;
+  transform: rotateY(180deg);
+}
+{% endstyle %
 {%-liquid
   assign buttonall = section.settings.buttonall
   assign buttonall_link = section.settings.buttonall_link
@@ -46,8 +84,32 @@
           data-perview-desktop="{{ section.settings.perviewDesktop }}"
           data-space-between="{{ section.settings.spaceBetween }}"
           >
-          <div class="swiper-wrapper">
-            start
+          <div class="posrelative swiper-wrapper">
+            <div class="posabsolute">
+              <div class="logo-1 logo-11">
+              <img
+                class="image-content__image lazyload scale-in"
+                src="{{ 'looooogo.png' | asset_url }}" 
+              
+                alt="Logo"
+                loading="lazy"
+                height="100"
+                width="100"
+              />
+
+                    </div>
+                    <div class="logo-1 logo-2">
+                        <img
+                class="image-content__image lazyload scale-in"
+                src="{{ 'looooogo.png' | asset_url }}" 
+              
+                alt="Logo"
+                loading="lazy"
+                height="100"
+                width="100"
+              />
+                    </div>
+                </div>
             {%- assign collection = collections[section.settings.collection] -%}
             {%- assign limit = section.settings.limit -%}
             {%- if collection != blank -%}
@@ -69,7 +131,7 @@
             </div>
             {%- endfor -%}
             {%- endif -%}
-            end
+          
             </div>
             
             {%- if section.settings.scrollbar -%}
