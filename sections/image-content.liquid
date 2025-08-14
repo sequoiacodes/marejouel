@@ -50,6 +50,9 @@
       height:100%;
       width:100%;
 }
+.p-lg-5-custom{
+  padding:0% 0% 0% 5%
+}
 </style>
 <div class="text_image_relative customstyle{{ section.id }} position-relative" data-aos="{{ section.settings.animation }}">
   {%- render 'style-section' -%}
@@ -118,7 +121,7 @@
               </div>
             {%- when 'text_block' -%}
               {%- assign text_color = block.settings.title_color -%}
-              <div class=" h-100 flex  w-100 {% if section.settings.align_center %}flex--center-vertical{% endif %} {% if block.settings.enable_padding %} p-3 p-lg-5 {% endif %}" style="background-color:{{ block.settings.bgtext }} ;">
+              <div class=" h-100 flex  w-100 {% if section.settings.align_center %}flex--center-vertical{% endif %} {% if block.settings.enable_padding %} p-3 p-lg-5-custom {% endif %}" style="background-color:{{ block.settings.bgtext }} ;">
                 <div class="flex__item image-content__text text-{{ block.settings.align }}"  {% if text_color != 'rgba(0,0,0,0)' %}
                   style="--g-font-color-subtop: {{ text_color }};--g-color-heading :  {{ text_color }};--color-body-text : {{ text_color }};--color-body-text-rgb: {{ text_color.red }}, {{ text_color.green }},  {{ text_color.blue }} ;"
                 {% endif %} >
