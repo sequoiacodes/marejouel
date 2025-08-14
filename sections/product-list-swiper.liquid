@@ -82,21 +82,21 @@
           data-space-between="{{ section.settings.spaceBetween }}"
           >
           <div class="posrelative swiper-wrapper">
+            /* CUSTOM CSS FOR BG  */
             <div class="posabsolute">
               <div class="logo-1 logo-11">
-              <img
-                class="image-content__image lazyload scale-in"
-                src="{{ 'looooogo.png' | asset_url }}" 
-              
-                alt="Logo"
-                loading="lazy"
-                height="100"
-                width="100"
-              />
-
-                    </div>
-                  
-                </div>
+                <img
+                  class="image-content__image lazyload scale-in"
+                  src="{{ 'looooogo.png' | asset_url }}" 
+                  alt="Logo"
+                  loading="lazy"
+                  height="100"
+                  width="100"
+                />
+              </div>
+           </div> 
+           
+           /* CUSTOM CSS END FOR BG  */
             {%- assign collection = collections[section.settings.collection] -%}
             {%- assign limit = section.settings.limit -%}
             {%- if collection != blank -%}
