@@ -279,7 +279,7 @@
             "style_btn": "btn-theme",
             "button": "discover now",
             "link": "",
-            "enable_padding": false,
+            "enable_padding": true,
             "align": "left"
           }
         }
