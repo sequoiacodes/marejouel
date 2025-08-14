@@ -52,9 +52,9 @@
       <div class="{{ section.settings.setwidth }}">
         {%- render 'section-heading' -%}
       </div>
-      <div class="{{ section.settings.setwidth }} container-p">AAAAA
+      <div class="{{ section.settings.setwidth }} container-p">
       <div class="productlist-wrapper dots-negative swiper-wrapper-{{ section.id }} position-relative">
-        <div class="arr_absolute">
+        <div class="arr_absolute">  {% comment %}Customized section{% endcomment %}
            <img
               class="image_arr lazyload scale-in"
               src="{{ 'arrive_bg.png' | asset_url }}" 
