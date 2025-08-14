@@ -177,8 +177,9 @@
         <div class="ai-flex-layout__content-{{ ai_gen_id }}">
           {{ block.settings.content }}
         </div>
-        <div>
-          <button>abc</button>
+         <div class="d-flex justify-content-center align-items-center p-4">
+          <a href="#" class="btn {{ section.settings.style_btn }}"> Donate </a>
+         
         </div>
       {% endif %}
     </div>
@@ -208,6 +209,38 @@
         }
       ],
       "default": "image_left"
+    },
+     {
+      "type": "select",
+      "id": "style_btn",
+      "label": "Style Button",
+      "default": "btn-theme",
+      "options": [
+        {
+          "value": "btn-theme",
+          "label": "Button Box"
+        },
+        {
+          "value": "btn-theme btn-white",
+          "label": "Button Box White"
+        },
+        {
+          "value": "btn-underline",
+          "label": "Button Line"
+        },
+        {
+          "value": "btn-underline btn-underline-white",
+          "label": "Button Line White"
+        },
+        {
+          "value": "btn-outline",
+          "label": "Button Outline"
+        },
+        {
+          "value": "btn-outline btn-outline-white",
+          "label": "Button Outline White"
+        }
+      ]
     },
     {
       "type": "header",
