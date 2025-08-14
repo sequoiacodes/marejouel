@@ -96,7 +96,7 @@
               {%- for i in (1..limit) -%}
               <div class="producttab-item {% if enable_carousel %} col {% else %} {{ column }} {% endif %}">
                   <div data-aos="{{ section.settings.animation }}"  data-aos-delay="{{ forloop.index | times: 100 }}">
-                  {%- render 'product-grid-blank' -%}
+                  {%- render 'product-grid-blank' -%}AAAAAAAA
                   </div>
               </div>
               {%- endfor -%}
@@ -108,7 +108,7 @@
         {%- if buttonall != blank -%}
           <div class="pt-3 text-center">
             <a href="{{ buttonall_link }}" class="btn {{ style_btn }}">
-              {{ buttonall }}AAAAAAAAAAAA
+              {{ buttonall }}
             </a>
           </div>
         {%- endif -%}
