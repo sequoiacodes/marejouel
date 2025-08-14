@@ -256,6 +256,53 @@
         "marginmobile": "0px 0px 0px 0px"
       }
     },
+    "68f00d7d-af01-4aa1-a146-2e58796e1611": {
+      "type": "image-content",
+      "blocks": {
+        "template--19541121335616__68f00d7d-af01-4aa1-a146-2e58796e1611-1687424811e3734094-2": {
+          "type": "image_block",
+          "settings": {
+            "image": "shopify://shop_images/about-us-img.png"
+          }
+        },
+        "text_block_CWDyU3": {
+          "type": "text_block",
+          "settings": {
+            "width": "100%",
+            "bgtext": "#ffffff",
+            "title_color": "rgba(0,0,0,0)",
+            "subtitle": "",
+            "title": "",
+            "size_text": "h6",
+            "text": "<p style=\"text-align: justify; font-family: 'Gilda Display', serif; font-size: 20px; font-style: normal; font-weight: 400; line-height: normal;\">\nAt Mare Jouel, we create more than just swimwear – we create memories. Inspired by the vibrant Key Biscayne community and the beauty of Miami’s coastline, each piece is designed to make you feel confident, graceful, and ready to embrace the magic of the moment. Our swimwear is made to highlight your natural beauty and empower you to feel your best, making every beach day an unforgettable experience. Crafted with high-quality, eco-friendly fabrics, Mare Jouel reflects timeless elegance and the unforgettable memories made in the sun and sea.\n</p>",
+            "answer_content": "<p><br/></p>",
+            "style_btn": "btn-theme",
+            "button": "discover now",
+            "link": "",
+            "enable_padding": true,
+            "align": "left"
+          }
+        }
+      },
+      "block_order": [
+        "template--19541121335616__68f00d7d-af01-4aa1-a146-2e58796e1611-1687424811e3734094-2",
+        "text_block_CWDyU3"
+      ],
+      "settings": {
+        "animation": "",
+        "setwidth": "full",
+        "bgsection": "rgba(0,0,0,0)",
+        "rangebg": 0,
+        "bgbefore": "rgba(0,0,0,0)",
+        "bg_pos": "left",
+        "enable_padding": false,
+        "align_center": true,
+        "paddingsection": "70px 0px 70px 0px",
+        "paddingmobile": "40px 0px 0px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
     "cbb9eed3-bb8e-4d0c-befd-efb97ca27a01": {
       "type": "scrolling-text",
       "blocks": {
@@ -702,53 +749,6 @@
         "wborder": "1px"
       }
     },
-    "68f00d7d-af01-4aa1-a146-2e58796e1611": {
-      "type": "image-content",
-      "blocks": {
-        "template--19541121335616__68f00d7d-af01-4aa1-a146-2e58796e1611-1687424811e3734094-2": {
-          "type": "image_block",
-          "settings": {
-            "image": "shopify://shop_images/about-us-img.png"
-          }
-        },
-        "text_block_CWDyU3": {
-          "type": "text_block",
-          "settings": {
-            "width": "100%",
-            "bgtext": "#ffffff",
-            "title_color": "rgba(0,0,0,0)",
-            "subtitle": "",
-            "title": "",
-            "size_text": "h6",
-            "text": "<p style=\"text-align: justify; font-family: 'Gilda Display', serif; font-size: 20px; font-style: normal; font-weight: 400; line-height: normal;\">\nAt Mare Jouel, we create more than just swimwear – we create memories. Inspired by the vibrant Key Biscayne community and the beauty of Miami’s coastline, each piece is designed to make you feel confident, graceful, and ready to embrace the magic of the moment. Our swimwear is made to highlight your natural beauty and empower you to feel your best, making every beach day an unforgettable experience. Crafted with high-quality, eco-friendly fabrics, Mare Jouel reflects timeless elegance and the unforgettable memories made in the sun and sea.\n</p>",
-            "answer_content": "<p><br/></p>",
-            "style_btn": "btn-theme",
-            "button": "discover now",
-            "link": "",
-            "enable_padding": true,
-            "align": "left"
-          }
-        }
-      },
-      "block_order": [
-        "template--19541121335616__68f00d7d-af01-4aa1-a146-2e58796e1611-1687424811e3734094-2",
-        "text_block_CWDyU3"
-      ],
-      "settings": {
-        "animation": "",
-        "setwidth": "full",
-        "bgsection": "rgba(0,0,0,0)",
-        "rangebg": 0,
-        "bgbefore": "rgba(0,0,0,0)",
-        "bg_pos": "left",
-        "enable_padding": false,
-        "align_center": true,
-        "paddingsection": "70px 0px 70px 0px",
-        "paddingmobile": "40px 0px 0px 0px",
-        "marginsection": "0px 0px 0px 0px",
-        "marginmobile": "0px 0px 0px 0px"
-      }
-    },
     "16609007639672b3d5": {
       "type": "newsletter",
       "settings": {
@@ -1075,6 +1075,7 @@
     "ea0a2867-55f8-4a4d-b69a-54b7fd3f3edc",
     "rich_text_BheE9q",
     "16601928830ceb6d9f",
+    "68f00d7d-af01-4aa1-a146-2e58796e1611",
     "cbb9eed3-bb8e-4d0c-befd-efb97ca27a01",
     "7f1588c7-fcd8-4960-af12-6c22080eb14c",
     "166012224636496bd8",
@@ -1085,7 +1086,6 @@
     "1660192760ca5a4d9c",
     "1660192674d8a6fd50",
     "1660900735d9374b53",
-    "68f00d7d-af01-4aa1-a146-2e58796e1611",
     "16609007639672b3d5",
     "ea256325-7ebc-4ad1-9d79-25dc551f1f31",
     "5e6d27a3-1163-46d3-a128-345487900584",
