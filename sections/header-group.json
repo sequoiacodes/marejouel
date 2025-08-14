@@ -253,7 +253,7 @@
         "enable_white": false,
         "setwidth": "container-fluid",
         "layout_header": "logo-left-navigation-center",
-        "type_sticky": "sticky",
+        "type_sticky": "sticky-top",
         "height_header": "small",
         "topbarbg": "#f5f5f5",
         "topborderbg": "rgba(0,0,0,0)",

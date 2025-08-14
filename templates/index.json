@@ -107,9 +107,9 @@
           "type": "collection",
           "settings": {
             "collection": "women",
-            "image": "shopify://shop_images/collection1.jpg",
+            "image": "shopify://shop_images/catagory1.png",
             "color": "#ffffff",
-            "enable_gradient": false,
+            "enable_gradient": true,
             "bg_overlay": "#222222",
             "opacity_overlay": 0.2
           }
@@ -118,7 +118,7 @@
           "type": "collection",
           "settings": {
             "collection": "accessories",
-            "image": "shopify://shop_images/collection2.png",
+            "image": "shopify://shop_images/catagory2.png",
             "color": "#ffffff",
             "enable_gradient": false,
             "bg_overlay": "#222222",
@@ -129,7 +129,7 @@
           "type": "collection",
           "settings": {
             "collection": "men",
-            "image": "shopify://shop_images/collection3_b803877a-cfb3-4435-afb2-b5733017f0d8.png",
+            "image": "shopify://shop_images/catagory3.png",
             "color": "#ffffff",
             "enable_gradient": false,
             "bg_overlay": "#222222",
@@ -140,6 +140,7 @@
           "type": "collection",
           "settings": {
             "collection": "",
+            "image": "shopify://shop_images/catagory4.png",
             "color": "#ffffff",
             "enable_gradient": false,
             "bg_overlay": "#222222",
@@ -150,6 +151,7 @@
           "type": "collection",
           "settings": {
             "collection": "",
+            "image": "shopify://shop_images/catagory5.png",
             "color": "#ffffff",
             "enable_gradient": false,
             "bg_overlay": "#222222",
@@ -160,6 +162,7 @@
           "type": "collection",
           "settings": {
             "collection": "",
+            "image": "shopify://shop_images/catagory6.png",
             "color": "#ffffff",
             "enable_gradient": false,
             "bg_overlay": "#222222",
