@@ -387,8 +387,8 @@
             "title": "TESTIMONIALS",
             "header_alignment": "flex-start",
             "header_padding_top": 40,
-            "header_padding_bottom": 20,
-            "header_padding_horizontal": 30,
+            "header_padding_bottom": 0,
+            "header_padding_horizontal": 55,
             "background_image": "shopify://shop_images/270a27fd96f5836be62a5d746436c77547f2f5c7.png",
             "overlay_opacity": 20,
             "backdrop_blur": 3,
@@ -416,16 +416,59 @@
             "testimonial_text_size": 18,
             "author_text_size": 16,
             "star_size": 20,
-            "section_padding_top": 60,
-            "section_padding_bottom": 60,
-            "border_radius": 12,
-            "image_border_radius": 6
+            "section_padding_top": 50,
+            "section_padding_bottom": 35,
+            "border_radius": 14,
+            "image_border_radius": 2
           },
           "blocks": {}
         }
       },
       "block_order": [
         "ai_gen_block_183994c_6wX7Ai"
+      ],
+      "settings": {}
+    },
+    "175516095374c60626": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_b5f9b68_qrkT4r": {
+          "type": "ai_gen_block_b5f9b68",
+          "settings": {
+            "button_text": "Donate Now",
+            "donation_amount": "",
+            "donation_link": "",
+            "open_new_tab": true,
+            "alignment": "center",
+            "button_background_color": "#999999",
+            "button_hover_background_color": "#d73f0f",
+            "button_text_color": "#ffffff",
+            "button_hover_text_color": "#ffffff",
+            "border_width": 0,
+            "border_color": "#007acc",
+            "border_hover_color": "#005999",
+            "border_radius": 8,
+            "font_size": 16,
+            "font_weight": "600",
+            "text_transform": "none",
+            "letter_spacing": 0,
+            "button_padding_vertical": 16,
+            "button_padding_horizontal": 32,
+            "container_padding": 20,
+            "show_icon": true,
+            "icon_style": "heart",
+            "icon_size": 20,
+            "hover_lift": 2,
+            "shadow_horizontal": 0,
+            "shadow_vertical": 2,
+            "shadow_blur": 4,
+            "shadow_opacity": 0.1
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_b5f9b68_qrkT4r"
       ],
       "settings": {}
     }
@@ -436,6 +479,7 @@
     "scrolling_text_XgfLiY",
     "175515053594e2f7e6",
     "895c09e5-5c6d-4c4d-8492-727381e40aa0",
-    "17551551517178b39c"
+    "17551551517178b39c",
+    "175516095374c60626"
   ]
 }
