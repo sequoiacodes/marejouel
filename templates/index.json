@@ -290,7 +290,7 @@
       ],
       "settings": {
         "animation": "",
-        "setwidth": "full",
+        "setwidth": "container-fluid",
         "bgsection": "rgba(0,0,0,0)",
         "rangebg": 0,
         "bgbefore": "rgba(0,0,0,0)",
