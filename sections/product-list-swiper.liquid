@@ -26,16 +26,13 @@
   display:flex;
   justify-content: center;
   align-items:center;
-  opacity:0.2;
+  opacity:1;
  
 }
 .logo-11{
   padding-left:10%;
 }
-.logo-2{
-  padding-left:10%;
-  transform: rotateY(180deg);
-}
+
 {% endstyle %
 {%-liquid
   assign buttonall = section.settings.buttonall
@@ -98,17 +95,7 @@
               />
 
                     </div>
-                    <div class="logo-1 logo-2">
-                        <img
-                class="image-content__image lazyload scale-in"
-                src="{{ 'looooogo.png' | asset_url }}" 
-              
-                alt="Logo"
-                loading="lazy"
-                height="100"
-                width="100"
-              />
-                    </div>
+                  
                 </div>
             {%- assign collection = collections[section.settings.collection] -%}
             {%- assign limit = section.settings.limit -%}
