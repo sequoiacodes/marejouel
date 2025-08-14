@@ -13,19 +13,20 @@
  
   pointer-events: none;   /* so clicks go through the overlay */
   z-index: 1;
-  /* display:flex;
-  justify-content: space-between; */
+  display:flex;
+  justify-content: center;
 
   }
   .content_arr {
- background:green;
+  position: relative;
+  z-index: 2; /* place content above the overlay */
   
 }
 .logo-1_arr{
-  
-  /* display:flex;
+  width:100%;
+  display:flex;
   justify-content: center;
-  align-items:center; */
+  align-items:center;
   opacity:0.6;
   background:gray;
  
@@ -85,7 +86,7 @@
           <div class="posrelative swiper-wrapper">
             /* CUSTOM CSS FOR BG  */
             <div class="posabsolute_arr">
-              /* <div class="logo-1_arr logo-11_arr"> */
+              <div class="logo-1_arr logo-11_arr">
                 <img
                   class="image-content__image_arr lazyload scale-in"
                   src="{{ 'arrive_bg.png' | asset_url }}" 
@@ -94,7 +95,7 @@
                   height="auto"
                   width="auto"
                 />
-              /* </div> */
+              </div>
            </div> 
            
            /* CUSTOM CSS END FOR BG  */
