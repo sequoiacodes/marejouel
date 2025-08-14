@@ -705,32 +705,34 @@
     "68f00d7d-af01-4aa1-a146-2e58796e1611": {
       "type": "image-content",
       "blocks": {
-        "template--19541121335616__68f00d7d-af01-4aa1-a146-2e58796e1611-1687424811e3734094-1": {
+        "template--19541121335616__68f00d7d-af01-4aa1-a146-2e58796e1611-1687424811e3734094-2": {
+          "type": "image_block",
+          "settings": {
+            "image": "shopify://shop_images/about-us-img.png"
+          }
+        },
+        "text_block_CWDyU3": {
           "type": "text_block",
           "settings": {
-            "width": "75%",
-            "bgtext": "rgba(0,0,0,0)",
-            "title_color": "#ffffff",
-            "subtitle": "the best",
-            "title": "Consciously Crafted",
+            "width": "100%",
+            "bgtext": "#ffffff",
+            "title_color": "rgba(0,0,0,0)",
+            "subtitle": "Sub Title",
+            "title": "Image with text",
             "size_text": "h2",
-            "text": "",
-            "answer_content": "<p>We aspire to be a brand of the 21st century: 100% online and without any intermediary.</p>",
-            "style_btn": "btn-theme btn-white",
-            "button": "shop now",
+            "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "answer_content": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "style_btn": "btn-theme",
+            "button": "discover now",
             "link": "",
             "enable_padding": true,
             "align": "left"
           }
-        },
-        "template--19541121335616__68f00d7d-af01-4aa1-a146-2e58796e1611-1687424811e3734094-2": {
-          "type": "image_block",
-          "settings": {}
         }
       },
       "block_order": [
-        "template--19541121335616__68f00d7d-af01-4aa1-a146-2e58796e1611-1687424811e3734094-1",
-        "template--19541121335616__68f00d7d-af01-4aa1-a146-2e58796e1611-1687424811e3734094-2"
+        "template--19541121335616__68f00d7d-af01-4aa1-a146-2e58796e1611-1687424811e3734094-2",
+        "text_block_CWDyU3"
       ],
       "settings": {
         "animation": "fade-up",
