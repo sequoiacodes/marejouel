@@ -230,6 +230,32 @@
         "marginmobile": "0px 0px 0px 0px"
       }
     },
+    "16601928830ceb6d9f": {
+      "type": "product-list-swiper",
+      "settings": {
+        "animation": "fade-up",
+        "setwidth": "container-fluid",
+        "bgsection": "#ffffff",
+        "title_top": "New Arrivals",
+        "title": "di mare collection",
+        "des": "",
+        "align-heading": "left",
+        "collection": "new-arrivals-1",
+        "limit": 10,
+        "perviewDesktop": 4,
+        "spaceBetween": 30,
+        "nowrap": false,
+        "arrows": false,
+        "scrollbar": false,
+        "buttonall": "Shop The collection",
+        "buttonall_link": "#",
+        "style_btn": "btn-theme",
+        "paddingsection": "40px 0px 80px 0px",
+        "paddingmobile": "32px 0px 0px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
     "cbb9eed3-bb8e-4d0c-befd-efb97ca27a01": {
       "type": "scrolling-text",
       "blocks": {
@@ -288,32 +314,6 @@
         "text": "#000000",
         "paddingsection": "50px 0px 50px 0px",
         "paddingmobile": "50px 0px 50px 0px",
-        "marginsection": "0px 0px 0px 0px",
-        "marginmobile": "0px 0px 0px 0px"
-      }
-    },
-    "16601928830ceb6d9f": {
-      "type": "product-list-swiper",
-      "settings": {
-        "animation": "fade-up",
-        "setwidth": "container-fluid",
-        "bgsection": "#ffffff",
-        "title_top": "New Arrivals",
-        "title": "di mare collection",
-        "des": "",
-        "align-heading": "left",
-        "collection": "new-arrivals-1",
-        "limit": 10,
-        "perviewDesktop": 4,
-        "spaceBetween": 30,
-        "nowrap": false,
-        "arrows": true,
-        "scrollbar": false,
-        "buttonall": "Shop The collection",
-        "buttonall_link": "#",
-        "style_btn": "btn-theme",
-        "paddingsection": "40px 0px 80px 0px",
-        "paddingmobile": "32px 0px 0px 0px",
         "marginsection": "0px 0px 0px 0px",
         "marginmobile": "0px 0px 0px 0px"
       }
