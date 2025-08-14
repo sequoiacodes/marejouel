@@ -94,7 +94,7 @@
         "gradient_overlay": true,
         "bg_overlay": "#000000",
         "opacity_overlay": 0.6,
-        "paddingsection": "60px 0px 40px 30px",
+        "paddingsection": "100px 0px 100px 30px",
         "paddingmobile": "40px 0px 40px 0px",
         "marginsection": "0px 0px 0px 0px",
         "marginmobile": "0px 0px 0px 0px"
@@ -193,7 +193,7 @@
       "settings": {
         "animation": "fade-up",
         "setwidth": "container-fluid",
-        "bgsection": "#ffffff",
+        "bgsection": "#fff8ec",
         "title_top": "Let’s find the perfect swimsuit for you!",
         "title": "shop by categories",
         "des": "",
@@ -203,9 +203,9 @@
         "enable_padding": false,
         "size_image_col": "portrait",
         "size_title": "h4",
-        "paddingsection": "0px 0px 100px 0px",
+        "paddingsection": "100px 0px 100px 32px",
         "paddingmobile": "5px 0px 20px 0px",
-        "marginsection": "0px 0px 0px 35px",
+        "marginsection": "0px 0px 0px 0px",
         "marginmobile": "0px 0px 0px 0px"
       }
     },
