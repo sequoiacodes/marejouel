@@ -406,7 +406,7 @@
         "166012224636496bd8-1": {
           "type": "collection",
           "settings": {
-            "title": "BUTTOND",
+            "title": "BOTTOMS",
             "collection": "best-seller-bottom"
           }
         }
@@ -416,7 +416,7 @@
         "166012224636496bd8-1"
       ],
       "settings": {
-        "animation": "fade-up",
+        "animation": "",
         "setwidth": "container-fluid",
         "bgsection": "#ffffff",
         "title_top": "Our Most Loved Pieces",
