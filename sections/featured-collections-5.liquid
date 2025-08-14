@@ -209,7 +209,7 @@ grid-template-columns: 1fr 1fr;
                           <div class="m-0 type-onimage position-absolute collection-card__meta w-100 d-flex flex-column h-100 justify-content-center p-4 text-center">
                             <h4 class="mb-1 title-collection {{ section.settings.size_title }}">
                               <a class="" href="{{ featured_collection.url | default : '#' }}">
-                                {{ collectionTitle }}Aalok
+                                {{ collectionTitle }}  {% comment %}Here we can chnage the title{% endcomment %}
                               </a>
                             </h4>
                               <p class="item-counts ">{{ count }}</p> 
