@@ -37,6 +37,9 @@
   {%- render 'style-section' -%}
 <div class="{{ section.settings.setwidth }}">
   <div class="section-block">
+    <div class="{{ section.settings.setwidth }}">
+        {%- render 'section-heading' -%}
+      </div>
     <div class="row {% unless section.settings.enable_padding %}no-gutters {% endunless %}">
       {%- liquid
         case section.blocks.size 
