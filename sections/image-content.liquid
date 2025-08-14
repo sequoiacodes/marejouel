@@ -51,20 +51,20 @@
       width:100%;
 }
 </style>
-<div class="customstyle{{ section.id }} position-relative" data-aos="{{ section.settings.animation }}">
+<div class="text_image_relative customstyle{{ section.id }} position-relative" data-aos="{{ section.settings.animation }}">
   {%- render 'style-section' -%}
-<div class="text_image_relative {{ section.settings.setwidth }}">
-      {% comment %} div for back ground  {% endcomment %}
-       <div class="text_image_absolute">
-           <img
-              class="text_image_img lazyload scale-in"
-              src="{{ 'about_us.png' | asset_url }}" 
-              alt="Logo"
-              loading="lazy"
-              height="auto"
-              width="auto"
-            />
-       </div>
+  {% comment %} div for back ground  {% endcomment %}
+   <div class="text_image_absolute">
+       <img
+          class="text_image_img lazyload scale-in"
+          src="{{ 'about_us.png' | asset_url }}" 
+          alt="Logo"
+          loading="lazy"
+          height="auto"
+          width="auto"
+        />
+   </div>
+<div class=" {{ section.settings.setwidth }}">
   <div class="section-block">
     <div class="subtop text-left text-top mt-2 mb-2 aos-init aos-animate">
     About Us
