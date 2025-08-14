@@ -235,7 +235,7 @@
       "settings": {
         "animation": "fade-up",
         "setwidth": "container-fluid",
-        "bgsection": "#ffffff",
+        "bgsection": "#fff8ec",
         "title_top": "New Arrivals",
         "title": "di mare collection",
         "des": "",
