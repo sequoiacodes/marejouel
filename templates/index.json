@@ -400,7 +400,7 @@
           "type": "collection",
           "settings": {
             "title": "SWIM TOPS",
-            "collection": "men"
+            "collection": "best-seller-top"
           }
         },
         "166012224636496bd8-1": {
@@ -419,16 +419,16 @@
         "animation": "fade-up",
         "setwidth": "container-fluid",
         "bgsection": "#ffffff",
-        "title_top": "",
+        "title_top": "Our Most Loved Pieces",
         "title": "Best Sellers",
-        "des": "Our Most Loved Pieces.",
+        "des": "",
         "align-heading": "left",
-        "style_tab": "button",
+        "style_tab": "line",
         "enable_carousel": false,
-        "arrows": true,
-        "draggable": true,
-        "dots": true,
-        "infinite": true,
+        "arrows": false,
+        "draggable": false,
+        "dots": false,
+        "infinite": false,
         "rows": "1",
         "spaceBetween": 30,
         "limit": 4,
