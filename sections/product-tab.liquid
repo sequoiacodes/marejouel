@@ -7,6 +7,8 @@
   assign enable_carousel = section.settings.enable_carousel
   assign show = section.settings.show 
   assign style_tab = section.settings.style_tab
+    assign size_image_grid = settings.size_image_grid
+  assign cover_contain = section.settings.cover_contain
   case show
     when 3
     assign column = ' col-lg-4 col-6'
@@ -82,7 +84,11 @@
               {%- for product in collection.products limit: limit -%}
               <div class="producttab-item {% if enable_carousel %} col {% else %} {{ column }} {% endif %}" data-scroll data-scroll-speed="1" >
                 <div data-aos="{{ section.settings.animation }}"  data-aos-delay="{{ forloop.index | times: 100 }}">
-                {%- render 'product-card', product: product -%}
+                   {%- liquid
+                  assign enable_edit_item = section.settings.enable_edit_item
+                  assign select_item = section.settings.select_item
+                -%}
+                {%- render 'product-card', product: product, size_image_grid: size_image_grid, cover_contain: cover_contain , enable_edit_item: enable_edit_item, select_item: select_item -%}
                 </div>
               </div>
               {%- endfor -%}
