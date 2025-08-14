@@ -1,6 +1,671 @@
+{% doc %}
+  @prompt
+    Create a testimonials section with customer reviews that includes star ratings, customer quotes in large text, customer names, and space for a product or lifestyle image. The section should have a clean, modern design with proper spacing and typography that matches the style shown in the reference image., make one parent div and 2 child div which are flex and the in the first div there is subtitle title rating star author name and navigation button and another div have photo section
+
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-testimonials-{{ ai_gen_id }} {
+    padding: {{ block.settings.section_padding_top }}px 0 {{ block.settings.section_padding_bottom }}px;
+    background-color: {{ block.settings.background_color }};
+  }
+
+  .ai-testimonials-container-{{ ai_gen_id }} {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .ai-testimonials-wrapper-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .ai-testimonials-content-{{ ai_gen_id }} {
+    flex: 1;
+    max-width: 500px;
+  }
+
+  .ai-testimonials-subtitle-{{ ai_gen_id }} {
+    font-size: {{ block.settings.subtitle_size }}px;
+    color: {{ block.settings.subtitle_color }};
+    margin: 0 0 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-weight: 400;
+  }
+
+  .ai-testimonials-title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.title_size }}px;
+    color: {{ block.settings.title_color }};
+    margin: 0 0 32px;
+    font-weight: 400;
+    line-height: 1.3;
+  }
+
+  .ai-testimonial-stars-{{ ai_gen_id }} {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 24px;
+  }
+
+  .ai-testimonial-star-{{ ai_gen_id }} {
+    width: {{ block.settings.star_size }}px;
+    height: {{ block.settings.star_size }}px;
+    fill: {{ block.settings.star_color }};
+  }
+
+  .ai-testimonial-star-empty-{{ ai_gen_id }} {
+    fill: {{ block.settings.star_empty_color }};
+  }
+
+  .ai-testimonial-quote-{{ ai_gen_id }} {
+    font-size: {{ block.settings.quote_size }}px;
+    color: {{ block.settings.text_color }};
+    line-height: 1.6;
+    margin: 0 0 32px;
+    font-style: italic;
+  }
+
+  .ai-testimonial-author-{{ ai_gen_id }} {
+    font-size: {{ block.settings.author_size }}px;
+    color: {{ block.settings.author_color }};
+    font-weight: 600;
+    margin: 0 0 40px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  .ai-testimonials-navigation-{{ ai_gen_id }} {
+    display: flex;
+    gap: 16px;
+  }
+
+  .ai-testimonials-nav-button-{{ ai_gen_id }} {
+    width: 50px;
+    height: 50px;
+    border: 2px solid {{ block.settings.button_border_color }};
+    background-color: {{ block.settings.button_bg_color }};
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .ai-testimonials-nav-button-{{ ai_gen_id }}:hover {
+    background-color: {{ block.settings.button_hover_bg_color }};
+    border-color: {{ block.settings.button_hover_border_color }};
+  }
+
+  .ai-testimonials-nav-button-{{ ai_gen_id }} svg {
+    width: 20px;
+    height: 20px;
+    fill: {{ block.settings.button_icon_color }};
+    transition: fill 0.3s ease;
+  }
+
+  .ai-testimonials-nav-button-{{ ai_gen_id }}:hover svg {
+    fill: {{ block.settings.button_hover_icon_color }};
+  }
+
+  .ai-testimonials-photo-section-{{ ai_gen_id }} {
+    flex: 1;
+    max-width: 600px;
+  }
+
+  .ai-testimonials-image-{{ ai_gen_id }} {
+    width: 100%;
+    height: 500px;
+    border-radius: {{ block.settings.image_border_radius }}px;
+    overflow: hidden;
+  }
+
+  .ai-testimonials-image-{{ ai_gen_id }} img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ai-testimonials-image-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-testimonials-image-placeholder-{{ ai_gen_id }} svg {
+    width: 80px;
+    height: 80px;
+    opacity: 0.3;
+  }
+
+  .ai-testimonial-item-{{ ai_gen_id }} {
+    display: none;
+  }
+
+  .ai-testimonial-item-{{ ai_gen_id }}.active {
+    display: block;
+  }
+
+  @media screen and (max-width: 768px) {
+    .ai-testimonials-wrapper-{{ ai_gen_id }} {
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .ai-testimonials-content-{{ ai_gen_id }} {
+      max-width: 100%;
+      text-align: center;
+    }
+
+    .ai-testimonials-photo-section-{{ ai_gen_id }} {
+      max-width: 100%;
+    }
+
+    .ai-testimonials-image-{{ ai_gen_id }} {
+      height: 300px;
+    }
+
+    .ai-testimonials-title-{{ ai_gen_id }} {
+      font-size: {{ block.settings.title_size | times: 0.8 }}px;
+    }
+
+    .ai-testimonial-quote-{{ ai_gen_id }} {
+      font-size: {{ block.settings.quote_size | times: 0.9 }}px;
+    }
+
+    .ai-testimonial-stars-{{ ai_gen_id }} {
+      justify-content: center;
+    }
+
+    .ai-testimonials-navigation-{{ ai_gen_id }} {
+      justify-content: center;
+    }
+  }
+{% endstyle %}
+
+<testimonials-slider-{{ ai_gen_id }} class="ai-testimonials-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-testimonials-container-{{ ai_gen_id }}">
+    <div class="ai-testimonials-wrapper-{{ ai_gen_id }}">
+      <div class="ai-testimonials-content-{{ ai_gen_id }}">
+        {% if block.settings.subtitle != blank %}
+          <div class="ai-testimonials-subtitle-{{ ai_gen_id }}">{{ block.settings.subtitle }}</div>
+        {% endif %}
+
+        {% if block.settings.title != blank %}
+          <h2 class="ai-testimonials-title-{{ ai_gen_id }}">{{ block.settings.title }}</h2>
+        {% endif %}
+
+        <div class="ai-testimonials-content-slider-{{ ai_gen_id }}">
+          {% for i in (1..3) %}
+            {% liquid
+              assign testimonial_enabled_key = 'testimonial_' | append: i | append: '_enabled'
+              assign testimonial_rating_key = 'testimonial_' | append: i | append: '_rating'
+              assign testimonial_quote_key = 'testimonial_' | append: i | append: '_quote'
+              assign testimonial_author_key = 'testimonial_' | append: i | append: '_author'
+
+              assign testimonial_enabled = block.settings[testimonial_enabled_key]
+              assign testimonial_rating = block.settings[testimonial_rating_key]
+              assign testimonial_quote = block.settings[testimonial_quote_key]
+              assign testimonial_author = block.settings[testimonial_author_key]
+            %}
+
+            {% if testimonial_enabled %}
+              <div class="ai-testimonial-item-{{ ai_gen_id }} {% if forloop.first %}active{% endif %}" data-testimonial="{{ i }}">
+                <div class="ai-testimonial-stars-{{ ai_gen_id }}">
+                  {% for star in (1..5) %}
+                    {% if star <= testimonial_rating %}
+                      <svg class="ai-testimonial-star-{{ ai_gen_id }}" viewBox="0 0 24 24">
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                      </svg>
+                    {% else %}
+                      <svg class="ai-testimonial-star-{{ ai_gen_id }} ai-testimonial-star-empty-{{ ai_gen_id }}" viewBox="0 0 24 24">
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                      </svg>
+                    {% endif %}
+                  {% endfor %}
+                </div>
+
+                {% if testimonial_quote != blank %}
+                  <blockquote class="ai-testimonial-quote-{{ ai_gen_id }}">
+                    {{ testimonial_quote }}
+                  </blockquote>
+                {% endif %}
+
+                {% if testimonial_author != blank %}
+                  <cite class="ai-testimonial-author-{{ ai_gen_id }}">
+                    {{ testimonial_author }}
+                  </cite>
+                {% endif %}
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+
+        <div class="ai-testimonials-navigation-{{ ai_gen_id }}">
+          <button class="ai-testimonials-nav-button-{{ ai_gen_id }} ai-testimonials-prev-{{ ai_gen_id }}" aria-label="Previous testimonial">
+            <svg viewBox="0 0 24 24">
+              <path d="M15 18l-6-6 6-6"/>
+            </svg>
+          </button>
+          <button class="ai-testimonials-nav-button-{{ ai_gen_id }} ai-testimonials-next-{{ ai_gen_id }}" aria-label="Next testimonial">
+            <svg viewBox="0 0 24 24">
+              <path d="M9 18l6-6-6-6"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="ai-testimonials-photo-section-{{ ai_gen_id }}">
+        <div class="ai-testimonials-image-slider-{{ ai_gen_id }}">
+          {% for i in (1..3) %}
+            {% liquid
+              assign testimonial_enabled_key = 'testimonial_' | append: i | append: '_enabled'
+              assign testimonial_image_key = 'testimonial_' | append: i | append: '_image'
+
+              assign testimonial_enabled = block.settings[testimonial_enabled_key]
+              assign testimonial_image = block.settings[testimonial_image_key]
+            %}
+
+            {% if testimonial_enabled %}
+              <div class="ai-testimonial-item-{{ ai_gen_id }} {% if forloop.first %}active{% endif %}" data-testimonial="{{ i }}">
+                <div class="ai-testimonials-image-{{ ai_gen_id }}">
+                  {% if testimonial_image != blank %}
+                    <img
+                      src="{{ testimonial_image | image_url: width: 600 }}"
+                      alt="{{ testimonial_image.alt | escape }}"
+                      loading="lazy"
+                      width="600"
+                      height="500"
+                    >
+                  {% else %}
+                    <div class="ai-testimonials-image-placeholder-{{ ai_gen_id }}">
+                      {{ 'image' | placeholder_svg_tag }}
+                    </div>
+                  {% endif %}
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</testimonials-slider-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class TestimonialsSlider{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+        this.currentIndex = 0;
+        this.testimonials = [];
+      }
+
+      connectedCallback() {
+        this.testimonials = this.querySelectorAll('.ai-testimonial-item-{{ ai_gen_id }}');
+        this.prevButton = this.querySelector('.ai-testimonials-prev-{{ ai_gen_id }}');
+        this.nextButton = this.querySelector('.ai-testimonials-next-{{ ai_gen_id }}');
+        
+        this.setupEventListeners();
+        this.updateButtons();
+      }
+
+      setupEventListeners() {
+        this.prevButton.addEventListener('click', () => this.goToPrevious());
+        this.nextButton.addEventListener('click', () => this.goToNext());
+      }
+
+      goToPrevious() {
+        this.currentIndex = this.currentIndex === 0 ? this.testimonials.length - 1 : this.currentIndex - 1;
+        this.showTestimonial(this.currentIndex);
+      }
+
+      goToNext() {
+        this.currentIndex = this.currentIndex === this.testimonials.length - 1 ? 0 : this.currentIndex + 1;
+        this.showTestimonial(this.currentIndex);
+      }
+
+      showTestimonial(index) {
+        this.testimonials.forEach((testimonial, i) => {
+          if (i === index) {
+            testimonial.classList.add('active');
+          } else {
+            testimonial.classList.remove('active');
+          }
+        });
+        this.updateButtons();
+      }
+
+      updateButtons() {
+        if (this.testimonials.length <= 1) {
+          this.prevButton.style.display = 'none';
+          this.nextButton.style.display = 'none';
+        }
+      }
+    }
+
+    customElements.define('testimonials-slider-{{ ai_gen_id }}', TestimonialsSlider{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Customer testimonials",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section content"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Testimonials"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "What our customers say about us"
+    },
+    {
+      "type": "header",
+      "content": "Section style"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 60
+    },
+    {
+      "type": "header",
+      "content": "Typography"
+    },
+    {
+      "type": "color",
+      "id": "subtitle_color",
+      "label": "Subtitle color",
+      "default": "#999999"
+    },
+    {
+      "type": "range",
+      "id": "subtitle_size",
+      "min": 10,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Subtitle size",
+      "default": 12
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "min": 24,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "label": "Title size",
+      "default": 38
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Quote text color",
+      "default": "#282828"
+    },
+    {
+      "type": "range",
+      "id": "quote_size",
+      "min": 16,
+      "max": 32,
+      "step": 1,
+      "unit": "px",
+      "label": "Quote size",
+      "default": 20
+    },
+    {
+      "type": "color",
+      "id": "author_color",
+      "label": "Author color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "author_size",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Author size",
+      "default": 14
+    },
+    {
+      "type": "header",
+      "content": "Star ratings"
+    },
+    {
+      "type": "range",
+      "id": "star_size",
+      "min": 16,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "label": "Star size",
+      "default": 20
+    },
+    {
+      "type": "color",
+      "id": "star_color",
+      "label": "Star color",
+      "default": "#FFD700"
+    },
+    {
+      "type": "color",
+      "id": "star_empty_color",
+      "label": "Empty star color",
+      "default": "#E0E0E0"
+    },
+    {
+      "type": "header",
+      "content": "Navigation buttons"
+    },
+    {
+      "type": "color",
+      "id": "button_bg_color",
+      "label": "Button background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "button_border_color",
+      "label": "Button border",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_icon_color",
+      "label": "Button icon color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_bg_color",
+      "label": "Button hover background",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_border_color",
+      "label": "Button hover border",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_icon_color",
+      "label": "Button hover icon color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Image style"
+    },
+    {
+      "type": "range",
+      "id": "image_border_radius",
+      "min": 0,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "label": "Image border radius",
+      "default": 8
+    },
+    {
+      "type": "header",
+      "content": "Testimonial 1"
+    },
+    {
+      "type": "checkbox",
+      "id": "testimonial_1_enabled",
+      "label": "Enable testimonial 1",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "testimonial_1_image",
+      "label": "Image"
+    },
+    {
+      "type": "range",
+      "id": "testimonial_1_rating",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "label": "Star rating",
+      "default": 5
+    },
+    {
+      "type": "textarea",
+      "id": "testimonial_1_quote",
+      "label": "Quote",
+      "default": "This product exceeded my expectations. The quality is outstanding and it arrived quickly. I would definitely recommend it to anyone looking for something special."
+    },
+    {
+      "type": "text",
+      "id": "testimonial_1_author",
+      "label": "Author name",
+      "default": "Sarah Johnson"
+    },
+    {
+      "type": "header",
+      "content": "Testimonial 2"
+    },
+    {
+      "type": "checkbox",
+      "id": "testimonial_2_enabled",
+      "label": "Enable testimonial 2",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "testimonial_2_image",
+      "label": "Image"
+    },
+    {
+      "type": "range",
+      "id": "testimonial_2_rating",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "label": "Star rating",
+      "default": 5
+    },
+    {
+      "type": "textarea",
+      "id": "testimonial_2_quote",
+      "label": "Quote",
+      "default": "Amazing customer service and beautiful products. I've been a loyal customer for years and they never disappoint. The attention to detail is incredible."
+    },
+    {
+      "type": "text",
+      "id": "testimonial_2_author",
+      "label": "Author name",
+      "default": "Michael Chen"
+    },
+    {
+      "type": "header",
+      "content": "Testimonial 3"
+    },
+    {
+      "type": "checkbox",
+      "id": "testimonial_3_enabled",
+      "label": "Enable testimonial 3",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "testimonial_3_image",
+      "label": "Image"
+    },
+    {
+      "type": "range",
+      "id": "testimonial_3_rating",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "label": "Star rating",
+      "default": 5
+    },
+    {
+      "type": "textarea",
+      "id": "testimonial_3_quote",
+      "label": "Quote",
+      "default": "Perfect fit, perfect style, perfect everything! I get compliments every time I wear it. The quality is exceptional and it's become my go-to piece."
+    },
+    {
+      "type": "text",
+      "id": "testimonial_3_author",
+      "label": "Author name",
+      "default": "Emma Rodriguez"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Customer testimonials"
+    }
+  ]
+}
 {% endschema %}
