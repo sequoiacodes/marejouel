@@ -102,15 +102,15 @@
             {%- assign collection = collections[section.settings.collection] -%}
             {%- assign limit = section.settings.limit -%}
             {%- if collection != blank -%}
-
-            {%- for product in collection.products limit: limit -%}
-            <div class="content_arr productlist-item swiper-slide">
-                <div data-aos="{{ section.settings.animation }}"  data-aos-delay="{{ forloop.index | times: 100 }}">
-                  {%- render 'product-card', product: product -%}
-                 
-                </div>
-            </div>
-            {%- endfor -%}
+              <div class="content_arr">
+                {%- for product in collection.products limit: limit -%}
+                  <div class=" productlist-item swiper-slide">
+                    <div data-aos="{{ section.settings.animation }}"  data-aos-delay="{{ forloop.index | times: 100 }}">
+                      {%- render 'product-card', product: product -%}  
+                    </div>
+                  </div>
+                {%- endfor -%}
+              </div>
             {%- else -%}
             {%- for i in (1..limit) -%}
             <div class="productlist-item swiper-slide">
