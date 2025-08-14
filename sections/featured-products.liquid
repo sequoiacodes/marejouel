@@ -15,7 +15,7 @@
         <div class="{{ section.settings.colgrid }} col-md-6 col-sm-6 col-xs-6 col-6 {% unless section.settings.padding %} p-0 {% endunless %} col-item " 
           data-aos="{{ section.settings.animation }}"  data-aos-delay="{{ forloop.index | times: 50 }}" >
           {%- render 'product-card', product: product, collection: collection -%}
-          {{ collection.title }}
+          
         </div>
         {%- endfor -%}
         {% if section.settings.txtbutton != blank %}
