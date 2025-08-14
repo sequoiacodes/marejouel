@@ -269,7 +269,7 @@
           "type": "text_block",
           "settings": {
             "width": "100%",
-            "bgtext": "#ffffff",
+            "bgtext": "rgba(0,0,0,0)",
             "title_color": "rgba(0,0,0,0)",
             "subtitle": "",
             "title": "",
