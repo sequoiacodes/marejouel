@@ -5,6 +5,14 @@
   assign style_btn = section.settings.style_btn
   -%}
 <style>
+  .arr_absolute{
+  position: absolute;
+  inset: 0;               /* shorthand for top:0; right:0; bottom:0; left:0; */
+  pointer-events: none;   /* so clicks go through the overlay */
+  z-index: 1;
+  display:flex;
+  justify-content: space-between;
+  }
     {%- if section.settings.nowrap -%}
     .productswiper .swiper-container {
         overflow: visible;
@@ -39,13 +47,16 @@
         {%- render 'section-heading' -%}
       </div>
       <div class="{{ section.settings.setwidth }} container-p">AAAAA
-      <div class="productlist-wrapper dots-negative swiper-wrapper-{{ section.id }} position-relative">BBBB
+      <div class="productlist-wrapper dots-negative swiper-wrapper-{{ section.id }} position-relative">
+        <div class="arr_absolute">
+
+        </div>
         <div class="productlist-swiper swiper-container swipercol-{{ section.id }} {% if section.settings.scrollbar %} pb-5 {% endif %}" id="Productlist-{{ section.id }}"
           data-section-id="{{ section.id }}"  
           data-section-type="swipercustom"
           data-perview-desktop="{{ section.settings.perviewDesktop }}"
           data-space-between="{{ section.settings.spaceBetween }}"
-          >CCCC
+          >
           <div class="swiper-wrapper">
             
             {%- assign collection = collections[section.settings.collection] -%}
