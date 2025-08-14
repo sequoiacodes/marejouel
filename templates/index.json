@@ -209,33 +209,6 @@
         "marginmobile": "0px 0px 0px 0px"
       }
     },
-    "8d3646ae-af4d-47b1-b4c0-f529c93a012e": {
-      "type": "count-down",
-      "disabled": true,
-      "settings": {
-        "animation": "fade-up",
-        "setwidth": "container",
-        "bgsection": "#f9f7f2",
-        "bg_full": true,
-        "enable_padding": false,
-        "color": "#4c341f",
-        "e_blur": true,
-        "overlay": "#000000",
-        "opacity": 0.5,
-        "title": "NEXT DROP",
-        "size_text": "h3",
-        "des": "",
-        "data_countdown": "2025-05-11T00:00:00",
-        "e_button": true,
-        "txt_button": "Shop now",
-        "link_button": "",
-        "style_btn": "btn-underline",
-        "paddingsection": "40px 0px 40px 0px",
-        "paddingmobile": "40px 0px 40px 0px",
-        "marginsection": "0px 0px 0px 0px",
-        "marginmobile": "0px 0px 0px 0px"
-      }
-    },
     "16601928830ceb6d9f": {
       "type": "product-list-swiper",
       "settings": {
@@ -1098,10 +1071,9 @@
   "order": [
     "2eb6b70b-dbd5-4aeb-ab9b-4433f8269284",
     "ea0a2867-55f8-4a4d-b69a-54b7fd3f3edc",
-    "8d3646ae-af4d-47b1-b4c0-f529c93a012e",
-    "16601928830ceb6d9f",
     "rich_text_BheE9q",
     "cbb9eed3-bb8e-4d0c-befd-efb97ca27a01",
+    "16601928830ceb6d9f",
     "7f1588c7-fcd8-4960-af12-6c22080eb14c",
     "166012224636496bd8",
     "7bbfe968-615f-45fb-b164-8b8d8466d957",
