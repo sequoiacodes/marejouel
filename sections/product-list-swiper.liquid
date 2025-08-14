@@ -50,7 +50,14 @@
       <div class="{{ section.settings.setwidth }} container-p">AAAAA
       <div class="productlist-wrapper dots-negative swiper-wrapper-{{ section.id }} position-relative">
         <div class="arr_absolute">
-
+           <img
+              class="image-content__image lazyload scale-in"
+              src="{{ 'looooogo.png' | asset_url }}" 
+              alt="Logo"
+              loading="lazy"
+              height="auto"
+              width="auto"
+            />
         </div>
         <div class="productlist-swiper swiper-container swipercol-{{ section.id }} {% if section.settings.scrollbar %} pb-5 {% endif %}" id="Productlist-{{ section.id }}"
           data-section-id="{{ section.id }}"  
