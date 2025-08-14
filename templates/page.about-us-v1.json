@@ -213,7 +213,7 @@
           "settings": {
             "layout_direction": "image_left",
             "container_min_height": 400,
-            "container_padding_vertical": 25,
+            "container_padding_vertical": 0,
             "container_padding_horizontal": 0,
             "mobile_container_padding": 0,
             "mobile_layout": "column",
@@ -376,172 +376,6 @@
         "marginsection": "0px 0px 0px 0px",
         "marginmobile": "0px 0px 0px 0px"
       }
-    },
-    "559f6024-64db-446e-a9dc-976582972dce": {
-      "type": "quotes",
-      "blocks": {
-        "template--16716887458110__559f6024-64db-446e-a9dc-976582972dce-16666891474b2efc36-0": {
-          "type": "quote",
-          "settings": {
-            "title": "Perfect !",
-            "author": "John Alvy",
-            "info": "Engineer",
-            "rate": 5,
-            "quote": "These are comfortable and they look great. I love that the sole is not super thick and oversized like other shoes. Much more subtle understated..."
-          }
-        },
-        "template--16716887458110__559f6024-64db-446e-a9dc-976582972dce-16666891474b2efc36-1": {
-          "type": "quote",
-          "settings": {
-            "title": "Awesome !",
-            "author": "Jacquelyn Rizzo",
-            "info": "Producer",
-            "rate": 5,
-            "quote": "I love this shirt. It feels like a soft sweater but lightweight like a shirt. I wore it to work today. It was 85 and I was fine running around. Great lightweight shirt..."
-          }
-        },
-        "template--16716887458110__559f6024-64db-446e-a9dc-976582972dce-16666891474b2efc36-2": {
-          "type": "quote",
-          "settings": {
-            "title": "Amazing !",
-            "author": "Hailee Parsons",
-            "info": "Designer",
-            "rate": 5,
-            "quote": "Just right for fall and winter. Quality is there. Order usual size unless you want over sized. Absolutely beautiful and looks amazingly flattering..."
-          }
-        }
-      },
-      "block_order": [
-        "template--16716887458110__559f6024-64db-446e-a9dc-976582972dce-16666891474b2efc36-0",
-        "template--16716887458110__559f6024-64db-446e-a9dc-976582972dce-16666891474b2efc36-1",
-        "template--16716887458110__559f6024-64db-446e-a9dc-976582972dce-16666891474b2efc36-2"
-      ],
-      "settings": {
-        "animation": "fade",
-        "setwidth": "container",
-        "bgsection": "#f3efe9",
-        "title_top": "",
-        "title": "We Love Our Clients",
-        "des": "We are very fortunate to have formed excellent \npartnerships with many of our clients.",
-        "align-heading": "center",
-        "aligntext": "text-left",
-        "style": "style-1",
-        "color_rate": "#f1f1f1",
-        "color_rated": "#000000",
-        "size_text": "txt-body",
-        "bg_item": "#ffffff",
-        "widthcolumn": 100,
-        "enable_padding_inner": true,
-        "show": 3,
-        "arrows": true,
-        "draggable": true,
-        "dots": false,
-        "infinite": true,
-        "paddingsection": "100px 0px 100px 0px",
-        "paddingmobile": "60px 0px 60px 0px",
-        "marginsection": "0px 0px 0px 0px",
-        "marginmobile": "0px 0px 0px 0px"
-      }
-    },
-    "abb14abe-2a33-4a6b-aaa1-d36d5422d78d": {
-      "type": "s_team_member",
-      "blocks": {
-        "template--16716887458110__abb14abe-2a33-4a6b-aaa1-d36d5422d78d-1666689151286d1fe7-0": {
-          "type": "member",
-          "settings": {
-            "name": "Abdul Khalek",
-            "position": "CEO & Founder",
-            "twitter": "https://twitter.com/",
-            "google": "https://plus.google.com",
-            "facebook": "https://www.facebook.com/",
-            "linkedin": "https://www.linkedin.com/"
-          }
-        },
-        "template--16716887458110__abb14abe-2a33-4a6b-aaa1-d36d5422d78d-1666689151286d1fe7-1": {
-          "type": "member",
-          "settings": {
-            "name": "Vera Duncan",
-            "position": "Producer",
-            "twitter": "https://twitter.com/",
-            "google": "https://plus.google.com",
-            "facebook": "https://www.facebook.com/",
-            "linkedin": "https://www.linkedin.com/"
-          }
-        },
-        "template--16716887458110__abb14abe-2a33-4a6b-aaa1-d36d5422d78d-1666689151286d1fe7-2": {
-          "type": "member",
-          "settings": {
-            "name": "Michella Ore",
-            "position": "Developer",
-            "twitter": "https://twitter.com/",
-            "google": "https://plus.google.com",
-            "facebook": "https://www.facebook.com/",
-            "linkedin": "https://www.linkedin.com/"
-          }
-        },
-        "da71da3f-22ff-40d5-be4f-f445f70629e5": {
-          "type": "member",
-          "disabled": true,
-          "settings": {
-            "name": "John Smith",
-            "position": "CEO",
-            "twitter": "#",
-            "google": "#",
-            "facebook": "#",
-            "linkedin": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--16716887458110__abb14abe-2a33-4a6b-aaa1-d36d5422d78d-1666689151286d1fe7-0",
-        "template--16716887458110__abb14abe-2a33-4a6b-aaa1-d36d5422d78d-1666689151286d1fe7-1",
-        "template--16716887458110__abb14abe-2a33-4a6b-aaa1-d36d5422d78d-1666689151286d1fe7-2",
-        "da71da3f-22ff-40d5-be4f-f445f70629e5"
-      ],
-      "settings": {
-        "animation": "fade",
-        "setwidth": "container",
-        "bgsection": "",
-        "title_top": "",
-        "title": "Team Of Highly Skilled",
-        "des": "",
-        "align-heading": "center",
-        "items": "3",
-        "layout": "1",
-        "paddingsection": "90px 0px 40px 0px",
-        "paddingmobile": "60px 0px 40px 0px",
-        "marginsection": "0px 0px 0px 0px",
-        "marginmobile": "0px 0px 0px 0px"
-      }
-    },
-    "a035e328-7cfe-4cf0-81d0-e2f5f0188740": {
-      "type": "map",
-      "settings": {
-        "heading": "Our store",
-        "address": "<p>123 Fake St.<br/>Toronto, Canada</p><p>Mon - Fri, 10am - 9pm<br/>Saturday, 11am - 9pm<br/>Sunday, 11am - 5pm</p>",
-        "map_address": "301 Front St W, Toronto",
-        "button_text": "Get directions",
-        "show_pin": true,
-        "api_key": "",
-        "map_code": "<div class=\"mapouter\"><div class=\"gmap_canvas\">\n<iframe width=\"600\" height=\"500\" id=\"gmap_canvas\" src=\"https://maps.google.com/maps?q=CN%20Tower,%20301%20Front%20St%20W,%20Toronto,%20ON%20M5V%202T6,%20Canada&t=&z=13&ie=UTF8&iwloc=&output=embed\" frameborder=\"0\" scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\" loading=\"lazy\" allowfullscreen></iframe><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style>\n<a href=\"https://www.embedgooglemap.net\">google maps code generator</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style>\n</div></div>",
-        "background_image_position": "center center"
-      }
-    },
-    "e07a205a-2023-4ca5-b589-a46cd70b3237": {
-      "type": "contact-form",
-      "settings": {
-        "animation": "",
-        "bgsection": "#ffffff",
-        "title_top": "Questions?",
-        "title": "Send us an email",
-        "des": "",
-        "align-heading": "center",
-        "answer_content": "<p>This site is protected by reCAPTCHA and the Google <a href=\"https://policies.google.com/privacy\">Privacy Policy</a> and <a href=\"https://policies.google.com/terms\">Terms of Service</a> apply.</p>",
-        "paddingsection": "100px 0px 100px 0px",
-        "paddingmobile": "40px 0px 40px 0px",
-        "marginsection": "0px 0px 0px 0px",
-        "marginmobile": "0px 0px 0px 0px"
-      }
     }
   },
   "order": [
@@ -549,10 +383,6 @@
     "b2ef3f00-5f4f-4e93-8187-3970a28a8f9e",
     "scrolling_text_XgfLiY",
     "175515053594e2f7e6",
-    "895c09e5-5c6d-4c4d-8492-727381e40aa0",
-    "559f6024-64db-446e-a9dc-976582972dce",
-    "abb14abe-2a33-4a6b-aaa1-d36d5422d78d",
-    "a035e328-7cfe-4cf0-81d0-e2f5f0188740",
-    "e07a205a-2023-4ca5-b589-a46cd70b3237"
+    "895c09e5-5c6d-4c4d-8492-727381e40aa0"
   ]
 }
