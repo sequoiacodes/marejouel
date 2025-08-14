@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "collection-banner": {
@@ -8,9 +17,8 @@
         "show_collection_description": true,
         "show_collection_image": true,
         "save_allproducts": true,
-        "img_bannercollection": "shopify:\/\/shop_images\/waterdrop-club-main-image.webp",
         "title_all": "All Products",
-        "des_all": "<p>Shop now, not later. Browse the best of our favorite sale styles and brands.<\/p>",
+        "des_all": "<p>Shop now, not later. Browse the best of our favorite sale styles and brands.</p>",
         "style_banner": "full",
         "heading_size": "h2",
         "img_height": "350px",
@@ -35,8 +43,7 @@
         "2f3b8aad-10de-480a-a5d8-f03f00650840": {
           "type": "collection",
           "settings": {
-            "collection": "men",
-            "image": "shopify:\/\/shop_images\/Unrecorded_Ecom_beanie_Grey_FModelLR.webp"
+            "collection": "men"
           }
         },
         "template--17739035869502__ea7af2bd-7a4c-4129-ae32-bacb42814742-167584089359f62679-1": {
@@ -48,15 +55,13 @@
         "template--17739035869502__ea7af2bd-7a4c-4129-ae32-bacb42814742-167584089359f62679-2": {
           "type": "collection",
           "settings": {
-            "collection": "shoes",
-            "image": "shopify:\/\/shop_images\/bb4.jpg"
+            "collection": "shoes"
           }
         },
         "1e3656fa-e08a-43ca-ab4a-ae2571025870": {
           "type": "collection",
           "settings": {
-            "collection": "accessories",
-            "image": "shopify:\/\/shop_images\/image11.jpg"
+            "collection": "accessories"
           }
         },
         "d77e71b7-2eec-4316-9f50-2e6ee670490d": {

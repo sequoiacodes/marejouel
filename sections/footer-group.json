@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "type": "footer",
   "name": "Footer group",
@@ -14,7 +23,7 @@
         "e_size": "cover",
         "e_repeat": "no-repeat",
         "title_top": "",
-        "title": "Subscrible & Get <span class=\"text-theme\">10% <\/span> Discount",
+        "title": "Subscrible & Get <span class=\"text-theme\">10% </span> Discount",
         "des": "",
         "html_left": false,
         "html_left_block": "",
@@ -31,15 +40,15 @@
           "type": "text",
           "settings": {
             "widthlogofooter": 150,
-            "title": "About us",
-            "text": "<div class=\"pr-lg-5 rte\">\n<p class=\"mb-0 font-family-1 fz-6 \">(+800) 834-1434\n<\/p>\n<p class=\"mb-0 \">\nsupport@magnoli.com\n<\/p>\n<p class=\"mt-3\">We are design and product obsessed. Uncompromising in the style, quality and performance of every product we create.<\/p>\n<\/div>",
+            "title": "Mare Jouel Swimwear",
+            "text": "Mare Jouel is a sustainable swimwear brand committed to ethical fashion and ocean conservation.",
             "width": "25%"
           }
         },
         "dcbe7dc4-f450-42e9-81a9-dca8f287035b": {
           "type": "menu",
           "settings": {
-            "link_list": "search",
+            "link_list": "quick-links",
             "width": "16%"
           }
         },
@@ -53,7 +62,7 @@
         "1567410176792": {
           "type": "menu",
           "settings": {
-            "link_list": "account",
+            "link_list": "privacy-security-1",
             "width": "16%"
           }
         },
@@ -66,8 +75,8 @@
             "btn_cl_new": "#f4efe9",
             "btn_cl_new_hover": "#ffffff",
             "title": "NEWSLETTER",
-            "subheading": "<p>Get a 10% discount on your first order.<\/p>",
-            "enablesocial": true,
+            "subheading": "<p>Subscribe to get notified about early access to collections, exclusive offers and sustainability tips. </p>",
+            "enablesocial": false,
             "width": "25%"
           }
         }
@@ -81,12 +90,12 @@
       ],
       "settings": {
         "setwidth": "container-fluid",
-        "background": "#f4efe9",
+        "background": "#000000",
         "border_headfooter": "#e9e3dd",
         "border-copryright": "#e7ded6",
-        "text": "#282828",
+        "text": "#ffffff",
         "text_hover": "#80270f",
-        "title": "#000000",
+        "title": "#ffffff",
         "footer_align_title": "left",
         "enable_border": false,
         "footer_font_family": "--g-font-1",
@@ -101,8 +110,8 @@
         "enable_language_selector": true,
         "payment_info": "svg",
         "copyright": false,
-        "link_list_bottom": "term-footer",
-        "customcopyright": "© 2023 - Pose. Powered by Shopify",
+        "link_list_bottom": "",
+        "customcopyright": "© 2025 Mare Jouel . All Rights Reserved.",
         "padding_top": 64,
         "padding_bottom": 64,
         "m_padding_top": 32,
