@@ -512,7 +512,7 @@
           "type": "text_block",
           "settings": {
             "width": "100%",
-            "bgtext": "#ffffff",
+            "bgtext": "rgba(0,0,0,0)",
             "title_color": "rgba(0,0,0,0)",
             "subtitle": "helping little dreams grow big",
             "title": "giving back: semilla brillante",
