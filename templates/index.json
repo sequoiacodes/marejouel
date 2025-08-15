@@ -468,6 +468,32 @@
         "marginmobile": "0px 0px 0px 0px"
       }
     },
+    "featured_articles_2_W7b7yd": {
+      "type": "featured-articles-2",
+      "name": "Blog posts special",
+      "settings": {
+        "animation": "",
+        "setwidth": "container",
+        "zindex": "0",
+        "bgsection": "#ffffff",
+        "rangebg": 0,
+        "bgbefore": "#E3C9B8",
+        "title_top": "Sub Title Top",
+        "title": "Blog posts Special",
+        "des": "",
+        "align-heading": "center",
+        "blog": "",
+        "image_size": "auto",
+        "reverse": false,
+        "buttonall": "",
+        "buttonall_link": "",
+        "style_btn": "btn-theme",
+        "paddingsection": "0px 0px 0px 0px",
+        "paddingmobile": "40px 0px 40px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
     "7bbfe968-615f-45fb-b164-8b8d8466d957": {
       "type": "backgroundvideo",
       "blocks": {
@@ -1097,6 +1123,7 @@
     "7f1588c7-fcd8-4960-af12-6c22080eb14c",
     "166012224636496bd8",
     "16609007639672b3d5",
+    "featured_articles_2_W7b7yd",
     "7bbfe968-615f-45fb-b164-8b8d8466d957",
     "0c0246cb-5673-44cb-9cf3-1d345e8a2baa",
     "636a2cc5-ad9e-439e-b7b8-bfc204b24d4a",
