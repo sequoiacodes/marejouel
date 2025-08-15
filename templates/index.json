@@ -769,7 +769,7 @@
       "type": "newsletter",
       "settings": {
         "animation": "fade-up",
-        "setwidth": "container",
+        "setwidth": "container-fluid",
         "bgsection": "#000000",
         "bg_overlay": "#000000",
         "opacity_bg_overlay": 0.6,
