@@ -313,6 +313,7 @@ text-transform: capitalize;
   }
   .slideshow__btn {
     display: none;
+    
   }
 }
 {%- endunless -%}
@@ -684,7 +685,7 @@ text-transform: capitalize;
                     }
                     .btn-outline.slideshow__btn{{ block.id }}{
                       color:{{ block.settings.color_button }};
-                      border: 2px solid {{ block.settings.bg_button }};
+                      border: 2px solid {{ block.settings.color_button }};
                       background-color:transparent;
                     }
                     .btn-outline.slideshow__btn{{ block.id }}:hover{
@@ -713,8 +714,8 @@ text-transform: capitalize;
                     }
                   </style>
                   <div class="pb-1">
-                  <a href="{{ block.settings.button_link }}" class="btn slideshow__btn slideshow__btn{{ block.id }} {{ block.settings.stylebtns }}">
-                    <span>{{ block.settings.button_label }}</span>
+                  <a href="{{ block.settings.button_link }}" class="btn slideshow__btn slideshow__btn{{ block.id }} {{ block.settings.stylebtns }}">  {%comment %}Change here for button in slider hero{% endcomment %}
+                    <span>{{ block.settings.button_label }} </span>
                   </a>
                 </div>
                 {%- endif -%}
@@ -836,7 +837,7 @@ text-transform: capitalize;
                 }
                 .btn-outline.slideshow__btn{{ block.id }}{
                   color:{{ block.settings.color_button }};
-                  border: 2px solid {{ block.settings.bg_button }};
+                  {% comment %} border: 2px solid {{ block.settings.bg_button }}; {% endcomment %}
                   background-color:transparent;
                 }
                 .btn-outline.slideshow__btn{{ block.id }}:hover{
