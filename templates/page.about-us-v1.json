@@ -432,6 +432,70 @@
     "175516095374c60626": {
       "type": "_blocks",
       "settings": {}
+    },
+    "quotes_special_DEkP4Y": {
+      "type": "quotes-special",
+      "blocks": {
+        "quote_ggqYUP": {
+          "type": "quote",
+          "settings": {
+            "title": "",
+            "quote": "“ Absolutely loved it. the fit, the quality and the color. this is a slim fit jean like none other and the only one i will buy. ”",
+            "rate": 5,
+            "author": "-Joey B.",
+            "info": "",
+            "avatar": "shopify://shop_images/image_65504cc8-2bef-444c-8e58-ecb72c8c25a5.png"
+          }
+        },
+        "quote_Kpaiew": {
+          "type": "quote",
+          "settings": {
+            "title": "",
+            "quote": "The product looks stunning—great design, vibrant color, and perfect for summer. Feels both stylish and comfortable!",
+            "rate": 5,
+            "author": "-zenith_p.",
+            "info": "",
+            "avatar": "shopify://shop_images/image1.png"
+          }
+        },
+        "quote_aGcPYw": {
+          "type": "quote",
+          "settings": {
+            "title": "",
+            "quote": "Gorgeous piece! The style is flattering, and the quality looks amazing—perfect for beach days.",
+            "rate": 5,
+            "author": "-yousef B.",
+            "info": "",
+            "avatar": "shopify://shop_images/image2.png"
+          }
+        }
+      },
+      "block_order": [
+        "quote_ggqYUP",
+        "quote_Kpaiew",
+        "quote_aGcPYw"
+      ],
+      "name": "Testimonials Split",
+      "settings": {
+        "animation": "",
+        "setwidth": "container",
+        "bgsection": "#ffffff",
+        "title_top": "let’s hear from our clients",
+        "title": "testimonials",
+        "des": "",
+        "align-heading": "left",
+        "color_rate": "#1d1717",
+        "color_rated": "#db4a2b",
+        "image_size": "landscape",
+        "arrows": true,
+        "draggable": true,
+        "dots": true,
+        "infinite": true,
+        "paddingsection": "40px 0px 20px 0px",
+        "paddingmobile": "40px 0px 40px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
     }
   },
   "order": [
@@ -441,6 +505,7 @@
     "175515053594e2f7e6",
     "17551551517178b39c",
     "895c09e5-5c6d-4c4d-8492-727381e40aa0",
-    "175516095374c60626"
+    "175516095374c60626",
+    "quotes_special_DEkP4Y"
   ]
 }
