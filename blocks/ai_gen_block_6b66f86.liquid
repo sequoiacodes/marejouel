@@ -10,7 +10,7 @@
     display: flex;
     width: 100%;
     min-height: {{ block.settings.container_min_height }}px;
-    padding: {{ block.settings.container_padding_vertical }}px {{ block.settings.container_padding_horizontal }}px;
+    padding: {{ block.settings.container_padding_vertical }}px {{ block.settings.container_padding_horizontal }}px 0px {{ block.settings.container_padding_horizontal }}px;
     {% if block.settings.layout_direction == 'image_right' %}
       flex-direction: row-reverse;
     {% endif %}
