@@ -489,7 +489,7 @@
         "enable_short": true,
         "image_size": "auto",
         "arrows": false,
-        "draggable": false,
+        "draggable": true,
         "dots": false,
         "infinite": true,
         "rows": "1",
