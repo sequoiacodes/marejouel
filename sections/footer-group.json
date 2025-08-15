@@ -79,6 +79,13 @@
             "enablesocial": false,
             "width": "25%"
           }
+        },
+        "social_JEbfqV": {
+          "type": "social",
+          "settings": {
+            "title": "Follow us",
+            "width": "25%"
+          }
         }
       },
       "block_order": [
@@ -86,7 +93,8 @@
         "dcbe7dc4-f450-42e9-81a9-dca8f287035b",
         "1562342622030",
         "1567410176792",
-        "ec49d85b-17bb-4b65-a49f-3086aa5430cd"
+        "ec49d85b-17bb-4b65-a49f-3086aa5430cd",
+        "social_JEbfqV"
       ],
       "settings": {
         "setwidth": "container-fluid",
