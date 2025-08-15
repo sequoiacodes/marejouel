@@ -9,9 +9,9 @@
   }
 
   .ai-video-gallery-container-{{ ai_gen_id }} {
-    max-width: 100%;
-    margin: 0 0;
-    padding: 0px 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
   }
 
   .ai-video-gallery-header-{{ ai_gen_id }} {
@@ -292,7 +292,7 @@
   class="ai-video-gallery-{{ ai_gen_id }}"
   {{ block.shopify_attributes }}
 >
-  <div class="ai-video-gallery-container-{{ ai_gen_id }} ">
+  <div class="ai-video-gallery-container-{{ ai_gen_id }}">
     <div class="ai-video-gallery-header-{{ ai_gen_id }}">
       {% if block.settings.subheading != blank %}
         <p class="ai-video-gallery-subheading-{{ ai_gen_id }}">{{ block.settings.subheading }}</p>
