@@ -166,8 +166,8 @@
                     {%- if block.settings.title != blank -%}
                     <h3 class="mb-3 {{ block.settings.size_text }} ">{{ block.settings.title }}</h3>
                     {%- endif -%}   Remove for customized {% endcomment %}
+                   color {{ block.settings.bgsection }}
                     {%- if block.settings.text -%}
-                      {{ block.settings.bgsection }}
                       <div class="rte-setting">{{ block.settings.text }}</div>
                     {%- endif -%}
                     {%- if block.settings.answer_content != blank -%}
