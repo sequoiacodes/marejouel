@@ -625,6 +625,7 @@
           "name": "Video gallery",
           "settings": {
             "subheading": "VIDEOS FROM MARE JOUEL",
+            "width_layout": 1240,
             "heading": "CAPTURE THE MOMENTS",
             "text_alignment": "left",
             "video_1": "/aa",
