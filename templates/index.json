@@ -549,6 +549,68 @@
         "marginmobile": "0px 0px 0px 0px"
       }
     },
+    "quotes_special_BxmA3J": {
+      "type": "quotes-special",
+      "blocks": {
+        "quote_gbJjWB": {
+          "type": "quote",
+          "settings": {
+            "title": "Comment",
+            "quote": "“ Absolutely loved it. the fit, the quality and the color. this is a slim fit jean like none other and the only one i will buy. ”",
+            "rate": 5,
+            "author": "-Joey B.",
+            "info": "",
+            "avatar": "shopify://shop_images/image_65504cc8-2bef-444c-8e58-ecb72c8c25a5.png"
+          }
+        },
+        "quote_MakrcV": {
+          "type": "quote",
+          "settings": {
+            "title": "Comment",
+            "quote": "Add customer reviews and testimonials to showcase your store’s happy customers.",
+            "rate": 5,
+            "author": "Author's name",
+            "info": ""
+          }
+        },
+        "quote_K3MxJc": {
+          "type": "quote",
+          "settings": {
+            "title": "Comment",
+            "quote": "Add customer reviews and testimonials to showcase your store’s happy customers.",
+            "rate": 5,
+            "author": "Author's name",
+            "info": ""
+          }
+        }
+      },
+      "block_order": [
+        "quote_gbJjWB",
+        "quote_MakrcV",
+        "quote_K3MxJc"
+      ],
+      "name": "Testimonials Split",
+      "settings": {
+        "animation": "",
+        "setwidth": "container-fluid",
+        "bgsection": "#ffffff",
+        "title_top": "let’s hear from our clients",
+        "title": "testimonials",
+        "des": "",
+        "align-heading": "left",
+        "color_rate": "#f1f1f1",
+        "color_rated": "#000000",
+        "image_size": "auto",
+        "arrows": false,
+        "draggable": true,
+        "dots": false,
+        "infinite": true,
+        "paddingsection": "70px 0px 70px 0px",
+        "paddingmobile": "40px 0px 40px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
     "662cf23c-2a28-41c4-9bd8-b6517c99ba49": {
       "type": "image-content-6",
       "blocks": {
@@ -1014,6 +1076,7 @@
     "16609007639672b3d5",
     "featured_articles_z6PPr6",
     "image_content_b9yUhb",
+    "quotes_special_BxmA3J",
     "662cf23c-2a28-41c4-9bd8-b6517c99ba49",
     "1660192760ca5a4d9c",
     "1660192674d8a6fd50",
