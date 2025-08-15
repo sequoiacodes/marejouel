@@ -159,12 +159,12 @@
                   endcase 
                   -%}
                   <div class="{{ block_width }}">
-                    {% comment %} {%- if block.settings.subtitle != blank -%}
-                      <div class="subtop mb-3">{{ block.settings.subtitle }}</div>
+                    {%- if block.settings.textsubtitle != blank -%}
+                      <div class="subtop mb-3">{{ block.settings.textsubtitle }}</div>
                     {%- endif -%}
-                    {%- if block.settings.title != blank -%}
-                    <h3 class="mb-3 {{ block.settings.size_text }} ">{{ block.settings.title }}</h3>
-                    {%- endif -%}   Remove for customized {% endcomment %}
+                    {%- if block.settings.texttitle != blank -%}
+                    <h3 class="mb-3 {{ block.settings.size_text }} ">{{ block.settings.texttitle }}</h3>
+                    {%- endif -%}  
                     {%- if block.settings.text -%}
                       <div class="rte-setting">{{ block.settings.text }}</div>
                     {%- endif -%}
@@ -483,6 +483,18 @@
           "id": "title",
           "label": "Heading",
           "default": "Image with text"
+        },
+          {
+          "type": "text",
+          "id": "textsubtitle",
+          "label": "Text Sub Title",
+          "default": " Text Sub Title"
+        },
+        {
+          "type": "text",
+          "id": "texttitle",
+          "label": "Text Heading",
+          "default": "Text Title with text"
         },
         {
           "type": "select",
