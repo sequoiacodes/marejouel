@@ -2,7 +2,7 @@
 <div class="blog__item blog__item--3 {% if template contains 'index' %} mb-0 {% else %} mb-5 {% endif %}">
   {%- if article.image -%}
   <div class="content-block__image">
-    <a href="{{ article.url }}"> hhhhhh
+    <a href="{{ article.url }}"> 
       <noscript>
         {{ article | image_url: width: 1024, height: 1024 | image_tag: article.title | escape }}
       </noscript>
@@ -33,7 +33,7 @@
       {%- endif -%}
       {%- if enable_comment -%}
         <span class="text-white blog_comment align-items-center d-inline-flex">
-          {% render 'icon-comment' %}
+          {% render 'icon-comment' %} Comment -3
           {{ 'blogs.comments.with_count' | t: count: article.comments_count }}
         </span>
       {%- endif -%}
