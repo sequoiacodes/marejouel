@@ -453,7 +453,7 @@
         "newletter_color": "#e9e9e9",
         "colorborder": "#ffffff",
         "image_bg": "shopify://shop_images/4956fa1058c78b25524cdfd8c434fd7476926b3b.jpg",
-        "e_size": "auto",
+        "e_size": "cover",
         "e_repeat": "no-repeat",
         "e_position": "center center",
         "bg_inner": false,
