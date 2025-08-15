@@ -56,6 +56,14 @@
     height: 100%;
     object-fit: cover;
   }
+  .quote_style{
+    font-family: "Gilda Display";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+  }
 {% endstyle %}
 {%- render 'style-section' -%}
 <div class="customstyle{{ section.id }} ">
@@ -111,7 +119,7 @@
                               {%- endfor -%}
                             </ul>
                           {%- endif -%}
-                          <div>{{ block.settings.quote }}Hello</div>
+                          <div class="quote_style">{{ block.settings.quote }}</div>
                         </div>
                         <div class=" font-family-2 mt-1">{{ block.settings.author }}</div>
                         {%- if block.settings.info != blank -%}
