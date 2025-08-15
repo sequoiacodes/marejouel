@@ -506,7 +506,9 @@
       "blocks": {
         "image_block_cbJpCP": {
           "type": "image_block",
-          "settings": {}
+          "settings": {
+            "image": "shopify://shop_images/layout_1.png"
+          }
         },
         "text_block_DgPRgH": {
           "type": "text_block",
@@ -520,7 +522,7 @@
             "text": "<p style=\"text-align: justify; font-family: 'Gilda Display', serif; font-size: 20px; font-style: normal; font-weight: 400; line-height: normal;\">\nMare Jouel is a swimwear brand founded by Paulina Gomez, a Colombian teenager with a multicultural background. That’s why the brand dedicates a portion of its proceeds to supporting Semilla Brillante, a non-profit founded by Paulina to help orphaned and vulnerable children in Colombia. 50% of proceeds from Mare Jouel shirts support the Hogar Ángeles Custodios orphanage, funding education, necessities, and financial support for children in need. By purchasing a shirt, customers are helping provide brighter futures and hope for these children.\n</p>",
             "answer_content": "",
             "style_btn": "btn-theme",
-            "button": "discover now",
+            "button": "donate now",
             "link": "",
             "enable_padding": true,
             "align": "left"
