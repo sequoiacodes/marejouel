@@ -277,8 +277,8 @@
             "text": "<p style=\"text-align: justify; font-family: 'Gilda Display', serif; font-size: 20px; font-style: normal; font-weight: 400; line-height: normal;\">\nAt Mare Jouel, we create more than just swimwear – we create memories. Inspired by the vibrant Key Biscayne community and the beauty of Miami’s coastline, each piece is designed to make you feel confident, graceful, and ready to embrace the magic of the moment. Our swimwear is made to highlight your natural beauty and empower you to feel your best, making every beach day an unforgettable experience. Crafted with high-quality, eco-friendly fabrics, Mare Jouel reflects timeless elegance and the unforgettable memories made in the sun and sea.\n</p>",
             "answer_content": "<p><br/></p>",
             "style_btn": "btn-theme",
-            "button": "discover now",
-            "link": "",
+            "button": "Discover our story",
+            "link": "shopify://pages/about",
             "enable_padding": true,
             "align": "left"
           }
