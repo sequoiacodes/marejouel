@@ -54,7 +54,7 @@
   .parallax-banner__wraper--{{ section.id }}::before{
     content:"";
         position: absolute;
-        color:white;
+        color: white;
         top: 0;
         left: 0;
         right: 0;
@@ -62,6 +62,9 @@
         z-index: 1;
         background: {%- if section.settings.gradient_bg != blank -%} {{ section.settings.gradient_bg }} {%- else -%}  {{ section.settings.bg_overlay }}{%- endif -%};
       opacity: {{ section.settings.opacity_bg_overlay }};
+  }
+  .subtop {
+  color: white;
   }
   .parallax-banner__wraper--{{ section.id }} {
     {% if text_color != 'transparent' %}
