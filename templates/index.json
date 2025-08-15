@@ -540,7 +540,7 @@
       "name": "Image with text",
       "settings": {
         "animation": "",
-        "setwidth": "container",
+        "setwidth": "container-fluid",
         "bgsection": "#fce5df",
         "rangebg": 100,
         "bgbefore": "#fce5df",
