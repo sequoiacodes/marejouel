@@ -74,13 +74,13 @@
     <div class="row d-flex justify-content-center">
       <div class="{% if e_left %} col-lg-11 {% else %} col-lg-8 {% endif %}">
         <div class="{% if section.settings.bg_inner %}bg-white {% endif %} px-lg-4 py-4 px-0">
-          {%- render 'section-heading' -%} 
+          {%- render 'section-heading' -%} H
           {%- if e_left -%}
           <div class="row">
           {%- endif -%}
             {%- if e_left -%}
               <div class="left_newlleters text-left col-lg-6 col-12">
-                {{ section.settings.html_left_block }}
+                {{ section.settings.html_left_block }}E
               </div>
             {%- endif -%}
             <div class="form-vertical mail-section  {% if e_left %} col-lg-6 col-12  pt-2 {% else %} mt-n3  {% endif %}">
