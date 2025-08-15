@@ -1,6 +1,608 @@
+{% doc %}
+  @prompt
+    Create a video gallery section that displays a grid of video thumbnails with play buttons overlaid on each video. The section should have a heading "CAPTURE THE MOMENTS" and subheading "VIDEOS FROM MARE JOUEL" at the top. Include 4 video thumbnails in a horizontal row layout that's fully responsive - stacking vertically on mobile devices. Each video thumbnail should have a circular play button overlay in the center. The videos should show lifestyle content like swimming, poolside relaxation, and swimwear modeling. Make the section customizable with options to change the heading text, add/remove videos, adjust spacing, and control the responsive breakpoints. Include hover effects on the video thumbnails and ensure the play buttons are properly centered and styled.
+
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-video-gallery-{{ ai_gen_id }} {
+    padding: {{ block.settings.section_padding_top }}px 0 {{ block.settings.section_padding_bottom }}px;
+    background-color: {{ block.settings.background_color }};
+  }
+
+  .ai-video-gallery-container-{{ ai_gen_id }} {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .ai-video-gallery-header-{{ ai_gen_id }} {
+    text-align: center;
+    margin-bottom: {{ block.settings.header_spacing }}px;
+  }
+
+  .ai-video-gallery-heading-{{ ai_gen_id }} {
+    font-size: {{ block.settings.heading_size }}px;
+    color: {{ block.settings.heading_color }};
+    margin: 0 0 10px;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+
+  .ai-video-gallery-subheading-{{ ai_gen_id }} {
+    font-size: {{ block.settings.subheading_size }}px;
+    color: {{ block.settings.subheading_color }};
+    margin: 0;
+    font-weight: 400;
+  }
+
+  .ai-video-gallery-grid-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: repeat({{ block.settings.columns_desktop }}, 1fr);
+    gap: {{ block.settings.grid_gap }}px;
+  }
+
+  .ai-video-gallery-item-{{ ai_gen_id }} {
+    position: relative;
+    border-radius: {{ block.settings.video_border_radius }}px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .ai-video-gallery-item-{{ ai_gen_id }}:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+
+  .ai-video-gallery-thumbnail-{{ ai_gen_id }} {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .ai-video-gallery-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 250px;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-video-gallery-placeholder-{{ ai_gen_id }} svg {
+    width: 60px;
+    height: 60px;
+    opacity: 0.5;
+  }
+
+  .ai-video-gallery-play-button-{{ ai_gen_id }} {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: {{ block.settings.play_button_size }}px;
+    height: {{ block.settings.play_button_size }}px;
+    background-color: {{ block.settings.play_button_color }};
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  .ai-video-gallery-item-{{ ai_gen_id }}:hover .ai-video-gallery-play-button-{{ ai_gen_id }} {
+    transform: translate(-50%, -50%) scale(1.1);
+    background-color: {{ block.settings.play_button_hover_color }};
+  }
+
+  .ai-video-gallery-play-icon-{{ ai_gen_id }} {
+    width: calc({{ block.settings.play_button_size }}px * 0.4);
+    height: calc({{ block.settings.play_button_size }}px * 0.4);
+    color: {{ block.settings.play_icon_color }};
+    margin-left: 3px;
+  }
+
+  .ai-video-gallery-overlay-{{ ai_gen_id }} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .ai-video-gallery-item-{{ ai_gen_id }}:hover .ai-video-gallery-overlay-{{ ai_gen_id }} {
+    opacity: 1;
+  }
+
+  @media screen and (max-width: 768px) {
+    .ai-video-gallery-grid-{{ ai_gen_id }} {
+      {% if block.settings.columns_mobile == '1' %}
+        grid-template-columns: 1fr;
+      {% else %}
+        grid-template-columns: repeat(2, 1fr);
+      {% endif %}gap: {{ block.settings.grid_gap | times: 0.7 }}px;
+    }
+
+    .ai-video-gallery-heading-{{ ai_gen_id }} {
+      font-size: {{ block.settings.heading_size | times: 0.8 }}px;
+    }
+
+    .ai-video-gallery-subheading-{{ ai_gen_id }} {
+      font-size: {{ block.settings.subheading_size | times: 0.9 }}px;
+    }
+
+    .ai-video-gallery-thumbnail-{{ ai_gen_id }},
+    .ai-video-gallery-placeholder-{{ ai_gen_id }} {
+      height: 200px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .ai-video-gallery-grid-{{ ai_gen_id }} {
+      grid-template-columns: 1fr;
+    }
+
+    .ai-video-gallery-thumbnail-{{ ai_gen_id }},
+    .ai-video-gallery-placeholder-{{ ai_gen_id }} {
+      height: 180px;
+    }
+  }
+{% endstyle %}
+
+<video-gallery-{{ ai_gen_id }}
+  class="ai-video-gallery-{{ ai_gen_id }}"
+  {{ block.shopify_attributes }}
+>
+  <div class="ai-video-gallery-container-{{ ai_gen_id }}">
+    <div class="ai-video-gallery-header-{{ ai_gen_id }}">
+      {% if block.settings.heading != blank %}
+        <h2 class="ai-video-gallery-heading-{{ ai_gen_id }}">{{ block.settings.heading }}</h2>
+      {% endif %}
+      {% if block.settings.subheading != blank %}
+        <p class="ai-video-gallery-subheading-{{ ai_gen_id }}">{{ block.settings.subheading }}</p>
+      {% endif %}
+    </div>
+
+    <div class="ai-video-gallery-grid-{{ ai_gen_id }}">
+      {% for i in (1..4) %}
+        {% liquid
+          assign video_key = 'video_' | append: i
+          assign thumbnail_key = 'thumbnail_' | append: i
+          assign video_url = block.settings[video_key]
+          assign thumbnail_image = block.settings[thumbnail_key]
+        %}
+
+        {% if video_url != blank %}
+          <div
+            class="ai-video-gallery-item-{{ ai_gen_id }}"
+            data-video-url="{{ video_url }}"
+            data-video-index="{{ i }}"
+          >
+            {% if thumbnail_image %}
+              <img
+                src="{{ thumbnail_image | image_url: width: 600 }}"
+                alt="Video {{ i }} thumbnail"
+                class="ai-video-gallery-thumbnail-{{ ai_gen_id }}"
+                loading="lazy"
+                width="600"
+                height="400"
+              >
+            {% else %}
+              <div class="ai-video-gallery-placeholder-{{ ai_gen_id }}">
+                {{ 'image' | placeholder_svg_tag }}
+              </div>
+            {% endif %}
+
+            <div class="ai-video-gallery-overlay-{{ ai_gen_id }}"></div>
+
+            <div class="ai-video-gallery-play-button-{{ ai_gen_id }}">
+              <svg
+                class="ai-video-gallery-play-icon-{{ ai_gen_id }}"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</video-gallery-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class VideoGallery{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.videoItems = this.querySelectorAll('.ai-video-gallery-item-{{ ai_gen_id }}');
+        this.setupEventListeners();
+      }
+
+      setupEventListeners() {
+        this.videoItems.forEach((item) => {
+          item.addEventListener('click', (e) => {
+            e.preventDefault();
+            const videoUrl = item.dataset.videoUrl;
+            if (videoUrl) {
+              this.openVideoModal(videoUrl);
+            }
+          });
+
+          item.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              const videoUrl = item.dataset.videoUrl;
+              if (videoUrl) {
+                this.openVideoModal(videoUrl);
+              }
+            }
+          });
+
+          item.setAttribute('tabindex', '0');
+          item.setAttribute('role', 'button');
+          item.setAttribute('aria-label', 'Play video');
+        });
+      }
+
+      openVideoModal(videoUrl) {
+        const modal = document.createElement('div');
+        modal.style.cssText = `
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.9);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 9999;
+          padding: 20px;
+          box-sizing: border-box;
+        `;
+
+        const videoContainer = document.createElement('div');
+        videoContainer.style.cssText = `
+          position: relative;
+          width: 100%;
+          max-width: 800px;
+          aspect-ratio: 16/9;
+        `;
+
+        let videoElement;
+        if (videoUrl.includes('youtube.com') || videoUrl.includes('youtu.be')) {
+          const videoId = this.extractYouTubeId(videoUrl);
+          videoElement = document.createElement('iframe');
+          videoElement.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+          videoElement.setAttribute('allowfullscreen', '');
+        } else if (videoUrl.includes('vimeo.com')) {
+          const videoId = this.extractVimeoId(videoUrl);
+          videoElement = document.createElement('iframe');
+          videoElement.src = `https://player.vimeo.com/video/${videoId}?autoplay=1`;
+          videoElement.setAttribute('allowfullscreen', '');
+        } else {
+          videoElement = document.createElement('video');
+          videoElement.src = videoUrl;
+          videoElement.controls = true;
+          videoElement.autoplay = true;
+        }
+
+        videoElement.style.cssText = `
+          width: 100%;
+          height: 100%;
+          border: none;
+        `;
+
+        const closeButton = document.createElement('button');
+        closeButton.innerHTML = '×';
+        closeButton.style.cssText = `
+          position: absolute;
+          top: -40px;
+          right: 0;
+          background: none;
+          border: none;
+          color: white;
+          font-size: 30px;
+          cursor: pointer;
+          padding: 5px;
+          line-height: 1;
+        `;
+
+        closeButton.addEventListener('click', () => {document.body.removeChild(modal);
+          document.body.style.overflow = '';
+        });
+
+        modal.addEventListener('click', (e) => {
+          if (e.target === modal) {
+            document.body.removeChild(modal);
+            document.body.style.overflow = '';
+          }
+        });
+
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape') {
+            if (document.body.contains(modal)) {
+              document.body.removeChild(modal);
+              document.body.style.overflow = '';
+            }
+          }
+        });
+
+        videoContainer.appendChild(videoElement);
+        videoContainer.appendChild(closeButton);
+        modal.appendChild(videoContainer);
+        document.body.appendChild(modal);
+        document.body.style.overflow = 'hidden';
+      }
+
+      extractYouTubeId(url) {
+        const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
+        const match = url.match(regExp);
+        return (match && match[2].length === 11) ? match[2] : null;
+      }
+
+      extractVimeoId(url) {
+        const regExp = /vimeo.com\/(\d+)/;
+        const match = url.match(regExp);
+        return match ? match[1] : null;
+      }
+    }
+
+    customElements.define('video-gallery-{{ ai_gen_id }}', VideoGallery{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Video gallery",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "CAPTURE THE MOMENTS"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "VIDEOS FROM MARE JOUEL"
+    },
+    {
+      "type": "header",
+      "content": "Video 1"
+    },
+    {
+      "type": "url",
+      "id": "video_1",
+      "label": "Video URL"
+    },
+    {
+      "type": "image_picker",
+      "id": "thumbnail_1",
+      "label": "Thumbnail image"
+    },
+    {
+      "type": "header",
+      "content": "Video 2"
+    },
+    {
+      "type": "url",
+      "id": "video_2",
+      "label": "Video URL"
+    },
+    {
+      "type": "image_picker",
+      "id": "thumbnail_2",
+      "label": "Thumbnail image"
+    },
+    {
+      "type": "header",
+      "content": "Video 3"
+    },
+    {
+      "type": "url",
+      "id": "video_3",
+      "label": "Video URL"
+    },
+    {
+      "type": "image_picker",
+      "id": "thumbnail_3",
+      "label": "Thumbnail image"
+    },
+    {
+      "type": "header",
+      "content": "Video 4"
+    },
+    {
+      "type": "url",
+      "id": "video_4",
+      "label": "Video URL"
+    },
+    {
+      "type": "image_picker",
+      "id": "thumbnail_4",
+      "label": "Thumbnail image"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "label": "Columns on desktop",
+      "default": 4
+    },
+    {
+      "type": "select",
+      "id": "columns_mobile",
+      "label": "Columns on mobile",
+      "options": [
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        }
+      ],
+      "default": "1"
+    },
+    {
+      "type": "range",
+      "id": "grid_gap",
+      "min": 10,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "label": "Grid gap",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "header_spacing",
+      "min": 20,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "label": "Header spacing",
+      "default": 40
+    },
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "subheading_color",
+      "label": "Subheading color",
+      "default": "#666666"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "min": 16,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "label": "Heading size",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "subheading_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Subheading size",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "video_border_radius",
+      "min": 0,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "label": "Video border radius",
+      "default": 8
+    },
+    {
+      "type": "header",
+      "content": "Play button"
+    },
+    {
+      "type": "range",
+      "id": "play_button_size",
+      "min": 40,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Play button size",
+      "default": 70
+    },
+    {
+      "type": "color",
+      "id": "play_button_color",
+      "label": "Play button color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "play_button_hover_color",
+      "label": "Play button hover color",
+      "default": "#f0f0f0"
+    },
+    {
+      "type": "color",
+      "id": "play_icon_color",
+      "label": "Play icon color",
+      "default": "#000000"
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 60
+    }
+  ],
+  "presets": [
+    {
+      "name": "Video gallery"
+    }
+  ]
+}
 {% endschema %}
