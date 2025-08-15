@@ -71,7 +71,7 @@
   </div>
   <div class="{{ section.settings.setwidth }}">
     <div class="section-block">
-      {%- render 'section-heading' -%}
+      
       {%- if section.blocks.size > 0 -%}
       <div class="quotes-wrapper dots-negative quotes-2" > 
         <div class="quotes-slider row" id="Quotes-{{ section.id }}" 
@@ -90,6 +90,7 @@
               <div class="quote-wrap row">
                 <div class="col-12 col-md-6" data-aos="{{ section.settings.animation }}" data-aos-duration="500">
                     <div class="pb-5 px-3 px-lg-0">
+                      {%- render 'section-heading' -%}
                     {%- if block.settings.title != blank -%}
                         <div class="subtop pb-3">
                         {{ block.settings.title }}
