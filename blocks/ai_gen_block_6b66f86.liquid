@@ -180,6 +180,14 @@
         </div>
       {% endif %}
     </div>
+    <div class="d-flex justify-content-center align-items-center p-4">
+        <a href="https://example.com/donate" 
+           class="btn {{ section.settings.style_btn }}" 
+           target="_blank" 
+           rel="noopener noreferrer">
+          Donate
+        </a>
+      </div>
   </div>
 </div>
 
@@ -190,6 +198,38 @@
     {
       "type": "header",
       "content": "Layout"
+    },
+    {
+      "type": "select",
+      "id": "style_btn",
+      "label": "Style Button",
+      "default": "btn-theme",
+      "options": [
+        {
+          "value": "btn-theme",
+          "label": "Button Box"
+        },
+        {
+          "value": "btn-theme btn-white",
+          "label": "Button Box White"
+        },
+        {
+          "value": "btn-underline",
+          "label": "Button Line"
+        },
+        {
+          "value": "btn-underline btn-underline-white",
+          "label": "Button Line White"
+        },
+        {
+          "value": "btn-outline",
+          "label": "Button Outline"
+        },
+        {
+          "value": "btn-outline btn-outline-white",
+          "label": "Button Outline White"
+        },
+      ]
     },
     {
       "type": "select",
