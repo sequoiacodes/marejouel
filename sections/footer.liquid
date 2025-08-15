@@ -1,19 +1,19 @@
 <!-- footer.liquid -->
 
 <style>
-  /* Updated styles to match the design */
+  /* Updated styles for dark theme */
   .site-footer {
-    --footer-bg: #ffffff;
-    --footer-text: #000000;
-    --footer-title: #000000;
-    --footer-text-hover: #555555;
+    --footer-bg: #000000;
+    --footer-text: #ffffff;
+    --footer-title: #ffffff;
+    --footer-text-hover: #dddddd;
     --footer-font-size: 14px;
     --footer-font-weight: 600;
     --footer-font-space: 0.1em;
     --footer-font-type: uppercase;
-    --footer-head-border: #eaeaea;
-    --bottom-copy-border: #eaeaea;
-    --color-footer-text-rgb: 0, 0, 0;
+    --footer-head-border: #333333;
+    --bottom-copy-border: #333333;
+    --color-footer-text-rgb: 255, 255, 255;
   }
   
   .site-footer .site-footer__section-title {
@@ -35,12 +35,13 @@
     font-weight: 700;
     margin-bottom: 15px;
     letter-spacing: 0.05em;
+    color: #ffffff;
   }
   
   .footer-brand p {
     font-size: 14px;
     line-height: 1.6;
-    color: #666;
+    color: #cccccc;
   }
   
   .social-icons-row {
@@ -49,66 +50,100 @@
     margin-bottom: 15px;
   }
   
+  .social-icons-row a {
+    color: white;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons-row a:hover {
+    color: #dddddd;
+  }
+  
   .social-icons-row .icon {
     width: 24px;
     height: 24px;
+    fill: currentColor;
   }
   
   .quick-links-title {
     font-weight: 600;
     margin-bottom: 10px;
     font-size: 14px;
+    color: #ffffff;
   }
   
   .footer-newsletter {
-    background: #f9f9f9;
+    background: #111111;
     padding: 25px;
     border-radius: 4px;
   }
   
   .footer-email .form-control {
-    border: 1px solid #ddd;
-    background: #fff;
+    border: 1px solid #333333;
+    background: #222222;
+    color: white;
     padding: 12px 15px;
     margin-bottom: 15px;
   }
   
+  .footer-email .form-control::placeholder {
+    color: #aaaaaa;
+  }
+  
   .footer-email .btn-theme {
-    background: #000;
-    color: #fff;
+    background: #ffffff;
+    color: #000000;
     border: none;
     padding: 12px 25px;
     width: 100%;
     font-weight: 600;
     letter-spacing: 0.05em;
+    transition: all 0.3s ease;
   }
   
   .footer-email .btn-theme:hover {
-    background: #333;
+    background: #dddddd;
   }
   
   .site-footer__copyright {
     padding: 20px 0;
-    border-top: 1px solid #eaeaea;
+    border-top: 1px solid #333333;
     font-size: 13px;
-    color: #666;
+    color: #aaaaaa;
   }
   
   .payment-icons {
     display: flex;
     gap: 10px;
     margin-top: 15px;
+    align-items: center;
   }
   
   .payment-icons svg {
     height: 24px;
     width: auto;
+    filter: brightness(0) invert(1);
+  }
+  
+  .payment-icons .text-icon {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
   }
   
   .footer-bottom-links {
     display: flex;
     gap: 20px;
     margin-top: 10px;
+  }
+  
+  .footer-bottom-links a {
+    color: #aaaaaa;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-bottom-links a:hover {
+    color: #ffffff;
   }
   
   @media (max-width: 749px) {
@@ -150,10 +185,22 @@
             <h4 class="h5 site-footer__section-title">Stay Connected</h4>
             <div class="site-footer__list site-footer-block">
               <div class="social-icons-row">
-                <!-- Social icons would go here -->
-                <span>💬</span>
-                <span>💬</span>
-                <span>💬</span>
+                <!-- Social Media Links -->
+                <a href="https://instagram.com" aria-label="Instagram">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                  </svg>
+                </a>
+                <a href="https://facebook.com" aria-label="Facebook">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
+                  </svg>
+                </a>
+                <a href="https://twitter.com" aria-label="Twitter">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                  </svg>
+                </a>
               </div>
               <div class="quick-links-title">Quick Links</div>
               <ul class="site-footer__list">
@@ -228,11 +275,22 @@
         
         <div class="d-flex flex-column align-items-lg-end align-items-center">
           <div class="payment-icons">
-            <!-- Payment icons would go here -->
-            <span>VISA</span>
-            <span>P</span>
-            <span>G Pay</span>
-            <span>IOWs account</span>
+            <!-- Payment Icons -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 24" role="img" width="38" height="24" aria-labelledby="pi-visa">
+              <title id="pi-visa">Visa</title>
+              <path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"></path>
+              <path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"></path>
+              <path d="M28.3 10.1H28c-.4 1-.7 1.5-1 3h1.9c-.3-1.5-.3-2.2-.6-3zm2.9 5.9h-1.7c-.1 0-.1 0-.2-.1l-.2-.9-.1-.2h-2.4c-.1 0-.2 0-.2.2l-.3.9c0 .1-.1.1-.1.1h-2.1l.2-.5L27 8.7c0-.5.3-.7.8-.7h1.5c.1 0 .2 0 .2.2l1.4 6.5c.1.4.2.7.2 1.1.1.1.1.1.1.1.2zm-13.4-.3l.4-1.8c.1 0 .2.1.2.1.7.1 0 .1.1.1.1h1.3l.1-.1.3-1.2v-.1l-.1-.2h-1.7c-.1 0-.1 0-.2.1l-.3 1.4v.1s-.1 0-.1.1zm-3.5-.3h1.5l.1-.3v-.2l1.2-5.2c.1-.3.1-.4.1-.5 0-.1-.1-.1-.1-.1H12c-.1 0-.1 0-.1.2-.2.8-.5 2.4-.7 3.4-.1.2-.1.3-.1.4 0 .1.1.1.1.1zm-3.4-.1h1.4l1.4-6.5v-.2c0-.1 0-.1-.1-.1h-1.7c-.1 0-.1 0-.1.1l-1.4 6.5v.2c0 .1.1.1.1.1zm-3.5-.1h1.5l.7-6.6c0-.1 0-.2-.1-.2h-1.7c-.1 0-.1 0-.1.1l-.7 6.6v.2c0 .1.1.1.1.1z" fill="#142688"></path>
+            </svg>
+            <span class="text-icon">P</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 24" role="img" width="38" height="24" aria-labelledby="pi-google_pay">
+              <title id="pi-google_pay">Google Pay</title>
+              <path d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z" fill="#000" opacity=".07"></path>
+              <path d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32" fill="#FFF"></path>
+              <path d="M18.093 11.976v3.2h-1.018v-7.24h2.691a2.26 2.26 0 0 1 1.385 3.88l-.155.144-1.698 1.545a.57.57 0 0 0 .008.865l1.627 1.523-2.008.001zm-1.018.91v1.834h1.467c.509 0 .955-.107 1.272-.299a1.52 1.52 0 0 0 .638-.865 1.78 1.78 0 0 0 0-.665 1.521 1.521 0 0 0-.638-.865c-.317-.19-.763-.299-1.272-.299h-1.467zm-7.482-1.523v5.47H9.151v-5.47H7.2v-1.718h5.146v1.717h-1.933zm-3.593 0l1.523 5.47h-1.706l-1.523-5.47H4.573v5.47H3.027v-7.24h3.34l1.533 5.47h.025l1.523-5.47h3.347v7.24h-1.569v-5.47h-.008zm15.371 5.47h-1.569v-5.47h1.569v5.47zm-5.925-5.47v7.24h-1.569v-5.47l-1.775 1.718-.199-.182v-4.306h-1.569v5.47h1.569v-1.718l1.775 1.718h1.775v-7.24h1.569zm-5.239 0v1.718h2.691v1.15h-2.691v1.626h3.347v1.15h-4.916v-7.24h4.916v1.15h-3.347z" fill="#5F6368"></path>
+              <path d="M26.754 10.45h4.917v1.149h-4.917z" fill="#5F6368"></path>
+            </svg>
+            <span class="text-icon">IOWs account</span>
           </div>
           
           <div class="footer-bottom-links">
