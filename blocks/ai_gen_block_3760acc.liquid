@@ -9,7 +9,7 @@
   }
 
   .ai-video-gallery-container-{{ ai_gen_id }} {
-    max-width: 1200px;
+    max-width: {{block.settings.width_layout}}px;
     margin: 0 auto;
     padding: 0 20px;
   }
@@ -664,6 +664,15 @@
       "id": "subheading",
       "label": "Subheading",
       "default": "VIDEOS FROM MARE JOUEL"
+    },
+    {
+      "type": "range",
+      "id": "width_layout",
+      "label": "Layout Width",
+      "min": 1200,
+      "step": 5,
+      "max": 1400,
+      "default":1200
     },
     {
       "type": "text",
