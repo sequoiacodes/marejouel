@@ -641,7 +641,7 @@
             "grid_gap": 20,
             "header_spacing": 40,
             "item_width": 350,
-            "item_height": 400,
+            "item_height": 450,
             "show_nav_buttons": false,
             "show_dots": false,
             "background_color": "#ffffff",
