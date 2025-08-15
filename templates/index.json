@@ -475,7 +475,7 @@
       "name": "Blog posts",
       "settings": {
         "animation": "",
-        "setwidth": "container",
+        "setwidth": "container-fluid",
         "bgsection": "#ffffff",
         "title_top": "Join Mare Jouel: Swimwear Fashion That Inspires",
         "title": "Blog posts",
