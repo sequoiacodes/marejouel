@@ -1103,6 +1103,58 @@
     },
     "17549951131679c44e": {
       "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_3760acc_fBFiFN": {
+          "type": "ai_gen_block_3760acc",
+          "name": "Video gallery",
+          "settings": {
+            "subheading": "VIDEOS FROM MARE JOUEL",
+            "heading": "CAPTURE THE MOMENTS",
+            "text_alignment": "left",
+            "video_1": "/aa",
+            "thumbnail_1": "shopify://shop_images/image3.png",
+            "video_2": "/v2",
+            "thumbnail_2": "shopify://shop_images/video-1.png",
+            "video_3": "/v3",
+            "thumbnail_3": "shopify://shop_images/image4.png",
+            "video_4": "/v4",
+            "thumbnail_4": "shopify://shop_images/image5.png",
+            "enable_carousel": true,
+            "columns_desktop": 4,
+            "columns_mobile": "2",
+            "grid_gap": 20,
+            "header_spacing": 40,
+            "item_width": 350,
+            "item_height": 400,
+            "show_nav_buttons": false,
+            "show_dots": false,
+            "background_color": "#ffffff",
+            "heading_color": "#000000",
+            "subheading_color": "#666666",
+            "heading_size": 32,
+            "subheading_size": 16,
+            "video_border_radius": 8,
+            "play_button_size": 45,
+            "play_button_color": "#ffffff",
+            "play_button_hover_color": "rgba(0,0,0,0)",
+            "play_icon_color": "#ffffff",
+            "nav_button_size": 40,
+            "nav_button_color": "#ffffff",
+            "nav_button_hover_color": "#f0f0f0",
+            "nav_icon_color": "#000000",
+            "dot_color": "#cccccc",
+            "dot_active_color": "#000000",
+            "section_padding_top": 60,
+            "section_padding_bottom": 60,
+            "section_padding_left": 20,
+            "section_padding_right": 20
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_3760acc_fBFiFN"
+      ],
       "settings": {}
     },
     "1754995195a452d753": {
