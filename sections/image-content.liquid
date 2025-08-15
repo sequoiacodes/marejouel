@@ -63,7 +63,7 @@
   {%- render 'style-section' -%}
   {% comment %} div for back ground  {% endcomment %}
    {% for block in section.blocks %}
-     {% if section.settings.bgsection == blank %}
+     {% if section.settings.bgsection == "rgba(0,0,0,0)" %}
         
        <div class="text_image_absolute">
            <img
@@ -165,7 +165,6 @@
                     {%- if block.settings.title != blank -%}
                     <h3 class="mb-3 {{ block.settings.size_text }} ">{{ block.settings.title }}</h3>
                     {%- endif -%}   Remove for customized {% endcomment %}
-                     {{ section.settings.bgsection }}
                     {%- if block.settings.text -%}
                       <div class="rte-setting">{{ block.settings.text }}</div>
                     {%- endif -%}
