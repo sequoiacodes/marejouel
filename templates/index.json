@@ -673,54 +673,6 @@
       ],
       "settings": {}
     },
-    "video_G4Perd": {
-      "type": "video",
-      "blocks": {
-        "video_block_nD4VbL": {
-          "type": "video_block",
-          "settings": {
-            "video_url": "https://www.youtube.com/watch?v=bwDahMLUe4Q&list=RDbwDahMLUe4Q&start_radio=1"
-          }
-        },
-        "video_block_iJAgkY": {
-          "type": "video_block",
-          "settings": {
-            "video_url": "https://www.youtube.com/watch?v=bwDahMLUe4Q&list=RDbwDahMLUe4Q&start_radio=1"
-          }
-        },
-        "video_block_qk9MQD": {
-          "type": "video_block",
-          "settings": {
-            "video_url": "https://www.youtube.com/watch?v=bwDahMLUe4Q&list=RDbwDahMLUe4Q&start_radio=1"
-          }
-        },
-        "video_block_Qr8YTh": {
-          "type": "video_block",
-          "settings": {
-            "video_url": "https://www.youtube.com/watch?v=bwDahMLUe4Q&list=RDbwDahMLUe4Q&start_radio=1"
-          }
-        }
-      },
-      "block_order": [
-        "video_block_nD4VbL",
-        "video_block_iJAgkY",
-        "video_block_qk9MQD",
-        "video_block_Qr8YTh"
-      ],
-      "name": "Video Gallery",
-      "settings": {
-        "subtitle": "Our Featured Videos",
-        "title": "Watch Now",
-        "size_text": "h2",
-        "animation": "",
-        "color": "#000000",
-        "setwidth": "container-fluid",
-        "paddingsection": "60px 0px 60px 0px",
-        "paddingmobile": "40px 0px 40px 0px",
-        "marginsection": "0px 0px 0px 0px",
-        "marginmobile": "0px 0px 0px 0px"
-      }
-    },
     "1660192760ca5a4d9c": {
       "type": "brand-carousel",
       "blocks": {
@@ -871,15 +823,9 @@
         "6ecfa747-1624-47c4-8967-277d3c819672": {
           "type": "video",
           "settings": {
-            "video_url": "https://scontent-hkg4-1.cdninstagram.com/o1/v/t16/f1/m82/5C4478EB82E4BCF2A8DDA1BF393E96B5_video_dashinit.mp4?efg=eyJ2ZW5jb2RlX3RhZyI6InZ0c192b2RfdXJsZ2VuLjcyMC5jbGlwcyJ9&_nc_ht=scontent-hkg4-1.cdninstagram.com&_nc_cat=105&vs=1005889927089586_3021979593&_nc_vs=HBksFQIYT2lnX3hwdl9yZWVsc19wZXJtYW5lbnRfcHJvZC81QzQ0NzhFQjgyRTRCQ0YyQThEREExQkYzOTNFOTZCNV92aWRlb19kYXNoaW5pdC5tcDQVAALIAQAVABgkR01qamRSVl9pdk9VNmJvSEFJVkRmVXFCRmkxYWJxX0VBQUFGFQICyAEAKAAYABsBiAd1c2Vfb2lsATEVAAAm0NXArdWG%2BD8VAigCQzMsF0ASZmZmZmZmGBJkYXNoX2Jhc2VsaW5lXzFfdjERAHUAAA%3D%3D&ccb=9-4&oh=00_AfAhq-bjuFTEsL9H15z6sj24b1Jy_gEPus_R0CXdz5nSNQ&oe=64B9C10C&_nc_sid=1d576d&_nc_rid=d891ff1e62",
+            "video_url": "",
             "image_link": "https://www.instagram.com/reel/Cu1MBA1vdN1/",
             "enable_play_video": false
-          }
-        },
-        "1660925094098c539e-1": {
-          "type": "image",
-          "settings": {
-            "image_link": "https://www.instagram.com/p/CuyrWWgPTY6/"
           }
         },
         "1660925094098c539e-4": {
@@ -891,57 +837,34 @@
         "a3a10629-8bb5-4700-b3af-1c908798381a": {
           "type": "video",
           "settings": {
-            "video_url": "https://cdn.shopify.com/videos/c/o/v/42a9e75219f6412ab5309312b07982a6.mp4",
-            "image_link": "https://www.instagram.com/p/CT1byDeliOs/",
-            "enable_play_video": false
-          }
-        },
-        "1660925094098c539e-2": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "image_link": "https://www.instagram.com/p/CueN3LZPQYA/"
-          }
-        },
-        "1660925094098c539e-3": {
-          "type": "image",
-          "settings": {
-            "image_link": "#"
-          }
-        },
-        "1660925094098c539e-5": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "image_link": "#"
+            "video_url": "https://www.youtube.com/watch?v=bwDahMLUe4Q&list=RDbwDahMLUe4Q&start_radio=1",
+            "image_poster": "shopify://shop_images/image3.png",
+            "image_link": "https://www.youtube.com/watch?v=bwDahMLUe4Q&list=RDbwDahMLUe4Q&start_radio=1",
+            "enable_play_video": true
           }
         }
       },
       "block_order": [
         "1660925094098c539e-0",
         "6ecfa747-1624-47c4-8967-277d3c819672",
-        "1660925094098c539e-1",
         "1660925094098c539e-4",
-        "a3a10629-8bb5-4700-b3af-1c908798381a",
-        "1660925094098c539e-2",
-        "1660925094098c539e-3",
-        "1660925094098c539e-5"
+        "a3a10629-8bb5-4700-b3af-1c908798381a"
       ],
       "settings": {
         "animation": "fade-up",
         "setwidth": "full",
         "bgsection": "#ffffff",
-        "title_top": "",
-        "title": "",
+        "title_top": "hello",
+        "title": "nepal",
         "des": "",
-        "align-heading": "center",
-        "image_size": "square",
+        "align-heading": "left",
+        "image_size": "portrait",
         "arrows": false,
         "draggable": true,
         "dots": true,
         "infinite": true,
-        "show": 6,
-        "padding": false,
+        "show": 4,
+        "padding": true,
         "paddingsection": "0px 0px 0px 0px",
         "paddingmobile": "60px 0px 60px 0px",
         "marginsection": "0px 0px 0px 0px",
@@ -1039,7 +962,6 @@
     "image_content_b9yUhb",
     "quotes_special_BxmA3J",
     "17549951131679c44e",
-    "video_G4Perd",
     "1660192760ca5a4d9c",
     "1660900735d9374b53",
     "5e6d27a3-1163-46d3-a128-345487900584",
