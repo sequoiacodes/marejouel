@@ -271,9 +271,9 @@
             "width": "100%",
             "bgtext": "rgba(0,0,0,0)",
             "title_color": "rgba(0,0,0,0)",
-            "subtitle": "",
-            "title": "",
-            "size_text": "h6",
+            "subtitle": "About Us",
+            "title": "Who We Are",
+            "size_text": "h2",
             "text": "<p style=\"text-align: justify; font-family: 'Gilda Display', serif; font-size: 20px; font-style: normal; font-weight: 400; line-height: normal;\">\nAt Mare Jouel, we create more than just swimwear – we create memories. Inspired by the vibrant Key Biscayne community and the beauty of Miami’s coastline, each piece is designed to make you feel confident, graceful, and ready to embrace the magic of the moment. Our swimwear is made to highlight your natural beauty and empower you to feel your best, making every beach day an unforgettable experience. Crafted with high-quality, eco-friendly fabrics, Mare Jouel reflects timeless elegance and the unforgettable memories made in the sun and sea.\n</p>",
             "answer_content": "<p><br/></p>",
             "style_btn": "btn-theme",
@@ -501,162 +501,50 @@
         "marginmobile": "0px 0px 0px 0px"
       }
     },
-    "7bbfe968-615f-45fb-b164-8b8d8466d957": {
-      "type": "backgroundvideo",
+    "image_content_b9yUhb": {
+      "type": "image-content",
       "blocks": {
-        "template--19549173121344__7bbfe968-615f-45fb-b164-8b8d8466d957-1687372265509219e4-0": {
-          "type": "sub_title",
-          "settings": {
-            "subtitle": "Nieuwe Collectie"
-          }
+        "image_block_cbJpCP": {
+          "type": "image_block",
+          "settings": {}
         },
-        "template--19549173121344__7bbfe968-615f-45fb-b164-8b8d8466d957-1687372265509219e4-1": {
-          "type": "heading",
+        "text_block_DgPRgH": {
+          "type": "text_block",
           "settings": {
-            "title": "YON Collection",
-            "size_text": "h1"
-          }
-        },
-        "template--19549173121344__7bbfe968-615f-45fb-b164-8b8d8466d957-1687372265509219e4-2": {
-          "type": "paragraph",
-          "settings": {
-            "subtext": "Behind the Scenes"
-          }
-        },
-        "9e06118c-aa13-4153-bc8c-dddcde5ad4de": {
-          "type": "button",
-          "settings": {
+            "width": "100%",
+            "bgtext": "#ffffff",
+            "title_color": "rgba(0,0,0,0)",
+            "subtitle": "helping little dreams grow big",
+            "title": "giving back: semilla brillante",
+            "size_text": "h2",
+            "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "answer_content": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "style_btn": "btn-underline btn-underline-white",
             "button": "discover now",
-            "link": "#",
-            "style_btn": "btn-theme btn-white"
+            "link": "",
+            "enable_padding": true,
+            "align": "left"
           }
         }
       },
       "block_order": [
-        "template--19549173121344__7bbfe968-615f-45fb-b164-8b8d8466d957-1687372265509219e4-0",
-        "template--19549173121344__7bbfe968-615f-45fb-b164-8b8d8466d957-1687372265509219e4-1",
-        "template--19549173121344__7bbfe968-615f-45fb-b164-8b8d8466d957-1687372265509219e4-2",
-        "9e06118c-aa13-4153-bc8c-dddcde5ad4de"
+        "image_block_cbJpCP",
+        "text_block_DgPRgH"
       ],
+      "name": "Image with text",
       "settings": {
         "animation": "",
-        "setwidth": "full",
-        "height_section": "650px",
-        "height_section_mobile": "450px",
-        "align": "center",
-        "position_text": "mid-center",
-        "link_video": "https://cdn.shopify.com/videos/c/o/v/303fcffdaa3845f8bbf6094fd9e5fdcd.mp4",
-        "bgsection": "#ffffff",
-        "bg_overlay": "#000000",
-        "gradient_bg": "",
-        "opacity_bg_overlay": 0.2,
-        "title_color": "#ffffff",
-        "bg_box": "#ffffff",
-        "opacity_bgbox": 0,
-        "marginsection": "0px 0px 0px 0px",
-        "marginmobile": "0px 0px 0px 0px"
-      }
-    },
-    "0c0246cb-5673-44cb-9cf3-1d345e8a2baa": {
-      "type": "shop-the-look",
-      "blocks": {
-        "template--19541121335616__0c0246cb-5673-44cb-9cf3-1d345e8a2baa-1687421913e5760638-0": {
-          "type": "product_block",
-          "settings": {
-            "product_item": "theas-9831-long-sleeved",
-            "left": 61,
-            "top": 38,
-            "dot_color": "#80270f"
-          }
-        },
-        "template--19541121335616__0c0246cb-5673-44cb-9cf3-1d345e8a2baa-1687421913e5760638-1": {
-          "type": "product_block",
-          "settings": {
-            "product_item": "carolinas-9831-casual-pants",
-            "left": 39,
-            "top": 80,
-            "dot_color": "#80270f"
-          }
-        }
-      },
-      "block_order": [
-        "template--19541121335616__0c0246cb-5673-44cb-9cf3-1d345e8a2baa-1687421913e5760638-0",
-        "template--19541121335616__0c0246cb-5673-44cb-9cf3-1d345e8a2baa-1687421913e5760638-1"
-      ],
-      "settings": {
-        "animation": "fade-up",
         "setwidth": "container",
         "bgsection": "#ffffff",
-        "enable_right": false,
-        "enable_heading_right": false,
-        "title_top": "the best",
-        "title": "Ready to wear",
-        "des": "",
-        "align-heading": "center",
-        "arrows": false,
-        "draggable": true,
-        "dots": true,
-        "infinite": true,
-        "paddingsection": "80px 0px 100px 0px",
+        "rangebg": 0,
+        "bgbefore": "transparent",
+        "bg_pos": "left",
+        "enable_padding": true,
+        "align_center": true,
+        "paddingsection": "70px 0px 70px 0px",
         "paddingmobile": "40px 0px 40px 0px",
         "marginsection": "0px 0px 0px 0px",
         "marginmobile": "0px 0px 0px 0px"
-      }
-    },
-    "636a2cc5-ad9e-439e-b7b8-bfc204b24d4a": {
-      "type": "parallax-banner",
-      "blocks": {
-        "template--19541121335616__636a2cc5-ad9e-439e-b7b8-bfc204b24d4a-168742274974246dbf-0": {
-          "type": "sub_title",
-          "settings": {
-            "subtitle": "SPECIAL OFFER"
-          }
-        },
-        "template--19541121335616__636a2cc5-ad9e-439e-b7b8-bfc204b24d4a-168742274974246dbf-1": {
-          "type": "heading",
-          "settings": {
-            "title": "A Good Time",
-            "size_text": "h2"
-          }
-        },
-        "template--19541121335616__636a2cc5-ad9e-439e-b7b8-bfc204b24d4a-168742274974246dbf-2": {
-          "type": "paragraph",
-          "settings": {
-            "subtext": "Our most popular styles right now that your <br>little one will love."
-          }
-        },
-        "dcffbc03-c1f5-4bc7-9f09-24d94df31d4d": {
-          "type": "button",
-          "settings": {
-            "button": "shop now",
-            "link": "#",
-            "style_btn": "btn-theme"
-          }
-        }
-      },
-      "block_order": [
-        "template--19541121335616__636a2cc5-ad9e-439e-b7b8-bfc204b24d4a-168742274974246dbf-0",
-        "template--19541121335616__636a2cc5-ad9e-439e-b7b8-bfc204b24d4a-168742274974246dbf-1",
-        "template--19541121335616__636a2cc5-ad9e-439e-b7b8-bfc204b24d4a-168742274974246dbf-2",
-        "dcffbc03-c1f5-4bc7-9f09-24d94df31d4d"
-      ],
-      "settings": {
-        "animation": "fade",
-        "setwidth": "full",
-        "bgsection": "#ffffff",
-        "parrallax_enable": false,
-        "height_section": "550",
-        "height_section_mobile": "450",
-        "align": "left",
-        "position_text": "mid-left",
-        "bg_box": "#ffffff",
-        "opacity_bgbox": 1,
-        "title_color": "#000000",
-        "bg_overlay": "#000000",
-        "gradient_bg": "",
-        "opacity_bg_overlay": 0.2,
-        "paddingsection": "0px 0px 0px 0px",
-        "marginsection": "0px 0px 0px 0px"
       }
     },
     "662cf23c-2a28-41c4-9bd8-b6517c99ba49": {
@@ -1123,9 +1011,7 @@
     "166012224636496bd8",
     "16609007639672b3d5",
     "featured_articles_z6PPr6",
-    "7bbfe968-615f-45fb-b164-8b8d8466d957",
-    "0c0246cb-5673-44cb-9cf3-1d345e8a2baa",
-    "636a2cc5-ad9e-439e-b7b8-bfc204b24d4a",
+    "image_content_b9yUhb",
     "662cf23c-2a28-41c4-9bd8-b6517c99ba49",
     "1660192760ca5a4d9c",
     "1660192674d8a6fd50",
