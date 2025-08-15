@@ -442,6 +442,32 @@
         "marginmobile": "0px 0px 0px 0px"
       }
     },
+    "16609007639672b3d5": {
+      "type": "newsletter",
+      "settings": {
+        "animation": "fade-up",
+        "setwidth": "container-fluid",
+        "bgsection": "#000000",
+        "bg_overlay": "#000000",
+        "opacity_bg_overlay": 0.6,
+        "newletter_color": "#e9e9e9",
+        "colorborder": "#ffffff",
+        "image_bg": "shopify://shop_images/4956fa1058c78b25524cdfd8c434fd7476926b3b.jpg",
+        "e_size": "auto",
+        "e_repeat": "no-repeat",
+        "e_position": "center center",
+        "bg_inner": false,
+        "title_top": "",
+        "title": "",
+        "des": "<h1 style=\"color:#FFF8EC; font-family:'Gilda Display', serif; font-size:38px; font-style:normal; font-weight:400; line-height:normal; text-transform:uppercase; margin:0;\">\n    GET 10 % DISCOUNT\n  </h1>\n<span style=\"font-size:18px; font-family: Poppins;;\">Sign-Up For Our Newsletter To Get 10% Off At Your First Order And Receive Exclusive Access. Subscribe Today.</span>",
+        "html_left": true,
+        "html_left_block": "",
+        "paddingsection": "58px 0px 58px 0px",
+        "paddingmobile": "32px 0px 0px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
     "7bbfe968-615f-45fb-b164-8b8d8466d957": {
       "type": "backgroundvideo",
       "blocks": {
@@ -765,32 +791,6 @@
         "wborder": "1px"
       }
     },
-    "16609007639672b3d5": {
-      "type": "newsletter",
-      "settings": {
-        "animation": "fade-up",
-        "setwidth": "container-fluid",
-        "bgsection": "#000000",
-        "bg_overlay": "#000000",
-        "opacity_bg_overlay": 0.6,
-        "newletter_color": "#e9e9e9",
-        "colorborder": "#ffffff",
-        "image_bg": "shopify://shop_images/4956fa1058c78b25524cdfd8c434fd7476926b3b.jpg",
-        "e_size": "auto",
-        "e_repeat": "no-repeat",
-        "e_position": "center center",
-        "bg_inner": false,
-        "title_top": "",
-        "title": "",
-        "des": "<h1 style=\"color:#FFF8EC; font-family:'Gilda Display', serif; font-size:38px; font-style:normal; font-weight:400; line-height:normal; text-transform:uppercase; margin:0;\">\n    GET 10 % DISCOUNT\n  </h1>\n<span style=\"font-size:18px; font-family: Poppins;;\">Sign-Up For Our Newsletter To Get 10% Off At Your First Order And Receive Exclusive Access. Subscribe Today.</span>",
-        "html_left": true,
-        "html_left_block": "",
-        "paddingsection": "58px 0px 58px 0px",
-        "paddingmobile": "32px 0px 0px 0px",
-        "marginsection": "0px 0px 0px 0px",
-        "marginmobile": "0px 0px 0px 0px"
-      }
-    },
     "ea256325-7ebc-4ad1-9d79-25dc551f1f31": {
       "type": "grid-banner",
       "blocks": {
@@ -1096,6 +1096,7 @@
     "cbb9eed3-bb8e-4d0c-befd-efb97ca27a01",
     "7f1588c7-fcd8-4960-af12-6c22080eb14c",
     "166012224636496bd8",
+    "16609007639672b3d5",
     "7bbfe968-615f-45fb-b164-8b8d8466d957",
     "0c0246cb-5673-44cb-9cf3-1d345e8a2baa",
     "636a2cc5-ad9e-439e-b7b8-bfc204b24d4a",
@@ -1103,7 +1104,6 @@
     "1660192760ca5a4d9c",
     "1660192674d8a6fd50",
     "1660900735d9374b53",
-    "16609007639672b3d5",
     "ea256325-7ebc-4ad1-9d79-25dc551f1f31",
     "5e6d27a3-1163-46d3-a128-345487900584",
     "1660925094098c539e",
