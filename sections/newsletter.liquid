@@ -74,14 +74,14 @@
     <div class="row d-flex justify-content-center">
       <div class="{% if e_left %} col-lg-11 {% else %} col-lg-8 {% endif %}">
         <div class="{% if section.settings.bg_inner %}bg-white {% endif %} px-lg-4 py-4 px-0">
-         
+          {% comment %} {%- render 'section-heading' -%}  {% endcomment %}
           {%- if e_left -%}
           <div class="row">
           {%- endif -%}
             {%- if e_left -%}
               
               <div class="left_newlleters text-left col-lg-6 col-12">
-                 {%- render 'section-heading' -%} 
+                 {%- render 'section-heading' -%}  {% comment %}move from sbove{% endcomment %}
                 {{ section.settings.html_left_block }}
               </div>
             {%- endif -%}
