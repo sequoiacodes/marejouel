@@ -481,13 +481,46 @@
         "title_top": "Sub Title Top",
         "title": "Blog posts Special",
         "des": "",
-        "align-heading": "center",
+        "align-heading": "left",
         "blog": "",
         "image_size": "auto",
         "reverse": false,
         "buttonall": "",
         "buttonall_link": "",
         "style_btn": "btn-theme",
+        "paddingsection": "0px 0px 0px 0px",
+        "paddingmobile": "40px 0px 40px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
+    "featured_articles_z6PPr6": {
+      "type": "featured-articles",
+      "name": "Blog posts",
+      "settings": {
+        "animation": "",
+        "setwidth": "container",
+        "bgsection": "#ffffff",
+        "title_top": "Sub Title Top",
+        "title": "Blog posts",
+        "des": "",
+        "align-heading": "center",
+        "blog": "",
+        "item_style": "blog-1",
+        "enable_btn_blog": true,
+        "enable_btn_line": false,
+        "enable_date": true,
+        "enable_tag": true,
+        "enable_comment": true,
+        "enable_short": true,
+        "image_size": "auto",
+        "arrows": true,
+        "draggable": true,
+        "dots": true,
+        "infinite": true,
+        "rows": "1",
+        "limit": 5,
+        "show": 3,
         "paddingsection": "0px 0px 0px 0px",
         "paddingmobile": "40px 0px 40px 0px",
         "marginsection": "0px 0px 0px 0px",
@@ -1096,14 +1129,6 @@
         "marginmobile": "0px 0px 0px 0px"
       }
     },
-    "1754982989162cadcb": {
-      "type": "_blocks",
-      "settings": {}
-    },
-    "1754983258383c7797": {
-      "type": "_blocks",
-      "settings": {}
-    },
     "17549951131679c44e": {
       "type": "_blocks",
       "settings": {}
@@ -1124,6 +1149,7 @@
     "166012224636496bd8",
     "16609007639672b3d5",
     "featured_articles_2_W7b7yd",
+    "featured_articles_z6PPr6",
     "7bbfe968-615f-45fb-b164-8b8d8466d957",
     "0c0246cb-5673-44cb-9cf3-1d345e8a2baa",
     "636a2cc5-ad9e-439e-b7b8-bfc204b24d4a",
@@ -1135,8 +1161,6 @@
     "5e6d27a3-1163-46d3-a128-345487900584",
     "1660925094098c539e",
     "16485444103c52f5e9",
-    "1754982989162cadcb",
-    "1754983258383c7797",
     "17549951131679c44e",
     "1754995195a452d753"
   ]
