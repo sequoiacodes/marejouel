@@ -58,7 +58,9 @@
     height: 24px;
     fill: var(--g-color-heading);
   }
-  
+  .items_center{
+  align-items:center;
+  }
 </style>
 
 <section class="customstyle{{ section.id }} lazyload newsletter-section-{{ section.id }}" 
@@ -76,7 +78,7 @@
         <div class="{% if section.settings.bg_inner %}bg-white {% endif %} px-lg-4 py-4 px-0">
           {% comment %} {%- render 'section-heading' -%}  {% endcomment %}
           {%- if e_left -%}
-          <div class="row">
+          <div class="row items_center">
           {%- endif -%}
             {%- if e_left -%}
               
