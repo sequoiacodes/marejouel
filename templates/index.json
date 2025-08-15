@@ -561,7 +561,7 @@
           "settings": {
             "title": "",
             "quote": "“ Absolutely loved it. the fit, the quality and the color. this is a slim fit jean like none other and the only one i will buy. ”",
-            "rate": 5,
+            "rate": 4,
             "author": "-Joey B.",
             "info": "",
             "avatar": "shopify://shop_images/image_65504cc8-2bef-444c-8e58-ecb72c8c25a5.png"
@@ -602,7 +602,7 @@
         "title": "testimonials",
         "des": "",
         "align-heading": "left",
-        "color_rate": "#f1f1f1",
+        "color_rate": "#999999",
         "color_rated": "#d73f0f",
         "image_size": "auto",
         "arrows": false,
