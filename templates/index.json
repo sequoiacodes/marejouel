@@ -462,7 +462,7 @@
         "des": "<h1 style=\"color:#FFF8EC; font-family:'Gilda Display', serif; font-size:38px; font-style:normal; font-weight:400; line-height:normal; text-transform:uppercase; margin:0;\">\n    GET 10 % DISCOUNT\n  </h1>\n<span style=\"font-size:18px; font-family: Poppins;;\">Sign-Up For Our Newsletter To Get 10% Off At Your First Order And Receive Exclusive Access. Subscribe Today.</span>",
         "html_left": true,
         "html_left_block": "",
-        "paddingsection": "70px 0px 70px 0px",
+        "paddingsection": "120px 0px 120px 0px",
         "paddingmobile": "32px 0px 32px 0px",
         "marginsection": "0px 0px 0px 0px",
         "marginmobile": "0px 0px 0px 0px"
