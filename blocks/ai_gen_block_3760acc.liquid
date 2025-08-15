@@ -11,7 +11,7 @@
   .ai-video-gallery-container-{{ ai_gen_id }} {
     max-width: {{block.settings.width_layout}}px;
     margin: 0 auto;
-    padding: 100px 20px;
+    padding: {{ block.settings.vertical_padding }}px 20px;
   }
 
   .ai-video-gallery-header-{{ ai_gen_id }} {
@@ -673,6 +673,15 @@
       "step": 5,
       "max": 1400,
       "default":1200
+    },
+    {
+      "type": "range",
+      "id": "vertical_padding",
+      "max": 100,
+      "min": 0,
+      "step": 2,
+      "label": "Vertical Padding",
+      "default":60
     },
     {
       "type": "text",
