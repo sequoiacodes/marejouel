@@ -103,7 +103,7 @@
       "name": "Scrolling Text",
       "settings": {
         "animation": "",
-        "size_text": "h3",
+        "size_text": "h4",
         "text_style": "solid",
         "size_icon": 16,
         "speed": 18,
