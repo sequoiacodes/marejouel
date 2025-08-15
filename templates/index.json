@@ -83,7 +83,7 @@
       ],
       "settings": {
         "animation": "",
-        "setwidth": "container-fluid",
+        "setwidth": "container",
         "bgsection": "#ffffff",
         "title_top": "Dive Into Elegance with Our Curated Collections",
         "title": "featured collections",
