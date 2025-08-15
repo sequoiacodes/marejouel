@@ -657,7 +657,7 @@
               "subheading_color": "#000000",
               "button_label": "Discover mare joel",
               "button_link": "shopify://collections/tools",
-              "stylebtns": "btn-theme",
+              "stylebtns": "btn-outline",
               "bg_button": "#ffffff",
               "color_button": "#1b1c1e",
               "bg_button_hover": "#80270f",
