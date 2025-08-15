@@ -49,7 +49,7 @@
       </div>
     </div>
     {%- endif -%}
-    this title
+    {{ article.title }}
   <h4 class="blog__title-link {% if settings.enable_short %}  mb-3 {% else %} mb-4 {% endif %}"><a href="{{ article.url }}">{{ article.title }}</a></h4>
   {%- if enable_short -%}
   <div style="width:70px;"><hr ></div>
