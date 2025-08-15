@@ -1,55 +1,5 @@
 <!-- instagram-customize.liquid -->
-{%  style %}
-  .instagramoff-item {
-  position: relative;
-  overflow: hidden;
-}
 
-.instagramoff-item::before {
-  content: "📷"; /* Instagram icon - you can use any icon/emoji */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 2rem;
-  color: white;
-  background: rgba(0, 0, 0, 0.7);
-  padding: 10px;
-  border-radius: 50%;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  z-index: 2;
-}
-
-.instagramoff-item:hover::before {
-  opacity: 1;
-}
-
-.instagramoff-item::after {
-  content: ""; /* Different icon on hover - customize this */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 2rem;
-  color: white;
-  background: rgba(0, 0, 0, 0.7);
-  padding: 10px;
-  border-radius: 50%;
-  opacity: 0;
-  transition: opacity 0.3s ease 0.1s;
-  z-index: 3;
-}
-
-.instagramoff-item:hover::after {
-  opacity: 1;
-}
-
-.instagramoff-item:hover::before {
-  opacity: 0;
-}
-
-{% endstyle %}
 {%-  liquid 
   case section.settings.image_size 
   when 'square' 
