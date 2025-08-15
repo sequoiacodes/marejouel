@@ -181,8 +181,8 @@
       {% endif %}
     </div>
     <div class="d-flex justify-content-center align-items-center p-4">
-        <a href="https://example.com/donate" 
-           class=" btn btn-theme {{ section.settings.style_btn }}" 
+        <a href="{{ block.settings.btnurl }}" 
+           class=" {% if block.settings.btnurl != blank %}btn btn-theme {% endif %}  {{ section.settings.style_btn }}" 
            target="_blank" 
            rel="noopener noreferrer">
          {{ block.settings.btntitle }}
@@ -367,6 +367,12 @@
       "id": "btntitle",
       "label": "Button Title",
       "default": "Donate"
+    },
+     {
+      "type": "url",
+      "id": "btnurl",
+      "label": "Button Url",
+      "default": "/"
     },
     {
       "type": "richtext",
