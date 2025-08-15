@@ -523,7 +523,7 @@
             "answer_content": "",
             "style_btn": "btn-theme",
             "button": "donate now",
-            "link": "",
+            "link": "/#",
             "enable_padding": true,
             "align": "left"
           }
