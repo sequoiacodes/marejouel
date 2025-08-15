@@ -185,7 +185,7 @@
            class="btn {{ section.settings.style_btn }}" 
            target="_blank" 
            rel="noopener noreferrer">
-          Donate
+         {{ block.settings.btntitle }}
         </a>
       </div>
   </div>
@@ -361,6 +361,12 @@
       "id": "heading",
       "label": "Heading",
       "default": "Our story begins here"
+    },
+    {
+      "type": "text",
+      "id": "btntitle",
+      "label": "Button Title",
+      "default": "Donate"
     },
     {
       "type": "richtext",
