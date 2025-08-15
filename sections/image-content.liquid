@@ -63,21 +63,20 @@
   {%- render 'style-section' -%}
   {% comment %} div for back ground  {% endcomment %}
    {% for block in section.blocks %}
-     {% if block.settings.bgsection == blank %}
-        {% else %}
-          
+     {% if section.settings.bgsection == blank %}
+        
+       <div class="text_image_absolute">
+           <img
+              class="text_image_img lazyload scale-in"
+              src="{{ 'about_us.png' | asset_url }}" 
+              alt="Logo"
+              loading="lazy"
+              height="auto"
+              width="auto"
+            />
+       </div>
      {% endif %}
    {% endfor %}
-   <div class="text_image_absolute">
-       <img
-          class="text_image_img lazyload scale-in"
-          src="{{ 'about_us.png' | asset_url }}" 
-          alt="Logo"
-          loading="lazy"
-          height="auto"
-          width="auto"
-        />
-   </div>
 <div class=" {{ section.settings.setwidth }}">
   <div class="section-block">
     {% comment %} <div class="subtop text-left text-top  mb-2 aos-init aos-animate">
@@ -166,7 +165,6 @@
                     {%- if block.settings.title != blank -%}
                     <h3 class="mb-3 {{ block.settings.size_text }} ">{{ block.settings.title }}</h3>
                     {%- endif -%}   Remove for customized {% endcomment %}
-                   color {{ section.settings.bgsection }}
                     {%- if block.settings.text -%}
                       <div class="rte-setting">{{ block.settings.text }}</div>
                     {%- endif -%}
