@@ -444,6 +444,61 @@
     "175516095374c60626": {
       "type": "_blocks",
       "settings": {}
+    },
+    "1755245619af82e760": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_3760acc_zUGJQW": {
+          "type": "ai_gen_block_3760acc",
+          "settings": {
+            "subheading": "capture the moments",
+            "heading": "videos from mare jouel",
+            "text_alignment": "left",
+            "video_1": "shopify://products/ange-bikini",
+            "thumbnail_1": "shopify://shop_images/image3.png",
+            "video_2": "shopify://products/ange-bikini",
+            "thumbnail_2": "shopify://shop_images/video-1.png",
+            "video_3": "shopify://products/ange-bikini",
+            "thumbnail_3": "shopify://shop_images/image4.png",
+            "video_4": "shopify://products/ange-bikini",
+            "thumbnail_4": "shopify://shop_images/image5.png",
+            "enable_carousel": true,
+            "columns_desktop": 4,
+            "columns_mobile": "1",
+            "grid_gap": 20,
+            "header_spacing": 50,
+            "item_width": 300,
+            "item_height": 350,
+            "show_nav_buttons": true,
+            "show_dots": false,
+            "background_color": "#ffffff",
+            "heading_color": "#000000",
+            "subheading_color": "#666666",
+            "heading_size": 32,
+            "subheading_size": 16,
+            "video_border_radius": 2,
+            "play_button_size": 70,
+            "play_button_color": "#ffffff",
+            "play_button_hover_color": "#f0f0f0",
+            "play_icon_color": "#000000",
+            "nav_button_size": 40,
+            "nav_button_color": "#ffffff",
+            "nav_button_hover_color": "#f0f0f0",
+            "nav_icon_color": "#000000",
+            "dot_color": "#cccccc",
+            "dot_active_color": "#000000",
+            "section_padding_top": 60,
+            "section_padding_bottom": 60,
+            "section_padding_left": 20,
+            "section_padding_right": 20
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_3760acc_zUGJQW"
+      ],
+      "settings": {}
     }
   },
   "order": [
@@ -453,6 +508,7 @@
     "175515053594e2f7e6",
     "quotes_special_DEkP4Y",
     "895c09e5-5c6d-4c4d-8492-727381e40aa0",
-    "175516095374c60626"
+    "175516095374c60626",
+    "1755245619af82e760"
   ]
 }
