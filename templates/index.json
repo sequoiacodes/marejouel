@@ -519,7 +519,7 @@
             "size_text": "h2",
             "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "answer_content": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "style_btn": "btn-underline btn-underline-white",
+            "style_btn": "btn-theme",
             "button": "discover now",
             "link": "",
             "enable_padding": true,
@@ -535,7 +535,7 @@
       "settings": {
         "animation": "",
         "setwidth": "container",
-        "bgsection": "#ffffff",
+        "bgsection": "#fce5df",
         "rangebg": 0,
         "bgbefore": "transparent",
         "bg_pos": "left",
