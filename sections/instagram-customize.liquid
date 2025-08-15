@@ -15,7 +15,7 @@
     assign himg = '100%' 
   endcase 
 -%}
-<div class="customstyle{{ section.id }}" data-aos="{{ section.settings.animation }}" style="--h-image-insta:{{ himg }};">
+<div class="customstyle{{ section.id }}" data-aos="{{ section.settings.animation }}" style="-:{{ himg }};">
   <div class="{{ section.settings.setwidth }}">
     {%- render 'style-section' -%}
   <div class="section-block">
@@ -49,7 +49,7 @@
                   alt="{{ block.settings.image.alt | escape }}"
                   loading="lazy"
                 width="{{ block.settings.image.width }}"
-                height="{{ block.settings.image.height }}" >Hello
+                height="{{ block.settings.image.height }}" >
                 </a>
                 {%- else -%}
                 {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
