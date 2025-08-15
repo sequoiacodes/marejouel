@@ -192,7 +192,7 @@
       ],
       "settings": {
         "animation": "",
-        "setwidth": "container-fluid",
+        "setwidth": "container",
         "bgsection": "#fff8ec",
         "title_top": "Let’s find the perfect swimsuit for you!",
         "title": "shop by categories",
@@ -234,7 +234,7 @@
       "type": "product-list-swiper",
       "settings": {
         "animation": "fade-up",
-        "setwidth": "container-fluid",
+        "setwidth": "container",
         "bgsection": "#fff8ec",
         "title_top": "New Arrivals",
         "title": "di mare collection",
@@ -292,7 +292,7 @@
       ],
       "settings": {
         "animation": "",
-        "setwidth": "container-fluid",
+        "setwidth": "container",
         "bgsection": "rgba(0,0,0,0)",
         "rangebg": 0,
         "bgbefore": "rgba(0,0,0,0)",
@@ -419,7 +419,7 @@
       ],
       "settings": {
         "animation": "",
-        "setwidth": "container-fluid",
+        "setwidth": "container",
         "bgsection": "#fff8ec",
         "title_top": "Our Most Loved Pieces",
         "title": "Best Sellers",
@@ -448,7 +448,7 @@
       "type": "newsletter",
       "settings": {
         "animation": "fade-up",
-        "setwidth": "container-fluid",
+        "setwidth": "container",
         "bgsection": "#000000",
         "bg_overlay": "#000000",
         "opacity_bg_overlay": 0.7,
@@ -475,7 +475,7 @@
       "name": "Blog posts",
       "settings": {
         "animation": "",
-        "setwidth": "container-fluid",
+        "setwidth": "container",
         "bgsection": "#ffffff",
         "title_top": "Join Mare Jouel: Swimwear Fashion That Inspires",
         "title": "Blog posts",
@@ -540,7 +540,7 @@
       "name": "Image with text",
       "settings": {
         "animation": "",
-        "setwidth": "container-fluid",
+        "setwidth": "container",
         "bgsection": "#fce5df",
         "rangebg": 100,
         "bgbefore": "#fce5df",
@@ -598,7 +598,7 @@
       "name": "Testimonials Split",
       "settings": {
         "animation": "",
-        "setwidth": "container-fluid",
+        "setwidth": "container",
         "bgsection": "#ffffff",
         "title_top": "let’s hear from our clients",
         "title": "testimonials",
