@@ -501,19 +501,23 @@
       "blocks": {
         "image_block_38XmNJ": {
           "type": "image_block",
-          "settings": {}
+          "settings": {
+            "image": "shopify://shop_images/about-us-img.png"
+          }
         },
         "text_block_Ex4y6q": {
           "type": "text_block",
           "settings": {
             "width": "100%",
-            "bgtext": "#ffffff",
+            "bgtext": "rgba(0,0,0,0)",
             "title_color": "rgba(0,0,0,0)",
             "subtitle": "",
             "title": "",
+            "textsubtitle": "about us",
+            "texttitle": "who we are",
             "size_text": "h2",
-            "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "answer_content": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text": "<p style=\"text-align: justify; font-family: 'Gilda Display', serif; font-size: 20px; font-style: normal; font-weight: 400; line-height: normal;\">\nMare Jouel is a sustainable swimwear brand committed to ethical fashion and ocean conservation. Inspired by Colombia’s rich culture and biodiversity, we offer bikinis and cover-ups made from sustainable materials and ethically produced. Each piece is designed not only to enhance the natural beauty of the wearer but also to help preserve the marine environment. We incorporate vibrant and unique patterns, eco- friendly accessories, and transparent practices that ensure a positive impact on both local communities and the environment. With Mare Jouel, every fashion choice is a contribution to a more sustainable future.</p>",
+            "answer_content": "",
             "style_btn": "btn-underline btn-underline-white",
             "button": "discover now",
             "link": "",
@@ -529,14 +533,64 @@
       "name": "Image with text",
       "settings": {
         "animation": "",
-        "setwidth": "container",
+        "setwidth": "container-fluid",
         "bgsection": "rgba(0,0,0,0)",
         "rangebg": 0,
-        "bgbefore": "transparent",
+        "bgbefore": "rgba(0,0,0,0)",
         "bg_pos": "left",
-        "enable_padding": true,
+        "enable_padding": false,
         "align_center": true,
-        "paddingsection": "0px 0px 0px 0px",
+        "paddingsection": "40px 0px 0px 0px",
+        "paddingmobile": "40px 0px 40px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
+    "image_content_ryBrya": {
+      "type": "image-content",
+      "blocks": {
+        "text_block_nXbfiF": {
+          "type": "text_block",
+          "settings": {
+            "width": "100%",
+            "bgtext": "rgba(0,0,0,0)",
+            "title_color": "rgba(0,0,0,0)",
+            "subtitle": "",
+            "title": "",
+            "textsubtitle": "about us",
+            "texttitle": "who we are",
+            "size_text": "h2",
+            "text": "<p style=\"text-align: justify; font-family: 'Gilda Display', serif; font-size: 20px; font-style: normal; font-weight: 400; line-height: normal;\">\nMare Jouel is a sustainable swimwear brand committed to ethical fashion and ocean conservation. Inspired by Colombia’s rich culture and biodiversity, we offer bikinis and cover-ups made from sustainable materials and ethically produced. Each piece is designed not only to enhance the natural beauty of the wearer but also to help preserve the marine environment. We incorporate vibrant and unique patterns, eco- friendly accessories, and transparent practices that ensure a positive impact on both local communities and the environment. With Mare Jouel, every fashion choice is a contribution to a more sustainable future.</p>",
+            "answer_content": "",
+            "style_btn": "btn-underline btn-underline-white",
+            "button": "discover now",
+            "link": "",
+            "enable_padding": true,
+            "align": "left"
+          }
+        },
+        "image_block_dErzry": {
+          "type": "image_block",
+          "settings": {
+            "image": "shopify://shop_images/about-us-img.png"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_nXbfiF",
+        "image_block_dErzry"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "animation": "",
+        "setwidth": "container-fluid",
+        "bgsection": "rgba(0,0,0,0)",
+        "rangebg": 0,
+        "bgbefore": "rgba(0,0,0,0)",
+        "bg_pos": "left",
+        "enable_padding": false,
+        "align_center": true,
+        "paddingsection": "0px 20px 0px 20px",
         "paddingmobile": "40px 0px 40px 0px",
         "marginsection": "0px 0px 0px 0px",
         "marginmobile": "0px 0px 0px 0px"
@@ -551,6 +605,7 @@
     "quotes_special_DEkP4Y",
     "1755245619af82e760",
     "895c09e5-5c6d-4c4d-8492-727381e40aa0",
-    "image_content_9HQYc3"
+    "image_content_9HQYc3",
+    "image_content_ryBrya"
   ]
 }
