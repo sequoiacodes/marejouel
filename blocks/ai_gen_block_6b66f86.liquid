@@ -52,7 +52,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: {{ block.settings.text_alignment }};
-    padding: {{ block.settings.content_padding_vertical }}px {{ block.settings.content_padding_horizontal }}px 0px {{ block.settings.content_padding_horizontal }}px;text-align: {{ block.settings.text_alignment }};
+    {% comment %} padding: {{ block.settings.content_padding_vertical }}px {{ block.settings.content_padding_horizontal }}px 0px {{ block.settings.content_padding_horizontal }}px;text-align: {{ block.settings.text_alignment }}; {% endcomment %}
     position: relative;
     background-color: {{ block.settings.content_background_color }};
   }
@@ -141,7 +141,8 @@
       font-size: {{ block.settings.mobile_content_size }}px;
     }
   }
-{% endstyle %}<div class="ai-flex-layout-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+{% endstyle %}
+ <div class="ai-flex-layout-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
   <div class="ai-flex-layout__image-container-{{ ai_gen_id }}">
     {% if block.settings.image %}
       <img
