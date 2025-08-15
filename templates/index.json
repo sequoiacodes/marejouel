@@ -570,11 +570,12 @@
         "quote_MakrcV": {
           "type": "quote",
           "settings": {
-            "title": "Comment",
+            "title": "",
             "quote": "Add customer reviews and testimonials to showcase your store’s happy customers.",
             "rate": 5,
-            "author": "Author's name",
-            "info": ""
+            "author": "-zenith_p.",
+            "info": "",
+            "avatar": "shopify://shop_images/image1.png"
           }
         },
         "quote_K3MxJc": {
