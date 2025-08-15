@@ -118,30 +118,43 @@
   padding: 40px 20px;
   font-family: Arial, sans-serif;
 }
+
+.custom-footer * {
+  color: #fff !important; /* Force all text white */
+}
+
 .footer-top {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 20px;
   margin-bottom: 20px;
 }
-.custom-footer h2, .custom-footer h3 {
+
+.custom-footer h2, 
+.custom-footer h3 {
   margin-bottom: 10px;
 }
+
 .custom-footer p {
   margin-bottom: 15px;
   font-size: 14px;
   line-height: 1.5;
 }
+
+.custom-footer a {
+  text-decoration: none;
+}
+
 .social-links a {
   display: inline-block;
   margin-right: 10px;
   background: #fff;
-  color: #000;
+  color: #000 !important; /* Keep social icons black text for visibility */
   padding: 6px 8px;
   border-radius: 50%;
-  text-decoration: none;
   font-weight: bold;
 }
+
 .footer-bottom {
   border-top: 1px solid #333;
   padding-top: 15px;
@@ -149,8 +162,29 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
 .footer-bottom img {
   height: 24px;
   margin-right: 8px;
+}
+
+input[type="email"] {
+  background: transparent;
+  border: 1px solid #fff;
+  padding: 8px;
+  color: #fff;
+  width: 100%;
+}
+
+input[type="email"]::placeholder {
+  color: #fff;
+}
+
+button[type="submit"] {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 8px 12px;
+  cursor: pointer;
 }
 </style>
