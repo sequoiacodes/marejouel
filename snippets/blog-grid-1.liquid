@@ -62,7 +62,7 @@
     {%- endif -%}
   <div class="blog__title-link_custom {% if settings.enable_short %}  mb-3 {% else %} mb-4 {% endif %}"><a href="{{ article.url }}">{{ article.title }}</a></div>
   {%- if enable_short -%}
-  <div style="width:70px; background:black;"><hr ></div>
+  <div style="width:70px; background:gray; height:2px"><hr ></div>
   <div class="rte rte--indented-images mb-4">
     {%- if article.excerpt.size > 0 -%}
     {{ article.excerpt }}
