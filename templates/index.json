@@ -617,6 +617,46 @@
         "marginmobile": "0px 0px 0px 0px"
       }
     },
+    "video_G4Perd": {
+      "type": "video",
+      "blocks": {
+        "video_block_nD4VbL": {
+          "type": "video_block",
+          "settings": {}
+        },
+        "video_block_iJAgkY": {
+          "type": "video_block",
+          "settings": {}
+        },
+        "video_block_qk9MQD": {
+          "type": "video_block",
+          "settings": {}
+        },
+        "video_block_Qr8YTh": {
+          "type": "video_block",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "video_block_nD4VbL",
+        "video_block_iJAgkY",
+        "video_block_qk9MQD",
+        "video_block_Qr8YTh"
+      ],
+      "name": "Video Gallery",
+      "settings": {
+        "subtitle": "Our Featured Videos",
+        "title": "Watch Now",
+        "size_text": "h2",
+        "animation": "",
+        "color": "#000000",
+        "setwidth": "container",
+        "paddingsection": "60px 0px 60px 0px",
+        "paddingmobile": "40px 0px 40px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
     "662cf23c-2a28-41c4-9bd8-b6517c99ba49": {
       "type": "image-content-6",
       "blocks": {
@@ -1083,6 +1123,7 @@
     "featured_articles_z6PPr6",
     "image_content_b9yUhb",
     "quotes_special_BxmA3J",
+    "video_G4Perd",
     "662cf23c-2a28-41c4-9bd8-b6517c99ba49",
     "1660192760ca5a4d9c",
     "1660192674d8a6fd50",
