@@ -44,11 +44,12 @@
         </div>
       {%- endif -%}
       <div class="blog_comment align-items-center d-flex mb-3 txt-body-70">
-        {% render 'icon-comment' %} Comment 1
+        {% render 'icon-comment' %} 
         {{ 'blogs.comments.with_count' | t: count: article.comments_count }}
       </div>
     </div>
     {%- endif -%}
+    this title
   <h4 class="blog__title-link {% if settings.enable_short %}  mb-3 {% else %} mb-4 {% endif %}"><a href="{{ article.url }}">{{ article.title }}</a></h4>
   {%- if enable_short -%}
   <div style="width:70px;"><hr ></div>
