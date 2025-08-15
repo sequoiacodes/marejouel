@@ -626,6 +626,7 @@
           "settings": {
             "subheading": "VIDEOS FROM MARE JOUEL",
             "width_layout": 1240,
+            "vertical_padding": 60,
             "heading": "CAPTURE THE MOMENTS",
             "text_alignment": "left",
             "video_1": "/aa",
@@ -759,115 +760,70 @@
         "wborder": "1px"
       }
     },
-    "5e6d27a3-1163-46d3-a128-345487900584": {
-      "type": "faq-accordion",
+    "instagram_customize_J6Hxgt": {
+      "type": "instagram-customize",
       "blocks": {
-        "template--19541121335616__5e6d27a3-1163-46d3-a128-345487900584-1687514909b5a1268d-0": {
-          "type": "faq",
+        "image_D7UDjB": {
+          "type": "image",
           "settings": {
-            "faq_title": "How do you choose what materials to use?",
-            "faq_des": "<p>Act natural. We also use mostly natural materials, which break down better and are less of a pollutant than the synthetic fibers that are being found in oceans and water supplies. </p>"
+            "image": "shopify://shop_images/social_card_1.png",
+            "image_link": ""
           }
         },
-        "template--19541121335616__5e6d27a3-1163-46d3-a128-345487900584-1687514909b5a1268d-1": {
-          "type": "faq",
+        "image_AVTrQW": {
+          "type": "image",
           "settings": {
-            "faq_title": "Where are your products made?",
-            "faq_des": "<p>Answer Description</p>"
+            "image": "shopify://shop_images/social_card_2.png",
+            "image_link": ""
           }
         },
-        "template--19541121335616__5e6d27a3-1163-46d3-a128-345487900584-1687514909b5a1268d-2": {
-          "type": "faq",
+        "image_jYn4iw": {
+          "type": "image",
           "settings": {
-            "faq_title": "What are you doing to be more sustainable?",
-            "faq_des": "<p>Answer Description</p>"
+            "image": "shopify://shop_images/social_card_3.png",
+            "image_link": ""
+          }
+        },
+        "image_xB7pCp": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/social_card_4.png",
+            "image_link": ""
+          }
+        },
+        "image_4GFnQt": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/social_card_5.png",
+            "image_link": ""
           }
         }
       },
       "block_order": [
-        "template--19541121335616__5e6d27a3-1163-46d3-a128-345487900584-1687514909b5a1268d-0",
-        "template--19541121335616__5e6d27a3-1163-46d3-a128-345487900584-1687514909b5a1268d-1",
-        "template--19541121335616__5e6d27a3-1163-46d3-a128-345487900584-1687514909b5a1268d-2"
+        "image_D7UDjB",
+        "image_AVTrQW",
+        "image_jYn4iw",
+        "image_xB7pCp",
+        "image_4GFnQt"
       ],
+      "name": "Instagram Customize",
       "settings": {
         "animation": "",
         "setwidth": "container",
         "bgsection": "#ffffff",
-        "e_size": "auto",
-        "e_repeat": "no-repeat",
-        "e_pos": "center center",
-        "title_top": "Faqs",
-        "title": "Sustainability",
-        "des": "",
-        "align-heading": "center",
-        "title_size": "h6",
-        "e_first_open": true,
-        "e_reverse": true,
-        "e_small": true,
-        "left_html": "",
-        "e_right": false,
-        "paddingsection": "0px 0px 80px 0px",
-        "paddingmobile": "40px 0px 40px 0px",
-        "marginsection": "0px 0px 0px 0px",
-        "marginmobile": "0px 0px 0px 0px"
-      }
-    },
-    "1660925094098c539e": {
-      "type": "instagram-customize",
-      "blocks": {
-        "1660925094098c539e-0": {
-          "type": "image",
-          "settings": {
-            "image_link": "https://www.instagram.com/p/Cu3wKNqvfPG/"
-          }
-        },
-        "6ecfa747-1624-47c4-8967-277d3c819672": {
-          "type": "video",
-          "settings": {
-            "video_url": "",
-            "image_link": "https://www.instagram.com/reel/Cu1MBA1vdN1/",
-            "enable_play_video": false
-          }
-        },
-        "1660925094098c539e-4": {
-          "type": "image",
-          "settings": {
-            "image_link": "https://www.instagram.com/p/CtQ1RAMvvGv/"
-          }
-        },
-        "a3a10629-8bb5-4700-b3af-1c908798381a": {
-          "type": "video",
-          "settings": {
-            "video_url": "https://www.youtube.com/watch?v=bwDahMLUe4Q&list=RDbwDahMLUe4Q&start_radio=1",
-            "image_poster": "shopify://shop_images/image3.png",
-            "image_link": "https://www.youtube.com/watch?v=bwDahMLUe4Q&list=RDbwDahMLUe4Q&start_radio=1",
-            "enable_play_video": true
-          }
-        }
-      },
-      "block_order": [
-        "1660925094098c539e-0",
-        "6ecfa747-1624-47c4-8967-277d3c819672",
-        "1660925094098c539e-4",
-        "a3a10629-8bb5-4700-b3af-1c908798381a"
-      ],
-      "settings": {
-        "animation": "fade-up",
-        "setwidth": "full",
-        "bgsection": "#ffffff",
-        "title_top": "hello",
-        "title": "nepal",
+        "title_top": "Sub Title Top",
+        "title": "Instagram Customize",
         "des": "",
         "align-heading": "left",
-        "image_size": "portrait",
+        "image_size": "square",
         "arrows": false,
         "draggable": true,
         "dots": true,
         "infinite": true,
-        "show": 4,
-        "padding": true,
+        "show": 5,
+        "padding": false,
         "paddingsection": "0px 0px 0px 0px",
-        "paddingmobile": "60px 0px 60px 0px",
+        "paddingmobile": "40px 0px 40px 0px",
         "marginsection": "0px 0px 0px 0px",
         "marginmobile": "0px 0px 0px 0px"
       }
@@ -881,7 +837,7 @@
             "bgblock": "rgba(0,0,0,0)",
             "title": "Free Shipping",
             "description": "From all orders over $100",
-            "icon": "<svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-truck\" viewbox=\"0 0 82 82\"><path d=\"M7.238 68.717H1.867V2.12H58.4v16.736h3.886c9.755 0 17.663 7.908 17.663 17.663v32.199h-5.917M55.781 68.717H25.487\"></path><path d=\"M58.334 42.124h15.068v-4.27c0-6.82-5.53-12.35-12.351-12.35h-2.718v16.62M73.909 70.236a9.125 9.125 0 1 0-18.013-2.931 9.125 9.125 0 0 0 18.013 2.93ZM25.367 70.235a9.125 9.125 0 1 0-18.012-2.931 9.125 9.125 0 0 0 7.54 10.471 9.125 9.125 0 0 0 10.472-7.54Z\"></path><path d=\"M13.723 77.507c-3.966.658-7.937 1.51-11.857 2.593M60.373 76.736c-10.512-1.212-24.298-1.969-38.645-.451M79.768 80.121s-4.96-1.222-12.975-2.395\"></path></svg>"
+            "icon": ""
           }
         },
         "template--14684877652053__c5690cdb-c04d-45fd-9c6c-cfee011363ca-166585292003960893-1": {
@@ -965,8 +921,7 @@
     "17549951131679c44e",
     "1660192760ca5a4d9c",
     "1660900735d9374b53",
-    "5e6d27a3-1163-46d3-a128-345487900584",
-    "1660925094098c539e",
+    "instagram_customize_J6Hxgt",
     "16485444103c52f5e9",
     "1754995195a452d753"
   ]
