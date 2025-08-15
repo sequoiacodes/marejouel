@@ -469,7 +469,7 @@
             "header_spacing": 50,
             "item_width": 300,
             "item_height": 350,
-            "show_nav_buttons": true,
+            "show_nav_buttons": false,
             "show_dots": false,
             "background_color": "#ffffff",
             "heading_color": "#000000",
