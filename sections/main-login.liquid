@@ -23,7 +23,7 @@
   <div class="ormain-login-left">
     {%- if image != blank -%}
         <noscript>
-          <img src="{{ image | image_url: width: 600 }}" alt="{{ image.alt }}" class="image-content__image"
+          <img src="{{ image | image_url: width: 600, height:600 }}" alt="{{ image.alt }}" class="image-content__image"
             loading="lazy"
             width="{{ image.width }}"
             height="{{ image.height }}">
