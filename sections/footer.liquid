@@ -174,7 +174,7 @@
         right: 0.1rem;
         top: 50%;
         transform: translateY(-50%);
-        width: 0px;
+        width: 12px;
     }
     .site-footer.footer-acc-mobile .site-footer__section-title.active:before{
       content: "\e92d";
@@ -401,7 +401,7 @@
         {%- when 'text' -%}
         <div class="site-footer__section text-lg-{{ footer_align_title }} {% if block.settings.title == blank and block.settings.logofooter == blank and  block.settings.text == blank %} pb-0 {% endif  %}">
           {%- if block.settings.title != blank -%}
-          <h4 class="h5 site-footer__section-title">{{ block.settings.title | escape }}</h4>
+          <h4 class=" site-footer__section-title">{{ block.settings.title | escape }}</h4>
           {%- endif -%}
           <div class="{%- if block.settings.title != blank -%} site-footer-block {% endif %} footer-{{ footer_align_title }}">
             {%- if block.settings.logofooter != blank -%}
