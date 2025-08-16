@@ -16,14 +16,7 @@
         </a>
       </li>
       {%- endif -%} {% endcomment %}
-      {%- if settings.social_pinterest_link != blank -%}
-      <li class="list-inline-item">
-        <a href="{{ settings.social_pinterest_link | escape }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Pinterest' }}">
-          {%- render 'icon-pinterest' -%}
-          <span class="icon__fallback-text">Pin</span>
-        </a>
-      </li>
-      {%- endif -%}
+    
       {%- if settings.social_instagram_link != blank -%}
       <li class="list-inline-item">
         <a href="{{ settings.social_instagram_link | escape }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Instagram' }}">
@@ -69,6 +62,14 @@
         <a href="{{ settings.social_snapchat_link | escape }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Snapchat' }}">
           {%- render 'icon-snapchat' -%}
           <span class="icon__fallback-text" >Snap</span>
+        </a>
+      </li>
+      {%- endif -%}
+        {%- if settings.social_pinterest_link != blank -%}
+      <li class="list-inline-item">
+        <a href="{{ settings.social_pinterest_link | escape }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Pinterest' }}">
+          {%- render 'icon-pinterest' -%}
+          <span class="icon__fallback-text">Pin</span>
         </a>
       </li>
       {%- endif -%}
