@@ -150,7 +150,7 @@
   }
   .site-footer .site-footer__section-title{
     {% comment %} font-family: var({{ section.settings.footer_font_family }}); {% endcomment %}
-    text-transform:var(--footer-font-type);
+    {% comment %} text-transform:var(--footer-font-type); {% endcomment %}
     {% comment %} font-weight: var(--footer-font-weight);
     font-size: var(--footer-font-size); {% endcomment %}
     letter-spacing: var(--footer-font-space);
