@@ -792,7 +792,7 @@
           "settings": {
             "image": "shopify://shop_images/social_card_4.png",
             "image_link": "",
-            "social_icon": "Linkedin"
+            "social_icon": "facebook"
           }
         },
         "image_4GFnQt": {
@@ -841,16 +841,16 @@
           "settings": {
             "bgblock": "rgba(0,0,0,0)",
             "title": "Free Shipping",
-            "description": "From all orders over $100",
-            "icon": ""
+            "description": "Estimated 3-5 Days",
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"41\" height=\"41\" viewbox=\"0 0 41 41\" fill=\"none\">\n  <path d=\"M0.5 8V10.5H24.25V29.25H16.555C15.9975 27.1012 14.065 25.5 11.75 25.5C9.435 25.5 7.5025 27.1012 6.945 29.25H5.5V23H3V31.75H6.945C7.5025 33.8988 9.435 35.5 11.75 35.5C14.065 35.5 15.9975 33.8988 16.555 31.75H26.945C27.5025 33.8988 29.435 35.5 31.75 35.5C34.065 35.5 35.9975 33.8988 36.555 31.75H40.5V21.555L40.4212 21.3588L37.9212 13.8588L37.65 13H26.75V8H0.5ZM1.75 13V15.5H13V13H1.75ZM26.75 15.5H35.8512L38 21.9062V29.25H36.555C35.9975 27.1012 34.065 25.5 31.75 25.5C29.435 25.5 27.5025 27.1012 26.945 29.25H26.75V15.5ZM3 18V20.5H10.5V18H3ZM11.75 28C13.1462 28 14.25 29.1038 14.25 30.5C14.25 31.8962 13.1462 33 11.75 33C10.3538 33 9.25 31.8962 9.25 30.5C9.25 29.1038 10.3538 28 11.75 28ZM31.75 28C33.1463 28 34.25 29.1038 34.25 30.5C34.25 31.8962 33.1463 33 31.75 33C30.3538 33 29.25 31.8962 29.25 30.5C29.25 29.1038 30.3538 28 31.75 28Z\" fill=\"black\"></path>\n</svg>"
           }
         },
         "template--14684877652053__c5690cdb-c04d-45fd-9c6c-cfee011363ca-166585292003960893-1": {
           "type": "service",
           "settings": {
             "bgblock": "rgba(0,0,0,0)",
-            "title": "The Beach Club",
-            "description": "Be rewarded every time",
+            "title": "instant refunds",
+            "description": "Return Money Within 30 Days",
             "icon": "<svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-plant-based\" viewbox=\"0 0 82 82\"><path d=\"M41 20.701V80M56.735 26.294c0 8.703-7.045 15.758-15.735 15.758s-15.735-7.055-15.735-15.758C25.265 14.719 41 2 41 2s15.735 12.719 15.735 24.294ZM30.479 46.972c6.145 6.154 6.145 16.132 0 22.285-6.145 6.154-16.107 6.154-22.252 0C.054 61.072 2.2 40.936 2.2 40.936s20.106-2.149 28.279 6.036Z\"></path><path d=\"M41 77.861S27.525 60.403 10.092 50.177M51.412 46.972c-6.145 6.154-6.145 16.132 0 22.285 6.145 6.153 16.107 6.154 22.252 0 8.173-8.185 6.027-28.321 6.027-28.321s-20.106-2.149-28.279 6.036Z\"></path><path d=\"M40.891 77.861s13.475-17.458 30.908-27.684\"></path></svg>"
           }
         },
@@ -858,8 +858,8 @@
           "type": "service",
           "settings": {
             "bgblock": "rgba(0,0,0,0)",
-            "title": "Instant Refunds",
-            "description": "Return money within 30 days",
+            "title": "wear now",
+            "description": "Pay In Easy Installments",
             "icon": "<svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-package\" viewbox=\"0 0 82 82\"><path d=\"M80 21v39L41 80 2 60V21L41 2l39 19Z\"></path><path d=\"m2 21 39 20 38.571-19.807M41 41.478v38.338\"></path><path d=\"m27.715 8.643 38.409 19.473v17.543l-11.617 6.067V33.83L16.098 14.355\"></path></svg>"
           }
         },
@@ -867,8 +867,8 @@
           "type": "service",
           "settings": {
             "bgblock": "rgba(0,0,0,0)",
-            "title": "Wear Now",
-            "description": "Pay in easy instalments.",
+            "title": "Need help?",
+            "description": "Get In Touch With Us Now!",
             "icon": "<svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-shield\" viewbox=\"0 0 64 64\"><defs><style>.a{fill:none;stroke:#000;stroke-width:2px}</style></defs><path class=\"a\" d=\"M21.18 31.69L28.54 39l15.91-15.88\"></path><path class=\"a\" d=\"M53 12.54v15.24a31.41 31.41 0 0 1-3.7 14.95A25.46 25.46 0 0 1 32 56a25.46 25.46 0 0 1-17.3-13.27A31.41 31.41 0 0 1 11 27.78V12.54C24.88 13.67 32 8 32 8s7.12 5.67 21 4.54z\"></path></svg>"
           }
         }
