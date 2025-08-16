@@ -401,7 +401,7 @@
         {%- when 'text' -%}
         <div class="site-footer__section text-lg-{{ footer_align_title }} {% if block.settings.title == blank and block.settings.logofooter == blank and  block.settings.text == blank %} pb-0 {% endif  %}">
           {%- if block.settings.title != blank -%}
-          <h4 class=" site-footer__section-title">{{ block.settings.title | escape }}</h4>  {% comment %}Text{% endcomment %}
+          <h4 class=" h5">{{ block.settings.title | escape }}</h4>  {% comment %}Text{% endcomment %}
           {%- endif -%}
           <div class="{%- if block.settings.title != blank -%} site-footer-block {% endif %} footer-{{ footer_align_title }}">
             {%- if block.settings.logofooter != blank -%}
