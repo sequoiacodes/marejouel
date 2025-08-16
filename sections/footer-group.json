@@ -45,13 +45,6 @@
             "width": "25%"
           }
         },
-        "dcbe7dc4-f450-42e9-81a9-dca8f287035b": {
-          "type": "menu",
-          "settings": {
-            "link_list": "quick-links",
-            "width": "16%"
-          }
-        },
         "menu1_4gF3AV": {
           "type": "menu1",
           "settings": {
@@ -97,7 +90,6 @@
       },
       "block_order": [
         "1595696762386",
-        "dcbe7dc4-f450-42e9-81a9-dca8f287035b",
         "menu1_4gF3AV",
         "1562342622030",
         "1567410176792",
