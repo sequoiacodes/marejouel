@@ -2361,7 +2361,7 @@
       "pnewsletter": {
         "type": "pnewsletter",
         "settings": {
-          "pnewletter_enable": true,
+          "pnewletter_enable": false,
           "pnew_style": "pnew_style-4",
           "pnew-width": 560,
           "pnew-height": 600,
