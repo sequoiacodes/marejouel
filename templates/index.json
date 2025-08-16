@@ -767,35 +767,40 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/social_card_1.png",
-            "image_link": ""
+            "image_link": "",
+            "social_icon": "Instagram"
           }
         },
         "image_AVTrQW": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/social_card_2.png",
-            "image_link": "https://www.facebook.com/people/Sequoiacodes/61577194533389/"
+            "image_link": "https://www.facebook.com/people/Sequoiacodes/61577194533389/",
+            "social_icon": "Facebook"
           }
         },
         "image_jYn4iw": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/social_card_3.png",
-            "image_link": ""
+            "image_link": "",
+            "social_icon": "Instagram"
           }
         },
         "image_xB7pCp": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/social_card_4.png",
-            "image_link": ""
+            "image_link": "",
+            "social_icon": "Linkedin"
           }
         },
         "image_4GFnQt": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/social_card_5.png",
-            "image_link": ""
+            "image_link": "",
+            "social_icon": "Instagram"
           }
         }
       },
