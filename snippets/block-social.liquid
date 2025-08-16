@@ -40,14 +40,6 @@
         </a>
       </li>
       {%- endif -%} {% endcomment %}
-      {%- if settings.social_snapchat_link != blank -%}
-      <li class="list-inline-item">
-        <a href="{{ settings.social_snapchat_link | escape }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Snapchat' }}">
-          {%- render 'icon-snapchat' -%}
-          <span class="icon__fallback-text" >Snap</span>
-        </a>
-      </li>
-      {%- endif -%}
       {% comment %} {%- if settings.social_youtube_link != blank -%}
       <li class="list-inline-item">
         <a href="{{ settings.social_youtube_link | escape }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'YouTube' }}">
@@ -72,5 +64,13 @@
         </a>
       </li>
     {%- endif -%}
+       {%- if settings.social_snapchat_link != blank -%}
+      <li class="list-inline-item">
+        <a href="{{ settings.social_snapchat_link | escape }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Snapchat' }}">
+          {%- render 'icon-snapchat' -%}
+          <span class="icon__fallback-text" >Snap</span>
+        </a>
+      </li>
+      {%- endif -%}
     </ul>
   </div>
