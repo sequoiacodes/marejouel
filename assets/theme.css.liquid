@@ -9678,6 +9678,84 @@ figure.effect-chico:hover p {
 }
 .instagram .instagram-item:after,.instagramoff-item a::after {
   font-family: icomoon;
+  content: "\e929";
+  font-size: 18px;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: #fff;
+  opacity: 0;
+  transition: all ease 0.45s;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+/* Facebook ////////////////////////////////////////////////////////////////////////////  */
+.facebook .facebook-item,
+.facebookoff-item a {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding-top: var(--h-image-insta) !important;
+}
+
+.facebookoff-item video,
+.facebookoff-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.facebook .facebook-item:hover:after,
+.facebookoff-item a:hover::after {
+  opacity: 1;
+}
+
+.facebook .facebook-item:after,
+.facebookoff-item a::after {
+  font-family: icomoon;
+  content: "\e91f";
+  font-size: 18px;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: #fff;
+  opacity: 0;
+  transition: all ease 0.45s;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+/* Linkedin ////////////////////////////////////////////////////////////////////////////  */
+.linkedin .linkedin-item , .linkedinoff-item a{
+  position: relative;
+  display: block;
+  overflow:hidden;
+  padding-top:var(--h-image-insta) !important;
+}
+.linkedinoff-item video, .linkedinoff-item img{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height:100%;
+  object-fit:cover;
+}
+.linkedin .linkedin-item:hover:after,.linkedinoff-item a:hover::after {
+  opacity: 1;
+}
+.linkedin .linkedin-item:after,.linkedinoff-item a::after {
+  font-family: icomoon;
   content: "\e92a";
   font-size: 18px;
   position: absolute;
@@ -9693,6 +9771,8 @@ figure.effect-chico:hover p {
   align-items: center;
   pointer-events: none;
 }
+/* X ////////////////////////////////////////////////////////////////////////////  */
+/* Tiktok ////////////////////////////////////////////////////////////////////////////  */
 .lookbook__dot {
   position: absolute;
   z-index: 100;
