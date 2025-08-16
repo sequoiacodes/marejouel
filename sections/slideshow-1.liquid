@@ -474,7 +474,7 @@ text-transform: capitalize;
 .slideshow[data-transit="slide-fade"] .slide{
 }
 .slideshow[data-transit="slide-fade"] .slide .slideshow__image{
-  will-change: transform, opacity;
+  will-change: transform, opacity, 1s;
   transform: translateX(10vw);
   opacity: 0;
 }
@@ -484,7 +484,7 @@ text-transform: capitalize;
   transform: translateX(0);
 }
 .slideshow[data-transit="slide-fade"] .slide.slick-going .slideshow__image {
-  transition: transform 0.6s ease 60ms;
+  transition: transform 0.6s ease 1ms;
   transform: translateX(-10vw);
   opacity: 1;
 }
