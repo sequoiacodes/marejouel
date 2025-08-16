@@ -169,8 +169,10 @@
     .site-footer .site-footer__section-title{
       position: relative;
     }
-    .h5{
+    .footer_title{
     text-align: left;
+    background:red;
+    font-size:80px;
     }
     {% comment %} .site-footer.footer-acc-mobile .site-footer__section-title:before{
       content: "\e93d";
@@ -407,7 +409,7 @@
         {%- when 'text' -%}
         <div class="site-footer__section text-lg-{{ footer_align_title }} {% if block.settings.title == blank and block.settings.logofooter == blank and  block.settings.text == blank %} pb-0 {% endif  %}">
           {%- if block.settings.title != blank -%}
-          <h4 class=" h5">{{ block.settings.title | escape }}</h4>  {% comment %}Text{% endcomment %}
+          <h4 class="footer_title">{{ block.settings.title | escape }}</h4>  {% comment %}Text{% endcomment %}
           {%- endif -%}
           <div class="{%- if block.settings.title != blank -%} site-footer-block {% endif %} footer-{{ footer_align_title }}">
             {%- if block.settings.logofooter != blank -%}
