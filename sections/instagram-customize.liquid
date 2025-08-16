@@ -37,7 +37,7 @@
             {% when 'image' %}
             <div class="{% if section.settings.padding == false %} col px-0 {% else %} col {% endif %}  carousel__slide-wrapper--{{ block.id }}" {{ block.shopify_attributes }}>
               {% assign iconss = block.settings.social_icon | upcase %}
-              <div class="position-relative hv-image-brightness  {% if iconss == "INSTAGRAM" %}instagramoff-item {% endif %}"  data-aos="{{ section.settings.animation }}"  data-aos-delay="{{ forloop.index | times: 100 }}" >
+              <div class="position-relative hv-image-brightness  {% if iconss == "INSTAGRAM" %}instagramoff-item {% elsif iconss=="FACEBOOK" %}facebook-item{% elsif iconss=="LINKEDIN" %}linkedin-item {% else %} {% endif %}"  data-aos="{{ section.settings.animation }}"  data-aos-delay="{{ forloop.index | times: 100 }}" >
                 {%- if block.settings.image != blank -%}
                 <a  href="{{ block.settings.image_link }}" title="{{ block.settings.image.alt | escape }}" class="image-content__image-wrapper" style="padding-top:{{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}%;">
                   {% assign img_url = block.settings.image | image_url: width: 1 | replace: 'width=1', 'width={width}' %}
