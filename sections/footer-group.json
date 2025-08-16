@@ -74,7 +74,7 @@
             "btn_bg_new": "#343a40",
             "btn_cl_new": "#ffffff",
             "btn_cl_new_hover": "#ffffff",
-            "title": "NEWSLETTER",
+            "title": "newsletter",
             "subheading": "<p>Subscribe to get notified about early access to collections, exclusive offers and sustainability tips. </p>",
             "enablesocial": false,
             "width": "25%"
