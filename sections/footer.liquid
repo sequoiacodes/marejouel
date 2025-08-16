@@ -319,7 +319,7 @@
       {%- liquid
         case block.settings.width 
           when '16%' 
-          assign block_width = 'col-lg-2 col-md-3' 
+          assign block_width = 'col-lg-2 col-md-4' 
           when '20%' 
           assign block_width = 'col-1-5 col-md-6 col-12' 
           when '25%' 
@@ -393,7 +393,7 @@
         {%- if linklists[block.settings.link_list].links.size > 0 -%}
         <div class="site-footer__section text-lg-{{ footer_align_title }}">
           {%- if linklists[block.settings.link_list].title != blank -%}
-          <div class="h5  site-footer__section-title">{{ linklists[block.settings.link_list].title }}</div>
+          <div class="h5  site-footer__section-title">{{ linklists[block.settings.link_list].title }}Menu</div>
           {%- endif -%}
           <ul class="site-footer__list site-footer-block">
             {%- for link in linklists[block.settings.link_list].links -%}
