@@ -160,6 +160,9 @@
     line-height: normal;
     margin:0px 0px 10px 0px;
   }
+  .footer_menu{
+  width:200px !important;
+  }
   @media (max-width:749px){
     .site-footer .payment-icons li{
       padding: 5px 0;
@@ -391,7 +394,7 @@
           </div>
         {%- when 'menu' -%}
         {%- if linklists[block.settings.link_list].links.size > 0 -%}
-        <div class="site-footer__section text-lg-{{ footer_align_title }}">
+        <div class="site-footer__section footer_menu text-lg-{{ footer_align_title }}">
           {%- if linklists[block.settings.link_list].title != blank -%}
           <div class="h5  site-footer__section-title">{{ linklists[block.settings.link_list].title }}</div>
           {%- endif -%}
