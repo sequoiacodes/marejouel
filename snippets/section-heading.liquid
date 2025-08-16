@@ -64,7 +64,7 @@
     </div>
     {% if btn %}
     <div>
-       <a class="shop-the-collection" href="{{ collection_url }}">Shop the collection</a>
+       <a class="shop-the-collection" href="{{ section.settings.button_url }}">{{ section.settings.button_name }}</a>
     </div>
     {% endif %}
   </div>
@@ -81,3 +81,4 @@
     <p class="font-family-2 mb-5 txt-body-70">{{ section.settings.des }}</p>
   {%- endif -%}
 {%- endif -%}
+
