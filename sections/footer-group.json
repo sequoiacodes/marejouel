@@ -71,7 +71,7 @@
           "settings": {
             "bg_new": "rgba(0,0,0,0)",
             "border_new": "#999999",
-            "btn_bg_new": "#343a40",
+            "btn_bg_new": "rgba(0,0,0,0)",
             "btn_cl_new": "#ffffff",
             "btn_cl_new_hover": "#ffffff",
             "title": "newsletter",
