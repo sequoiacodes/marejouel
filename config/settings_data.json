@@ -690,14 +690,14 @@
               "subheading_color": "#000000",
               "button_label": "Discover mare joel",
               "button_link": "shopify://collections/all",
-              "stylebtns": "btn-theme",
+              "stylebtns": "btn-outline",
               "bg_button": "#ffffff",
               "color_button": "#000000",
               "bg_button_hover": "#80270f",
               "color_button_hover": "#ffffff",
               "button_label_2": "",
               "button_link_2": "shopify://collections/accessories",
-              "stylebtns_2": "btn-underline",
+              "stylebtns_2": "btn-outline",
               "bg_button_2": "#ffffff",
               "color_button_2": "#000000",
               "bg_button_hover_2": "#80270f",
@@ -716,7 +716,7 @@
           "slideshow_height_mobile": "500",
           "setwidth": "container",
           "slideshow_mobile": true,
-          "autorotate": false,
+          "autorotate": true,
           "autorotate_speed": 5,
           "anim_slideshow": "fade",
           "e_arrow": false,
@@ -1536,12 +1536,7 @@
         "type": "video",
         "settings": {
           "animation": "fade-up",
-          "setwidth": "container",
-          "video_url": "https://vimeo.com/262234800",
-          "cover_image": "shopify://shop_images/s3.jpg",
-          "show_overlay": true,
-          "overlay_color": "#000000",
-          "overlay_opacity": 0
+          "setwidth": "container"
         }
       },
       "brand-carousel": {
