@@ -89,7 +89,6 @@
   }
   .site-footer__section-title {
     color: var(--footer-title);
-    
   }
   .site-footer__list {
     list-style: none;
@@ -162,19 +161,12 @@
     } 
     .site-footer .site-footer__section-title{
       margin-bottom:16px;
-      text-align: left;
-      background:red;
       /*font-size: 14px;*/
     }
     .site-footer .site-footer__section-title{
       position: relative;
     }
-    .footer_title{
-    text-align: left;
-    background:red !important;
-    font-size:800px;
-    }
-    {% comment %} .site-footer.footer-acc-mobile .site-footer__section-title:before{
+    .site-footer.footer-acc-mobile .site-footer__section-title:before{
       content: "\e93d";
         font-family: icomoon !important;
         font-size: 12px;
@@ -186,7 +178,7 @@
     }
     .site-footer.footer-acc-mobile .site-footer__section-title.active:before{
       content: "\e92d";
-    } {% endcomment %}
+    }
     .site-footer__section{
       padding-bottom: 32px;
     }
@@ -356,7 +348,7 @@
         {%- when 'contact' -%}
           <div class="site-footer__section text-lg-{{ footer_align_title }}">
             {%- if block.settings.title != blank -%}
-              <h4 class="h5 site-footer__section-title ">{{ block.settings.title | escape }}</h4>
+              <span class="h5 site-footer__section-title ">{{ block.settings.title | escape }}</span>
             {%- endif -%}
               <div class="site-footer__list site-footer-block">
                 {%- if block.settings.contact_des != blank -%}
@@ -396,7 +388,7 @@
         {%- if linklists[block.settings.link_list].links.size > 0 -%}
         <div class="site-footer__section text-lg-{{ footer_align_title }}">
           {%- if linklists[block.settings.link_list].title != blank -%}
-          <h4 class="h5 site-footer__section-title">{{ linklists[block.settings.link_list].title }}</h4>
+          <span class="h5 site-footer__section-title">{{ linklists[block.settings.link_list].title }}</span>
           {%- endif -%}
           <ul class="site-footer__list site-footer-block">
             {%- for link in linklists[block.settings.link_list].links -%}
@@ -409,7 +401,7 @@
         {%- when 'text' -%}
         <div class="site-footer__section text-lg-{{ footer_align_title }} {% if block.settings.title == blank and block.settings.logofooter == blank and  block.settings.text == blank %} pb-0 {% endif  %}">
           {%- if block.settings.title != blank -%}
-          <h2 class="footer_title">{{ block.settings.title | escape }}</h2>  {% comment %}Text{% endcomment %}
+          <span class=" site-footer__section-title">{{ block.settings.title | escape }}</span>  {% comment %}Text{% endcomment %}
           {%- endif -%}
           <div class="{%- if block.settings.title != blank -%} site-footer-block {% endif %} footer-{{ footer_align_title }}">
             {%- if block.settings.logofooter != blank -%}
@@ -454,9 +446,9 @@
         {% endstyle %}
         <div class="site-footer__section section-footer-email text-lg-{{ footer_align_title }}">
           {%- if block.settings.title != blank -%}
-          <h4 class="h5 site-footer__section-title">
+          <span class="h5 site-footer__section-title">
             {{ block.settings.title | escape }}
-          </h4>
+          </span>
           {%- endif -%}
           <div class="site-footer-block ">
             <div class="form-vertical footer-email ">
