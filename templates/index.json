@@ -253,7 +253,7 @@
         "scrollbar": false,
         "buttonall": "Shop The collection",
         "buttonall_link": "#",
-        "style_btn": "btn-theme",
+        "style_btn": "btn-outline",
         "paddingsection": "40px 0px 80px 0px",
         "paddingmobile": "32px 0px 0px 0px",
         "marginsection": "0px 0px 0px 0px",
