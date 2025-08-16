@@ -52,6 +52,13 @@
             "width": "16%"
           }
         },
+        "menu1_4gF3AV": {
+          "type": "menu1",
+          "settings": {
+            "link_list1": "quick-links",
+            "width": "16%"
+          }
+        },
         "1562342622030": {
           "type": "menu",
           "settings": {
@@ -91,6 +98,7 @@
       "block_order": [
         "1595696762386",
         "dcbe7dc4-f450-42e9-81a9-dca8f287035b",
+        "menu1_4gF3AV",
         "1562342622030",
         "1567410176792",
         "ec49d85b-17bb-4b65-a49f-3086aa5430cd",
