@@ -151,9 +151,13 @@
   .site-footer .site-footer__section-title{
     {% comment %} font-family: var({{ section.settings.footer_font_family }}); {% endcomment %}
     text-transform:var(--footer-font-type);
-    font-weight: var(--footer-font-weight);
-    font-size: var(--footer-font-size);
+    {% comment %} font-weight: var(--footer-font-weight);
+    font-size: var(--footer-font-size); {% endcomment %}
     letter-spacing: var(--footer-font-space);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
     margin:0px 0px 32px 0px;
     background:red;
   }
