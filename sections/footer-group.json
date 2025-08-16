@@ -97,7 +97,7 @@
         "social_JEbfqV"
       ],
       "settings": {
-        "setwidth": "container-fluid",
+        "setwidth": "container",
         "background": "#000000",
         "border_headfooter": "#e9e3dd",
         "border-copryright": "#e7ded6",
