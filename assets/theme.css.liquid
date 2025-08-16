@@ -9659,40 +9659,70 @@ figure.effect-chico:hover p {
     width: 100% !important;
   }
 }
-.instagram .instagram-item , .instagramoff-item a{
+/* Common styles */
+.social-item {
   position: relative;
   display: block;
-  overflow:hidden;
-  padding-top:var(--h-image-insta) !important;
+  overflow: hidden;
+  padding-top: var(--h-image-insta) !important;
 }
-.instagramoff-item video, .instagramoff-item img{
+
+.social-item img,
+.social-item video {
   position: absolute;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   width: 100%;
-  height:100%;
-  object-fit:cover;
+  height: 100%;
+  object-fit: cover;
 }
-.instagram .instagram-item:hover:after,.instagramoff-item a:hover::after {
-  opacity: 1;
-}
-.instagram .instagram-item:after,.instagramoff-item a::after {
+
+.social-item:after {
   font-family: icomoon;
-  content: "\e929";
   font-size: 18px;
   position: absolute;
   height: 100%;
+  width: 100%;
   top: 0;
   left: 0;
   color: #fff;
   opacity: 0;
   transition: all ease 0.45s;
   display: flex;
-  width: 100%;
   justify-content: center;
   align-items: center;
   pointer-events: none;
 }
+
+.social-item:hover:after {
+  opacity: 1;
+}
+
+/* Instagram */
+.instagram-item:after {
+  content: "\e929"; /* Instagram icon code */
+}
+
+/* Facebook */
+.facebook-item:after {
+  content: "\e930"; /* Replace with Facebook unicode from Icomoon */
+}
+
+/* LinkedIn */
+.linkedin-item:after {
+  content: "\e931"; /* Replace with LinkedIn unicode */
+}
+
+/* Twitter / X */
+.twitter-item:after {
+  content: "\e932"; /* Replace with X unicode */
+}
+
+/* TikTok */
+.tiktok-item:after {
+  content: "\e933"; /* Replace with TikTok unicode */
+}
+
 .lookbook__dot {
   position: absolute;
   z-index: 100;
