@@ -885,7 +885,7 @@
       ],
       "settings": {
         "animation": "fade-up",
-        "setwidth": "full",
+        "setwidth": "container",
         "bgsection": "#f5f5f5",
         "title_top": "",
         "title": "",
