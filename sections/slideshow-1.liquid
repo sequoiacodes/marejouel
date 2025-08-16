@@ -767,13 +767,13 @@ text-transform: capitalize;
                       {% comment %} border-bottom-color:  {{ block.settings.bg_button_hover }} !important; {% endcomment %}
                     }
                   </style>
-                  <div class="pb-1">
+                  {% comment %} <div class="pb-1">
                     <div class="slideshow__btn">
                     <a href="{{ block.settings.button_link_2 }}" class="btn  slideshow__btn-2{{ block.id }} {{ block.settings.stylebtns_2 }}">
                       <span>{{ block.settings.button_label_2 }}</span>
                     </a>
                   </div>
-                  </div>
+                  </div>  BUTTON 2 REMOVED {% endcomment %}
                 {%- endif -%}
               </div>
               
