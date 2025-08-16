@@ -1,8 +1,14 @@
+{% style %}
+  .bg-icon{
+    background:white;
+    border-radius:50%;
+  }
+{% endstyle %}
 <div class="text block-socialtop">
     <ul class="list-inline social-icons">
       {%- if settings.social_facebook_link != blank -%}
       <li class="list-inline-item">
-        <a href="{{ settings.social_facebook_link | escape }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Facebook' }}">
+        <a class="bg-icon" href="{{ settings.social_facebook_link | escape }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Facebook' }}">
           {%- render 'icon-facebook' -%}
           <span class="icon__fallback-text">Fb</span>
         </a>
@@ -67,7 +73,7 @@
       {%- endif -%} {% endcomment %}
         {%- if settings.social_pinterest_link != blank -%}
       <li class="list-inline-item">
-        <a href="{{ settings.social_pinterest_link | escape }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Pinterest' }}">
+        <a class="bg-icon" href="{{ settings.social_pinterest_link | escape }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Pinterest' }}">
           {%- render 'icon-pinterest' -%}
           <span class="icon__fallback-text">Pin</span>
         </a>
