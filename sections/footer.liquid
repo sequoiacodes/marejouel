@@ -543,6 +543,7 @@
     .footer-flex {
         display: flex;
         justify-content: space-between;
+        align-items:center;
         flex-wrap: wrap;
       }
 
@@ -571,7 +572,7 @@
             {%- endif -%}
             </div>
         </div>
-        <div> Hello
+        <div> 
           {%- if section.settings.payment_info == 'svg' -%}
             {%- if shop.enabled_payment_types != empty -%}
               <ul id="footer-payment-methods" class="list-inline payment-icons text-center text-lg-right">
