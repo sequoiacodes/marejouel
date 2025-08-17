@@ -553,6 +553,9 @@
       }
       .background-white{
       background:white;
+      }
+      .border-1{
+      
       }        
   </style>
   <div class="site-footer__copyright" >
@@ -592,12 +595,14 @@
             {%- endif -%}
           {%- else -%}
             <div class="payment-images-row" style="display: flex; gap: 5px; justify-content: center; align-items: center;">
-              {%- if section.settings.imgpayment != blank -%}
-                <img class="lazyload background-white" src="{{ section.settings.imgpayment | image_url: width: 1, height: 1 }}" data-src="{{ section.settings.imgpayment | image_url: width: 400 }}" 
-                  loading="lazy"
-                  width="{{ section.settings.imgpayment.width }}"
-                  height="{{ section.settings.imgpayment.height }}"/>
-              {%- endif -%}
+              <div class="background-white ">
+                {%- if section.settings.imgpayment != blank -%}
+                  <img class="lazyload border-1" src="{{ section.settings.imgpayment | image_url: width: 1, height: 1 }}" data-src="{{ section.settings.imgpayment | image_url: width: 400 }}" 
+                    loading="lazy"
+                    width="{{ section.settings.imgpayment.width }}"
+                    height="{{ section.settings.imgpayment.height }}"/>
+                {%- endif -%}
+              </div>
               {%- if section.settings.imgpayment_1 != blank -%}
                   <img class="lazyload" src="{{ section.settings.imgpayment_1 | image_url: width: 1, height: 1 }}" data-src="{{ section.settings.imgpayment_1 | image_url: width: 400 }}" 
                   loading="lazy"
