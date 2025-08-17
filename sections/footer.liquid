@@ -540,7 +540,7 @@
                 >
                 <label class="label-p" for="NewsletterEmail-{{ block.id }}">{{ 'general.newsletter_form.newsletter_placeholder' | t }}</label>
                 <div class="d-flex {% if footer_align_title == 'center' %} justify-content-lg-center {% elsif footer_align_title == 'right' %} justify-content-lg-end {% else %} justify-content-lg-start {% endif %}">
-                  <button type="submit" class="btn btn-theme " name="commit">
+                  <button type="submit" class="btn btn-theme " style="padding:7px !important;" name="commit">
                     <div class="position-relative">{{ 'general.newsletter_form.submit' | t }}</div>{% comment %}no span{% endcomment %}
                   </button>
                 </div>
