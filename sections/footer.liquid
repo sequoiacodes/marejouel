@@ -550,8 +550,10 @@
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-              }
-
+      }
+      .background-white{
+      background:white;
+      }        
   </style>
   <div class="site-footer__copyright" >
     <div class="{{ section.settings.setwidth }}">
@@ -591,7 +593,7 @@
           {%- else -%}
             <div class="payment-images-row" style="display: flex; gap: 5px; justify-content: center; align-items: center;">
               {%- if section.settings.imgpayment != blank -%}
-                <img class="lazyload" src="{{ section.settings.imgpayment | image_url: width: 1, height: 1 }}" data-src="{{ section.settings.imgpayment | image_url: width: 400 }}" 
+                <img class="lazyload background-white" src="{{ section.settings.imgpayment | image_url: width: 1, height: 1 }}" data-src="{{ section.settings.imgpayment | image_url: width: 400 }}" 
                   loading="lazy"
                   width="{{ section.settings.imgpayment.width }}"
                   height="{{ section.settings.imgpayment.height }}"/>
