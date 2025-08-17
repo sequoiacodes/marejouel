@@ -30,7 +30,7 @@
     <div class="d-none d-lg-flex col-menu">
       {%- if layout_header == 'logo-center-navigation-left' and enable_menu_vertical and sl_menu_vertical == 'hover-menu' -%}
         <nav class="nav-bar d-none d-lg-block" role="navigation">
-          <ul class="site-nav">
+          <ul class="site-nav">Hello
             {%- for link in linklists[main_linklist].links -%}
               <li class="site-nav__item site-nav__item-normal {% if link.active %} site-nav--active{% endif %}" >
                   <a data-link="tab-{{ link.title | strip | downcase | handle }}" href="{{ link.url }}" 
