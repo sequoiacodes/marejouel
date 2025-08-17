@@ -506,7 +506,7 @@
                   left:5%;
                   z-index:5;
                 }
-                #hello{
+                .hello{
                   padding:0% 0% 0% 30% !important;
                   background:red;
                 }
@@ -520,7 +520,7 @@
                 value="{{ form.email }}"
                 placeholder="{{ 'general.newsletter_form.newsletter_placeholder' | t }}" 
                 name="contact[email]" 
-                id="NewsletterEmail-{{ block.id }} hello" 
+                id="NewsletterEmail-{{ block.id }}" 
                 class="form-control w-100 mb-3 input-p " 
                 aria-required="true"
                 autocorrect="off" 
@@ -536,7 +536,7 @@
                 required
                 style="background-color:{{ block.settings.bg_new }};border-color:{{ block.settings.border_new }}"
                 >
-                <label for="NewsletterEmail-{{ block.id }}">{{ 'general.newsletter_form.newsletter_placeholder' | t }}</label>
+                <label class="hello" for="NewsletterEmail-{{ block.id }}">{{ 'general.newsletter_form.newsletter_placeholder' | t }}</label>
                 <div class="d-flex {% if footer_align_title == 'center' %} justify-content-lg-center {% elsif footer_align_title == 'right' %} justify-content-lg-end {% else %} justify-content-lg-start {% endif %}">
                   <button type="submit" class="btn btn-theme " name="commit">
                     <div class="position-relative">{{ 'general.newsletter_form.submit' | t }}</div>{% comment %}no span{% endcomment %}
