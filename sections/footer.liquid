@@ -602,6 +602,18 @@
                   width="{{ section.settings.imgpayment.width }}"
                   height="{{ section.settings.imgpayment.height }}"/>              
               {%- endif -%}
+              {%- if section.settings.imgpayment_2 != blank -%}
+                  <img class="lazyload" src="{{ section.settings.imgpayment_2 | image_url: width: 1, height: 1 }}" data-src="{{ section.settings.imgpayment_2 | image_url: width: 400 }}" 
+                  loading="lazy"
+                  width="{{ section.settings.imgpayment.width }}"
+                  height="{{ section.settings.imgpayment.height }}"/>              
+              {%- endif -%}
+              {%- if section.settings.imgpayment_3 != blank -%}
+                  <img class="lazyload" src="{{ section.settings.imgpayment_3 | image_url: width: 1, height: 1 }}" data-src="{{ section.settings.imgpayment_3 | image_url: width: 400 }}" 
+                  loading="lazy"
+                  width="{{ section.settings.imgpayment.width }}"
+                  height="{{ section.settings.imgpayment.height }}"/>              
+              {%- endif -%}
               </div>
           
             

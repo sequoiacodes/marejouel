@@ -118,6 +118,8 @@
         "enable_language_selector": true,
         "payment_info": "img",
         "imgpayment": "shopify://shop_images/logos_visa.svg",
+        "imgpayment_1": "shopify://shop_images/logos_mastercard.svg",
+        "imgpayment_2": "shopify://shop_images/american-express_1.png",
         "copyright": true,
         "link_list_bottom": "privacy-security-1",
         "customcopyright": "© 2025 Mare Jouel . All Rights Reserved.",
