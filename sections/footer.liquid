@@ -620,8 +620,8 @@
               {%- if section.settings.imgpayment_2 != blank -%}
                   <img class="lazyload" src="{{ section.settings.imgpayment_2 | image_url: 'large' }}" data-src="{{ section.settings.imgpayment_2 | image_url: width: 400 }}" 
                   loading="lazy"
-                  width="40"
-                  height="30"/>              
+                  width="{{ section.settings.imgpayment.width }}"
+                  height="35"/>              
               {%- endif -%}
               </div>
               <div class="background-white ">
