@@ -121,6 +121,8 @@
         "imgpayment_1": "shopify://shop_images/logos_mastercard.svg",
         "imgpayment_2": "shopify://shop_images/american-express_1.png",
         "imgpayment_3": "shopify://shop_images/paypal-card.png",
+        "imgpayment_4": "shopify://shop_images/google-pay_1.png",
+        "imgpayment_5": "shopify://shop_images/security-checkout.png",
         "copyright": true,
         "link_list_bottom": "privacy-security-1",
         "customcopyright": "© 2025 Mare Jouel . All Rights Reserved.",
