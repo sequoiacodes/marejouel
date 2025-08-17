@@ -612,7 +612,7 @@
         "color_rated": "#d73f0f",
         "image_size": "auto",
         "arrows": true,
-        "draggable": true,
+        "draggable": false,
         "dots": false,
         "infinite": true,
         "paddingsection": "70px 0px 70px 0px",
