@@ -536,7 +536,7 @@
                 required
                 style="background-color:{{ block.settings.bg_new }};border-color:{{ block.settings.border_new }}"
                 >
-                <label class="hello" for="NewsletterEmail-{{ block.id }}">{{ 'general.newsletter_form.newsletter_placeholder' | t }}</label>
+                <label class="" for="NewsletterEmail-{{ block.id }}">{{ 'general.newsletter_form.newsletter_placeholder' | t }}</label>
                 <div class="d-flex {% if footer_align_title == 'center' %} justify-content-lg-center {% elsif footer_align_title == 'right' %} justify-content-lg-end {% else %} justify-content-lg-start {% endif %}">
                   <button type="submit" class="btn btn-theme " name="commit">
                     <div class="position-relative">{{ 'general.newsletter_form.submit' | t }}</div>{% comment %}no span{% endcomment %}
