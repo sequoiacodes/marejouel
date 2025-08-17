@@ -563,7 +563,7 @@
             {%- endif -%}
             </div>
         </div>
-        <div class="footer-copy-right">World
+        <div>
           {%- if section.settings.payment_info == 'svg' -%}
             {%- if shop.enabled_payment_types != empty -%}
               <ul id="footer-payment-methods" class="list-inline payment-icons text-center text-lg-right">
@@ -582,6 +582,9 @@
                 height="{{ section.settings.imgpayment.height }}"/>
             {%- endif -%}
           {%- endif -%}
+
+        </div>
+        <div class="footer-copy-right">World
           <div class="pt-3">
             <ul class="list-unstyled list-inline d-flex text-lg-right text-center footer-bottom-link flex-wrap justify-content-center justify-content-lg-end">
             {%- for link in linklists[section.settings.link_list_bottom].links -%}
