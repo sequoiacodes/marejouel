@@ -589,17 +589,12 @@
               </ul>
             {%- endif -%}
           {%- else -%}
-            <div class="payment-images-row" style="display: flex; gap: 10px; justify-content: center; align-items: center;">
+            <div class="payment-images-row" style="display: flex; gap: 5px; justify-content: center; align-items: center;">
               {%- if section.settings.imgpayment != blank -%}
-                <svg xmlns="http://www.w3.org/2000/svg" width="49" height="16" viewBox="0 0 49 16" fill="none">
-                <path d="M25.4086 5.0758C25.3811 7.24741 27.344 8.45918 28.8226 9.17972C30.3417 9.91893 30.852 10.393 30.846 11.0541C30.8346 12.0658 29.6342 12.5124 28.5109 12.5297C26.551 12.5601 25.4115 12.0006 24.5056 11.5774L23.7995 14.881C24.7085 15.2999 26.3915 15.6651 28.1367 15.6812C32.2335 15.6812 34.9137 13.6589 34.9282 10.5235C34.9442 6.54422 29.4241 6.32397 29.4618 4.54535C29.4748 4.00603 29.9895 3.43051 31.1171 3.28417C31.6753 3.21025 33.2161 3.15368 34.9631 3.95813L35.6487 0.761821C34.7093 0.419749 33.5018 0.0921974 31.9985 0.0921974C28.1426 0.0921974 25.4305 2.14199 25.4086 5.0758ZM42.2371 0.367514C41.489 0.367514 40.8586 0.803871 40.5773 1.47349L34.7253 15.4464H38.819L39.6336 13.195H44.6361L45.1087 15.4464H48.7168L45.5682 0.367514H42.2371ZM42.8098 4.44088L43.9912 10.1032H40.7557L42.8098 4.44088ZM20.4452 0.367702L17.2183 15.4462H21.1194L24.3447 0.367325L20.4452 0.367702ZM14.6743 0.367702L10.614 10.6308L8.97149 1.9042C8.77876 0.930027 8.01768 0.367514 7.1725 0.367514H0.535105L0.442139 0.80538C1.80477 1.10106 3.35295 1.57796 4.29091 2.08824C4.86493 2.39995 5.02861 2.67244 5.21719 3.41316L8.32807 15.4464H12.4505L18.7707 0.367514L14.6743 0.367702Z" fill="url(#paint0_linear_3264_631)"/>
-                <defs>
-                  <linearGradient id="paint0_linear_3264_631" x1="2219.82" y1="46.9526" x2="2264.95" y2="-1554.06" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#222357"/>
-                    <stop offset="1" stop-color="#254AA5"/>
-                  </linearGradient>
-                </defs>
-              </svg>
+                <img class="lazyload" src="{{ section.settings.imgpayment | image_url: width: 1, height: 1 }}" data-src="{{ section.settings.imgpayment | image_url: width: 400 }}" 
+                  loading="lazy"
+                  width="{{ section.settings.imgpayment.width }}"
+                  height="{{ section.settings.imgpayment.height }}"/>
               {%- endif -%}
               {%- if section.settings.imgpayment_1 != blank -%}
                   <img class="lazyload" src="{{ section.settings.imgpayment_1 | image_url: width: 1, height: 1 }}" data-src="{{ section.settings.imgpayment_1 | image_url: width: 400 }}" 
