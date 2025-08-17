@@ -587,9 +587,10 @@
         <div class="footer-copy-right">World
           <div class="pt-3">
             <ul class="list-unstyled list-inline d-flex text-lg-right text-center footer-bottom-link flex-wrap justify-content-center justify-content-lg-end">
-            {%- for link in linklists[section.settings.link_list_bottom].links -%}
+           
               <li class=""><a href="{{ link.url }}">{{ link.title }}</a></li>
-              {%- endfor -%}
+              <li class=""><a href="{{ link.url }}">{{ link.title }}</a></li>
+           
             </ul>
           </div>
         </div>
