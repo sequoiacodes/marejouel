@@ -543,7 +543,7 @@
     <div class="{{ section.settings.setwidth }}">
       <div class="d-flex flex-lg-row flex--sm-column flex-column-reverse">
         <div class="flex-lg-grow-1">
-            <div class="d-flex flex-column text-lg-left text-center pt-lg-0 pt-3"> Hello
+            <div class="d-flex flex-column text-lg-left text-center pt-lg-0 pt-3"> 
               <div class="d-flex flex-lg-row align-items-center justify-content-lg-start justify-content-center">
             {%- liquid
               assign enable_image = section.settings.enable_image
@@ -563,7 +563,7 @@
             {%- endif -%}
             </div>
         </div>
-        <div>
+        <div> Hello
           {%- if section.settings.payment_info == 'svg' -%}
             {%- if shop.enabled_payment_types != empty -%}
               <ul id="footer-payment-methods" class="list-inline payment-icons text-center text-lg-right">
