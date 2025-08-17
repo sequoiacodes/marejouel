@@ -506,7 +506,7 @@
                   left:5%;
                   z-index:5;
                 }
-                .input-p{
+                #hello{
                   padding:0% 0% 0% 30% !important;
                   background:red;
                 }
@@ -520,8 +520,8 @@
                 value="{{ form.email }}"
                 placeholder="{{ 'general.newsletter_form.newsletter_placeholder' | t }}" 
                 name="contact[email]" 
-                id="NewsletterEmail-{{ block.id }}" 
-                class="form-control w-100 mb-3 input-p" 
+                id="NewsletterEmail-{{ block.id }} hello" 
+                class="form-control w-100 mb-3 input-p " 
                 aria-required="true"
                 autocorrect="off" 
                 autocapitalize="off"
