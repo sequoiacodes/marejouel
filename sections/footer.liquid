@@ -589,13 +589,25 @@
               </ul>
             {%- endif -%}
           {%- else -%}
-            {%- if section.settings.imgpayment != blank -%}
-              <img class="lazyload" src="{{ section.settings.imgpayment | image_url: width: 1, height: 1 }}" data-src="{{ section.settings.imgpayment | image_url: width: 400 }}" 
-                loading="lazy"
-                width="{{ section.settings.imgpayment.width }}"
-                height="{{ section.settings.imgpayment.height }}"/>
-            {%- endif -%}
+            <div>
+              {%- if section.settings.imgpayment != blank -%}
+                <img class="lazyload" src="{{ section.settings.imgpayment | image_url: width: 1, height: 1 }}" data-src="{{ section.settings.imgpayment | image_url: width: 400 }}" 
+                  loading="lazy"
+                  width="{{ section.settings.imgpayment.width }}"
+                  height="{{ section.settings.imgpayment.height }}"/>
+              {%- endif -%}
+              {%- if section.settings.imgpayment_1 != blank -%}
+                  <img class="lazyload" src="{{ section.settings.imgpayment_1 | image_url: width: 1, height: 1 }}" data-src="{{ section.settings.imgpayment_1 | image_url: width: 400 }}" 
+                  loading="lazy"
+                  width="{{ section.settings.imgpayment.width }}"
+                  height="{{ section.settings.imgpayment.height }}"/>              
+              {%- endif -%}
+              </div>
+          
+            
           {%- endif -%}
+
+          
 
         </div>
         <div class="footer-copy-right">
@@ -905,6 +917,22 @@
       "id": "imgpayment",
       "label": "Image Payment"
     },
+    {
+      "type": "image_picker",
+      "id": "imgpayment_1",
+      "label": "Payment Image 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "imgpayment_2", 
+      "label": "Payment Image 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "imgpayment_3",
+      "label": "Payment Image 3"
+    },
+
     {
       "type": "checkbox",
       "id": "copyright",
