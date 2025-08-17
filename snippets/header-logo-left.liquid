@@ -43,6 +43,7 @@
           </ul>
         </nav>
       {%- else-%}
+        {% comment %} /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// {% endcomment %}
       <nav class="nav-bar d-none d-lg-block" role="navigation">
         <ul class="site-nav">
           {%- if layout_header == 'logo-center-navigation-left' and enable_menu_vertical and sl_menu_vertical == 'click-menu' -%}
@@ -118,6 +119,7 @@
           {%- endfor -%}
         </ul>
       </nav>    
+      {% comment %} //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// {% endcomment %}
     {%- endif -%}
     </div>
     <div class="header-bottom__right col-bottom__right">
