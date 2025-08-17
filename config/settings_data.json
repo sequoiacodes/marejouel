@@ -14,7 +14,7 @@
     "slideshow": "slideshow-1",
     "sectionheading": "heading-1",
     "loading": "border",
-    "favicon": "shopify://shop_images/ico.png",
+    "favicon": "shopify://shop_images/logo_301fca42-b2ca-4d4d-b79a-0a794bfc238b.png",
     "meta_description": "Pose Shopify Template with multiple layouts and styles allows you to create different structures and satisfies any specific requirements for different kinds of business.",
     "color_primary": "#80270f",
     "color_secondary": "#80270f",
@@ -1268,9 +1268,12 @@
           "show_overlay": false,
           "autorotate": false,
           "autorotate_speed": 5,
+          "e_arrow": false,
           "color_arrow": "#262613",
           "bg_arrow": "#ffffff",
           "opacity_arrow": 1,
+          "e_dot": true,
+          "slide_dot": "square",
           "color_dot_nav": "#262613",
           "color_dot_active": "#d48114"
         }
@@ -1281,6 +1284,7 @@
           "1590405549465": {
             "type": "image",
             "settings": {
+              "image": "shopify://shop_images/social_card_2.png",
               "width_image": 600,
               "alignment": "center center",
               "text_alignment": "left center",
@@ -1314,6 +1318,7 @@
           "1590404620420": {
             "type": "image",
             "settings": {
+              "image": "shopify://shop_images/social_card_4.png",
               "width_image": 600,
               "alignment": "center center",
               "text_alignment": "left center",

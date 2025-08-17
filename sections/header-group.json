@@ -283,7 +283,7 @@
         "menu_label_other": "#848484",
         "enable_menu_vertical": false,
         "sl_menu_vertical": "hover-menu",
-        "main_linklist_vertical": "",
+        "main_linklist_vertical": "main-menu",
         "link_list_search": "",
         "sidebar_search": true,
         "e_hd_currency": true,

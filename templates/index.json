@@ -222,7 +222,7 @@
         "style_btn": "btn-theme",
         "setwidth": "container",
         "bgsection": "#f090ee",
-        "gradient_bg": "linear-gradient(133deg, rgba(250, 220, 54, 0.24), rgba(254, 98, 146, 0.45) 36%, rgba(250, 220, 54, 0) 98%)",
+        "gradient_bg": "linear-gradient(78deg, rgba(250, 220, 54, 0.24), rgba(239, 11, 81, 0.45) 38%, rgba(250, 220, 54, 0) 98%)",
         "title_color": "#000000",
         "title_top": "SUMMER INSPIRATION",
         "title": "THE DI MARE COLLECTION",
