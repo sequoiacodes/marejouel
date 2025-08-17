@@ -611,7 +611,7 @@
         "color_rate": "#999999",
         "color_rated": "#d73f0f",
         "image_size": "auto",
-        "arrows": false,
+        "arrows": true,
         "draggable": true,
         "dots": false,
         "infinite": true,
