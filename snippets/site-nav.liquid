@@ -6,7 +6,7 @@
     <a href="{{ childlink_url }}" class="meganav__link meganav__link-toggle site-nav__link-toggle meganav__link--has-list{% if childlink.active %} meganav__link--active{% endif %}" {% if childlink.active %} aria-current="page"{% endif %}>
       {% render 'processMenuTitle' , itemName: childlink.title %}
       {% render 'processMenuLabel' , itemName: childlink.title %}
-      {% comment %} {% render 'icon-arrow-right' %} {% endcomment %}
+      {% render 'icon-arrow-right' %}
     </a>
     <div class="site-nav__dropdown site-nav__dropdown--third-level">
       <ul class="meganav__list">
