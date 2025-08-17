@@ -614,6 +614,18 @@
                   width="{{ section.settings.imgpayment.width }}"
                   height="{{ section.settings.imgpayment.height }}"/>              
               {%- endif -%}
+              {%- if section.settings.imgpayment_4 != blank -%}
+                  <img class="lazyload" src="{{ section.settings.imgpayment_4 | image_url: width: 1, height: 1 }}" data-src="{{ section.settings.imgpayment_4 | image_url: width: 400 }}" 
+                  loading="lazy"
+                  width="{{ section.settings.imgpayment.width }}"
+                  height="{{ section.settings.imgpayment.height }}"/>              
+              {%- endif -%}
+              {%- if section.settings.imgpayment_5 != blank -%}
+                  <img class="lazyload" src="{{ section.settings.imgpayment_5 | image_url: width: 1, height: 1 }}" data-src="{{ section.settings.imgpayment_5 | image_url: width: 400 }}" 
+                  loading="lazy"
+                  width="{{ section.settings.imgpayment.width }}"
+                  height="{{ section.settings.imgpayment.height }}"/>              
+              {%- endif -%}
               </div>
           
             
@@ -927,24 +939,33 @@
     {
       "type": "image_picker",
       "id": "imgpayment",
-      "label": "Image Payment"
+      "label": "Image Payment 1"
     },
     {
       "type": "image_picker",
       "id": "imgpayment_1",
-      "label": "Payment Image 1"
-    },
-    {
-      "type": "image_picker",
-      "id": "imgpayment_2", 
       "label": "Payment Image 2"
     },
     {
       "type": "image_picker",
-      "id": "imgpayment_3",
+      "id": "imgpayment_2", 
       "label": "Payment Image 3"
     },
-
+    {
+      "type": "image_picker",
+      "id": "imgpayment_3",
+      "label": "Payment Image 4"
+    },
+     {
+      "type": "image_picker",
+      "id": "imgpayment_4",
+      "label": "Payment Image 5"
+    },
+     {
+      "type": "image_picker",
+      "id": "imgpayment_5",
+      "label": "Payment Image 6"
+    },
     {
       "type": "checkbox",
       "id": "copyright",
