@@ -589,7 +589,7 @@
               </ul>
             {%- endif -%}
           {%- else -%}
-            <div>
+            <div class="payment-images-row" style="display: flex; gap: 10px; justify-content: center; align-items: center;">
               {%- if section.settings.imgpayment != blank -%}
                 <img class="lazyload" src="{{ section.settings.imgpayment | image_url: width: 1, height: 1 }}" data-src="{{ section.settings.imgpayment | image_url: width: 400 }}" 
                   loading="lazy"
@@ -626,7 +626,7 @@
                   width="{{ section.settings.imgpayment.width }}"
                   height="{{ section.settings.imgpayment.height }}"/>              
               {%- endif -%}
-              </div>
+            </div>
           
             
           {%- endif -%}
