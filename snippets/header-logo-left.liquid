@@ -30,11 +30,11 @@
     <div class="d-none d-lg-flex col-menu">
       {%- if layout_header == 'logo-center-navigation-left' and enable_menu_vertical and sl_menu_vertical == 'hover-menu' -%}
         <nav class="nav-bar d-none d-lg-block" role="navigation">
-          <ul class="site-nav">Hello
+          <ul class="site-nav">
             {%- for link in linklists[main_linklist].links -%}
               <li class="site-nav__item site-nav__item-normal {% if link.active %} site-nav--active{% endif %}" >
                   <a data-link="tab-{{ link.title | strip | downcase | handle }}" href="{{ link.url }}" 
-                    class="site-nav__link {% if link.links != blank %} outer-menu-item site-navtab {% endif %}">
+                    class="site-nav__link {% if link.links != blank %} outer-menu-item site-navtab {% endif %}">Hello
                     <span class="site-nav__title">{%- render 'processMenuTitle' , itemName: link.title -%}</span>
                     {%- render 'processMenuLabel' , itemName: link.title -%}
                   </a>
