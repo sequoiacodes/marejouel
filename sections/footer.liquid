@@ -496,8 +496,15 @@
                 {{ block.settings.subheading }}
               </div>
               {%- endif -%}
-              <div class="form-group flex-column">
-                {% render 'icon-email' %}
+              {% style %}
+                .form-relative{
+                  position:relative;
+                }
+              {% endstyle %}
+              <div class="form-group flex-column form-relative">
+                <span>
+                  {% render 'icon-email' %}
+                </span>
                 <input 
                 type="email" 
                 value="{{ form.email }}"
