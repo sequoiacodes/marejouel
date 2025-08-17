@@ -556,6 +556,9 @@
       padding:4px;
       height:30px;
       }
+      .contain-obj{
+      object-fit:contain;
+      }
       {% comment %} .border-1{
       border:1px solid black;
       }         {% endcomment %}
@@ -607,7 +610,7 @@
               </div>
               <div class="background-white ">
               {%- if section.settings.imgpayment_1 != blank -%}
-                  <img class="lazyload" src="{{ section.settings.imgpayment_1 | image_url: width: 1, height: 1 }}" data-src="{{ section.settings.imgpayment_1 | image_url: width: 400 }}" 
+                  <img class="lazyload contain-obj" src="{{ section.settings.imgpayment_1 | image_url: width: 1, height: 1 }}" data-src="{{ section.settings.imgpayment_1 | image_url: width: 400 }}" 
                   loading="lazy"
                   width="{{ section.settings.imgpayment.width }}"
                   height="{{ section.settings.imgpayment.height }}"/>              
