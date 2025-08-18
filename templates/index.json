@@ -314,35 +314,35 @@
           "type": "item",
           "settings": {
             "code": "as beautiful as a jewel",
-            "image": "shopify://shop_images/looooogo_59e8a743-1d5e-4e8d-ac10-6c111f645478.png"
+            "image": "shopify://shop_images/ri_shining-line.svg"
           }
         },
         "28834f1d-6fdd-4446-942c-c840fdd98763": {
           "type": "item",
           "settings": {
             "code": "as beautiful as a jewel",
-            "image": "shopify://shop_images/looooogo_59e8a743-1d5e-4e8d-ac10-6c111f645478.png"
+            "image": "shopify://shop_images/ri_shining-line.svg"
           }
         },
         "3b735a95-56a3-430b-9c96-cbc553f6e108": {
           "type": "item",
           "settings": {
             "code": "as beautiful as a jewel",
-            "image": "shopify://shop_images/looooogo_59e8a743-1d5e-4e8d-ac10-6c111f645478.png"
+            "image": "shopify://shop_images/ri_shining-line.svg"
           }
         },
         "item_D8RQdc": {
           "type": "item",
           "settings": {
             "code": "as beautiful as a jewel",
-            "image": "shopify://shop_images/looooogo_59e8a743-1d5e-4e8d-ac10-6c111f645478.png"
+            "image": "shopify://shop_images/ri_shining-line.svg"
           }
         },
         "item_F4CVKx": {
           "type": "item",
           "settings": {
             "code": "as beautiful as a jewel",
-            "image": "shopify://shop_images/looooogo_59e8a743-1d5e-4e8d-ac10-6c111f645478.png"
+            "image": "shopify://shop_images/ri_shining-line.svg"
           }
         }
       },
@@ -357,7 +357,7 @@
         "animation": "",
         "size_text": "h4",
         "text_style": "solid",
-        "size_icon": 16,
+        "size_icon": 20,
         "speed": 30,
         "scroll_type": "from-right",
         "background": "#f73c3c",
@@ -464,7 +464,7 @@
         "setwidth": "container",
         "bgsection": "#ffffff",
         "title_top": "Join Mare Jouel: Swimwear Fashion That Inspires",
-        "title": "Latest Blogs",
+        "title": "Blog posts",
         "des": "",
         "align-heading": "left",
         "blog": "news",
