@@ -263,7 +263,9 @@
       "blocks": {
         "template--19541121335616__68f00d7d-af01-4aa1-a146-2e58796e1611-1687424811e3734094-2": {
           "type": "image_block",
-          "settings": {}
+          "settings": {
+            "image": "shopify://shop_images/about-us-img5.png"
+          }
         },
         "text_block_CWDyU3": {
           "type": "text_block",
