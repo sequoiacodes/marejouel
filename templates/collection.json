@@ -37,31 +37,36 @@
         "template--17739035869502__ea7af2bd-7a4c-4129-ae32-bacb42814742-167584089359f62679-0": {
           "type": "collection",
           "settings": {
-            "collection": "women"
+            "collection": "best-seller",
+            "image": "shopify://shop_images/social_card_1.png"
           }
         },
         "2f3b8aad-10de-480a-a5d8-f03f00650840": {
           "type": "collection",
           "settings": {
-            "collection": "men"
+            "collection": "coverup",
+            "image": "shopify://shop_images/social_card_3.png"
           }
         },
         "template--17739035869502__ea7af2bd-7a4c-4129-ae32-bacb42814742-167584089359f62679-1": {
           "type": "collection",
           "settings": {
-            "collection": "tops"
+            "collection": "coverup",
+            "image": "shopify://shop_images/best-sellers-card-bottoms3_h_02913e63-b486-4ab2-81f2-210b28c0cd69.png"
           }
         },
         "template--17739035869502__ea7af2bd-7a4c-4129-ae32-bacb42814742-167584089359f62679-2": {
           "type": "collection",
           "settings": {
-            "collection": "shoes"
+            "collection": "bikinis",
+            "image": "shopify://shop_images/best-sellers-card-bottoms4_h_1f7c3ced-fce1-4010-ac5e-62167eaa595e.png"
           }
         },
         "1e3656fa-e08a-43ca-ab4a-ae2571025870": {
           "type": "collection",
           "settings": {
-            "collection": "accessories"
+            "collection": "trikini",
+            "image": "shopify://shop_images/bestseller3.png"
           }
         },
         "d77e71b7-2eec-4316-9f50-2e6ee670490d": {
