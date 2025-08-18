@@ -43,7 +43,38 @@
                     text-transform: uppercase !important;
                 }
 
-                    
+                    .btn-theme-1{
+    padding: 10px 12px;
+    display: inline-block;
+    width: auto;
+    text-decoration: none !important;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    cursor: pointer;
+    border: 1px solid var(--g-cta-button);
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    text-transform: capitalize;
+    background-color: var(--g-cta-button);
+    color: var(--g-cta-text);
+    font-family: Gilda Display;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: var(--g-font-spacing-btn);
+    border-radius: var(--g-font-radius-btn);
+    position: relative;
+    overflow: hidden;
+    transition: .4s;
+    border: none;
+}
                     {% endstyle %}
                      {%- if subtitle != blank -%}
                     <span id="subtitle_p" class="popup-newsletter--subtitle mb-3">{{ subtitle }}</span>
@@ -73,7 +104,7 @@
                     name="contact[email]" class="col-lg col-12 mb-3 mb-lg-0 form-control" autocapitalize="off">
                     <label  for="popupNewsletter" class="label--hidden">{{ 'general.newsletter_form.newsletter_placeholder' | t }}</label>
                     <div class="pl-lg-3 popup-btnwrap">
-                        <button type="submit" style=" text-transform: uppercase !important;" class="btn btn-theme " name="commit">
+                        <button type="submit" style=" text-transform: uppercase !important;" class="btn btn-theme-1 js-btnPopupNewsletter" name="commit">
                         <span class="d-sm-inline">{{ button }}</span>
                         </button>
                     </div>
