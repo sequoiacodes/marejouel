@@ -503,7 +503,9 @@
       "blocks": {
         "image_block_cbJpCP": {
           "type": "image_block",
-          "settings": {}
+          "settings": {
+            "image": "shopify://shop_images/about-us-img4.png"
+          }
         },
         "text_block_DgPRgH": {
           "type": "text_block",
