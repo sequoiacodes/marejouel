@@ -41,7 +41,9 @@
           "settings": {
             "widthlogofooter": 0,
             "title": "Mare Jouel Swimwear",
+            "title1": "stay Connected",
             "text": "Mare Jouel is a sustainable swimwear brand committed to ethical fashion and ocean conservation.",
+            "enablesocial": true,
             "width": "25%"
           }
         },
@@ -76,7 +78,7 @@
             "btn_cl_new_hover": "#ffffff",
             "title": "newsletter",
             "subheading": "<p style=\"font-family:'Gilda Display';\">Subscribe to get notified about early access to collections, exclusive offers and sustainability tips. </p>",
-            "enablesocial": false,
+            "enablesocial1": true,
             "width": "25%"
           }
         },
