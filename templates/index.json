@@ -545,9 +545,9 @@
       "settings": {
         "animation": "",
         "setwidth": "container",
-        "bgsection": "#fce5df",
+        "bgsection": "#fff8ec",
         "rangebg": 100,
-        "bgbefore": "#fce5df",
+        "bgbefore": "#fff8ec",
         "bg_pos": "left",
         "enable_padding": true,
         "align_center": true,
