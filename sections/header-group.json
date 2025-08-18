@@ -245,8 +245,7 @@
         "f6a2ffe9-edfd-4d1e-8d8e-7ad8c9531293"
       ],
       "settings": {
-        "logo": "shopify://shop_images/logo_301fca42-b2ca-4d4d-b79a-0a794bfc238b.png",
-        "logo_white": "shopify://shop_images/logo_301fca42-b2ca-4d4d-b79a-0a794bfc238b.png",
+        "logo": "shopify://shop_images/logo.png",
         "logo_max_width": 150,
         "enable_transparent": true,
         "hover_transparent": false,

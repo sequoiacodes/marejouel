@@ -641,7 +641,7 @@
           "1561259906467": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/hero.png",
+              "image": "shopify://shop_images/hero_1.png",
               "alignment": "left center",
               "text_alignment": "left center",
               "bgwrap": "#e8f2f5",
@@ -2373,8 +2373,6 @@
           "pnewletter_time_delay": 3,
           "pnewletter_time": 20,
           "pnewletter_background": "#ffffff",
-          "pnewletter_bgimage": "shopify://shop_images/Rectangle_14_2x_61e79465-3576-4407-80da-2240958ecedf.png",
-          "pnewsletter_logo": "shopify://shop_images/logo_9e731754-6525-4ce4-8ece-597c1f8fcf71.png",
           "subtitle": "FIRST TIMER ?",
           "pnewletter_subtitle_cl": "#ef1010",
           "pnewletter_title": "Sign up and Save",
