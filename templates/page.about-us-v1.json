@@ -61,35 +61,35 @@
           "type": "item",
           "settings": {
             "code": "as beautiful as a jewel",
-            "image": "shopify://shop_images/Property_1_black-logo.png"
+            "image": "shopify://shop_images/looooogo.png"
           }
         },
         "item_qJtWg4": {
           "type": "item",
           "settings": {
             "code": "as beautiful as a jewel",
-            "image": "shopify://shop_images/Property_1_black-logo.png"
+            "image": "shopify://shop_images/looooogo.png"
           }
         },
         "item_EBHVr9": {
           "type": "item",
           "settings": {
             "code": "as beautiful as a jewel",
-            "image": "shopify://shop_images/Property_1_black-logo.png"
+            "image": "shopify://shop_images/looooogo.png"
           }
         },
         "item_yQcQwJ": {
           "type": "item",
           "settings": {
             "code": "as beautiful as a jewel",
-            "image": "shopify://shop_images/Property_1_black-logo.png"
+            "image": "shopify://shop_images/looooogo.png"
           }
         },
         "item_3rN69T": {
           "type": "item",
           "settings": {
             "code": "as beautiful as a jewel",
-            "image": "shopify://shop_images/Property_1_black-logo.png"
+            "image": "shopify://shop_images/looooogo.png"
           }
         }
       },
@@ -130,7 +130,7 @@
             "container_padding_horizontal": 70,
             "mobile_container_padding": 0,
             "mobile_layout": "column",
-            "image": "shopify://shop_images/about-us-img.png",
+            "image": "shopify://shop_images/about-us-img5.png",
             "image_width": 50,
             "image_height": 400,
             "mobile_image_height": 250,
@@ -271,7 +271,7 @@
             "container_padding_horizontal": 70,
             "mobile_container_padding": 5,
             "mobile_layout": "column",
-            "image": "shopify://shop_images/about-us-img1.png",
+            "image": "shopify://shop_images/about-us-img4.png",
             "image_width": 50,
             "image_height": 400,
             "mobile_image_height": 250,
@@ -328,7 +328,7 @@
             "rate": 5,
             "author": "-Joey B.",
             "info": "",
-            "avatar": "shopify://shop_images/image_65504cc8-2bef-444c-8e58-ecb72c8c25a5.png"
+            "avatar": "shopify://shop_images/image7.png"
           }
         },
         "quote_Kpaiew": {
@@ -395,7 +395,7 @@
             "video_1": "shopify://products/ange-bikini",
             "thumbnail_1": "shopify://shop_images/image3.png",
             "video_2": "shopify://products/ange-bikini",
-            "thumbnail_2": "shopify://shop_images/image_6fb69263-351b-4236-9ddd-e4b69b3c9d9a.png",
+            "thumbnail_2": "shopify://shop_images/image.png",
             "video_3": "shopify://products/ange-bikini",
             "thumbnail_3": "shopify://shop_images/image4.png",
             "video_4": "shopify://products/ange-bikini",
