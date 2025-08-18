@@ -569,8 +569,7 @@
             "quote": "The product looks stunning—great design, vibrant color, and perfect for summer. Feels both stylish and comfortable!",
             "rate": 5,
             "author": "-zenith_p.",
-            "info": "",
-            "avatar": "shopify://shop_images/image1.png"
+            "info": ""
           }
         },
         "quote_K3MxJc": {
@@ -580,8 +579,7 @@
             "quote": "Gorgeous piece! The style is flattering, and the quality looks amazing—perfect for beach days.",
             "rate": 5,
             "author": "-yousef B.",
-            "info": "",
-            "avatar": "shopify://shop_images/image2.png"
+            "info": ""
           }
         }
       },
@@ -625,13 +623,9 @@
             "heading": "CAPTURE THE MOMENTS",
             "text_alignment": "left",
             "video_1": "/aa",
-            "thumbnail_1": "shopify://shop_images/image3.png",
             "video_2": "/v2",
-            "thumbnail_2": "shopify://shop_images/image.png",
             "video_3": "/v3",
-            "thumbnail_3": "shopify://shop_images/image4.png",
             "video_4": "/v4",
-            "thumbnail_4": "shopify://shop_images/image5.png",
             "enable_carousel": true,
             "columns_desktop": 4,
             "columns_mobile": "2",
@@ -761,6 +755,7 @@
         "image_D7UDjB": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/0C1A8748copy.png",
             "image_link": "",
             "social_icon": "Instagram"
           }
@@ -768,6 +763,7 @@
         "image_AVTrQW": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/0C1A9576copy.png",
             "image_link": "https://www.facebook.com/people/Sequoiacodes/61577194533389/",
             "social_icon": "Facebook"
           }
@@ -775,6 +771,7 @@
         "image_jYn4iw": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/0C1A9576copy1.png",
             "image_link": "",
             "social_icon": "Instagram"
           }
@@ -782,15 +779,9 @@
         "image_xB7pCp": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/0C1A8748copy2.png",
             "image_link": "",
             "social_icon": "facebook"
-          }
-        },
-        "image_4GFnQt": {
-          "type": "image",
-          "settings": {
-            "image_link": "",
-            "social_icon": "linkedin"
           }
         }
       },
@@ -798,8 +789,7 @@
         "image_D7UDjB",
         "image_AVTrQW",
         "image_jYn4iw",
-        "image_xB7pCp",
-        "image_4GFnQt"
+        "image_xB7pCp"
       ],
       "name": "Instagram Customize",
       "settings": {
