@@ -274,7 +274,7 @@
         "font_weight": "500",
         "menu_spacing": 0.2,
         "menu_space": 2,
-        "type_menu": "uppercase",
+        "type_menu": "capitalize",
         "menu_active": "thin-line",
         "menu_label_text": "#ffffff",
         "menu_label_new": "#01bad4",
