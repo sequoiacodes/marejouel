@@ -36,6 +36,15 @@
   padding-left:10%;
   transform: rotateY(180deg);
 }
+.custom_class{
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
 {% endstyle %}
 {%- liquid
   assign text_color = section.settings.title_color
@@ -83,7 +92,7 @@
       <div class="row justify-content-center">
         <div class="col-lg-7 col-12">
           {%- if section.settings.title_top != blank -%}
-            <div class=" text-center mb-2" data-aos="{{ section.settings.animation }}" data-aos-duration="300">
+            <div class="custom_class  text-center mb-2" data-aos="{{ section.settings.animation }}" data-aos-duration="300">
               {{ section.settings.title_top }}
             </div>
           {%- endif -%}
