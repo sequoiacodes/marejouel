@@ -43,7 +43,7 @@
                     text-transform: uppercase !important;
                 }
 
-                      .modal-title-p{
+                      #title_p{
                         font-family: "Gilda Display" !important;
                         font-size: 32px;
                         font-style: normal;
@@ -56,7 +56,7 @@
                     <span id="subtitle_p" class="popup-newsletter--subtitle mb-3">{{ subtitle }}</span>
                 {%- endif -%}
                 {% if pnewletter_title != blank %}
-                    <h3 style="font-family: 'Gilda Display' !important; font-size: 32px; font-style: normal; text-transform: capitalize; letter-spacing:1px;" class="modal-title popup-newsletter--title mb-2 {{ pnew_size_heading }}">
+                    <h3 id="title_p"  class=" popup-newsletter--title mb-2 {{ pnew_size_heading }}">
                         {{ pnewletter_title }}
                     </h3>
 
