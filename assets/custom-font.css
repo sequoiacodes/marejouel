@@ -1,0 +1,18 @@
+/* Load Poppins Light font */
+@font-face {
+  font-family: 'Poppins Light';
+  src: url('{{ "Poppins-Light.woff" | asset_url }}') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Apply font to collection grid elements */
+.collection-grid,
+.collection-grid .grid__item,
+.collection-grid .product-card,
+.collection-grid .product-card__title,
+.collection-grid .product-card__price {
+  font-family: 'Poppins Light', sans-serif;
+  font-weight: 300;
+}
