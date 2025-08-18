@@ -383,7 +383,7 @@
         "text": "#000000",
         "paddingsection": "50px 0px 50px 0px",
         "paddingmobile": "50px 0px 50px 0px",
-        "marginsection": "32px 0px 0px 0px",
+        "marginsection": "0px 0px 0px 0px",
         "marginmobile": "0px 0px 0px 0px"
       }
     },
