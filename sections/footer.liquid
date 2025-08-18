@@ -609,8 +609,8 @@
             </div>
             {%- if section.settings.copyright -%}
             {% comment %} <div class="pt-2">&copy; {{ 'now' | date: "%Y" }}, <b class="text-capitalize">{{ shop.name | link_to: '/' }}</b>. {{ powered_by_link }}</div> {% endcomment %}
+            <div class="pt-2">{{ section.settings.customcopyright }}</div>
             {%- else -%}
-              <div class="pt-2">{{ section.settings.customcopyright }}</div>
             {%- endif -%}
             </div>
         </div>
