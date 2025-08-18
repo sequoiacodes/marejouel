@@ -455,11 +455,13 @@
               </div>
             {%- endif -%}
             <div class="rte-setting">{{ block.settings.text }}</div>
-            <div>Hello</div>
+            <div>
+            
+              {% if block.settings.enablesocial %}
+                  {%- render 'block-social' -%}
+                {% endif %}
+            </div>
           </div>
-          {% if block.settings.enablesocial %}
-              {%- render 'block-social' -%}
-            {% endif %}
         </div>
 
         {%- when 'newsletter' -%}
