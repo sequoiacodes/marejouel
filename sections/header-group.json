@@ -269,7 +269,7 @@
         "menudropbg": "#ffffff",
         "menudropborder": "#f1f1f1",
         "main_linklist": "main-menu",
-        "font_family_menu": "--g-font-1",
+        "font_family_menu": "--g-font-2",
         "font_sizemenu": "12px",
         "font_weight": "500",
         "menu_spacing": 0.2,
