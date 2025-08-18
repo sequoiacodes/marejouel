@@ -54,13 +54,13 @@
                         text-transform: capitalized;
                       }
                     {% endstyle %}
-             {%- if subtitle != blank -%}
-    <div class="subtitle-n popup-newsletter--subtitle mb-3" style="font-family: 'Poppins' !important; letter-spacing: 1.4px !important;">{{ subtitle }}</div>
-{%- endif -%}
-{% if pnewletter_title != blank %}
-    <h3 style="font-family: 'Gilda Display' !important; font-size: 32px; font-style: normal; text-transform: capitalize;" class="modal-title popup-newsletter--title mb-2 {{ pnew_size_heading }}">
-        {{ pnewletter_title }}
-    </h3>
+                     {%- if subtitle != blank -%}
+                    <div class="subtitle-n popup-newsletter--subtitle mb-3" style="font-family: 'Poppins' !important; letter-spacing: 1.4px !important;">{{ subtitle }}</div>
+                {%- endif -%}
+                {% if pnewletter_title != blank %}
+                    <h3 style="font-family: 'Gilda Display' !important; font-size: 32px; font-style: normal; text-transform: capitalize; letter-spacing:1px;" class="modal-title popup-newsletter--title mb-2 {{ pnew_size_heading }}">
+                        {{ pnewletter_title }}
+                    </h3>
 
 
                 {% endif %}
