@@ -18,14 +18,14 @@
             "width": "4",
             "image": "shopify://shop_images/collection1.jpg",
             "image_mobile": "shopify://shop_images/collection1.jpg",
-            "subtitle": "premium",
-            "title": "Luxury",
-            "size_text": "h3",
+            "subtitle": "",
+            "title": "di mare collection",
+            "size_text": "h5",
             "description": "",
             "bg_color": "#ffffff",
             "colordef": "#ffffff",
             "opacity_bg": 0,
-            "style_btn": "btn-theme btn-white",
+            "style_btn": "btn-outline btn-outline-white",
             "button_text": "shop now",
             "button_link": "",
             "vertical": "bottom",
@@ -39,14 +39,14 @@
             "width": "4",
             "image": "shopify://shop_images/collection2.png",
             "image_mobile": "shopify://shop_images/collection2.png",
-            "subtitle": "must have",
-            "title": "high summer",
-            "size_text": "h3",
+            "subtitle": "",
+            "title": "summer essentials",
+            "size_text": "h5",
             "description": "",
             "bg_color": "#ffffff",
             "colordef": "#ffffff",
             "opacity_bg": 0,
-            "style_btn": "btn-theme btn-white",
+            "style_btn": "btn-outline btn-outline-white",
             "button_text": "shop now",
             "button_link": "#",
             "vertical": "bottom",
@@ -60,14 +60,14 @@
             "width": "4",
             "image": "shopify://shop_images/collection3_b803877a-cfb3-4435-afb2-b5733017f0d8.png",
             "image_mobile": "shopify://shop_images/collection3_b803877a-cfb3-4435-afb2-b5733017f0d8.png",
-            "subtitle": "Handge",
-            "title": "jacket",
-            "size_text": "h3",
+            "subtitle": "",
+            "title": "Best sellers",
+            "size_text": "h5",
             "description": "",
             "bg_color": "#ffffff",
             "colordef": "#ffffff",
             "opacity_bg": 0,
-            "style_btn": "btn-theme btn-white",
+            "style_btn": "btn-outline btn-outline-white",
             "button_text": "shop now",
             "button_link": "",
             "vertical": "bottom",
@@ -83,18 +83,20 @@
       ],
       "settings": {
         "animation": "",
-        "setwidth": "container-fluid",
+        "setwidth": "container",
         "bgsection": "#ffffff",
         "title_top": "Dive Into Elegance with Our Curated Collections",
         "title": "featured collections",
         "des": "",
+        "button_name": "Shop The Collection",
+        "button_url": "/",
         "align-heading": "left",
         "no_gutter": false,
         "show_overlay": true,
         "gradient_overlay": true,
         "bg_overlay": "#000000",
         "opacity_overlay": 0.6,
-        "paddingsection": "60px 0px 40px 0px",
+        "paddingsection": "100px 0px 100px 30px",
         "paddingmobile": "40px 0px 40px 0px",
         "marginsection": "0px 0px 0px 0px",
         "marginmobile": "0px 0px 0px 0px"
@@ -106,10 +108,10 @@
         "template--19549173121344__ea0a2867-55f8-4a4d-b69a-54b7fd3f3edc-1687342987fde68e6d-0": {
           "type": "collection",
           "settings": {
-            "collection": "women",
-            "image": "shopify://shop_images/collection1.jpg",
+            "collection": "bikinis",
+            "image": "shopify://shop_images/catagory1.png",
             "color": "#ffffff",
-            "enable_gradient": false,
+            "enable_gradient": true,
             "bg_overlay": "#222222",
             "opacity_overlay": 0.2
           }
@@ -117,8 +119,8 @@
         "template--19549173121344__ea0a2867-55f8-4a4d-b69a-54b7fd3f3edc-1687342987fde68e6d-1": {
           "type": "collection",
           "settings": {
-            "collection": "accessories",
-            "image": "shopify://shop_images/collection2.png",
+            "collection": "onepiece",
+            "image": "shopify://shop_images/catagory2.png",
             "color": "#ffffff",
             "enable_gradient": false,
             "bg_overlay": "#222222",
@@ -128,8 +130,41 @@
         "template--19549173121344__ea0a2867-55f8-4a4d-b69a-54b7fd3f3edc-1687342987fde68e6d-2": {
           "type": "collection",
           "settings": {
-            "collection": "men",
-            "image": "shopify://shop_images/collection3_b803877a-cfb3-4435-afb2-b5733017f0d8.png",
+            "collection": "trikini",
+            "image": "shopify://shop_images/catagory3.png",
+            "color": "#ffffff",
+            "enable_gradient": false,
+            "bg_overlay": "#222222",
+            "opacity_overlay": 0.2
+          }
+        },
+        "collection_EKf3aR": {
+          "type": "collection",
+          "settings": {
+            "collection": "coverup",
+            "image": "shopify://shop_images/catagory4.png",
+            "color": "#ffffff",
+            "enable_gradient": false,
+            "bg_overlay": "#222222",
+            "opacity_overlay": 0.2
+          }
+        },
+        "collection_V7EhW4": {
+          "type": "collection",
+          "settings": {
+            "collection": "t-shirt",
+            "image": "shopify://shop_images/catagory5.png",
+            "color": "#ffffff",
+            "enable_gradient": false,
+            "bg_overlay": "#222222",
+            "opacity_overlay": 0.2
+          }
+        },
+        "collection_3tRrL9": {
+          "type": "collection",
+          "settings": {
+            "collection": "hat",
+            "image": "shopify://shop_images/catagory6.png",
             "color": "#ffffff",
             "enable_gradient": false,
             "bg_overlay": "#222222",
@@ -152,76 +187,28 @@
         "template--19549173121344__ea0a2867-55f8-4a4d-b69a-54b7fd3f3edc-1687342987fde68e6d-0",
         "template--19549173121344__ea0a2867-55f8-4a4d-b69a-54b7fd3f3edc-1687342987fde68e6d-1",
         "template--19549173121344__ea0a2867-55f8-4a4d-b69a-54b7fd3f3edc-1687342987fde68e6d-2",
+        "collection_EKf3aR",
+        "collection_V7EhW4",
+        "collection_3tRrL9",
         "template--19549173121344__ea0a2867-55f8-4a4d-b69a-54b7fd3f3edc-1687342987fde68e6d-3"
       ],
       "settings": {
-        "animation": "fade-up",
-        "setwidth": "full",
-        "bgsection": "#ffffff",
-        "title_top": "Nepal",
-        "title": "Hello",
-        "des": "hello",
-        "align-heading": "center",
-        "layout": "grid",
-        "col": "col-lg-4",
-        "enable_padding": true,
-        "size_image_col": "auto",
-        "size_title": "h4",
-        "paddingsection": "0px 0px 0px 0px",
-        "paddingmobile": "40px 0px 40px 0px",
-        "marginsection": "0px 0px 0px 0px",
-        "marginmobile": "0px 0px 0px 0px"
-      }
-    },
-    "8d3646ae-af4d-47b1-b4c0-f529c93a012e": {
-      "type": "count-down",
-      "disabled": true,
-      "settings": {
-        "animation": "fade-up",
+        "animation": "",
         "setwidth": "container",
-        "bgsection": "#f9f7f2",
-        "bg_full": true,
-        "enable_padding": false,
-        "color": "#4c341f",
-        "e_blur": true,
-        "overlay": "#000000",
-        "opacity": 0.5,
-        "title": "NEXT DROP",
-        "size_text": "h3",
+        "bgsection": "#fff8ec",
+        "title_top": "Let’s find the perfect swimsuit for you!",
+        "title": "shop by categories",
         "des": "",
-        "data_countdown": "2025-05-11T00:00:00",
-        "e_button": true,
-        "txt_button": "Shop now",
-        "link_button": "",
-        "style_btn": "btn-underline",
-        "paddingsection": "40px 0px 40px 0px",
-        "paddingmobile": "40px 0px 40px 0px",
-        "marginsection": "0px 0px 0px 0px",
-        "marginmobile": "0px 0px 0px 0px"
-      }
-    },
-    "16601928830ceb6d9f": {
-      "type": "product-list-swiper",
-      "settings": {
-        "animation": "fade-up",
-        "setwidth": "container-fluid",
-        "bgsection": "#ffffff",
-        "title_top": "",
-        "title": "New Arrivals",
-        "des": "These pieces can be easily mixed and matched to create totally different looks.",
-        "align-heading": "center",
-        "collection": "women",
-        "limit": 10,
-        "perviewDesktop": 4,
-        "spaceBetween": 30,
-        "nowrap": false,
-        "arrows": true,
-        "scrollbar": false,
-        "buttonall": "All new arrivals",
-        "buttonall_link": "#",
-        "style_btn": "btn-theme",
-        "paddingsection": "40px 0px 80px 0px",
-        "paddingmobile": "32px 0px 0px 0px",
+        "button_name": "Shop The Collection",
+        "button_url": "/",
+        "align-heading": "left",
+        "layout": "grid",
+        "col": "col-lg-2",
+        "enable_padding": false,
+        "size_image_col": "portrait",
+        "size_title": "h4",
+        "paddingsection": "100px 0px 100px 32px",
+        "paddingmobile": "5px 0px 20px 0px",
         "marginsection": "0px 0px 0px 0px",
         "marginmobile": "0px 0px 0px 0px"
       }
@@ -232,9 +219,13 @@
       "name": "Rich text",
       "settings": {
         "animation": "",
+        "button_title": "All Collection",
+        "buttton_url": "shopify://collections",
+        "topsub_color": "black",
+        "style_btn": "btn-theme",
         "setwidth": "container",
         "bgsection": "#f090ee",
-        "gradient_bg": "linear-gradient(133deg, rgba(250, 220, 54, 0.24), rgba(254, 98, 146, 0.45) 36%, rgba(250, 220, 54, 0) 98%)",
+        "gradient_bg": "linear-gradient(78deg, rgba(250, 220, 54, 0.24), rgba(239, 11, 81, 0.45) 38%, rgba(250, 220, 54, 0) 98%)",
         "title_color": "#000000",
         "title_top": "SUMMER INSPIRATION",
         "title": "THE DI MARE COLLECTION",
@@ -246,45 +237,155 @@
         "marginmobile": "0px 0px 0px 0px"
       }
     },
+    "16601928830ceb6d9f": {
+      "type": "product-list-swiper",
+      "settings": {
+        "animation": "fade-up",
+        "setwidth": "container",
+        "bgsection": "#fff8ec",
+        "title_top": "New Arrivals",
+        "title": "di mare collection",
+        "des": "",
+        "align-heading": "left",
+        "collection": "new-arrivals-1",
+        "limit": 10,
+        "perviewDesktop": 4,
+        "spaceBetween": 30,
+        "nowrap": false,
+        "arrows": false,
+        "scrollbar": false,
+        "buttonall": "Shop The collection",
+        "buttonall_link": "#",
+        "style_btn": "btn-outline",
+        "paddingsection": "40px 0px 80px 0px",
+        "paddingmobile": "32px 0px 0px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
+    "68f00d7d-af01-4aa1-a146-2e58796e1611": {
+      "type": "image-content",
+      "blocks": {
+        "template--19541121335616__68f00d7d-af01-4aa1-a146-2e58796e1611-1687424811e3734094-2": {
+          "type": "image_block",
+          "settings": {
+            "image": "shopify://shop_images/about-us-img.png"
+          }
+        },
+        "text_block_CWDyU3": {
+          "type": "text_block",
+          "settings": {
+            "width": "100%",
+            "bgtext": "rgba(0,0,0,0)",
+            "title_color": "rgba(0,0,0,0)",
+            "subtitle": "About Us",
+            "title": "Who We Are",
+            "textsubtitle": "",
+            "texttitle": "",
+            "size_text": "h2",
+            "text": "<p style=\"text-align: justify; font-family: 'Gilda Display', serif; font-size: 20px; font-style: normal; font-weight: 400; line-height: normal;\">\nAt Mare Jouel, we create more than just swimwear – we create memories. Inspired by the vibrant Key Biscayne community and the beauty of Miami’s coastline, each piece is designed to make you feel confident, graceful, and ready to embrace the magic of the moment. Our swimwear is made to highlight your natural beauty and empower you to feel your best, making every beach day an unforgettable experience. Crafted with high-quality, eco-friendly fabrics, Mare Jouel reflects timeless elegance and the unforgettable memories made in the sun and sea.\n</p>",
+            "answer_content": "<p><br/></p>",
+            "style_btn": "btn-theme",
+            "button": "Discover our story",
+            "link": "shopify://pages/about",
+            "enable_padding": true,
+            "align": "left"
+          }
+        }
+      },
+      "block_order": [
+        "template--19541121335616__68f00d7d-af01-4aa1-a146-2e58796e1611-1687424811e3734094-2",
+        "text_block_CWDyU3"
+      ],
+      "settings": {
+        "animation": "",
+        "setwidth": "container",
+        "bgsection": "rgba(0,0,0,0)",
+        "rangebg": 0,
+        "bgbefore": "rgba(0,0,0,0)",
+        "bg_pos": "left",
+        "enable_padding": false,
+        "align_center": true,
+        "paddingsection": "40px 0px 70px 0px",
+        "paddingmobile": "40px 0px 0px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
     "cbb9eed3-bb8e-4d0c-befd-efb97ca27a01": {
       "type": "scrolling-text",
       "blocks": {
         "template--19549173121344__cbb9eed3-bb8e-4d0c-befd-efb97ca27a01-1687343499304c03d3-0": {
           "type": "item",
           "settings": {
-            "code": "shop new arrivals"
+            "code": "as beautiful as a jewel",
+            "image": "shopify://shop_images/ri_shining-line.svg"
           }
         },
         "28834f1d-6fdd-4446-942c-c840fdd98763": {
           "type": "item",
           "settings": {
-            "code": "Shop best sellers"
+            "code": "as beautiful as a jewel",
+            "image": "shopify://shop_images/ri_shining-line.svg"
           }
         },
         "3b735a95-56a3-430b-9c96-cbc553f6e108": {
           "type": "item",
           "settings": {
-            "code": "Save 30%"
+            "code": "as beautiful as a jewel",
+            "image": "shopify://shop_images/ri_shining-line.svg"
+          }
+        },
+        "item_D8RQdc": {
+          "type": "item",
+          "settings": {
+            "code": "as beautiful as a jewel",
+            "image": "shopify://shop_images/ri_shining-line.svg"
+          }
+        },
+        "item_F4CVKx": {
+          "type": "item",
+          "settings": {
+            "code": "as beautiful as a jewel",
+            "image": "shopify://shop_images/ri_shining-line.svg"
+          }
+        },
+        "item_YKLXwY": {
+          "type": "item",
+          "settings": {
+            "code": "as beautiful as a jewel",
+            "image": "shopify://shop_images/ri_shining-line.svg"
+          }
+        },
+        "item_KgNk7n": {
+          "type": "item",
+          "settings": {
+            "code": "as beautiful as a jewel",
+            "image": "shopify://shop_images/ri_shining-line.svg"
           }
         }
       },
       "block_order": [
         "template--19549173121344__cbb9eed3-bb8e-4d0c-befd-efb97ca27a01-1687343499304c03d3-0",
         "28834f1d-6fdd-4446-942c-c840fdd98763",
-        "3b735a95-56a3-430b-9c96-cbc553f6e108"
+        "3b735a95-56a3-430b-9c96-cbc553f6e108",
+        "item_D8RQdc",
+        "item_F4CVKx",
+        "item_YKLXwY",
+        "item_KgNk7n"
       ],
       "settings": {
         "animation": "",
-        "size_text": "h1",
+        "size_text": "h5",
         "text_style": "solid",
-        "size_icon": 64,
+        "size_icon": 20,
         "speed": 30,
         "scroll_type": "from-right",
-        "background": "rgba(0,0,0,0)",
-        "gradient_bg": "",
-        "text": "#99857f",
-        "paddingsection": "40px 0px 40px 0px",
-        "paddingmobile": "40px 0px 40px 0px",
+        "background": "#f73c3c",
+        "gradient_bg": "linear-gradient(133deg, rgba(255, 199, 134, 0.91) 10%, rgba(255, 128, 108, 0.74) 49%, rgba(255, 193, 230, 1) 86%)",
+        "text": "#000000",
+        "paddingsection": "50px 0px 50px 0px",
+        "paddingmobile": "50px 0px 50px 0px",
         "marginsection": "0px 0px 0px 0px",
         "marginmobile": "0px 0px 0px 0px"
       }
@@ -308,14 +409,14 @@
           "type": "collection",
           "settings": {
             "title": "SWIM TOPS",
-            "collection": "men"
+            "collection": "best-seller-top"
           }
         },
         "166012224636496bd8-1": {
           "type": "collection",
           "settings": {
-            "title": "BUTTOND",
-            "collection": "women"
+            "title": "BOTTOMS",
+            "collection": "best-seller-bottom"
           }
         }
       },
@@ -324,19 +425,19 @@
         "166012224636496bd8-1"
       ],
       "settings": {
-        "animation": "fade-up",
-        "setwidth": "container-fluid",
-        "bgsection": "#ffffff",
-        "title_top": "",
+        "animation": "",
+        "setwidth": "container",
+        "bgsection": "#fff8ec",
+        "title_top": "Our Most Loved Pieces",
         "title": "Best Sellers",
-        "des": "Our Most Loved Pieces.",
+        "des": "",
         "align-heading": "left",
         "style_tab": "line",
         "enable_carousel": false,
-        "arrows": true,
-        "draggable": true,
-        "dots": true,
-        "infinite": true,
+        "arrows": false,
+        "draggable": false,
+        "dots": false,
+        "infinite": false,
         "rows": "1",
         "spaceBetween": 30,
         "limit": 4,
@@ -350,211 +451,236 @@
         "marginmobile": "0px 0px 0px 0px"
       }
     },
-    "7bbfe968-615f-45fb-b164-8b8d8466d957": {
-      "type": "backgroundvideo",
-      "blocks": {
-        "template--19549173121344__7bbfe968-615f-45fb-b164-8b8d8466d957-1687372265509219e4-0": {
-          "type": "sub_title",
-          "settings": {
-            "subtitle": "Nieuwe Collectie"
-          }
-        },
-        "template--19549173121344__7bbfe968-615f-45fb-b164-8b8d8466d957-1687372265509219e4-1": {
-          "type": "heading",
-          "settings": {
-            "title": "YON Collection",
-            "size_text": "h1"
-          }
-        },
-        "template--19549173121344__7bbfe968-615f-45fb-b164-8b8d8466d957-1687372265509219e4-2": {
-          "type": "paragraph",
-          "settings": {
-            "subtext": "Behind the Scenes"
-          }
-        },
-        "9e06118c-aa13-4153-bc8c-dddcde5ad4de": {
-          "type": "button",
-          "settings": {
-            "button": "discover now",
-            "link": "#",
-            "style_btn": "btn-theme btn-white"
-          }
-        }
-      },
-      "block_order": [
-        "template--19549173121344__7bbfe968-615f-45fb-b164-8b8d8466d957-1687372265509219e4-0",
-        "template--19549173121344__7bbfe968-615f-45fb-b164-8b8d8466d957-1687372265509219e4-1",
-        "template--19549173121344__7bbfe968-615f-45fb-b164-8b8d8466d957-1687372265509219e4-2",
-        "9e06118c-aa13-4153-bc8c-dddcde5ad4de"
-      ],
-      "settings": {
-        "animation": "",
-        "setwidth": "full",
-        "height_section": "650px",
-        "height_section_mobile": "450px",
-        "align": "center",
-        "position_text": "mid-center",
-        "link_video": "https://cdn.shopify.com/videos/c/o/v/303fcffdaa3845f8bbf6094fd9e5fdcd.mp4",
-        "bgsection": "#ffffff",
-        "bg_overlay": "#000000",
-        "gradient_bg": "",
-        "opacity_bg_overlay": 0.2,
-        "title_color": "#ffffff",
-        "bg_box": "#ffffff",
-        "opacity_bgbox": 0,
-        "marginsection": "0px 0px 0px 0px",
-        "marginmobile": "0px 0px 0px 0px"
-      }
-    },
-    "0c0246cb-5673-44cb-9cf3-1d345e8a2baa": {
-      "type": "shop-the-look",
-      "blocks": {
-        "template--19541121335616__0c0246cb-5673-44cb-9cf3-1d345e8a2baa-1687421913e5760638-0": {
-          "type": "product_block",
-          "settings": {
-            "product_item": "theas-9831-long-sleeved",
-            "left": 61,
-            "top": 38,
-            "dot_color": "#80270f"
-          }
-        },
-        "template--19541121335616__0c0246cb-5673-44cb-9cf3-1d345e8a2baa-1687421913e5760638-1": {
-          "type": "product_block",
-          "settings": {
-            "product_item": "carolinas-9831-casual-pants",
-            "left": 39,
-            "top": 80,
-            "dot_color": "#80270f"
-          }
-        }
-      },
-      "block_order": [
-        "template--19541121335616__0c0246cb-5673-44cb-9cf3-1d345e8a2baa-1687421913e5760638-0",
-        "template--19541121335616__0c0246cb-5673-44cb-9cf3-1d345e8a2baa-1687421913e5760638-1"
-      ],
+    "16609007639672b3d5": {
+      "type": "newsletter",
       "settings": {
         "animation": "fade-up",
         "setwidth": "container",
-        "bgsection": "#ffffff",
-        "enable_right": false,
-        "enable_heading_right": false,
-        "title_top": "the best",
-        "title": "Ready to wear",
-        "des": "",
-        "align-heading": "center",
-        "arrows": false,
-        "draggable": true,
-        "dots": true,
-        "infinite": true,
-        "paddingsection": "80px 0px 100px 0px",
-        "paddingmobile": "40px 0px 40px 0px",
+        "bgsection": "#000000",
+        "bg_overlay": "#000000",
+        "opacity_bg_overlay": 0.7,
+        "newletter_color": "#e9e9e9",
+        "colorborder": "#ffffff",
+        "image_bg": "shopify://shop_images/4956fa1058c78b25524cdfd8c434fd7476926b3b.jpg",
+        "e_size": "cover",
+        "e_repeat": "no-repeat",
+        "e_position": "center center",
+        "bg_inner": false,
+        "title_top": "",
+        "title": "",
+        "des": "<h1 style=\"color:#FFF8EC; font-family:'Gilda Display', serif; font-size:38px; font-style:normal; font-weight:400; line-height:normal; text-transform:uppercase; margin:0;\">\n    GET 10 % DISCOUNT\n  </h1>\n<span style=\"font-size:18px; font-family: Poppins;;\">Sign-Up For Our Newsletter To Get 10% Off At Your First Order And Receive Exclusive Access. Subscribe Today.</span>",
+        "html_left": true,
+        "html_left_block": "",
+        "paddingsection": "120px 0px 120px 0px",
+        "paddingmobile": "32px 0px 32px 0px",
         "marginsection": "0px 0px 0px 0px",
         "marginmobile": "0px 0px 0px 0px"
       }
     },
-    "636a2cc5-ad9e-439e-b7b8-bfc204b24d4a": {
-      "type": "parallax-banner",
-      "blocks": {
-        "template--19541121335616__636a2cc5-ad9e-439e-b7b8-bfc204b24d4a-168742274974246dbf-0": {
-          "type": "sub_title",
-          "settings": {
-            "subtitle": "SPECIAL OFFER"
-          }
-        },
-        "template--19541121335616__636a2cc5-ad9e-439e-b7b8-bfc204b24d4a-168742274974246dbf-1": {
-          "type": "heading",
-          "settings": {
-            "title": "A Good Time",
-            "size_text": "h2"
-          }
-        },
-        "template--19541121335616__636a2cc5-ad9e-439e-b7b8-bfc204b24d4a-168742274974246dbf-2": {
-          "type": "paragraph",
-          "settings": {
-            "subtext": "Our most popular styles right now that your <br>little one will love."
-          }
-        },
-        "dcffbc03-c1f5-4bc7-9f09-24d94df31d4d": {
-          "type": "button",
-          "settings": {
-            "button": "shop now",
-            "link": "#",
-            "style_btn": "btn-theme"
-          }
-        }
-      },
-      "block_order": [
-        "template--19541121335616__636a2cc5-ad9e-439e-b7b8-bfc204b24d4a-168742274974246dbf-0",
-        "template--19541121335616__636a2cc5-ad9e-439e-b7b8-bfc204b24d4a-168742274974246dbf-1",
-        "template--19541121335616__636a2cc5-ad9e-439e-b7b8-bfc204b24d4a-168742274974246dbf-2",
-        "dcffbc03-c1f5-4bc7-9f09-24d94df31d4d"
-      ],
-      "settings": {
-        "animation": "fade",
-        "setwidth": "full",
-        "bgsection": "#ffffff",
-        "parrallax_enable": false,
-        "height_section": "550",
-        "height_section_mobile": "450",
-        "align": "left",
-        "position_text": "mid-left",
-        "bg_box": "#ffffff",
-        "opacity_bgbox": 1,
-        "title_color": "#000000",
-        "bg_overlay": "#000000",
-        "gradient_bg": "",
-        "opacity_bg_overlay": 0.2,
-        "paddingsection": "0px 0px 0px 0px",
-        "marginsection": "0px 0px 0px 0px"
-      }
-    },
-    "662cf23c-2a28-41c4-9bd8-b6517c99ba49": {
-      "type": "image-content-6",
-      "blocks": {
-        "template--19541121335616__662cf23c-2a28-41c4-9bd8-b6517c99ba49-1687424839f6967066-1": {
-          "type": "text_block",
-          "settings": {
-            "bgtext": "#ffffff",
-            "subtitle": "cool G012",
-            "title": "French blue",
-            "size_text": "h2",
-            "text": "",
-            "answer_content": "<p>Coon G012 is a short sleeved t-shirt crafted from 100% organic cotton for a comfortable quality.</p>",
-            "button": "50% Off hurry up",
-            "link": "",
-            "style_btn": "btn-outline",
-            "align": "left"
-          }
-        },
-        "template--19541121335616__662cf23c-2a28-41c4-9bd8-b6517c99ba49-1687424839f6967066-0": {
-          "type": "image_block",
-          "settings": {
-            "style_content": "default",
-            "w_image": 40,
-            "pos_image": 88,
-            "e_image": "right",
-            "enable_video": false,
-            "text_circle": "Fashion2 style store",
-            "video_url": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--19541121335616__662cf23c-2a28-41c4-9bd8-b6517c99ba49-1687424839f6967066-1",
-        "template--19541121335616__662cf23c-2a28-41c4-9bd8-b6517c99ba49-1687424839f6967066-0"
-      ],
+    "featured_articles_z6PPr6": {
+      "type": "featured-articles",
+      "name": "Blog posts",
       "settings": {
         "animation": "",
         "setwidth": "container",
         "bgsection": "#ffffff",
-        "size": "50-50",
-        "enable_padding": true,
-        "align_center": true,
-        "paddingsection": "80px 0px 80px 0px",
+        "title_top": "Join Mare Jouel: Swimwear Fashion That Inspires",
+        "title": "Blog posts",
+        "des": "",
+        "align-heading": "left",
+        "blog": "news",
+        "item_style": "blog-1",
+        "enable_btn_blog": true,
+        "enable_btn_line": true,
+        "enable_date": true,
+        "enable_tag": true,
+        "enable_comment": true,
+        "enable_short": true,
+        "image_size": "auto",
+        "arrows": false,
+        "draggable": true,
+        "dots": false,
+        "infinite": true,
+        "rows": "1",
+        "limit": 5,
+        "show": 3,
+        "paddingsection": "40px 0px 0px 0px",
         "paddingmobile": "40px 0px 40px 0px",
         "marginsection": "0px 0px 0px 0px",
         "marginmobile": "0px 0px 0px 0px"
       }
+    },
+    "image_content_b9yUhb": {
+      "type": "image-content",
+      "blocks": {
+        "image_block_cbJpCP": {
+          "type": "image_block",
+          "settings": {
+            "image": "shopify://shop_images/layout_1.png"
+          }
+        },
+        "text_block_DgPRgH": {
+          "type": "text_block",
+          "settings": {
+            "width": "100%",
+            "bgtext": "rgba(0,0,0,0)",
+            "title_color": "rgba(0,0,0,0)",
+            "subtitle": "helping little dreams grow big",
+            "title": "giving back: semilla brillante",
+            "textsubtitle": "",
+            "texttitle": "",
+            "size_text": "h2",
+            "text": "<p style=\"text-align: justify; font-family: 'Gilda Display', serif; font-size: 20px; font-style: normal; font-weight: 400; line-height: normal;\">\nMare Jouel is a swimwear brand founded by Paulina Gomez, a Colombian teenager with a multicultural background. That’s why the brand dedicates a portion of its proceeds to supporting Semilla Brillante, a non-profit founded by Paulina to help orphaned and vulnerable children in Colombia. 50% of proceeds from Mare Jouel shirts support the Hogar Ángeles Custodios orphanage, funding education, necessities, and financial support for children in need. By purchasing a shirt, customers are helping provide brighter futures and hope for these children.\n</p>",
+            "answer_content": "",
+            "style_btn": "btn-theme",
+            "button": "donate now",
+            "link": "/#",
+            "enable_padding": true,
+            "align": "left"
+          }
+        }
+      },
+      "block_order": [
+        "image_block_cbJpCP",
+        "text_block_DgPRgH"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "animation": "",
+        "setwidth": "container",
+        "bgsection": "#fff8ec",
+        "rangebg": 100,
+        "bgbefore": "#fff8ec",
+        "bg_pos": "left",
+        "enable_padding": true,
+        "align_center": true,
+        "paddingsection": "70px 0px 70px 0px",
+        "paddingmobile": "40px 0px 40px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
+    "quotes_special_BxmA3J": {
+      "type": "quotes-special",
+      "blocks": {
+        "quote_gbJjWB": {
+          "type": "quote",
+          "settings": {
+            "title": "",
+            "quote": "“ Absolutely loved it. the fit, the quality and the color. this is a slim fit jean like none other and the only one i will buy. ”",
+            "rate": 5,
+            "author": "-Joey B.",
+            "info": "",
+            "avatar": "shopify://shop_images/image_65504cc8-2bef-444c-8e58-ecb72c8c25a5.png"
+          }
+        },
+        "quote_MakrcV": {
+          "type": "quote",
+          "settings": {
+            "title": "",
+            "quote": "The product looks stunning—great design, vibrant color, and perfect for summer. Feels both stylish and comfortable!",
+            "rate": 5,
+            "author": "-zenith_p.",
+            "info": "",
+            "avatar": "shopify://shop_images/image1.png"
+          }
+        },
+        "quote_K3MxJc": {
+          "type": "quote",
+          "settings": {
+            "title": "",
+            "quote": "Gorgeous piece! The style is flattering, and the quality looks amazing—perfect for beach days.",
+            "rate": 5,
+            "author": "-yousef B.",
+            "info": "",
+            "avatar": "shopify://shop_images/image2.png"
+          }
+        }
+      },
+      "block_order": [
+        "quote_gbJjWB",
+        "quote_MakrcV",
+        "quote_K3MxJc"
+      ],
+      "name": "Testimonials Split",
+      "settings": {
+        "animation": "",
+        "setwidth": "container",
+        "bgsection": "#ffffff",
+        "title_top": "let’s hear from our clients",
+        "title": "testimonials",
+        "des": "",
+        "align-heading": "left",
+        "color_rate": "#999999",
+        "color_rated": "#d73f0f",
+        "image_size": "auto",
+        "arrows": true,
+        "draggable": true,
+        "dots": false,
+        "infinite": true,
+        "paddingsection": "70px 0px 70px 0px",
+        "paddingmobile": "40px 0px 40px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
+    "17549951131679c44e": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_3760acc_fBFiFN": {
+          "type": "ai_gen_block_3760acc",
+          "name": "Video gallery",
+          "settings": {
+            "subheading": "VIDEOS FROM MARE JOUEL",
+            "width_layout": 1240,
+            "vertical_padding": 60,
+            "heading": "CAPTURE THE MOMENTS",
+            "text_alignment": "left",
+            "video_1": "/aa",
+            "thumbnail_1": "shopify://shop_images/image3.png",
+            "video_2": "/v2",
+            "thumbnail_2": "shopify://shop_images/video-1.png",
+            "video_3": "/v3",
+            "thumbnail_3": "shopify://shop_images/image4.png",
+            "video_4": "/v4",
+            "thumbnail_4": "shopify://shop_images/image5.png",
+            "enable_carousel": true,
+            "columns_desktop": 4,
+            "columns_mobile": "2",
+            "grid_gap": 20,
+            "header_spacing": 40,
+            "item_width": 350,
+            "item_height": 450,
+            "show_nav_buttons": false,
+            "show_dots": false,
+            "background_color": "#ffffff",
+            "heading_color": "#000000",
+            "subheading_color": "#666666",
+            "heading_size": 32,
+            "subheading_size": 16,
+            "video_border_radius": 8,
+            "play_button_size": 45,
+            "play_button_color": "#ffffff",
+            "play_button_hover_color": "rgba(0,0,0,0)",
+            "play_icon_color": "#ffffff",
+            "nav_button_size": 40,
+            "nav_button_color": "#ffffff",
+            "nav_button_hover_color": "#f0f0f0",
+            "nav_icon_color": "#000000",
+            "dot_color": "#cccccc",
+            "dot_active_color": "#000000",
+            "section_padding_top": 60,
+            "section_padding_bottom": 60,
+            "section_padding_left": 0,
+            "section_padding_right": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_3760acc_fBFiFN"
+      ],
+      "settings": {}
     },
     "1660192760ca5a4d9c": {
       "type": "brand-carousel",
@@ -628,38 +754,6 @@
         "marginmobile": "0px 0px 0px 0px"
       }
     },
-    "1660192674d8a6fd50": {
-      "type": "featured-articles",
-      "settings": {
-        "animation": "fade-up",
-        "setwidth": "container",
-        "bgsection": "#ffffff",
-        "title_top": "",
-        "title": "Journal",
-        "des": "Subscribe for latest news and blog updates from our editor.",
-        "align-heading": "center",
-        "blog": "news",
-        "item_style": "blog-1",
-        "enable_btn_blog": true,
-        "enable_btn_line": true,
-        "enable_date": true,
-        "enable_tag": true,
-        "enable_comment": true,
-        "enable_short": true,
-        "image_size": "landscape",
-        "arrows": true,
-        "draggable": true,
-        "dots": true,
-        "infinite": true,
-        "rows": "1",
-        "limit": 3,
-        "show": 3,
-        "paddingsection": "80px 0px 60px 0px",
-        "paddingmobile": "60px 0px 60px 0px",
-        "marginsection": "0px 0px 0px 0px",
-        "marginmobile": "0px 0px 0px 0px"
-      }
-    },
     "1660900735d9374b53": {
       "type": "line",
       "disabled": true,
@@ -673,279 +767,75 @@
         "wborder": "1px"
       }
     },
-    "68f00d7d-af01-4aa1-a146-2e58796e1611": {
-      "type": "image-content",
+    "instagram_customize_J6Hxgt": {
+      "type": "instagram-customize",
       "blocks": {
-        "template--19541121335616__68f00d7d-af01-4aa1-a146-2e58796e1611-1687424811e3734094-1": {
-          "type": "text_block",
+        "image_D7UDjB": {
+          "type": "image",
           "settings": {
-            "width": "75%",
-            "bgtext": "rgba(0,0,0,0)",
-            "title_color": "#ffffff",
-            "subtitle": "the best",
-            "title": "Consciously Crafted",
-            "size_text": "h2",
-            "text": "",
-            "answer_content": "<p>We aspire to be a brand of the 21st century: 100% online and without any intermediary.</p>",
-            "style_btn": "btn-theme btn-white",
-            "button": "shop now",
-            "link": "",
-            "enable_padding": true,
-            "align": "left"
+            "image": "shopify://shop_images/social_card_1.png",
+            "image_link": "",
+            "social_icon": "Instagram"
           }
         },
-        "template--19541121335616__68f00d7d-af01-4aa1-a146-2e58796e1611-1687424811e3734094-2": {
-          "type": "image_block",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "template--19541121335616__68f00d7d-af01-4aa1-a146-2e58796e1611-1687424811e3734094-1",
-        "template--19541121335616__68f00d7d-af01-4aa1-a146-2e58796e1611-1687424811e3734094-2"
-      ],
-      "settings": {
-        "animation": "fade-up",
-        "setwidth": "full",
-        "bgsection": "#7c6d5e",
-        "rangebg": 0,
-        "bgbefore": "rgba(0,0,0,0)",
-        "bg_pos": "left",
-        "enable_padding": false,
-        "align_center": true,
-        "paddingsection": "0px 0px 0px 0px",
-        "paddingmobile": "40px 0px 0px 0px",
-        "marginsection": "0px 0px 0px 0px",
-        "marginmobile": "0px 0px 0px 0px"
-      }
-    },
-    "16609007639672b3d5": {
-      "type": "newsletter",
-      "settings": {
-        "animation": "fade-up",
-        "setwidth": "container",
-        "bgsection": "#ffffff",
-        "bg_overlay": "#000000",
-        "opacity_bg_overlay": 0,
-        "newletter_color": "rgba(0,0,0,0)",
-        "colorborder": "#e1e1e1",
-        "e_size": "auto",
-        "e_repeat": "no-repeat",
-        "e_position": "center center",
-        "bg_inner": false,
-        "title_top": "",
-        "title": "Get <span class=\"text-theme\">10% </span> Discount",
-        "des": "Subscribe to receive the latest news, exclusive offers and 10% off your first order.",
-        "html_left": false,
-        "html_left_block": "",
-        "paddingsection": "58px 0px 58px 0px",
-        "paddingmobile": "32px 0px 0px 0px",
-        "marginsection": "0px 0px 0px 0px",
-        "marginmobile": "0px 0px 0px 0px"
-      }
-    },
-    "ea256325-7ebc-4ad1-9d79-25dc551f1f31": {
-      "type": "grid-banner",
-      "blocks": {
-        "template--19541121335616__ea256325-7ebc-4ad1-9d79-25dc551f1f31-168751421229c70d7f-0": {
-          "type": "banner",
+        "image_AVTrQW": {
+          "type": "image",
           "settings": {
-            "width": "6",
-            "subtitle": "Summer 23",
-            "title": "Female",
-            "size_text": "h2",
-            "description": "",
-            "bg_color": "#ffffff",
-            "colordef": "#ffffff",
-            "opacity_bg": 0,
-            "style_btn": "btn-theme btn-white",
-            "button_text": "shop Female",
-            "button_link": "",
-            "vertical": "bottom",
-            "horizontal": "left",
-            "text_align": "left"
+            "image": "shopify://shop_images/social_card_2.png",
+            "image_link": "https://www.facebook.com/people/Sequoiacodes/61577194533389/",
+            "social_icon": "Facebook"
           }
         },
-        "template--19541121335616__ea256325-7ebc-4ad1-9d79-25dc551f1f31-168751421229c70d7f-1": {
-          "type": "banner",
+        "image_jYn4iw": {
+          "type": "image",
           "settings": {
-            "width": "6",
-            "subtitle": "Summer 23",
-            "title": "Male",
-            "size_text": "h2",
-            "description": "",
-            "bg_color": "#ffffff",
-            "colordef": "#ffffff",
-            "opacity_bg": 0,
-            "style_btn": "btn-theme btn-white",
-            "button_text": "shop male",
-            "button_link": "",
-            "vertical": "bottom",
-            "horizontal": "center",
-            "text_align": "left"
+            "image": "shopify://shop_images/social_card_3.png",
+            "image_link": "",
+            "social_icon": "Instagram"
+          }
+        },
+        "image_xB7pCp": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/social_card_4.png",
+            "image_link": "",
+            "social_icon": "facebook"
+          }
+        },
+        "image_4GFnQt": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/social_card_5.png",
+            "image_link": "",
+            "social_icon": "linkedin"
           }
         }
       },
       "block_order": [
-        "template--19541121335616__ea256325-7ebc-4ad1-9d79-25dc551f1f31-168751421229c70d7f-0",
-        "template--19541121335616__ea256325-7ebc-4ad1-9d79-25dc551f1f31-168751421229c70d7f-1"
+        "image_D7UDjB",
+        "image_AVTrQW",
+        "image_jYn4iw",
+        "image_xB7pCp",
+        "image_4GFnQt"
       ],
-      "settings": {
-        "animation": "fade-up",
-        "setwidth": "container-fluid",
-        "bgsection": "#ffffff",
-        "title_top": "",
-        "title": "",
-        "des": "",
-        "align-heading": "center",
-        "no_gutter": false,
-        "show_overlay": true,
-        "gradient_overlay": true,
-        "bg_overlay": "#000000",
-        "opacity_overlay": 0.4,
-        "paddingsection": "0px 0px 80px 0px",
-        "paddingmobile": "40px 0px 40px 0px",
-        "marginsection": "0px 0px 0px 0px",
-        "marginmobile": "0px 0px 0px 0px"
-      }
-    },
-    "5e6d27a3-1163-46d3-a128-345487900584": {
-      "type": "faq-accordion",
-      "blocks": {
-        "template--19541121335616__5e6d27a3-1163-46d3-a128-345487900584-1687514909b5a1268d-0": {
-          "type": "faq",
-          "settings": {
-            "faq_title": "How do you choose what materials to use?",
-            "faq_des": "<p>Act natural. We also use mostly natural materials, which break down better and are less of a pollutant than the synthetic fibers that are being found in oceans and water supplies. </p>"
-          }
-        },
-        "template--19541121335616__5e6d27a3-1163-46d3-a128-345487900584-1687514909b5a1268d-1": {
-          "type": "faq",
-          "settings": {
-            "faq_title": "Where are your products made?",
-            "faq_des": "<p>Answer Description</p>"
-          }
-        },
-        "template--19541121335616__5e6d27a3-1163-46d3-a128-345487900584-1687514909b5a1268d-2": {
-          "type": "faq",
-          "settings": {
-            "faq_title": "What are you doing to be more sustainable?",
-            "faq_des": "<p>Answer Description</p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--19541121335616__5e6d27a3-1163-46d3-a128-345487900584-1687514909b5a1268d-0",
-        "template--19541121335616__5e6d27a3-1163-46d3-a128-345487900584-1687514909b5a1268d-1",
-        "template--19541121335616__5e6d27a3-1163-46d3-a128-345487900584-1687514909b5a1268d-2"
-      ],
+      "name": "Instagram Customize",
       "settings": {
         "animation": "",
         "setwidth": "container",
         "bgsection": "#ffffff",
-        "e_size": "auto",
-        "e_repeat": "no-repeat",
-        "e_pos": "center center",
-        "title_top": "Faqs",
-        "title": "Sustainability",
+        "title_top": "#specialasajewel",
+        "title": "from the mare jouel community",
         "des": "",
-        "align-heading": "center",
-        "title_size": "h6",
-        "e_first_open": true,
-        "e_reverse": true,
-        "e_small": true,
-        "left_html": "",
-        "e_right": false,
-        "paddingsection": "0px 0px 80px 0px",
-        "paddingmobile": "40px 0px 40px 0px",
-        "marginsection": "0px 0px 0px 0px",
-        "marginmobile": "0px 0px 0px 0px"
-      }
-    },
-    "1660925094098c539e": {
-      "type": "instagram-customize",
-      "blocks": {
-        "1660925094098c539e-0": {
-          "type": "image",
-          "settings": {
-            "image_link": "https://www.instagram.com/p/Cu3wKNqvfPG/"
-          }
-        },
-        "6ecfa747-1624-47c4-8967-277d3c819672": {
-          "type": "video",
-          "settings": {
-            "video_url": "https://scontent-hkg4-1.cdninstagram.com/o1/v/t16/f1/m82/5C4478EB82E4BCF2A8DDA1BF393E96B5_video_dashinit.mp4?efg=eyJ2ZW5jb2RlX3RhZyI6InZ0c192b2RfdXJsZ2VuLjcyMC5jbGlwcyJ9&_nc_ht=scontent-hkg4-1.cdninstagram.com&_nc_cat=105&vs=1005889927089586_3021979593&_nc_vs=HBksFQIYT2lnX3hwdl9yZWVsc19wZXJtYW5lbnRfcHJvZC81QzQ0NzhFQjgyRTRCQ0YyQThEREExQkYzOTNFOTZCNV92aWRlb19kYXNoaW5pdC5tcDQVAALIAQAVABgkR01qamRSVl9pdk9VNmJvSEFJVkRmVXFCRmkxYWJxX0VBQUFGFQICyAEAKAAYABsBiAd1c2Vfb2lsATEVAAAm0NXArdWG%2BD8VAigCQzMsF0ASZmZmZmZmGBJkYXNoX2Jhc2VsaW5lXzFfdjERAHUAAA%3D%3D&ccb=9-4&oh=00_AfAhq-bjuFTEsL9H15z6sj24b1Jy_gEPus_R0CXdz5nSNQ&oe=64B9C10C&_nc_sid=1d576d&_nc_rid=d891ff1e62",
-            "image_link": "https://www.instagram.com/reel/Cu1MBA1vdN1/",
-            "enable_play_video": false
-          }
-        },
-        "1660925094098c539e-1": {
-          "type": "image",
-          "settings": {
-            "image_link": "https://www.instagram.com/p/CuyrWWgPTY6/"
-          }
-        },
-        "1660925094098c539e-4": {
-          "type": "image",
-          "settings": {
-            "image_link": "https://www.instagram.com/p/CtQ1RAMvvGv/"
-          }
-        },
-        "a3a10629-8bb5-4700-b3af-1c908798381a": {
-          "type": "video",
-          "settings": {
-            "video_url": "https://cdn.shopify.com/videos/c/o/v/42a9e75219f6412ab5309312b07982a6.mp4",
-            "image_link": "https://www.instagram.com/p/CT1byDeliOs/",
-            "enable_play_video": false
-          }
-        },
-        "1660925094098c539e-2": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "image_link": "https://www.instagram.com/p/CueN3LZPQYA/"
-          }
-        },
-        "1660925094098c539e-3": {
-          "type": "image",
-          "settings": {
-            "image_link": "#"
-          }
-        },
-        "1660925094098c539e-5": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "image_link": "#"
-          }
-        }
-      },
-      "block_order": [
-        "1660925094098c539e-0",
-        "6ecfa747-1624-47c4-8967-277d3c819672",
-        "1660925094098c539e-1",
-        "1660925094098c539e-4",
-        "a3a10629-8bb5-4700-b3af-1c908798381a",
-        "1660925094098c539e-2",
-        "1660925094098c539e-3",
-        "1660925094098c539e-5"
-      ],
-      "settings": {
-        "animation": "fade-up",
-        "setwidth": "full",
-        "bgsection": "#ffffff",
-        "title_top": "",
-        "title": "",
-        "des": "",
-        "align-heading": "center",
+        "align-heading": "left",
         "image_size": "square",
         "arrows": false,
         "draggable": true,
         "dots": true,
         "infinite": true,
-        "show": 6,
-        "padding": false,
+        "show": 5,
+        "padding": true,
         "paddingsection": "0px 0px 0px 0px",
-        "paddingmobile": "60px 0px 60px 0px",
+        "paddingmobile": "40px 0px 40px 0px",
         "marginsection": "0px 0px 0px 0px",
         "marginmobile": "0px 0px 0px 0px"
       }
@@ -958,35 +848,35 @@
           "settings": {
             "bgblock": "rgba(0,0,0,0)",
             "title": "Free Shipping",
-            "description": "From all orders over $100",
-            "icon": "<svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-truck\" viewbox=\"0 0 82 82\"><path d=\"M7.238 68.717H1.867V2.12H58.4v16.736h3.886c9.755 0 17.663 7.908 17.663 17.663v32.199h-5.917M55.781 68.717H25.487\"></path><path d=\"M58.334 42.124h15.068v-4.27c0-6.82-5.53-12.35-12.351-12.35h-2.718v16.62M73.909 70.236a9.125 9.125 0 1 0-18.013-2.931 9.125 9.125 0 0 0 18.013 2.93ZM25.367 70.235a9.125 9.125 0 1 0-18.012-2.931 9.125 9.125 0 0 0 7.54 10.471 9.125 9.125 0 0 0 10.472-7.54Z\"></path><path d=\"M13.723 77.507c-3.966.658-7.937 1.51-11.857 2.593M60.373 76.736c-10.512-1.212-24.298-1.969-38.645-.451M79.768 80.121s-4.96-1.222-12.975-2.395\"></path></svg>"
+            "description": "Estimated 3-5 Days",
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"41\" height=\"41\" viewbox=\"0 0 41 41\" fill=\"none\">\n  <path d=\"M0.5 8V10.5H24.25V29.25H16.555C15.9975 27.1012 14.065 25.5 11.75 25.5C9.435 25.5 7.5025 27.1012 6.945 29.25H5.5V23H3V31.75H6.945C7.5025 33.8988 9.435 35.5 11.75 35.5C14.065 35.5 15.9975 33.8988 16.555 31.75H26.945C27.5025 33.8988 29.435 35.5 31.75 35.5C34.065 35.5 35.9975 33.8988 36.555 31.75H40.5V21.555L40.4212 21.3588L37.9212 13.8588L37.65 13H26.75V8H0.5ZM1.75 13V15.5H13V13H1.75ZM26.75 15.5H35.8512L38 21.9062V29.25H36.555C35.9975 27.1012 34.065 25.5 31.75 25.5C29.435 25.5 27.5025 27.1012 26.945 29.25H26.75V15.5ZM3 18V20.5H10.5V18H3ZM11.75 28C13.1462 28 14.25 29.1038 14.25 30.5C14.25 31.8962 13.1462 33 11.75 33C10.3538 33 9.25 31.8962 9.25 30.5C9.25 29.1038 10.3538 28 11.75 28ZM31.75 28C33.1463 28 34.25 29.1038 34.25 30.5C34.25 31.8962 33.1463 33 31.75 33C30.3538 33 29.25 31.8962 29.25 30.5C29.25 29.1038 30.3538 28 31.75 28Z\" fill=\"black\"></path>\n</svg>"
           }
         },
         "template--14684877652053__c5690cdb-c04d-45fd-9c6c-cfee011363ca-166585292003960893-1": {
           "type": "service",
           "settings": {
             "bgblock": "rgba(0,0,0,0)",
-            "title": "The Beach Club",
-            "description": "Be rewarded every time",
-            "icon": "<svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-plant-based\" viewbox=\"0 0 82 82\"><path d=\"M41 20.701V80M56.735 26.294c0 8.703-7.045 15.758-15.735 15.758s-15.735-7.055-15.735-15.758C25.265 14.719 41 2 41 2s15.735 12.719 15.735 24.294ZM30.479 46.972c6.145 6.154 6.145 16.132 0 22.285-6.145 6.154-16.107 6.154-22.252 0C.054 61.072 2.2 40.936 2.2 40.936s20.106-2.149 28.279 6.036Z\"></path><path d=\"M41 77.861S27.525 60.403 10.092 50.177M51.412 46.972c-6.145 6.154-6.145 16.132 0 22.285 6.145 6.153 16.107 6.154 22.252 0 8.173-8.185 6.027-28.321 6.027-28.321s-20.106-2.149-28.279 6.036Z\"></path><path d=\"M40.891 77.861s13.475-17.458 30.908-27.684\"></path></svg>"
+            "title": "instant refunds",
+            "description": "Return Money Within 30 Days",
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"33\" height=\"35\" viewbox=\"0 0 33 35\" fill=\"none\">\n  <path d=\"M10.332 1.5H18.6654C19.3284 1.5 19.9643 1.76339 20.4331 2.23223C20.902 2.70107 21.1654 3.33696 21.1654 4C21.1654 5.5471 20.5508 7.03083 19.4568 8.12479C18.3629 9.21875 16.8791 9.83333 15.332 9.83333H13.6654C12.1183 9.83333 10.6345 9.21875 9.54058 8.12479C8.44661 7.03083 7.83203 5.5471 7.83203 4C7.83203 3.33696 8.09542 2.70107 8.56426 2.23223C9.0331 1.76339 9.66899 1.5 10.332 1.5Z\" stroke=\"black\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n  <path d=\"M15.3327 31.5H7.83268C6.06457 31.5 4.36888 30.7976 3.11864 29.5474C1.86839 28.2972 1.16602 26.6015 1.16602 24.8334V23.1667C1.16518 20.2241 2.13778 17.364 3.93224 15.0319C5.7267 12.6998 8.24221 11.0268 11.0868 10.2737C13.9313 9.52058 16.9451 9.72958 19.6585 10.8682C22.3718 12.0067 24.6323 14.0109 26.0877 16.5684M21.166 28.1667H31.166M21.166 28.1667L26.166 23.1667M21.166 28.1667L26.166 33.1667\" stroke=\"black\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</svg>"
           }
         },
         "template--14684877652053__c5690cdb-c04d-45fd-9c6c-cfee011363ca-166585292003960893-2": {
           "type": "service",
           "settings": {
             "bgblock": "rgba(0,0,0,0)",
-            "title": "Instant Refunds",
-            "description": "Return money within 30 days",
-            "icon": "<svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-package\" viewbox=\"0 0 82 82\"><path d=\"M80 21v39L41 80 2 60V21L41 2l39 19Z\"></path><path d=\"m2 21 39 20 38.571-19.807M41 41.478v38.338\"></path><path d=\"m27.715 8.643 38.409 19.473v17.543l-11.617 6.067V33.83L16.098 14.355\"></path></svg>"
+            "title": "wear now",
+            "description": "Pay In Easy Installments",
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"41\" height=\"40\" viewbox=\"0 0 41 40\" fill=\"none\">\n  <path d=\"M37.1668 11.6667H33.8335V3.33337H30.5002V7.23337L20.5002 11.5167L10.5002 7.23337V3.33337H7.16683V11.6667H3.8335V15H7.25016C7.66683 18.75 10.8168 21.6667 14.6668 21.6667C17.0335 21.6667 19.1335 20.55 20.5002 18.8334C21.8835 20.55 23.9668 21.6667 26.3335 21.6667C30.1835 21.6667 33.3335 18.75 33.7502 15H37.1668V11.6667ZM14.6668 18.3334C13.5618 18.3334 12.502 17.8944 11.7206 17.113C10.9391 16.3316 10.5002 15.2718 10.5002 14.1667V10.8334L18.8335 14.4167C18.6668 16.6 16.8835 18.3334 14.6668 18.3334ZM30.5002 14.1667C30.5002 15.2718 30.0612 16.3316 29.2798 17.113C28.4984 17.8944 27.4386 18.3334 26.3335 18.3334C24.1168 18.3334 22.3335 16.6 22.1668 14.4167L30.5002 10.8334V14.1667ZM3.8335 25V28.3334H5.50016C10.4502 28.3334 14.5502 31.95 15.3502 36.6667H25.6502C26.4502 31.95 30.5502 28.3334 35.5002 28.3334H37.1668V25H3.8335ZM23.1502 33.3334H17.8502C17.0708 31.4181 15.862 29.7075 14.3168 28.3334H26.6835C25.1502 29.7 23.9335 31.4 23.1502 33.3334Z\" fill=\"black\"></path>\n</svg>"
           }
         },
         "4273663e-a3ea-49a8-a7c1-c872309fc99c": {
           "type": "service",
           "settings": {
             "bgblock": "rgba(0,0,0,0)",
-            "title": "Wear Now",
-            "description": "Pay in easy instalments.",
-            "icon": "<svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-shield\" viewbox=\"0 0 64 64\"><defs><style>.a{fill:none;stroke:#000;stroke-width:2px}</style></defs><path class=\"a\" d=\"M21.18 31.69L28.54 39l15.91-15.88\"></path><path class=\"a\" d=\"M53 12.54v15.24a31.41 31.41 0 0 1-3.7 14.95A25.46 25.46 0 0 1 32 56a25.46 25.46 0 0 1-17.3-13.27A31.41 31.41 0 0 1 11 27.78V12.54C24.88 13.67 32 8 32 8s7.12 5.67 21 4.54z\"></path></svg>"
+            "title": "Need help?",
+            "description": "Get In Touch With Us Now!",
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"41\" height=\"40\" viewbox=\"0 0 41 40\" fill=\"none\">\n  <path d=\"M20.4168 30C21.0002 30 21.4935 29.7984 21.8968 29.395C22.3002 28.9917 22.5013 28.4989 22.5002 27.9167C22.4991 27.3345 22.2979 26.8412 21.8968 26.4367C21.4957 26.0323 21.0024 25.8312 20.4168 25.8334C19.8313 25.8356 19.3385 26.0373 18.9385 26.4384C18.5385 26.8395 18.3368 27.3323 18.3335 27.9167C18.3302 28.5012 18.5318 28.9945 18.9385 29.3967C19.3452 29.7989 19.8379 30 20.4168 30ZM18.9168 23.5834H22.0002C22.0002 22.6667 22.1046 21.9445 22.3135 21.4167C22.5224 20.8889 23.1124 20.1667 24.0835 19.25C24.8057 18.5278 25.3752 17.84 25.7918 17.1867C26.2085 16.5334 26.4168 15.7489 26.4168 14.8334C26.4168 13.2778 25.8474 12.0834 24.7085 11.25C23.5696 10.4167 22.2224 10 20.6668 10C19.0835 10 17.7991 10.4167 16.8135 11.25C15.8279 12.0834 15.1402 13.0834 14.7502 14.25L17.5002 15.3334C17.6391 14.8334 17.9518 14.2917 18.4385 13.7084C18.9252 13.125 19.6679 12.8334 20.6668 12.8334C21.5557 12.8334 22.2224 13.0767 22.6668 13.5634C23.1113 14.05 23.3335 14.5845 23.3335 15.1667C23.3335 15.7223 23.1668 16.2434 22.8335 16.73C22.5002 17.2167 22.0835 17.6678 21.5835 18.0834C20.3613 19.1667 19.6113 19.9862 19.3335 20.5417C19.0557 21.0973 18.9168 22.1112 18.9168 23.5834ZM20.5002 36.6667C18.1946 36.6667 16.0279 36.2295 14.0002 35.355C11.9724 34.4806 10.2085 33.2928 8.7085 31.7917C7.2085 30.2906 6.02128 28.5267 5.14683 26.5C4.27239 24.4734 3.83461 22.3067 3.8335 20C3.83239 17.6934 4.27016 15.5267 5.14683 13.5C6.0235 11.4734 7.21072 9.70949 8.7085 8.20838C10.2063 6.70727 11.9702 5.52005 14.0002 4.64672C16.0302 3.77338 18.1968 3.3356 20.5002 3.33338C22.8035 3.33116 24.9702 3.76894 27.0002 4.64672C29.0302 5.52449 30.7941 6.71172 32.2918 8.20838C33.7896 9.70505 34.9774 11.4689 35.8552 13.5C36.7329 15.5312 37.1702 17.6978 37.1668 20C37.1635 22.3023 36.7257 24.4689 35.8535 26.5C34.9813 28.5312 33.7941 30.2951 32.2918 31.7917C30.7896 33.2884 29.0257 34.4762 27.0002 35.355C24.9746 36.2339 22.8079 36.6712 20.5002 36.6667ZM20.5002 33.3334C24.2224 33.3334 27.3752 32.0417 29.9585 29.4584C32.5418 26.875 33.8335 23.7223 33.8335 20C33.8335 16.2778 32.5418 13.125 29.9585 10.5417C27.3752 7.95838 24.2224 6.66672 20.5002 6.66672C16.7779 6.66672 13.6252 7.95838 11.0418 10.5417C8.4585 13.125 7.16683 16.2778 7.16683 20C7.16683 23.7223 8.4585 26.875 11.0418 29.4584C13.6252 32.0417 16.7779 33.3334 20.5002 33.3334Z\" fill=\"black\"></path>\n</svg>"
           }
         }
       },
@@ -998,8 +888,8 @@
       ],
       "settings": {
         "animation": "fade-up",
-        "setwidth": "full",
-        "bgsection": "#f5f5f5",
+        "setwidth": "container",
+        "bgsection": "#fff8ec",
         "title_top": "",
         "title": "",
         "des": "",
@@ -1022,18 +912,6 @@
         "marginmobile": "0px 0px 0px 0px"
       }
     },
-    "1754982989162cadcb": {
-      "type": "_blocks",
-      "settings": {}
-    },
-    "1754983258383c7797": {
-      "type": "_blocks",
-      "settings": {}
-    },
-    "17549951131679c44e": {
-      "type": "_blocks",
-      "settings": {}
-    },
     "1754995195a452d753": {
       "type": "_blocks",
       "settings": {}
@@ -1042,28 +920,21 @@
   "order": [
     "2eb6b70b-dbd5-4aeb-ab9b-4433f8269284",
     "ea0a2867-55f8-4a4d-b69a-54b7fd3f3edc",
-    "8d3646ae-af4d-47b1-b4c0-f529c93a012e",
-    "16601928830ceb6d9f",
     "rich_text_BheE9q",
+    "16601928830ceb6d9f",
+    "68f00d7d-af01-4aa1-a146-2e58796e1611",
     "cbb9eed3-bb8e-4d0c-befd-efb97ca27a01",
     "7f1588c7-fcd8-4960-af12-6c22080eb14c",
     "166012224636496bd8",
-    "7bbfe968-615f-45fb-b164-8b8d8466d957",
-    "0c0246cb-5673-44cb-9cf3-1d345e8a2baa",
-    "636a2cc5-ad9e-439e-b7b8-bfc204b24d4a",
-    "662cf23c-2a28-41c4-9bd8-b6517c99ba49",
-    "1660192760ca5a4d9c",
-    "1660192674d8a6fd50",
-    "1660900735d9374b53",
-    "68f00d7d-af01-4aa1-a146-2e58796e1611",
     "16609007639672b3d5",
-    "ea256325-7ebc-4ad1-9d79-25dc551f1f31",
-    "5e6d27a3-1163-46d3-a128-345487900584",
-    "1660925094098c539e",
-    "16485444103c52f5e9",
-    "1754982989162cadcb",
-    "1754983258383c7797",
+    "featured_articles_z6PPr6",
+    "image_content_b9yUhb",
+    "quotes_special_BxmA3J",
     "17549951131679c44e",
+    "1660192760ca5a4d9c",
+    "1660900735d9374b53",
+    "instagram_customize_J6Hxgt",
+    "16485444103c52f5e9",
     "1754995195a452d753"
   ]
 }

@@ -33,6 +33,7 @@
     color: var(--footer-text);
     border-top: 1px solid var(--footer-head-border);
     line-height: 1.8;
+    font-family: "Gilda Display";
   }
   .site-footer a {
     color: var(--footer-text);
@@ -148,14 +149,32 @@
     color:var(--footer-text);
   }
   .site-footer .site-footer__section-title{
-    font-family: var({{ section.settings.footer_font_family }});
-    text-transform:var(--footer-font-type);
-    font-weight: var(--footer-font-weight);
-    font-size: var(--footer-font-size);
+    {% comment %} font-family: var({{ section.settings.footer_font_family }}); {% endcomment %}
+    {% comment %} text-transform:var(--footer-font-type); {% endcomment %}
+    {% comment %} font-weight: var(--footer-font-weight);
+    font-size: var(--footer-font-size); {% endcomment %}
     letter-spacing: var(--footer-font-space);
-    margin-bottom:32px;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin:0px 0px 10px 0px;
+  }
+  .footer_menu{
+  width:250px !important;
+  transform:translateX(-45px);
+  }
+   .footer_menu1{
+  width:150px !important;
   }
   @media (max-width:749px){
+     .footer_menu{
+      width:100% !important;
+      transform:translateX(0px);
+      }
+      .footer_menu1{
+      width:100% !important;
+      }
     .site-footer .payment-icons li{
       padding: 5px 0;
     } 
@@ -274,11 +293,11 @@
     }
   }
   @media (min-width:991px){
-
+{% comment %} ////////////////////////////////////////////////////////////////////////////// {% endcomment %}
     .row .footer-column:not(:first-child){
       border-left:1px solid var(--footer-head-border);
-      padding-left:40px;
-      padding-right:40px;
+      padding-left:20px;
+      padding-right:20px;
     }
     .row .footer-column:last-child{
       padding-right:var(--g-hgutter);
@@ -338,7 +357,7 @@
         {%- when 'social' -%}
         <div class="site-footer__section social-account text-lg-{{ footer_align_title }}">
           {%- if block.settings.title != blank -%}
-          <h4 class="h5 site-footer__section-title ">{{ block.settings.title | escape }}</h4>
+          <div class="h5  site-footer__section-title ">{{ block.settings.title | escape }}</div>
           {%- endif -%}
           <div class="site-footer__list site-footer-block">
             {%- render 'block-social' -%}
@@ -348,7 +367,7 @@
         {%- when 'contact' -%}
           <div class="site-footer__section text-lg-{{ footer_align_title }}">
             {%- if block.settings.title != blank -%}
-              <h4 class="h5 site-footer__section-title ">{{ block.settings.title | escape }}</h4>
+              <div class="h5  site-footer__section-title ">{{ block.settings.title | escape }}</div>
             {%- endif -%}
               <div class="site-footer__list site-footer-block">
                 {%- if block.settings.contact_des != blank -%}
@@ -386,12 +405,25 @@
           </div>
         {%- when 'menu' -%}
         {%- if linklists[block.settings.link_list].links.size > 0 -%}
-        <div class="site-footer__section text-lg-{{ footer_align_title }}">
+        <div class="site-footer__section footer_menu text-lg-{{ footer_align_title }}">
           {%- if linklists[block.settings.link_list].title != blank -%}
-          <h4 class="h5 site-footer__section-title">{{ linklists[block.settings.link_list].title }}</h4>
+          <div class="h5  site-footer__section-title">{{ linklists[block.settings.link_list].title }}</div>
           {%- endif -%}
           <ul class="site-footer__list site-footer-block">
             {%- for link in linklists[block.settings.link_list].links -%}
+            <li class="site-footer__list-item"><a href="{{ link.url }}">{{ link.title }}</a></li>
+            {%- endfor -%}
+          </ul>
+        </div>
+        {%- endif -%}
+          {%- when 'menu1' -%}
+        {%- if linklists[block.settings.link_list1].links.size > 0 -%}
+        <div class="site-footer__section footer_menu1 text-lg-{{ footer_align_title }}">
+          {%- if linklists[block.settings.link_list1].title != blank -%}
+          <div class="h5  site-footer__section-title">{{ linklists[block.settings.link_list1].title }}</div>
+          {%- endif -%}
+          <ul class="site-footer__list site-footer-block">
+            {%- for link in linklists[block.settings.link_list1].links -%}
             <li class="site-footer__list-item"><a href="{{ link.url }}">{{ link.title }}</a></li>
             {%- endfor -%}
           </ul>
@@ -401,7 +433,7 @@
         {%- when 'text' -%}
         <div class="site-footer__section text-lg-{{ footer_align_title }} {% if block.settings.title == blank and block.settings.logofooter == blank and  block.settings.text == blank %} pb-0 {% endif  %}">
           {%- if block.settings.title != blank -%}
-          <h4 class="h5 site-footer__section-title">{{ block.settings.title | escape }}</h4>
+          <div class=" site-footer__section-title">{{ block.settings.title | escape }}</div>  {% comment %}Text{% endcomment %}
           {%- endif -%}
           <div class="{%- if block.settings.title != blank -%} site-footer-block {% endif %} footer-{{ footer_align_title }}">
             {%- if block.settings.logofooter != blank -%}
@@ -429,6 +461,7 @@
         {%- when 'newsletter' -%}
         {% style %}
         .footer-email .btn-theme{
+          border:1px solid white;
           background-color: {{ block.settings.btn_bg_new }};
           color:{{ block.settings.btn_cl_new }};
         }
@@ -446,9 +479,9 @@
         {% endstyle %}
         <div class="site-footer__section section-footer-email text-lg-{{ footer_align_title }}">
           {%- if block.settings.title != blank -%}
-          <h4 class="h5 site-footer__section-title">
+          <div class="h5  site-footer__section-title">
             {{ block.settings.title | escape }}
-          </h4>
+          </div>
           {%- endif -%}
           <div class="site-footer-block ">
             <div class="form-vertical footer-email ">
@@ -459,18 +492,38 @@
               {%- else -%}
               <input type="hidden" name="contact[tags]" value="newsletter">
               {%- if block.settings.subheading != blank -%}
-              <div class="site-footer__newsletter-label mb-3">
-                {{ block.settings.subheading }}
+              <div class="site-footer__newsletter-label mb-3" >
+                {{ block.settings.subheading }} 
               </div>
               {%- endif -%}
-              <div class="form-group flex-column">
+              {% style %}
+                .form-relative{
+                  position:relative;
+                }
+                .icon-position{
+                  position:absolute;
+                  top:10%;
+                  left:5%;
+                  z-index:5;
+                }
+                .input-p{
+                  padding:0px 0px 0px 45px !important;
+                }
+                .label-p{
+                  transform:translateX(30px) !important;
+                }
+              {% endstyle %}
+              <div class="form-group flex-column form-relative">
+                <span class="icon-position">
+                  {% render 'icon-email' %}
+                </span>
                 <input 
                 type="email" 
                 value="{{ form.email }}"
                 placeholder="{{ 'general.newsletter_form.newsletter_placeholder' | t }}" 
                 name="contact[email]" 
                 id="NewsletterEmail-{{ block.id }}" 
-                class="form-control w-100 mb-3" 
+                class="form-control w-100 mb-3 input-p " 
                 aria-required="true"
                 autocorrect="off" 
                 autocapitalize="off"
@@ -485,10 +538,10 @@
                 required
                 style="background-color:{{ block.settings.bg_new }};border-color:{{ block.settings.border_new }}"
                 >
-                <label for="NewsletterEmail-{{ block.id }}">{{ 'general.newsletter_form.newsletter_placeholder' | t }}</label>
+                <label class="label-p" for="NewsletterEmail-{{ block.id }}">{{ 'general.newsletter_form.newsletter_placeholder' | t }}</label>
                 <div class="d-flex {% if footer_align_title == 'center' %} justify-content-lg-center {% elsif footer_align_title == 'right' %} justify-content-lg-end {% else %} justify-content-lg-start {% endif %}">
-                  <button type="submit" class="btn btn-theme " name="commit">
-                    <span class="position-relative">{{ 'general.newsletter_form.submit' | t }}</span>
+                  <button type="submit" class="btn btn-theme " style="padding:10px !important;" name="commit">
+                    <div class="position-relative">{{ 'general.newsletter_form.submit' | t }}</div>{% comment %}no span{% endcomment %}
                   </button>
                 </div>
               </div>
@@ -506,12 +559,43 @@
     </div>
     </div>
   </div>
+  <style>
+    .footer-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        flex-wrap: wrap;
+        padding:10px 10px 50px 10px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      .footer-flex-b {
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        flex-wrap: wrap;
+      }
+      .background-white{
+      background:white;
+      padding:4px;
+      height:30px;
+      border-radius:2px;
+      }
+      .contain-obj{
+        margin:0px 4px 0px 4px;
+      }
+      {% comment %} .border-1{
+      border:1px solid black;
+      }         {% endcomment %}
+  </style>
   <div class="site-footer__copyright" >
     <div class="{{ section.settings.setwidth }}">
-      <div class="d-flex flex-lg-row flex--sm-column flex-column-reverse">
-        <div class="flex-lg-grow-1">
-            <div class="d-flex flex-column text-lg-left text-center pt-lg-0 pt-3">
-              <div class="d-flex flex-lg-row align-items-center justify-content-lg-start justify-content-center">
+      <div class="footer-flex"> {% comment %}Main{% endcomment %}
+        <div class="">
+            <div class=""> 
+              <div class="">
             {%- liquid
               assign enable_image = section.settings.enable_image
               assign enable_name = section.settings.enable_name 
@@ -530,7 +614,7 @@
             {%- endif -%}
             </div>
         </div>
-        <div class="footer-copy-right">
+        <div> 
           {%- if section.settings.payment_info == 'svg' -%}
             {%- if shop.enabled_payment_types != empty -%}
               <ul id="footer-payment-methods" class="list-inline payment-icons text-center text-lg-right">
@@ -542,19 +626,71 @@
               </ul>
             {%- endif -%}
           {%- else -%}
-            {%- if section.settings.imgpayment != blank -%}
-              <img class="lazyload" src="{{ section.settings.imgpayment | image_url: width: 1, height: 1 }}" data-src="{{ section.settings.imgpayment | image_url: width: 400 }}" 
-                loading="lazy"
-                width="{{ section.settings.imgpayment.width }}"
-                height="{{ section.settings.imgpayment.height }}"/>
-            {%- endif -%}
+            <div class="payment-images-row" style="display: flex; gap: 5px; justify-content: center; align-items: center;">
+              <div class="background-white ">
+                {%- if section.settings.imgpayment != blank -%}
+                  <img class="lazyload border-1" src="{{ section.settings.imgpayment | image_url: width: 1, height: 1 }}" data-src="{{ section.settings.imgpayment | image_url: width: 400 }}" 
+                    loading="lazy"
+                    width="{{ section.settings.imgpayment.width }}"
+                    height="{{ section.settings.imgpayment.height }}"/>
+                {%- endif -%}
+              </div>
+              <div class="background-white ">
+              {%- if section.settings.imgpayment_1 != blank -%}
+                  <img class="lazyload contain-obj" src="{{ section.settings.imgpayment_1 | image_url: width: 1, height: 1 }}" data-src="{{ section.settings.imgpayment_1 | image_url: width: 400 }}" 
+                  loading="lazy"
+                  width="40"
+                  height="30"/>              
+              {%- endif -%}
+              </div>
+              <div class=" ">
+              {%- if section.settings.imgpayment_2 != blank -%}
+                  <img class="lazyload" src="{{ section.settings.imgpayment_2 | image_url: 'large' }}" data-src="{{ section.settings.imgpayment_2 | image_url: width: 400 }}" 
+                  loading="lazy"
+                  width="{{ section.settings.imgpayment.width }}"
+                  height="30"/>              
+              {%- endif -%}
+              </div>
+              <div class=" " style="background:white; padding:0px 2px; border-radius:2px;">
+              {%- if section.settings.imgpayment_3 != blank -%}
+                  <img class="lazyload" src="{{ section.settings.imgpayment_3 | image_url: width: 1, height: 1 }}" data-src="{{ section.settings.imgpayment_3 | image_url: width: 400 }}" 
+                  loading="lazy"
+                  width="{{ section.settings.imgpayment.width }}"
+                  height="{{ section.settings.imgpayment.height }}"/>              
+              {%- endif -%}
+              </div>
+              <div class="background-white ">
+              {%- if section.settings.imgpayment_4 != blank -%}
+                  <img class="lazyload" src="{{ section.settings.imgpayment_4 | image_url: width: 1, height: 1 }}" data-src="{{ section.settings.imgpayment_4 | image_url: width: 400 }}" 
+                  loading="lazy"
+                  width="55"
+                  height="{{ section.settings.imgpayment.height }}"/>              
+              {%- endif -%}
+              </div>
+              <div class=" ">
+              {%- if section.settings.imgpayment_5 != blank -%}
+                  <img class="lazyload" src="{{ section.settings.imgpayment_5 | image_url: width: 3, height: 1 }}" data-src="{{ section.settings.imgpayment_5 | image_url: width: 600 }}" 
+                  loading="lazy"
+                  width="150"
+                  height="{{ section.settings.imgpayment.height }}"/>              
+              {%- endif -%}
+              </div>
+            </div>
+          
+            
           {%- endif -%}
-          <div class="pt-3">
-            <ul class="list-unstyled list-inline d-flex text-lg-right text-center footer-bottom-link flex-wrap justify-content-center justify-content-lg-end">
-            {%- for link in linklists[section.settings.link_list_bottom].links -%}
-              <li class=""><a href="{{ link.url }}">{{ link.title }}</a></li>
-              {%- endfor -%}
-            </ul>
+
+          
+
+        </div>
+        <div class="footer-copy-right">
+          <div class="">
+            <div class="list-unstyled list-inline  text-lg-right text-center footer-bottom-link footer-flex-b">
+           
+              <span class=" "><a href="#">Terms of Usage</a></span>
+              <span class=""><a href="#">Conditions</a></span>
+           
+            </div>
           </div>
         </div>
       
@@ -852,7 +988,32 @@
     {
       "type": "image_picker",
       "id": "imgpayment",
-      "label": "Image Payment"
+      "label": "Image Payment 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "imgpayment_1",
+      "label": "Payment Image 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "imgpayment_2", 
+      "label": "Payment Image 3"
+    },
+    {
+      "type": "image_picker",
+      "id": "imgpayment_3",
+      "label": "Payment Image 4"
+    },
+     {
+      "type": "image_picker",
+      "id": "imgpayment_4",
+      "label": "Payment Image 5"
+    },
+     {
+      "type": "image_picker",
+      "id": "imgpayment_5",
+      "label": "Payment Image 6"
     },
     {
       "type": "checkbox",
@@ -985,6 +1146,59 @@
           "id": "link_list",
           "type": "link_list",
           "label": "Menu",
+          "default": "footer",
+          "info": "This menu won't show dropdown items"
+        },
+        {
+          "type": "select",
+          "id": "width",
+          "label": "Container width",
+          "default": "25%",
+          "options": [
+            {
+              "value": "16%",
+              "label": "16%"
+            },
+            {
+              "value": "20%",
+              "label": "20%"
+            },
+            {
+              "value": "25%",
+              "label": "25%"
+            },
+            {
+              "value": "33%",
+              "label": "33%"
+            },
+            {
+              "value": "50%",
+              "label": "50%"
+            },
+            {
+              "value": "66%",
+              "label": "66%"
+            },
+            {
+              "value": "75%",
+              "label": "75%"
+            },
+            {
+              "value": "100%",
+              "label": "100%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "menu1",
+      "name": "Menu1",
+      "settings": [
+        {
+          "id": "link_list1",
+          "type": "link_list",
+          "label": "Menu1",
           "default": "footer",
           "info": "This menu won't show dropdown items"
         },
@@ -1234,7 +1448,7 @@
           "default": "Be in the know"
         },
         {
-          "type": "richtext",
+          "type": "html",
           "id": "subheading",
           "label": "Subheading",
           "default": "<p>Promotions, new products and sales. Directly to your inbox.</p>"

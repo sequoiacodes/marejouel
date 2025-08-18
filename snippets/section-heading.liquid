@@ -1,26 +1,88 @@
-<!-- section-heading.liquid - Apply for all section title -->
+<style>
+  {% if btn %}
+    .heading-top{
+      display: flex;
+      align-items: center;
+      flex-wrap:wrap;
+      justify-content: space-between;
+    } 
+    .shop-the-collection{
+      font-family: "Gilda Display";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: capitalize;
+      border: 2px solid var(--text-color, #000);
+      display: flex;
+      width: 183px;
+      padding: 10px;
+      justify-content: center;
+      margin: 0 0 20% 0;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+    .shop-the-collection:hover{
+    border:2px solid #ee3232;
+    color:#ee3232;
+    }
+
+
+/* Mobile (max-width: 767px) */
+@media (max-width: 767px) {
+  .shop-the-collection {
+    width:150px;
+    font-size: 14px;
+    margin: 0 0 6% 0;
+    gap:6px
+}
+
+/* Extra small (max-width: 480px) */
+@media (max-width: 480px) {
+  .shop-the-collection {
+    width:140px;
+    font-size: 12px;
+    margin: 0 0 5% 0;
+    gap:3px;
+  }
+}
+  {% endif %}
+</style>
+
 {%- if settings.sectionheading == 'heading-1' -%}
-  {%- if section.settings.title_top != blank -%}
-    <div class="subtop text-{{ section.settings.align-heading }} text-top {% if section.settings.title != blank %} mb-2 {% else %} mb-4 {% endif %}" data-aos="{{ section.settings.animation }}" data-aos-duration="300">{{ section.settings.title_top }}</div>
-  {%- endif -%}
-  {%- if section.settings.title != blank -%}
-  <h3 class="section-title-1 text-{{ section.settings.align-heading }}  {% if section.settings.des != blank %} mb-2 {% else %} mb-5 {% endif %}" data-aos="{{ section.settings.animation }}" data-aos-duration="500">
-    <span>{{ section.settings.title }}</span>
-  </h3>
-  {%- endif -%}
-  {%- if section.settings.des != blank -%}
-  <div class="font-family-2 mb-5 txt-body-70 text-{{ section.settings.align-heading }}" data-aos="{{ section.settings.animation }}" data-aos-duration="800">{{ section.settings.des }}</div>
-  {%- endif -%}
+  <div class="heading-top">
+   
+    <div>
+      {%- if section.settings.title_top != blank -%}
+        <div class="subtop text-{{ section.settings.align-heading }} text-top {% if section.settings.title != blank %} mb-2 {% else %} mb-4 {% endif %}" data-aos="{{ section.settings.animation }}" data-aos-duration="300">{{ section.settings.title_top }}</div>
+      {%- endif -%}
+      {%- if section.settings.title != blank -%}
+        <h3 class="section-title-1 text-{{ section.settings.align-heading }} {% if section.settings.des != blank %} mb-2 {% else %} mb-5 {% endif %}" data-aos="{{ section.settings.animation }}" data-aos-duration="500">
+          <span>{{ section.settings.title }}</span>
+        </h3>
+      {%- endif -%}
+      {%- if section.settings.des != blank -%}
+        <div class="font-family-2 mb-5 txt-body-70 text-{{ section.settings.align-heading }}" data-aos="{{ section.settings.animation }}" data-aos-duration="800">{{ section.settings.des }}</div>
+      {%- endif -%}
+    </div>
+    {% if btn %}
+    <div>
+       <a class="shop-the-collection" href="{{ collection_url }}">Shop the collection</a>
+    </div>
+    {% endif %}
+  </div>
 {%- elsif settings.sectionheading == 'heading-2' -%}
   {%- if section.settings.title_top != blank -%}
     <div class="subtop text-center text-top" data-aos="{{ section.settings.animation }}" data-aos-duration="300">{{ section.settings.title_top }}</div>
   {%- endif -%}
   {%- if section.settings.title != blank -%}
-  <h3 class="section-title-2 {% if section.settings.des != blank %} mb-2 {% else %} mb-5 {% endif %}">
-    <span>{{ section.settings.title }}</span>
-  </h3>
+    <h3 class="section-title-2 {% if section.settings.des != blank %} mb-2 {% else %} mb-5 {% endif %}">
+      <span>{{ section.settings.title }}</span>
+    </h3>
   {%- endif -%}
   {%- if section.settings.des != blank -%}
-  <p class="font-family-2 mb-5 txt-body-70">{{ section.settings.des }}</p>
+    <p class="font-family-2 mb-5 txt-body-70">{{ section.settings.des }}</p>
   {%- endif -%}
 {%- endif -%}
+

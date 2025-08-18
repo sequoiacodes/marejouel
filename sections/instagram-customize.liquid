@@ -5,6 +5,8 @@
     assign himg = '100%' 
     when 'portrait' 
       assign himg = '120%' 
+    when 'custom' 
+     assign himg = '150%' 
     when 'wide' 
       assign himg = '56%' 
     when 'landscape' 
@@ -34,7 +36,8 @@
           {% case block.type %}
             {% when 'image' %}
             <div class="{% if section.settings.padding == false %} col px-0 {% else %} col {% endif %}  carousel__slide-wrapper--{{ block.id }}" {{ block.shopify_attributes }}>
-              <div class="position-relative hv-image-brightness instagramoff-item"  data-aos="{{ section.settings.animation }}"  data-aos-delay="{{ forloop.index | times: 100 }}" >
+              {% assign iconss = block.settings.social_icon | upcase %}
+              <div class="position-relative hv-image-brightness  {% if iconss == "INSTAGRAM" %}instagramoff-item {% elsif iconss=="FACEBOOK" %}facebookoff-item{% elsif iconss=="LINKEDIN" %}linkedinoff-item {% else %} {% endif %}"  data-aos="{{ section.settings.animation }}"  data-aos-delay="{{ forloop.index | times: 100 }}" >
                 {%- if block.settings.image != blank -%}
                 <a  href="{{ block.settings.image_link }}" title="{{ block.settings.image.alt | escape }}" class="image-content__image-wrapper" style="padding-top:{{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}%;">
                   {% assign img_url = block.settings.image | image_url: width: 1 | replace: 'width=1', 'width={width}' %}
@@ -59,7 +62,7 @@
             <div class="position-relative hv-image-brightness instagramoff-item instagramoff-itemvideo"  data-aos="{{ section.settings.animation }}"  data-aos-delay="{{ forloop.index | times: 100 }}" >
               {%- if block.settings.video_url != blank -%}
               <a  href="{{ block.settings.image_link }}" class="d-block">
-          <video id="video-insta{{ section.id }}" controls  loop="" muted="" playsinline="" {% if block.settings.enable_play_video %} autoplay {% else %} preload="none" {% endif %} disablepictureinpicture controlslist="nodownload noplaybackrate"
+          <video id="video-insta{{ section.id }}"   loop="" muted="" playsinline="" {% if block.settings.enable_play_video %} autoplay {% else %} preload="none" {% endif %} disablepictureinpicture controlslist="nodownload noplaybackrate"
                 {% if block.settings.image_poster != blank %} poster="{{ block.settings.image_poster | image_url: width: 1920 }}" {% endif %}>
                   <source src="{{ block.settings.video_url }}" type="video/mp4">
               </video>
@@ -291,6 +294,10 @@
           "label": "Wide (16:9)"
         },
         {
+          "value": "custom",
+          "label": "Portarait (1:2)",
+        },
+        {
           "value": "square",
           "label": "Square (1:1)"
         }
@@ -392,7 +399,29 @@
           "type": "url",
           "id": "image_link",
           "label": "Image link to"
+        },
+       {
+          "type": "select",
+          "id": "social_icon",
+          "label": "Social Icon",
+          "default": "instagram",
+          "options": [
+            {
+              "value": "instagram",
+              "label": "Instagram"
+            },
+            {
+              "value": "facebook", 
+              "label": "Facebook"
+            },
+            {
+              "value": "linkedin",
+              "label": "Linkedin"
+            }
+           
+          ]
         }
+
       ]
     },
     {

@@ -15,7 +15,7 @@
 {%- render 'style-section' -%}
   <div class="{{ section.settings.setwidth }}">
     <div class="section-block">
-      {%- render 'section-heading' -%}
+      {%- render 'section-heading', btn: true, collection_url: collections.first.url -%}
       <div class="collectionlist-wrapper">
         <div class="collectionlist-slider row" id="collection-list-{{ section.id }}"
             data-rows="{{ section.settings.rows }}"

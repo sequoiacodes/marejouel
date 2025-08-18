@@ -58,7 +58,52 @@
     height: 24px;
     fill: var(--g-color-heading);
   }
-  
+  .items_center{
+  align-items:center;
+  }
+  .subscribe-cta {
+  text-align: left;
+  max-width: auto;
+  margin: auto;
+  align-self: stretch;
+}
+
+.subscribe-cta-title {
+  color: #FFF8EC;
+  font-family: "Gilda Display", serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.subscribe-cta-text {
+  color: #FFF;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+  @media (max-width: 768px) {
+    .subscribe-cta-title {
+      font-size: 32px !important;
+    }
+    .subscribe-cta-text {
+      font-size: 16px !important;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .subscribe-cta-title {
+      font-size: 24px !important;
+    }
+    .subscribe-cta-text {
+      font-size: 14px !important;
+    }
+  }
 </style>
 
 <section class="customstyle{{ section.id }} lazyload newsletter-section-{{ section.id }}" 
@@ -74,12 +119,21 @@
     <div class="row d-flex justify-content-center">
       <div class="{% if e_left %} col-lg-11 {% else %} col-lg-8 {% endif %}">
         <div class="{% if section.settings.bg_inner %}bg-white {% endif %} px-lg-4 py-4 px-0">
-          {%- render 'section-heading' -%} 
+          {% comment %} {%- render 'section-heading' -%}  {% endcomment %}
           {%- if e_left -%}
-          <div class="row">
+          <div class="row items_center">
           {%- endif -%}
             {%- if e_left -%}
+              
               <div class="left_newlleters text-left col-lg-6 col-12">
+                 <div class="subscribe-cta">
+                    <h3 class="subscribe-cta-title">GET 10 % DISCOUNT</h3>
+                    <span class="subscribe-cta-text">
+                      Sign-Up For Our Newsletter To Get 10% Off At Your First Order And Receive Exclusive Access. Subscribe Today.
+                    </span>
+                  </div>
+
+
                 {{ section.settings.html_left_block }}
               </div>
             {%- endif -%}

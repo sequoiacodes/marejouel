@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "type": "footer",
   "name": "Footer group",
@@ -14,7 +23,7 @@
         "e_size": "cover",
         "e_repeat": "no-repeat",
         "title_top": "",
-        "title": "Subscrible & Get <span class=\"text-theme\">10% <\/span> Discount",
+        "title": "Subscrible & Get <span class=\"text-theme\">10% </span> Discount",
         "des": "",
         "html_left": false,
         "html_left_block": "",
@@ -30,16 +39,16 @@
         "1595696762386": {
           "type": "text",
           "settings": {
-            "widthlogofooter": 150,
-            "title": "About us",
-            "text": "<div class=\"pr-lg-5 rte\">\n<p class=\"mb-0 font-family-1 fz-6 \">(+800) 834-1434\n<\/p>\n<p class=\"mb-0 \">\nsupport@magnoli.com\n<\/p>\n<p class=\"mt-3\">We are design and product obsessed. Uncompromising in the style, quality and performance of every product we create.<\/p>\n<\/div>",
+            "widthlogofooter": 0,
+            "title": "Mare Jouel Swimwear",
+            "text": "Mare Jouel is a sustainable swimwear brand committed to ethical fashion and ocean conservation.",
             "width": "25%"
           }
         },
-        "dcbe7dc4-f450-42e9-81a9-dca8f287035b": {
-          "type": "menu",
+        "menu1_4gF3AV": {
+          "type": "menu1",
           "settings": {
-            "link_list": "search",
+            "link_list1": "quick-links",
             "width": "16%"
           }
         },
@@ -53,7 +62,7 @@
         "1567410176792": {
           "type": "menu",
           "settings": {
-            "link_list": "account",
+            "link_list": "privacy-security-1",
             "width": "16%"
           }
         },
@@ -61,52 +70,66 @@
           "type": "newsletter",
           "settings": {
             "bg_new": "rgba(0,0,0,0)",
-            "border_new": "#000000",
-            "btn_bg_new": "#000000",
-            "btn_cl_new": "#f4efe9",
+            "border_new": "#999999",
+            "btn_bg_new": "rgba(0,0,0,0)",
+            "btn_cl_new": "#ffffff",
             "btn_cl_new_hover": "#ffffff",
-            "title": "NEWSLETTER",
-            "subheading": "<p>Get a 10% discount on your first order.<\/p>",
-            "enablesocial": true,
+            "title": "newsletter",
+            "subheading": "<p style=\"font-family:'Gilda Display';\">Subscribe to get notified about early access to collections, exclusive offers and sustainability tips. </p>",
+            "enablesocial": false,
+            "width": "25%"
+          }
+        },
+        "social_JEbfqV": {
+          "type": "social",
+          "settings": {
+            "title": "Stay Connected",
             "width": "25%"
           }
         }
       },
       "block_order": [
         "1595696762386",
-        "dcbe7dc4-f450-42e9-81a9-dca8f287035b",
+        "menu1_4gF3AV",
         "1562342622030",
         "1567410176792",
-        "ec49d85b-17bb-4b65-a49f-3086aa5430cd"
+        "ec49d85b-17bb-4b65-a49f-3086aa5430cd",
+        "social_JEbfqV"
       ],
       "settings": {
-        "setwidth": "container-fluid",
-        "background": "#f4efe9",
+        "setwidth": "container",
+        "background": "#393939",
         "border_headfooter": "#e9e3dd",
         "border-copryright": "#e7ded6",
-        "text": "#282828",
+        "text": "#ffffff",
         "text_hover": "#80270f",
-        "title": "#000000",
+        "title": "#ffffff",
         "footer_align_title": "left",
         "enable_border": false,
         "footer_font_family": "--g-font-1",
-        "footer_font_size_title": 13,
-        "footer_font_weight": "500",
-        "footer_spacing": 0.2,
+        "footer_font_size_title": 16,
+        "footer_font_weight": "600",
+        "footer_spacing": 0.1,
         "footer_typetext": "uppercase",
         "acc_mobile": true,
         "e_ft_currency": true,
         "enable_image": true,
         "enable_name": true,
         "enable_language_selector": true,
-        "payment_info": "svg",
-        "copyright": false,
-        "link_list_bottom": "term-footer",
-        "customcopyright": "© 2023 - Pose. Powered by Shopify",
-        "padding_top": 64,
+        "payment_info": "img",
+        "imgpayment": "shopify://shop_images/logos_visa.svg",
+        "imgpayment_1": "shopify://shop_images/logos_mastercard.svg",
+        "imgpayment_2": "shopify://shop_images/616c2ef9e1b913a87249cde0ccd678e2fe495ad2.png",
+        "imgpayment_3": "shopify://shop_images/paypal.png",
+        "imgpayment_4": "shopify://shop_images/0b4690532fcda78fcb64b7ddb4e44b94560fc7df.png",
+        "imgpayment_5": "shopify://shop_images/security-checkout_4f5214dc-b9a8-4528-a968-dbcc16a1b662.png",
+        "copyright": true,
+        "link_list_bottom": "privacy-security-1",
+        "customcopyright": "© 2025 Mare Jouel . All Rights Reserved.",
+        "padding_top": 84,
         "padding_bottom": 64,
         "m_padding_top": 32,
-        "m_padding_bottom": 0
+        "m_padding_bottom": 12
       }
     }
   },

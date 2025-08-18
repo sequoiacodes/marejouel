@@ -1,1 +1,20 @@
-<i class="icon-facebook"></i>
+{% style %}
+  .icon-facebook {
+    background: white;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px; /* ← typo fix */
+    color: black;
+    display: inline-flex;         /* optional: icon center align */
+    align-items: center;          /* optional */
+    justify-content: center;      /* optional */
+    padding:1px;
+    margin-top:1px;
+  }
+  .icon-facebook:hover {
+    background: blue;
+    color: white;
+  }
+{% endstyle %}
+
+<i class="icon-facebook" style=" font-size:20px"></i>

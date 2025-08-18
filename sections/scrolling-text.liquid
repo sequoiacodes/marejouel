@@ -20,6 +20,7 @@
       justify-content: center;
       display: grid;
       overflow: hidden;
+      
     }
     .textscroll-item .image-content__image{
       width: var(--g-w-imagescroll);
@@ -29,10 +30,14 @@
       place-items: center;
       display: grid;
       animation-duration: {{ speed }}s;
+     
     }
     .type-outline{
         -webkit-text-stroke: 1px {{ section.settings.text }};
         -webkit-text-fill-color: transparent;
+    }
+    .abc{
+      text-transform: capitalize;
     }
   </style>
   {%- render 'style-section' -%}
@@ -43,7 +48,7 @@
         {%- for i in (1..10) -%}
           <span class="textscroll-item {% if scroll_type == 'from-left' %} anim-loop-left {% else %} anim-loop-right {% endif %}">
           {%- for block in section.blocks -%}
-           <span class=" px-5 {{ size }} type-{{ text_style }} mb-0 d-flex align-items-center">
+           <span class="abc px-3 {{ size }} type-{{ text_style }} mb-0 d-flex align-items-center">
             {% if block.settings.image != blank %}
               <img class="image-content__image mr-2"
                 src="{{ block.settings.image | image_url: width: 240 }}"

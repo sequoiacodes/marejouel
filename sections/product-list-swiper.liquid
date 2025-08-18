@@ -5,6 +5,20 @@
   assign style_btn = section.settings.style_btn
   -%}
 <style>
+  .arr_absolute{
+  position: absolute;
+  inset: 0;               /* shorthand for top:0; right:0; bottom:0; left:0; */
+  pointer-events: none;   /* so clicks go through the overlay */
+  z-index: 5;
+  display:flex;
+  justify-content: center;
+ 
+  }
+  .image_arr{
+  transform: translateY(-25px);
+  height:350px !important;
+  width:80%;
+  }
     {%- if section.settings.nowrap -%}
     .productswiper .swiper-container {
         overflow: visible;
@@ -40,6 +54,16 @@
       </div>
       <div class="{{ section.settings.setwidth }} container-p">
       <div class="productlist-wrapper dots-negative swiper-wrapper-{{ section.id }} position-relative">
+        <div class="arr_absolute">  {% comment %}Customized section{% endcomment %}
+           <img
+              class="image_arr lazyload scale-in"
+              src="{{ 'arrive_bg.png' | asset_url }}" 
+              alt="Logo"
+              loading="lazy"
+              height="auto"
+              width="auto"
+            />
+        </div>
         <div class="productlist-swiper swiper-container swipercol-{{ section.id }} {% if section.settings.scrollbar %} pb-5 {% endif %}" id="Productlist-{{ section.id }}"
           data-section-id="{{ section.id }}"  
           data-section-type="swipercustom"
@@ -47,13 +71,16 @@
           data-space-between="{{ section.settings.spaceBetween }}"
           >
           <div class="swiper-wrapper">
+            
             {%- assign collection = collections[section.settings.collection] -%}
             {%- assign limit = section.settings.limit -%}
             {%- if collection != blank -%}
+
             {%- for product in collection.products limit: limit -%}
             <div class="productlist-item swiper-slide">
                 <div data-aos="{{ section.settings.animation }}"  data-aos-delay="{{ forloop.index | times: 100 }}">
                   {%- render 'product-card', product: product -%}
+                 
                 </div>
             </div>
             {%- endfor -%}
@@ -66,6 +93,7 @@
             </div>
             {%- endfor -%}
             {%- endif -%}
+          
             </div>
             
             {%- if section.settings.scrollbar -%}

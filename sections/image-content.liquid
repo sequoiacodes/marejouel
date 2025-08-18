@@ -32,11 +32,65 @@
       {%- endif -%}
     }
   }
+  .text_image_relative{
+  position:relative;
+  }
+  .text_image_absolute{
+     position: absolute;
+      inset: 0;               /* shorthand for top:0; right:0; bottom:0; left:0; */
+      pointer-events: none;   /* so clicks go through the overlay */
+      z-index: 0;
+      display:flex;
+      justify-content: center;
+  }
+  .mt-2{
+  padding-top:3% !important;
+  }
+.text_image_img{
+      height:100%;
+      width:100%;
+}
+.custom_padding {
+  padding-left: 10%;
+}
+@media(max-width:749px){
+.custom_padding {
+  padding-left: 1%;
+}
+}
 </style>
-<div class="customstyle{{ section.id }} position-relative" data-aos="{{ section.settings.animation }}">
+<div class="text_image_relative customstyle{{ section.id }} position-relative" data-aos="{{ section.settings.animation }}">
   {%- render 'style-section' -%}
-<div class="{{ section.settings.setwidth }}">
+  {% comment %} div for back ground  {% endcomment %}
+   {% for block in section.blocks %}
+     {% if section.settings.bgsection == "rgba(0,0,0,0)" %}
+        
+       <div class="text_image_absolute">
+           <img
+              class="text_image_img lazyload scale-in"
+              src="{{ 'about_us.png' | asset_url }}" 
+              alt="Logo"
+              loading="lazy"
+              height="auto"
+              width="auto"
+            />
+       </div>
+     {% endif %}
+   {% endfor %}
+<div class=" {{ section.settings.setwidth }}">
   <div class="section-block">
+    {% comment %} <div class="subtop text-left text-top  mb-2 aos-init aos-animate">
+    About Us
+    </div>
+    <h3 class="section-title-1 text-left mb-5  aos-init aos-animate">Who We Are</h3> {% endcomment %}
+    {% for block in section.blocks %}
+      {%- if block.settings.subtitle != blank -%}
+        <div class="subtop mb-3">{{ block.settings.subtitle }}</div>
+      {%- endif -%}
+      {%- if block.settings.title != blank -%}
+      <h3 class=" mb-5 {{ block.settings.size_text }} ">{{ block.settings.title }}</h3>
+      {%- endif -%}
+    {% endfor %}
     <div class="row {% unless section.settings.enable_padding %}no-gutters {% endunless %}">
       {%- liquid
         case section.blocks.size 
@@ -85,7 +139,7 @@
               </div>
             {%- when 'text_block' -%}
               {%- assign text_color = block.settings.title_color -%}
-              <div class=" h-100 flex  w-100 {% if section.settings.align_center %}flex--center-vertical{% endif %} {% if block.settings.enable_padding %} p-3 p-lg-5 {% endif %}" style="background-color:{{ block.settings.bgtext }} ;">
+              <div class=" h-100 flex  w-100 {% if section.settings.align_center %}flex--center-vertical{% endif %} {% if block.settings.enable_padding %} custom_padding {% endif %}" style="background-color:{{ block.settings.bgtext }} ;">
                 <div class="flex__item image-content__text text-{{ block.settings.align }}"  {% if text_color != 'rgba(0,0,0,0)' %}
                   style="--g-font-color-subtop: {{ text_color }};--g-color-heading :  {{ text_color }};--color-body-text : {{ text_color }};--color-body-text-rgb: {{ text_color.red }}, {{ text_color.green }},  {{ text_color.blue }} ;"
                 {% endif %} >
@@ -105,12 +159,12 @@
                   endcase 
                   -%}
                   <div class="{{ block_width }}">
-                    {%- if block.settings.subtitle != blank -%}
-                      <div class="subtop mb-3">{{ block.settings.subtitle }}</div>
+                    {%- if block.settings.textsubtitle != blank -%}
+                      <div class="subtop mb-3">{{ block.settings.textsubtitle }}</div>
                     {%- endif -%}
-                    {%- if block.settings.title != blank -%}
-                    <h3 class="mb-3 {{ block.settings.size_text }} ">{{ block.settings.title }}</h3>
-                    {%- endif -%}
+                    {%- if block.settings.texttitle != blank -%}
+                    <h3 class="mb-3 {{ block.settings.size_text }} ">{{ block.settings.texttitle }}</h3>
+                    {%- endif -%}  
                     {%- if block.settings.text -%}
                       <div class="rte-setting">{{ block.settings.text }}</div>
                     {%- endif -%}
@@ -118,7 +172,7 @@
                     {{ block.settings.answer_content }}
                     {%- endif -%}
                     {%- if block.settings.button != blank -%}
-                      <div class="mt-5">
+                      <div class="mt-4">
                         <a href="{{ block.settings.link }}" class="btn {{ block.settings.style_btn }} ">
                           {{ block.settings.button }}
                         </a>
@@ -430,6 +484,18 @@
           "label": "Heading",
           "default": "Image with text"
         },
+          {
+          "type": "text",
+          "id": "textsubtitle",
+          "label": "Text Sub Title",
+          "default": " Text Sub Title"
+        },
+        {
+          "type": "text",
+          "id": "texttitle",
+          "label": "Text Heading",
+          "default": "Text Title with text"
+        },
         {
           "type": "select",
           "id": "size_text",
@@ -567,10 +633,10 @@
           "type": "image_block"
         },
         {
-          "type": "text_block"
+          "type": "image_block"
         },
         {
-          "type": "image_block"
+          "type": "text_block"
         }
       ]
     }

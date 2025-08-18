@@ -36,6 +36,16 @@
   padding-left:10%;
   transform: rotateY(180deg);
 }
+.custom_class{
+  font-family: Poppins;
+  color:{{section.settings.topsub_color}};
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
 {% endstyle %}
 {%- liquid
   assign text_color = section.settings.title_color
@@ -83,7 +93,7 @@
       <div class="row justify-content-center">
         <div class="col-lg-7 col-12">
           {%- if section.settings.title_top != blank -%}
-            <div class="subtop text-center mb-2" data-aos="{{ section.settings.animation }}" data-aos-duration="300">
+            <div class="custom_class  text-center mb-2" data-aos="{{ section.settings.animation }}" data-aos-duration="300">
               {{ section.settings.title_top }}
             </div>
           {%- endif -%}
@@ -179,7 +189,7 @@
         </div>
       </div>
       <div class="d-flex justify-content-center align-items-center p-4">
-          <a href="#" class="btn {{ section.settings.style_btn }}"> All Collection</a>
+          <a href="{{ section.settings.buttton_url }}" class="btn {{ section.settings.style_btn }}"> {{ section.settings.button_title }}</a>
          
         </div>
     </div>
@@ -309,6 +319,38 @@
         }
       ],
       "label": "Select Animation"
+    },
+    {
+    "type": "text",
+    "id": "button_title",
+    "label": "Button Title",
+    "default":"Title"
+    },
+    {
+      "type": "url",
+      "id": "buttton_url",
+      "label": "Button Url",
+      "default":"/"
+    },
+    {
+    "type": "select",
+    "id": "topsub_color",
+    "label": "Color for Top Subtitle",
+    "default":"black",
+    "options": [
+      {
+      "value": "black",
+      "label": "Black",
+      },
+      {
+      "value": "white",
+      "label": "White"
+      },
+      {
+      "value": "gray",
+      "label": "Gray"
+      }
+    ]
     },
     {
       "type": "select",

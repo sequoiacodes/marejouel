@@ -17,7 +17,7 @@
   position: relative;
 }
 .mega-subtitle .slideshow__subtitle {
-font-size: 20px;
+  /* Use inherited/responsive size (e.g., .fz-2) */
   line-height: 1.5;
   font-weight: 400;
 }
@@ -271,10 +271,20 @@ html:not(.no-js) .slideshow.slick-initialized .slideshow__slide{
 
 .slideshow__title {
   font-weight: var(--g-slide-font-weight);
-  font-size: 72px;
-  line-height: revert;
-  letter-spacing:normal;
+  font-size: var(--g-slide-font-size);
+  line-height: var(--g-slide-font-lineheight);
+  letter-spacing: var(--g-slide-font-spacing);
   text-transform: var(--g-slide-font-transform);
+}
+}
+.fz-2 {
+  font-size: 28px; 
+font-family: "Gilda Display";
+
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: capitalize;
 }
 @media (min-width:992px) {
   .mega-subtitle{
@@ -285,6 +295,15 @@ html:not(.no-js) .slideshow.slick-initialized .slideshow__slide{
   .slideshow__title {
     font-size:var(--g-slide-font-size-mobile);
   }
+  .fz-2 {
+ 
+font-family: "Gilda Display";
+  font-size: calc(var(--g-fz2_font_size) +0px);
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: capitalize;
+}
 }
 
 {%- unless section.settings.slideshow_mobile -%}
@@ -294,6 +313,7 @@ html:not(.no-js) .slideshow.slick-initialized .slideshow__slide{
   }
   .slideshow__btn {
     display: none;
+    
   }
 }
 {%- endunless -%}
@@ -301,13 +321,14 @@ html:not(.no-js) .slideshow.slick-initialized .slideshow__slide{
 
 .slideshow__title--mobile {
   margin-bottom: 0;
-  font-size: calc(var(--g-font-size) + 30px);
+  font-size: calc(var(--g-fz2_font_size_mobile) +0px);
   font-weight: 400;
 }
 
 .slideshow__title--mobile~.slideshow__subtitle--mobile {
+
   margin-top: 7px;
-  font-size: var(--g-font-size);
+  font-size: var(--g-fz2_font_size_mobile);
 }
 
 .slideshow__subtitle--mobile,.slideshow__title--mobile {
@@ -591,22 +612,22 @@ html:not(.no-js) .slideshow.slick-initialized .slideshow__slide{
               <div class="d-inline-block text-{% if text_horizontal_alignment == 'right' %}left{% else %}{{text_horizontal_alignment}}{% endif %} ">
               <ul class="list-unstyled"  >
                 {%- unless block.settings.slide_toptitle == blank -%}
-                <li class="mb-3">
-                  <p class="slideshow__toptitle subtop" style="color:{{ block.settings.slide_toptitle_color }}">
+                <li class="">
+                  <p class=" subtop" style="color:{{ block.settings.slide_toptitle_color }}">{% comment %}slideshow__toptitle removed{% endcomment %}
                     {{ block.settings.slide_toptitle }}
                   </p>
                 </li>
                 {%- endunless -%}
                 {%- unless block.settings.slide_title == blank -%}
                 <li class="mb-3">
-                  <h2 class="h1 mega-title slideshow__title font-family-1" style="color:{{ block.settings.slide_title_color }}">
+                  <h2 class="h1 mega-title  font-family-1" style="color:{{ block.settings.slide_title_color }}">{% comment %}slideshow__title removed{% endcomment %}
                     {{ block.settings.slide_title }}
                   </h2>
                 </li>
                 {%- endunless -%}
                 {%- unless block.settings.subheading == blank -%}
-                <li class="mb-lg-5">
-                  <div class="mega-subtitle slideshow__subtitle  d-lg-block fz-2" style="color:{{ block.settings.subheading_color }}">
+                <li class="mb-lg-5 mb-3">
+                  <div class="mega-subtitle   d-lg-block fz-2" style="color:{{ block.settings.subheading_color }}"> {% comment %}slideshow__subtitle removed{% endcomment %}
                     {{ block.settings.subheading }}
                   </div>
                 </li>
@@ -664,7 +685,7 @@ html:not(.no-js) .slideshow.slick-initialized .slideshow__slide{
                     }
                     .btn-outline.slideshow__btn{{ block.id }}{
                       color:{{ block.settings.color_button }};
-                      border: 2px solid {{ block.settings.bg_button }};
+                      border: 2px solid {{ block.settings.color_button }};
                       background-color:transparent;
                     }
                     .btn-outline.slideshow__btn{{ block.id }}:hover{
@@ -691,10 +712,13 @@ html:not(.no-js) .slideshow.slick-initialized .slideshow__slide{
                       color:{{ block.settings.color_button_hover }} !important;
                       {% comment %} border-bottom-color:  {{ block.settings.bg_button_hover }} !important; {% endcomment %}
                     }
+                    .btn-outline{
+                    
+                    }
                   </style>
                   <div class="pb-1">
-                  <a href="{{ block.settings.button_link }}" class="btn slideshow__btn slideshow__btn{{ block.id }} {{ block.settings.stylebtns }}">
-                    <span>{{ block.settings.button_label }}</span>
+                  <a href="{{ block.settings.button_link }}" class="btn  slideshow__btn{{ block.id }} {{ block.settings.stylebtns }}">  {%comment %}  slideshow__btn class removed Change here for button in slider hero{% endcomment %}
+                    <span>{{ block.settings.button_label }} </span>
                   </a>
                 </div>
                 {%- endif -%}
@@ -746,13 +770,13 @@ html:not(.no-js) .slideshow.slick-initialized .slideshow__slide{
                       {% comment %} border-bottom-color:  {{ block.settings.bg_button_hover }} !important; {% endcomment %}
                     }
                   </style>
-                  <div class="pb-1">
+                  {% comment %} <div class="pb-1">
                     <div class="slideshow__btn">
                     <a href="{{ block.settings.button_link_2 }}" class="btn  slideshow__btn-2{{ block.id }} {{ block.settings.stylebtns_2 }}">
                       <span>{{ block.settings.button_label_2 }}</span>
                     </a>
                   </div>
-                  </div>
+                  </div>  BUTTON 2 REMOVED {% endcomment %}
                 {%- endif -%}
               </div>
               
@@ -816,7 +840,7 @@ html:not(.no-js) .slideshow.slick-initialized .slideshow__slide{
                 }
                 .btn-outline.slideshow__btn{{ block.id }}{
                   color:{{ block.settings.color_button }};
-                  border: 2px solid {{ block.settings.bg_button }};
+                  {% comment %} border: 2px solid {{ block.settings.bg_button }}; {% endcomment %}
                   background-color:transparent;
                 }
                 .btn-outline.slideshow__btn{{ block.id }}:hover{

@@ -16,7 +16,20 @@
 {% style %}
   .customstyle{{ section.id }}{
     --g-padding-s-top: {{ paddingTop }} ;
+    position: relative ;
   }
+  .testabsolute{
+     position: absolute;
+      inset: 0;               /* shorthand for top:0; right:0; bottom:0; left:0; */
+      pointer-events: none;   /* so clicks go through the overlay */
+      z-index: 0;
+      display:flex;
+      justify-content: center;
+  }
+  .text_image_img{
+      height:100%;
+      width:100%;
+}
   .customstyle{{ section.id }} .rating li svg{
     fill: {{ section.settings.color_rate }};
   }
@@ -43,12 +56,38 @@
     height: 100%;
     object-fit: cover;
   }
+  .quote_style{
+    font-family: "Gilda Display";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  .font-family-2{
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: capitalize;
+  }
 {% endstyle %}
 {%- render 'style-section' -%}
 <div class="customstyle{{ section.id }} ">
+  <div class="testabsolute">
+    <img
+          class="text_image_img lazyload scale-in"
+          src="{{ 'testo.png' | asset_url }}" 
+          alt="Logo"
+          loading="lazy"
+          height="auto"
+          width="auto"
+        />
+  </div>
   <div class="{{ section.settings.setwidth }}">
     <div class="section-block">
-      {%- render 'section-heading' -%}
+      
       {%- if section.blocks.size > 0 -%}
       <div class="quotes-wrapper dots-negative quotes-2" > 
         <div class="quotes-slider row" id="Quotes-{{ section.id }}" 
@@ -67,6 +106,7 @@
               <div class="quote-wrap row">
                 <div class="col-12 col-md-6" data-aos="{{ section.settings.animation }}" data-aos-duration="500">
                     <div class="pb-5 px-3 px-lg-0">
+                      {%- render 'section-heading' -%}
                     {%- if block.settings.title != blank -%}
                         <div class="subtop pb-3">
                         {{ block.settings.title }}
@@ -79,15 +119,15 @@
                                 {%- assign iMax = block.settings.rate -%}
                                 {%- if i <= iMax -%}
                                 <li class="rated">
-                                  <svg aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                                  <svg aria-hidden="true" focusable="false" width="25" height="25" viewBox="0 0 25 25" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
                                     {%- else -%}
                                 <li>
-                                  <svg aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                                  <svg aria-hidden="true" focusable="false" width="25" height="25" viewBox="0 0 25 25" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
                                   {%- endif -%}
                               {%- endfor -%}
                             </ul>
                           {%- endif -%}
-                          <div>{{ block.settings.quote }}</div>
+                          <div class="quote_style">{{ block.settings.quote }}</div>
                         </div>
                         <div class=" font-family-2 mt-1">{{ block.settings.author }}</div>
                         {%- if block.settings.info != blank -%}
