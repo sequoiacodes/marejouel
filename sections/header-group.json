@@ -36,7 +36,7 @@
         "afb084a9-2a31-4207-9d23-694c0f6b1281"
       ],
       "settings": {
-        "enable": true,
+        "enable": false,
         "animation": "fade",
         "size_text": "small",
         "announ_type": "carousel",
