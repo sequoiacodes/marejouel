@@ -456,10 +456,9 @@
             {%- endif -%}
             <div class="rte-setting">{{ block.settings.text }}</div>
             <div>
-            
-              
-                  {%- render 'block-social' -%}
-             
+             {% if block.settings.enablesocial %}
+              {%- render 'block-social' -%}
+            {% endif %}
             </div>
           </div>
         </div>
@@ -1467,7 +1466,7 @@
         },
         {
           "type": "checkbox",
-          "id": "enablesocial",
+          "id": "enablesocial1",
           "label": "Enable Social",
           "default": true
         },
