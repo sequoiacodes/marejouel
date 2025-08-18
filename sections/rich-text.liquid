@@ -38,7 +38,7 @@
 }
 .custom_class{
   font-family: Poppins;
-  color:black;
+  color:{{section.settings.topsub_color}};
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -189,7 +189,7 @@
         </div>
       </div>
       <div class="d-flex justify-content-center align-items-center p-4">
-          <a href="#" class="btn {{ section.settings.style_btn }}"> All Collection</a>
+          <a href="{{ section.settings.buttton_url }}" class="btn {{ section.settings.style_btn }}"> {{ section.settings.button_title }}</a>
          
         </div>
     </div>
@@ -319,6 +319,38 @@
         }
       ],
       "label": "Select Animation"
+    },
+    {
+    "type": "text",
+    "id": "button_title",
+    "label": "Button Title",
+    "default":"Title"
+    },
+    {
+      "type": "url",
+      "id": "buttton_url",
+      "label": "Button Url",
+      "default":"/"
+    },
+    {
+    "type": "select",
+    "id": "topsub_color",
+    "label": "Color for Top Subtitle",
+    "default":"black",
+    "options": [
+      {
+      "value": "black",
+      "label": "Black",
+      },
+      {
+      "value": "white",
+      "label": "White"
+      },
+      {
+      "value": "gray",
+      "label": "Gray"
+      }
+    ]
     },
     {
       "type": "select",
