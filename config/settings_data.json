@@ -659,7 +659,7 @@
               "button_link": "shopify://collections/tools",
               "stylebtns": "btn-outline",
               "bg_button": "#ffffff",
-              "color_button": "#1b1c1e",
+              "color_button": "#1e1e1e",
               "bg_button_hover": "#80270f",
               "color_button_hover": "#ffffff",
               "button_label_2": "",
@@ -2428,7 +2428,6 @@
               "btn_cl_new_hover": "#ffffff",
               "title": "NEWSLETTER",
               "subheading": "<p>Get a 10% discount on your first order.</p>",
-              "enablesocial": true,
               "width": "25%"
             }
           }
