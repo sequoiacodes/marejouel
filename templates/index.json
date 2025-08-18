@@ -219,6 +219,9 @@
       "name": "Rich text",
       "settings": {
         "animation": "",
+        "button_title": "All Collection",
+        "buttton_url": "shopify://collections",
+        "topsub_color": "black",
         "style_btn": "btn-theme",
         "setwidth": "container",
         "bgsection": "#f090ee",
