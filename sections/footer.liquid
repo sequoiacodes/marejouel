@@ -483,9 +483,9 @@
         
         {% endstyle %}
         <div class="site-footer__section section-footer-email text-lg-{{ footer_align_title }}">
-          {%- if block.settings.titlesocial != blank -%}
+          {%- if block.settings.title != blank -%}
           <div class="h5  site-footer__section-title">
-            {{ block.settings.titlesocial | escape }}
+            {{ block.settings.title | escape }}
           </div>
           {%- endif -%}
           <div class="site-footer-block ">
@@ -553,7 +553,7 @@
               {%- endif -%}
               {%- endform -%}
             </div>
-            {% if block.settings.enablesocial1 %}
+            {% if block.settings.enablesocial %}
               {%- render 'block-social' -%}
             {% endif %}
         </div>
@@ -1097,7 +1097,7 @@
       "settings": [
         {
           "type": "text",
-          "id": "titlesocial",
+          "id": "title",
           "label": "Heading",
           "default": "Follow us"
         },
