@@ -35,9 +35,19 @@
                         >
                     </div>
                 {%- endif -%}
-
+                    {% style %}
+                      subtitle-n{
+                        font-family: Poppins;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        letter-spacing: 1.4px;
+                        text-transform: uppercase;
+                      }
+                    {% endstyle %}
                 {%- if subtitle != blank -%}
-                    <div class=" popup-newsletter--subtitle mb-3">{{ subtitle }}</div>
+                    <div class="subtitle-n popup-newsletter--subtitle mb-3">{{ subtitle }}</div>
                 {%- endif -%}
                 {% if pnewletter_title != blank %}
                 <h3 class="modal-title popup-newsletter--title mb-2  {{ pnew_size_heading }}">
