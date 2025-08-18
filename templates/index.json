@@ -201,7 +201,7 @@
         "col": "col-lg-2",
         "enable_padding": false,
         "size_image_col": "portrait",
-        "size_title": "h4",
+        "size_title": "h3",
         "paddingsection": "100px 0px 100px 32px",
         "paddingmobile": "5px 0px 20px 0px",
         "marginsection": "0px 0px 0px 0px",
