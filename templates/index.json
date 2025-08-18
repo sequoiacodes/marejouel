@@ -569,7 +569,8 @@
             "quote": "The product looks stunning—great design, vibrant color, and perfect for summer. Feels both stylish and comfortable!",
             "rate": 5,
             "author": "-zenith_p.",
-            "info": ""
+            "info": "",
+            "avatar": "shopify://shop_images/image1.png"
           }
         },
         "quote_K3MxJc": {
@@ -579,7 +580,8 @@
             "quote": "Gorgeous piece! The style is flattering, and the quality looks amazing—perfect for beach days.",
             "rate": 5,
             "author": "-yousef B.",
-            "info": ""
+            "info": "",
+            "avatar": "shopify://shop_images/image2.png"
           }
         }
       },
@@ -623,9 +625,13 @@
             "heading": "CAPTURE THE MOMENTS",
             "text_alignment": "left",
             "video_1": "/aa",
+            "thumbnail_1": "shopify://shop_images/image3.png",
             "video_2": "/v2",
+            "thumbnail_2": "shopify://shop_images/image.png",
             "video_3": "/v3",
+            "thumbnail_3": "shopify://shop_images/image4.png",
             "video_4": "/v4",
+            "thumbnail_4": "shopify://shop_images/image5.png",
             "enable_carousel": true,
             "columns_desktop": 4,
             "columns_mobile": "2",
