@@ -85,6 +85,7 @@
     "currency_enable_image": true,
     "selector_enable_name": false,
     "mobile_phone": "+012 345 678",
+    "enable_breadcrumb": false,
     "enable_post": false,
     "enable_article": false,
     "enable_collection": false,
