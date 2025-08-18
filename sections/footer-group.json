@@ -48,21 +48,21 @@
         "menu1_4gF3AV": {
           "type": "menu1",
           "settings": {
-            "link_list1": "quick-links",
+            "link_list1": "",
             "width": "16%"
           }
         },
         "1562342622030": {
           "type": "menu",
           "settings": {
-            "link_list": "our-collections",
+            "link_list": "footer",
             "width": "16%"
           }
         },
         "1567410176792": {
           "type": "menu",
           "settings": {
-            "link_list": "privacy-security",
+            "link_list": "",
             "width": "16%"
           }
         },
@@ -117,6 +117,8 @@
         "enable_name": true,
         "enable_language_selector": true,
         "payment_info": "img",
+        "imgpayment_4": "shopify://shop_images/0b4690532fcda78fcb64b7ddb4e44b94560fc7df.png",
+        "imgpayment_5": "shopify://shop_images/security-checkout_3e5f4363-e62a-498c-85e1-1b98b2bc5940.png",
         "copyright": true,
         "link_list_bottom": "",
         "customcopyright": "© 2025 Mare Jouel . All Rights Reserved.",
