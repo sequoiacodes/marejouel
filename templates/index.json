@@ -313,36 +313,43 @@
         "template--19549173121344__cbb9eed3-bb8e-4d0c-befd-efb97ca27a01-1687343499304c03d3-0": {
           "type": "item",
           "settings": {
-            "code": "as beautiful as a jewel",
-            "image": "shopify://shop_images/looooogo.png"
+            "code": "as beautiful as a jewel"
           }
         },
         "28834f1d-6fdd-4446-942c-c840fdd98763": {
           "type": "item",
           "settings": {
-            "code": "as beautiful as a jewel",
-            "image": "shopify://shop_images/looooogo.png"
+            "code": "as beautiful as a jewel"
           }
         },
         "3b735a95-56a3-430b-9c96-cbc553f6e108": {
           "type": "item",
           "settings": {
-            "code": "as beautiful as a jewel",
-            "image": "shopify://shop_images/looooogo.png"
+            "code": "as beautiful as a jewel"
           }
         },
         "item_D8RQdc": {
           "type": "item",
           "settings": {
-            "code": "as beautiful as a jewel",
-            "image": "shopify://shop_images/looooogo.png"
+            "code": "as beautiful as a jewel"
           }
         },
         "item_F4CVKx": {
           "type": "item",
           "settings": {
-            "code": "as beautiful as a jewel",
-            "image": "shopify://shop_images/looooogo.png"
+            "code": "as beautiful as a jewel"
+          }
+        },
+        "item_YKLXwY": {
+          "type": "item",
+          "settings": {
+            "code": "as beautiful as a jewel"
+          }
+        },
+        "item_KgNk7n": {
+          "type": "item",
+          "settings": {
+            "code": "as beautiful as a jewel"
           }
         }
       },
@@ -351,13 +358,15 @@
         "28834f1d-6fdd-4446-942c-c840fdd98763",
         "3b735a95-56a3-430b-9c96-cbc553f6e108",
         "item_D8RQdc",
-        "item_F4CVKx"
+        "item_F4CVKx",
+        "item_YKLXwY",
+        "item_KgNk7n"
       ],
       "settings": {
         "animation": "",
         "size_text": "h5",
         "text_style": "solid",
-        "size_icon": 16,
+        "size_icon": 20,
         "speed": 30,
         "scroll_type": "from-right",
         "background": "#f73c3c",
@@ -560,8 +569,7 @@
             "quote": "The product looks stunning—great design, vibrant color, and perfect for summer. Feels both stylish and comfortable!",
             "rate": 5,
             "author": "-zenith_p.",
-            "info": "",
-            "avatar": "shopify://shop_images/image1.png"
+            "info": ""
           }
         },
         "quote_K3MxJc": {
@@ -571,8 +579,7 @@
             "quote": "Gorgeous piece! The style is flattering, and the quality looks amazing—perfect for beach days.",
             "rate": 5,
             "author": "-yousef B.",
-            "info": "",
-            "avatar": "shopify://shop_images/image2.png"
+            "info": ""
           }
         }
       },
@@ -616,13 +623,9 @@
             "heading": "CAPTURE THE MOMENTS",
             "text_alignment": "left",
             "video_1": "/aa",
-            "thumbnail_1": "shopify://shop_images/image3.png",
             "video_2": "/v2",
-            "thumbnail_2": "shopify://shop_images/image.png",
             "video_3": "/v3",
-            "thumbnail_3": "shopify://shop_images/image4.png",
             "video_4": "/v4",
-            "thumbnail_4": "shopify://shop_images/image5.png",
             "enable_carousel": true,
             "columns_desktop": 4,
             "columns_mobile": "2",
@@ -752,6 +755,7 @@
         "image_D7UDjB": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/0C1A8748copy.png",
             "image_link": "",
             "social_icon": "Instagram"
           }
@@ -759,13 +763,15 @@
         "image_AVTrQW": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/0C1A9576copy.png",
             "image_link": "https://www.facebook.com/people/Sequoiacodes/61577194533389/",
-            "social_icon": "Facebook"
+            "social_icon": "facebook"
           }
         },
         "image_jYn4iw": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/0C1A8505copy.png",
             "image_link": "",
             "social_icon": "Instagram"
           }
@@ -773,6 +779,7 @@
         "image_xB7pCp": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/0C1A9576copy1.png",
             "image_link": "",
             "social_icon": "facebook"
           }
@@ -780,6 +787,7 @@
         "image_4GFnQt": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/0C1A8748copy2.png",
             "image_link": "",
             "social_icon": "linkedin"
           }
