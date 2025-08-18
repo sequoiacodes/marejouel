@@ -54,12 +54,12 @@
                       }
                     {% endstyle %}
                 {%- if subtitle != blank -%}
-                    <div class="subtitle-n popup-newsletter--subtitle mb-3">{{ subtitle }}</div>
+                    <div class="subtitle-n  mb-3">{{ subtitle }}</div>
                 {%- endif -%}
                 {% if pnewletter_title != blank %}
-                <h3 class="modal-title popup-newsletter--title mb-2  {{ pnew_size_heading }}">
+                <div class="modal-title popup-newsletter--title mb-2  {{ pnew_size_heading }}">
                 {{ pnewletter_title }}
-                </h3>
+                </div>
                 {% endif %}
                 {% if pnewletter_description != blank %}
                 <div class="popup-newsletter--description pb-4 mb-2">
