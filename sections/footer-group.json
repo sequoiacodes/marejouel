@@ -14,7 +14,7 @@
     "newsletter-footer": {
       "type": "newsletter-footer",
       "settings": {
-        "enable_newletter_footer": true,
+        "enable_newletter_footer": false,
         "animation": "",
         "setwidth": "container",
         "bgsection": "#000000",
