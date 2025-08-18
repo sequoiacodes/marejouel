@@ -558,9 +558,10 @@
           "settings": {
             "title": "",
             "quote": "The product looks stunning—great design, vibrant color, and perfect for summer. Feels both stylish and comfortable!",
-            "rate": 5,
+            "rate": 2,
             "author": "-zenith_p.",
-            "info": ""
+            "info": "",
+            "avatar": "shopify://shop_images/image1.png"
           }
         },
         "quote_K3MxJc": {
@@ -570,7 +571,8 @@
             "quote": "Gorgeous piece! The style is flattering, and the quality looks amazing—perfect for beach days.",
             "rate": 5,
             "author": "-yousef B.",
-            "info": ""
+            "info": "",
+            "avatar": "shopify://shop_images/image2.png"
           }
         }
       },
