@@ -48,21 +48,21 @@
         "menu1_4gF3AV": {
           "type": "menu1",
           "settings": {
-            "link_list1": "",
+            "link_list1": "quick-links",
             "width": "16%"
           }
         },
         "1562342622030": {
           "type": "menu",
           "settings": {
-            "link_list": "footer",
+            "link_list": "our-collections",
             "width": "16%"
           }
         },
         "1567410176792": {
           "type": "menu",
           "settings": {
-            "link_list": "",
+            "link_list": "privacy-security",
             "width": "16%"
           }
         },
