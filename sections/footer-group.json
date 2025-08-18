@@ -86,6 +86,7 @@
           "type": "social",
           "settings": {
             "title": "Stay Connected",
+            "show_social": false,
             "width": "25%"
           }
         }
