@@ -1,4 +1,4 @@
-{% comment %} <ul class="meganav__list">
+ <ul class="meganav__list">
   {% for childlink in link.links %}
   <li class="site-nav__dropdown-container site-nav__dropdown-container--second-level">
     {% assign childlink_url = childlink.url %}
@@ -8,7 +8,7 @@
       {% render 'processMenuLabel' , itemName: childlink.title %}
       {% render 'icon-arrow-right' %}
     </a>
-    <div class="site-nav__dropdown site-nav__dropdown--third-level">
+    {% comment %} <div class="site-nav__dropdown site-nav__dropdown--third-level">
       <ul class="meganav__list">
         {% for grandchildlink in childlink.links %}
         <li class="site-nav__dropdown-container site-nav__dropdown-container--third-level">
@@ -19,7 +19,7 @@
         </li>
         {% endfor %}
       </ul>
-    </div>
+    </div> {% endcomment %}
     {% else %}
     <a href="{{ childlink_url }}" class="meganav__link {% if childlink.active %} meganav__link--active{% endif %}"{% if childlink.active %} aria-current="page"{% endif %}>
       {% render 'processMenuTitle' , itemName: childlink.title %}
@@ -28,4 +28,4 @@
     {% endif %}
   </li>
   {% endfor %}
-</ul> {% endcomment %}
+</ul> 
