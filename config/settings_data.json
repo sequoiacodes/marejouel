@@ -638,39 +638,6 @@
       "slideshow-1": {
         "type": "slideshow-1",
         "blocks": {
-          "1561259906467": {
-            "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/hero_1.png",
-              "alignment": "left center",
-              "text_alignment": "left center",
-              "bgwrap": "#e8f2f5",
-              "show_overlay": true,
-              "gradient_overlay": true,
-              "bg_overlay": "#000000",
-              "opacity_overlay": 0.5,
-              "slide_toptitle": "say yes to a never ending summer",
-              "slide_toptitle_color": "#000000",
-              "slide_title": "The di mare collection",
-              "slide_title_color": "#d73f0f",
-              "subheading": "\"Inspired By The Beauty Of The Ocean\"",
-              "subheading_color": "#000000",
-              "button_label": "Discover mare joel",
-              "button_link": "shopify://collections/tools",
-              "stylebtns": "btn-outline",
-              "bg_button": "#ffffff",
-              "color_button": "#1e1e1e",
-              "bg_button_hover": "#80270f",
-              "color_button_hover": "#ffffff",
-              "button_label_2": "",
-              "button_link_2": "shopify://collections/all",
-              "stylebtns_2": "btn-underline",
-              "bg_button_2": "#ffffff",
-              "color_button_2": "#ffffff",
-              "bg_button_hover_2": "#ffffff",
-              "color_button_hover_2": "#ffffff"
-            }
-          },
           "1561259904381": {
             "type": "image",
             "settings": {
@@ -703,11 +670,44 @@
               "bg_button_hover_2": "#80270f",
               "color_button_hover_2": "#ffffff"
             }
+          },
+          "1561259906467": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/hero_1.png",
+              "alignment": "left center",
+              "text_alignment": "left center",
+              "bgwrap": "#e8f2f5",
+              "show_overlay": true,
+              "gradient_overlay": true,
+              "bg_overlay": "#000000",
+              "opacity_overlay": 0.5,
+              "slide_toptitle": "say yes to a never ending summer",
+              "slide_toptitle_color": "#000000",
+              "slide_title": "The di mare collection",
+              "slide_title_color": "#d73f0f",
+              "subheading": "\"Inspired By The Beauty Of The Ocean\"",
+              "subheading_color": "#000000",
+              "button_label": "Discover mare joel",
+              "button_link": "shopify://collections/tools",
+              "stylebtns": "btn-outline",
+              "bg_button": "#ffffff",
+              "color_button": "#1e1e1e",
+              "bg_button_hover": "#80270f",
+              "color_button_hover": "#ffffff",
+              "button_label_2": "",
+              "button_link_2": "shopify://collections/all",
+              "stylebtns_2": "btn-underline",
+              "bg_button_2": "#ffffff",
+              "color_button_2": "#ffffff",
+              "bg_button_hover_2": "#ffffff",
+              "color_button_hover_2": "#ffffff"
+            }
           }
         },
         "block_order": [
-          "1561259906467",
-          "1561259904381"
+          "1561259904381",
+          "1561259906467"
         ],
         "settings": {
           "enable_slideshow": true,
