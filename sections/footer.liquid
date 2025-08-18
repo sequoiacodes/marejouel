@@ -363,9 +363,9 @@
           <div class="site-footer__list site-footer-block">
             {%- render 'block-social' -%}
           </div>
+        </div >
           {% endif %}
           {% comment %} ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// {% endcomment %}
-        </div >
         {%- when 'contact' -%}
           <div class="site-footer__section text-lg-{{ footer_align_title }}">
             {%- if block.settings.title != blank -%}
@@ -1116,7 +1116,7 @@
           "type": "checkbox",
           "id": "show_social",
           "label": "Show Social Block",
-          "default": false
+          "default": true
         },
         {
           "type": "select",
