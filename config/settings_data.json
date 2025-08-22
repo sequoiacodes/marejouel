@@ -2371,7 +2371,7 @@
           "pnew_style": "pnew_style-4",
           "pnew-width": 500,
           "pnew-height": 600,
-          "pnewletter_time_delay": 3,
+          "pnewletter_time_delay": 10,
           "pnewletter_time": 20,
           "pnewletter_background": "#ffffff",
           "pnewletter_bgimage": "shopify://shop_images/Rectangle_14.png",
