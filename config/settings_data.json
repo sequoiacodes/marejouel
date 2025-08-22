@@ -644,7 +644,7 @@
             "settings": {
               "image": "shopify://shop_images/hero2_0b8a212e-bf4d-4a1b-813b-9390388c633b.png",
               "image_mobile": "shopify://shop_images/unsplash_q9GnP8x-yEs.png",
-              "alignment": "center bottom",
+              "alignment": "center top",
               "text_alignment": "left center",
               "bgwrap": "#343a40",
               "show_overlay": true,
