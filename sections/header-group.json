@@ -246,6 +246,7 @@
       ],
       "settings": {
         "logo": "shopify://shop_images/logo.png",
+        "logo_white": "shopify://shop_images/logo.png",
         "logo_max_width": 150,
         "enable_transparent": true,
         "hover_transparent": false,
