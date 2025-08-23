@@ -266,7 +266,7 @@
         "menudroptexttitle": "#000000",
         "menudroptext": "#000000",
         "menudropbg": "#f9f7f2",
-        "menudropborder": "#999999",
+        "menudropborder": "rgba(0,0,0,0)",
         "main_linklist": "main-menu",
         "font_family_menu": "--g-font-2",
         "font_sizemenu": "12px",
