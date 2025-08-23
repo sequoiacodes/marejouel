@@ -387,8 +387,8 @@
         "align-heading": "center",
         "paddingsection": "80px 0px 80px 0px",
         "paddingmobile": "40px 0px 40px 0px",
-        "marginsection": "40px 0px 40px 0px",
-        "marginmobile": "0px 0px 0px 0px"
+        "marginsection": "50px 0px 50px 0px",
+        "marginmobile": "30px 0px 30px 0px"
       }
     },
     "70b7f2d2-4c12-4305-88bd-da89e2d18d5b": {
