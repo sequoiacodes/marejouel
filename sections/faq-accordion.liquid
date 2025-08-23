@@ -75,7 +75,7 @@
                 {%- if section.blocks.size > 0 -%}
                     <div id="accordion-faqs" class="{{ section.settings.s_accordion }} {% if section.settings.e_right %} {% if section.settings.e_reverse %} pl-lg-5 ml-lg-3 {% else %} pr-lg-5 mr-lg-3  {% endif %} {% endif %}  mb-5 mb-lg-0">
                     {%- for block in section.blocks -%}
-                        <div style="color:white;" class="card-faqs">
+                        <div style="color:black;" class="card-faqs">
                             <div class="card-faqs-heading" >
                                 <h4 class="mb-0 {{ section.settings.title_size }}">
                                     <span class="faq-heading d-flex align-items-center {% if forloop.first == true and section.settings.e_first_open %}{% else %}collapsed{% endif %}" data-toggle="collapse" data-target="#faq-{{ block.id }}" aria-expanded="{%- if  forloop.first == true and section.settings.e_first_open -%} true {%- else -%} false {%- endif -%}" aria-controls="faq-{{ block.id }}">
