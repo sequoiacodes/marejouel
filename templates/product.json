@@ -629,7 +629,7 @@
         "title_top": "",
         "title": "FAQs",
         "des": "Have a question ? We are here to help.",
-        "align-heading": "center",
+        "align-heading": "left",
         "title_size": "h6",
         "e_first_open": false,
         "e_reverse": true,
