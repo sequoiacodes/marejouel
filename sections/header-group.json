@@ -251,7 +251,7 @@
         "enable_transparent": true,
         "hover_transparent": true,
         "enable_white": false,
-        "setwidth": "container",
+        "setwidth": "container-fluid",
         "layout_header": "logo-left-navigation-center",
         "type_sticky": "sticky-top",
         "height_header": "small",
