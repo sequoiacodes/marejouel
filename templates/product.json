@@ -621,6 +621,7 @@
       ],
       "settings": {
         "animation": "",
+        "faq_color": "#000000",
         "setwidth": "container",
         "bgsection": "#ffffff",
         "e_size": "auto",
