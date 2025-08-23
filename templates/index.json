@@ -214,6 +214,7 @@
       "name": "Rich text",
       "settings": {
         "animation": "",
+        "inset_img": "shopify://shop_images/looooogo_59e8a743-1d5e-4e8d-ac10-6c111f645478.png",
         "button_title": "All Collection",
         "buttton_url": "shopify://collections",
         "topsub_color": "black",
