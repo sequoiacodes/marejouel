@@ -107,7 +107,7 @@
         "size_text": "h4",
         "text_style": "solid",
         "size_icon": 16,
-        "speed": 18,
+        "speed": 30,
         "scroll_type": "from-right",
         "background": "#e55b5b",
         "gradient_bg": "linear-gradient(90deg, rgba(255, 199, 134, 0.8) 3.37%, rgba(255, 128, 108, 0.8) 51.44%, rgba(255, 193, 230, 1) 100%)",
