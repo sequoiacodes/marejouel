@@ -256,7 +256,7 @@
         "51f9d856-95f4-4741-bf4d-afe15438ff29"
       ],
       "settings": {
-        "setwidth": "container",
+        "setwidth": "container-fluid",
         "media_style": "media-bottom",
         "media_size": "large",
         "image_size": "portrait",
