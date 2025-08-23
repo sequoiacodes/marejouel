@@ -2370,7 +2370,7 @@
         "type": "pnewsletter",
         "settings": {
           "pnewletter_enable": true,
-          "cross_border": "#ffffff",
+          "cross_border": "#343a40",
           "pnew_style": "pnew_style-4",
           "pnew-width": 500,
           "pnew-height": 600,
