@@ -67,7 +67,7 @@
       <div class="logo-1 logo-11">
       <img
   class="image-content__image lazyload scale-in"
-  src="{{ 'looooogo.png' | asset_url }}" 
+  src="{{ section.settings.inset_img | image_url:'large' }}" 
  
   alt="Logo"
   loading="lazy"
@@ -319,6 +319,11 @@
         }
       ],
       "label": "Select Animation"
+    },
+    {
+    "type": "image_picker",
+    "id": "inset_img",
+    "label": "Background Image"
     },
     {
     "type": "text",
