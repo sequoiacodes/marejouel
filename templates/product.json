@@ -302,35 +302,10 @@
           "settings": {
             "title_tab": "Description"
           }
-        },
-        "b69a53cf-5bc1-4b18-add3-92af436f966c": {
-          "type": "content",
-          "settings": {
-            "title_tab": "Materrial",
-            "answer_content": "<p>hello nepal whjkhsdaf sdfjhdsafjhdf fjdkh<strong>fsadkjh</strong></p>",
-            "page": "material"
-          }
-        },
-        "147e9960-c5fe-44f4-8469-9583a9752a0a": {
-          "type": "review",
-          "settings": {
-            "title_tab": "Reviews"
-          }
-        },
-        "2e69c5c0-ab83-4cda-9c38-1aaab6fdf1cc": {
-          "type": "related-product",
-          "settings": {
-            "title_heading": "buy with",
-            "size_text": "h6",
-            "product_limit": 3
-          }
         }
       },
       "block_order": [
-        "description_3wCtgw",
-        "b69a53cf-5bc1-4b18-add3-92af436f966c",
-        "147e9960-c5fe-44f4-8469-9583a9752a0a",
-        "2e69c5c0-ab83-4cda-9c38-1aaab6fdf1cc"
+        "description_3wCtgw"
       ],
       "settings": {
         "animation": "fade-up",
@@ -345,43 +320,9 @@
     },
     "93495e3d-f562-4706-aa2e-14cf6b83c216": {
       "type": "rich-text",
-      "blocks": {
-        "e313bb24-b47f-4f70-82d8-21e78d481ad8": {
-          "type": "image",
-          "settings": {
-            "img-in-hero": 44,
-            "image_link": ""
-          }
-        },
-        "b103ea62-6bf1-49fd-ab23-3d4bb5dc1243": {
-          "type": "spacer",
-          "settings": {
-            "hero-spacer": 8
-          }
-        },
-        "84ad5551-3059-4091-a4ca-408e36eaeff9": {
-          "type": "sub_title",
-          "settings": {
-            "subtitle": "Sustainability"
-          }
-        },
-        "4c0967d6-9bfa-4693-98ce-decc57dda257": {
-          "type": "heading",
-          "settings": {
-            "title": "Our fabrics are developed specifically for us and we only produce quality apparel that lasts.",
-            "size_text": "h4"
-          }
-        }
-      },
-      "block_order": [
-        "e313bb24-b47f-4f70-82d8-21e78d481ad8",
-        "b103ea62-6bf1-49fd-ab23-3d4bb5dc1243",
-        "84ad5551-3059-4091-a4ca-408e36eaeff9",
-        "4c0967d6-9bfa-4693-98ce-decc57dda257"
-      ],
       "settings": {
         "animation": "fade-up",
-        "button_title": "Title",
+        "button_title": "",
         "buttton_url": "/",
         "topsub_color": "black",
         "style_btn": "btn-theme",
@@ -389,8 +330,8 @@
         "bgsection": "#000000",
         "gradient_bg": "linear-gradient(180deg, rgba(114, 255, 179, 0), rgba(250, 249, 230, 1) 98%)",
         "title_color": "#000000",
-        "title_top": "ddsdsd",
-        "title": "hello",
+        "title_top": "",
+        "title": "Our fabrics are developed specifically for us and we only produce quality apparel that lasts.",
         "text": "",
         "align-heading": "center",
         "paddingsection": "80px 0px 80px 0px",
