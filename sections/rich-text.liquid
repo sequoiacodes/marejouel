@@ -63,31 +63,34 @@
   }
 </style>
 <div class="posrelative customstyle{{ section.id }}" data-aos="{{ section.settings.animation }}">
-  <div class="posabsolute">
-      <div class="logo-1 logo-11">
-      <img
-  class="image-content__image lazyload scale-in"
-  src="{{ section.settings.inset_img | image_url: width: 200  }}" 
- 
-  alt="Logo"
-  loading="lazy"
-  height="100"
-  width="100"
-/>
-
-      </div>
-      <div class="logo-1 logo-2">
-           <img
-  class="image-content__image lazyload scale-in"
-  src="{{ section.settings.inset_img | image_url: width: 200  }}" 
- 
-  alt="Logo"
-  loading="lazy"
-  height="100"
-  width="100"
-/>
-      </div>
-  </div>
+  {% if section.settings.inset_img %}
+    
+    <div class="posabsolute">
+        <div class="logo-1 logo-11">
+        <img
+    class="image-content__image lazyload scale-in"
+    src="{{ section.settings.inset_img | image_url: width: 200  }}" 
+   
+    alt="Logo"
+    loading="lazy"
+    height="100"
+    width="100"
+  />
+  
+        </div>
+        <div class="logo-1 logo-2">
+             <img
+    class="image-content__image lazyload scale-in"
+    src="{{ section.settings.inset_img | image_url: width: 200  }}" 
+   
+    alt="Logo"
+    loading="lazy"
+    height="100"
+    width="100"
+  />
+        </div>
+    </div>
+  {% endif %}
   <div class="content {{ section.settings.setwidth }}">
     <div class="section-block">
       <div class="row justify-content-center">
