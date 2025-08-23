@@ -36,7 +36,7 @@
       "type": "main-collection-template",
       "settings": {
         "collection_width": "container-fluid",
-        "products_per_page": 9,
+        "products_per_page": 12,
         "collection_perrow": "3",
         "type_pagination": "pagi",
         "enable_viewcolumn": true,
