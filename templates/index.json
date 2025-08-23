@@ -83,7 +83,7 @@
       ],
       "settings": {
         "animation": "",
-        "setwidth": "container",
+        "setwidth": "container-fluid",
         "bgsection": "#ffffff",
         "title_top": "Dive Into Elegance with Our Curated Collections",
         "title": "featured collections",
@@ -189,7 +189,7 @@
       ],
       "settings": {
         "animation": "",
-        "setwidth": "container",
+        "setwidth": "container-fluid",
         "bgsection": "#fff8ec",
         "title_top": "Let’s find the perfect swimsuit for you!",
         "title": "shop by categories",
@@ -237,7 +237,7 @@
       "type": "product-list-swiper",
       "settings": {
         "animation": "fade-up",
-        "setwidth": "container",
+        "setwidth": "container-fluid",
         "bgsection": "#fff8ec",
         "title_top": "New Arrivals",
         "title": "di mare collection",
@@ -295,7 +295,7 @@
       ],
       "settings": {
         "animation": "",
-        "setwidth": "container",
+        "setwidth": "container-fluid",
         "bgsection": "rgba(0,0,0,0)",
         "rangebg": 0,
         "bgbefore": "rgba(0,0,0,0)",
@@ -406,7 +406,7 @@
       ],
       "settings": {
         "animation": "",
-        "setwidth": "container",
+        "setwidth": "container-fluid",
         "bgsection": "#fff8ec",
         "title_top": "Our Most Loved Pieces",
         "title": "Best Sellers",
@@ -435,7 +435,7 @@
       "type": "newsletter",
       "settings": {
         "animation": "fade-up",
-        "setwidth": "container",
+        "setwidth": "container-fluid",
         "bgsection": "#000000",
         "bg_overlay": "#000000",
         "opacity_bg_overlay": 0.7,
@@ -462,7 +462,7 @@
       "name": "Blog posts",
       "settings": {
         "animation": "",
-        "setwidth": "container",
+        "setwidth": "container-fluid",
         "bgsection": "#ffffff",
         "title_top": "Join Mare Jouel: Swimwear Fashion That Inspires",
         "title": "latest blog",
@@ -527,7 +527,7 @@
       "name": "Image with text",
       "settings": {
         "animation": "",
-        "setwidth": "container",
+        "setwidth": "container-fluid",
         "bgsection": "#fff8ec",
         "rangebg": 100,
         "bgbefore": "#fff8ec",
@@ -585,7 +585,7 @@
       "name": "Testimonials Split",
       "settings": {
         "animation": "",
-        "setwidth": "container",
+        "setwidth": "container-fluid",
         "bgsection": "#ffffff",
         "title_top": "let’s hear from our clients",
         "title": "testimonials",
@@ -612,7 +612,7 @@
           "name": "Video gallery",
           "settings": {
             "subheading": "capture the moments",
-            "width_layout": 1240,
+            "width_layout": 1400,
             "vertical_padding": 60,
             "heading": "VIDEOS FROM MARE JOUEL",
             "text_alignment": "left",
@@ -801,7 +801,7 @@
       "name": "Instagram Customize",
       "settings": {
         "animation": "",
-        "setwidth": "container",
+        "setwidth": "container-fluid",
         "bgsection": "#ffffff",
         "title_top": "#specialasajewel",
         "title": "from the mare jouel community",
@@ -868,7 +868,7 @@
       ],
       "settings": {
         "animation": "fade-up",
-        "setwidth": "container",
+        "setwidth": "container-fluid",
         "bgsection": "#fff8ec",
         "title_top": "",
         "title": "",
