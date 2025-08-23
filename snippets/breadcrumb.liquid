@@ -9,33 +9,27 @@
     assign showBreadcrumb = true
   endif
 
-  # Define which templates should be excluded
-  assign excluded_templates = 'index,cart'
-  if settings.enable_post == false
-    assign excluded_templates = excluded_templates | append: ',blog'
-  endif
-  if settings.enable_article == false
-    assign excluded_templates = excluded_templates | append: ',article'
-  endif
-  if settings.enable_product == false
-    assign excluded_templates = excluded_templates | append: ',product'
-  endif
-  if settings.enable_customer == false
-    assign excluded_templates = excluded_templates | append: ',customers'
+  # Check if breadcrumb should show on this template
+  assign show_breadcrumb = true
+  if template == 'index' or template == 'cart'
+    assign show_breadcrumb = false
   endif
   
-  assign excluded_array = excluded_templates | split: ','
-  assign show_on_template = true
-  
-  for excluded in excluded_array
-    if template contains excluded
-      assign show_on_template = false
-      break
-    endif
-  endfor
+  if template contains 'blog' and settings.enable_post == false
+    assign show_breadcrumb = false
+  endif
+  if template contains 'article' and settings.enable_article == false
+    assign show_breadcrumb = false
+  endif
+  if template contains 'product' and settings.enable_product == false
+    assign show_breadcrumb = false
+  endif
+  if template contains 'customers' and settings.enable_customer == false
+    assign show_breadcrumb = false
+  endif
 -%}
 
-{%- if enable_breadcrumb and showBreadcrumb and show_on_template -%}
+{%- if enable_breadcrumb and showBreadcrumb and show_breadcrumb -%}
 <style>
   .g-breadcrumb{
     border-radius: 0;
@@ -72,31 +66,47 @@
   <div class="{{ settings.layout_bread }}">
     <a href="/" title="{{ 'general.breadcrumb.home' | t }}">{{ 'general.breadcrumb.home' | t }}</a>
     
-    {% if template contains 'page' %}
-      <span aria-hidden="true"> / </span>
-      <span>{{ page.title }}</span>
+    {% comment %} Product pages {% endcomment %}
+    {% if template contains 'product' %}
+      {% comment %} Show Collections link if product is in a collection {% endcomment %}
+      {% if collections.size > 0 %}
+        <span aria-hidden="true"> / </span>
+        <a href="/collections">{{ 'general.breadcrumb.collections' | t | default: 'Collections' }}</a>
+      {% endif %}
       
-    {% elsif template contains 'product' %}
+      {% comment %} Show specific collection if available {% endcomment %}
       {% if collection and collection.url %}
         <span aria-hidden="true"> / </span>
         <a href="{{ collection.url }}">{{ collection.title }}</a>
+      {% elsif product.collections.size > 0 %}
+        {% assign first_collection = product.collections.first %}
+        <span aria-hidden="true"> / </span>
+        <a href="{{ first_collection.url }}">{{ first_collection.title }}</a>
       {% endif %}
+      
       <span aria-hidden="true"> / </span>
       <span>{{ product.title }}</span>
       
+    {% comment %} Collection pages {% endcomment %}
     {% elsif template contains 'collection' and collection.handle %}
       <span aria-hidden="true"> / </span>
+      <a href="/collections">{{ 'general.breadcrumb.collections' | t | default: 'Collections' }}</a>
+      <span aria-hidden="true"> / </span>
+      
       {% if current_tags %}
-        {% capture collection_url %}/collections/{{ collection.handle }}{% endcapture %}
-        <a href="{{ collection_url }}">{{ collection.title }}</a>
+        <a href="{{ collection.url }}">{{ collection.title }}</a>
         <span aria-hidden="true"> / </span>
         <span>{{ current_tags | join: " + " }}</span>
       {% else %}
         <span>{{ collection.title }}</span>
       {% endif %}
       
+    {% comment %} Blog pages {% endcomment %}
     {% elsif template == 'blog' %}
       <span aria-hidden="true"> / </span>
+      <a href="/blogs">{{ 'general.breadcrumb.blogs' | t | default: 'Blogs' }}</a>
+      <span aria-hidden="true"> / </span>
+      
       {% if current_tags %}
         <a href="{{ blog.url }}">{{ blog.title }}</a>
         <span aria-hidden="true"> / </span>
@@ -105,12 +115,35 @@
         <span>{{ blog.title }}</span>
       {% endif %}
       
+    {% comment %} Article pages {% endcomment %}
     {% elsif template == 'article' %}
+      <span aria-hidden="true"> / </span>
+      <a href="/blogs">{{ 'general.breadcrumb.blogs' | t | default: 'Blogs' }}</a>
       <span aria-hidden="true"> / </span>
       <a href="{{ blog.url }}">{{ blog.title }}</a>
       <span aria-hidden="true"> / </span>
       <span>{{ article.title }}</span>
       
+    {% comment %} Regular pages {% endcomment %}
+    {% elsif template contains 'page' %}
+      <span aria-hidden="true"> / </span>
+      <span>{{ page.title }}</span>
+      
+    {% comment %} Search pages {% endcomment %}
+    {% elsif template == 'search' %}
+      <span aria-hidden="true"> / </span>
+      <span>{{ 'general.search.title' | t | default: 'Search' }}</span>
+      {% if search.terms %}
+        <span aria-hidden="true"> / </span>
+        <span>"{{ search.terms }}"</span>
+      {% endif %}
+      
+    {% comment %} Customer pages {% endcomment %}
+    {% elsif template contains 'customers' %}
+      <span aria-hidden="true"> / </span>
+      <span>{{ 'customer.account.title' | t | default: 'Account' }}</span>
+      
+    {% comment %} Default fallback {% endcomment %}
     {% else %}
       <span aria-hidden="true"> / </span>
       <span>{{ page_title }}</span>
