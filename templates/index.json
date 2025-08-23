@@ -89,7 +89,7 @@
         "title": "featured collections",
         "des": "",
         "button_name": "Shop The Collection",
-        "button_url": "/",
+        "button_url": "shopify://collections",
         "align-heading": "left",
         "no_gutter": false,
         "show_overlay": true,
