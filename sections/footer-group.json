@@ -105,7 +105,7 @@
         "border_headfooter": "#e9e3dd",
         "border-copryright": "#e7ded6",
         "text": "#ffffff",
-        "text_hover": "#80270f",
+        "text_hover": "#d73f0f",
         "title": "#ffffff",
         "footer_align_title": "left",
         "enable_border": false,
