@@ -90,7 +90,7 @@
     "enable_article": true,
     "enable_collection": true,
     "enable_product": true,
-    "page_breadcrumb": "",
+    "page_breadcrumb": "about-v1,about-v2,contact,sustainability",
     "color_breadcrumbs": "#000000",
     "color_breadcrumbs_active": "#000000",
     "border_breadcrumb": "rgba(0,0,0,0)",
