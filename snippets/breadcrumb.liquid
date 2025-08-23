@@ -68,10 +68,10 @@
     
     {% comment %} Product pages {% endcomment %}
     {% if template contains 'product' %}
-      {% comment %} Show Collections link if product is in a collection {% endcomment %}
+      {% comment %} Show Collections link {% endcomment %}
       {% if collections.size > 0 %}
         <span aria-hidden="true"> / </span>
-        <a href="/collections">{{ 'general.breadcrumb.collections' | t | default: 'Collections' }}</a>
+        <a href="/collections">Collections</a>
       {% endif %}
       
       {% comment %} Show specific collection if available {% endcomment %}
@@ -90,7 +90,7 @@
     {% comment %} Collection pages {% endcomment %}
     {% elsif template contains 'collection' and collection.handle %}
       <span aria-hidden="true"> / </span>
-      <a href="/collections">{{ 'general.breadcrumb.collections' | t | default: 'Collections' }}</a>
+      <a href="/collections">Collections</a>
       <span aria-hidden="true"> / </span>
       
       {% if current_tags %}
@@ -104,7 +104,7 @@
     {% comment %} Blog pages {% endcomment %}
     {% elsif template == 'blog' %}
       <span aria-hidden="true"> / </span>
-      <a href="/blogs">{{ 'general.breadcrumb.blogs' | t | default: 'Blogs' }}</a>
+      <a href="/blogs">Blog</a>
       <span aria-hidden="true"> / </span>
       
       {% if current_tags %}
@@ -118,7 +118,7 @@
     {% comment %} Article pages {% endcomment %}
     {% elsif template == 'article' %}
       <span aria-hidden="true"> / </span>
-      <a href="/blogs">{{ 'general.breadcrumb.blogs' | t | default: 'Blogs' }}</a>
+      <a href="/blogs">Blog</a>
       <span aria-hidden="true"> / </span>
       <a href="{{ blog.url }}">{{ blog.title }}</a>
       <span aria-hidden="true"> / </span>
@@ -132,7 +132,7 @@
     {% comment %} Search pages {% endcomment %}
     {% elsif template == 'search' %}
       <span aria-hidden="true"> / </span>
-      <span>{{ 'general.search.title' | t | default: 'Search' }}</span>
+      <span>Search</span>
       {% if search.terms %}
         <span aria-hidden="true"> / </span>
         <span>"{{ search.terms }}"</span>
@@ -141,7 +141,7 @@
     {% comment %} Customer pages {% endcomment %}
     {% elsif template contains 'customers' %}
       <span aria-hidden="true"> / </span>
-      <span>{{ 'customer.account.title' | t | default: 'Account' }}</span>
+      <span>Account</span>
       
     {% comment %} Default fallback {% endcomment %}
     {% else %}
