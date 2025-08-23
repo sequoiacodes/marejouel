@@ -491,11 +491,11 @@
       "settings": {
         "animation": "fade-up",
         "setwidth": "container",
-        "bgsection": "#ffffff",
+        "bgsection": "#000000",
         "title_top": "",
         "title": "",
         "des": "",
-        "align-heading": "center",
+        "align-heading": "left",
         "color_rate": "#f1f1f1",
         "color_rated": "#000000",
         "image_size": "auto",
