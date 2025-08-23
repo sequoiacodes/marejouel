@@ -309,7 +309,7 @@
       ],
       "settings": {
         "animation": "fade-up",
-        "setwidth": "container",
+        "setwidth": "container-fluid",
         "tab_size": "large",
         "enable_left": true,
         "paddingsection": "48px 0px 40px 0px",
@@ -359,7 +359,7 @@
       "name": "Image Text Product",
       "settings": {
         "animation": "",
-        "setwidth": "container",
+        "setwidth": "container-fluid",
         "section_image": "{{ product.featured_image }}",
         "block_text_color": "#000000",
         "block_text_bg": "#F9F7F2",
