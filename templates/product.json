@@ -365,7 +365,7 @@
         "block_text_bg": "#F9F7F2",
         "paddingsection": "0px 0px 0px 0px",
         "paddingmobile": "40px 0px 40px 0px",
-        "marginsection": "0px 0px 0px 0px",
+        "marginsection": "40px 0px 40px 0px",
         "marginmobile": "0px 0px 0px 0px"
       }
     },
@@ -387,7 +387,7 @@
         "align-heading": "center",
         "paddingsection": "80px 0px 80px 0px",
         "paddingmobile": "40px 0px 40px 0px",
-        "marginsection": "0px 0px 0px 0px",
+        "marginsection": "40px 0px 40px 0px",
         "marginmobile": "0px 0px 0px 0px"
       }
     },
