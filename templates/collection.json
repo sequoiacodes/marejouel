@@ -17,6 +17,7 @@
         "show_collection_description": true,
         "show_collection_image": true,
         "save_allproducts": true,
+        "img_bannercollection": "shopify://shop_images/ss-2025-lookbook-bg-image.png",
         "title_all": "All Products",
         "des_all": "<p>Shop now, not later. Browse the best of our favorite sale styles and brands.</p>",
         "style_banner": "full",
@@ -25,10 +26,10 @@
         "bg_color": "#f4efe9",
         "image_text_color": "#ffffff",
         "image_overlay_color": "#000000",
-        "image_overlay_opacity": 50,
+        "image_overlay_opacity": 0,
         "enable_collection": true,
         "enable_count": true,
-        "link_list_head": ""
+        "link_list_head": "our-collections"
       }
     },
     "product-grid": {
