@@ -77,7 +77,7 @@
           "type": "button",
           "settings": {
             "button": "Shop now",
-            "link": "#",
+            "link": "shopify://collections/all",
             "style_btn": "btn-outline"
           }
         }
