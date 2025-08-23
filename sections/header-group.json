@@ -270,7 +270,7 @@
         "menudropborder": "rgba(0,0,0,0)",
         "main_linklist": "main-menu",
         "font_family_menu": "--g-font-2",
-        "font_sizemenu": "14px",
+        "font_sizemenu": "12px",
         "font_weight": "500",
         "menu_spacing": 0.2,
         "menu_space": 2,
