@@ -318,6 +318,57 @@
         "marginmobile": "0px 0px 0px 0px"
       }
     },
+    "image_text_product_tH6xKx": {
+      "type": "image-text-product",
+      "blocks": {
+        "text_icon_VpKYBC": {
+          "type": "text_icon",
+          "settings": {
+            "block_title": "Heading",
+            "block_des": "<p>Made of flax, a natural material that won’t irritate sensitive skin</p>"
+          }
+        },
+        "text_icon_ya6zML": {
+          "type": "text_icon",
+          "settings": {
+            "block_title": "Heading",
+            "block_des": "<p>Made of flax, a natural material that won’t irritate sensitive skin</p>"
+          }
+        },
+        "text_icon_xUac4P": {
+          "type": "text_icon",
+          "settings": {
+            "block_title": "Heading",
+            "block_des": "<p>Made of flax, a natural material that won’t irritate sensitive skin</p>"
+          }
+        },
+        "text_icon_eRHaEW": {
+          "type": "text_icon",
+          "settings": {
+            "block_title": "Heading",
+            "block_des": "<p>Made of flax, a natural material that won’t irritate sensitive skin</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_icon_VpKYBC",
+        "text_icon_ya6zML",
+        "text_icon_xUac4P",
+        "text_icon_eRHaEW"
+      ],
+      "name": "Image Text Product",
+      "settings": {
+        "animation": "",
+        "setwidth": "container",
+        "section_image": "{{ product.featured_image }}",
+        "block_text_color": "#000000",
+        "block_text_bg": "#F9F7F2",
+        "paddingsection": "0px 0px 0px 0px",
+        "paddingmobile": "40px 0px 40px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
     "93495e3d-f562-4706-aa2e-14cf6b83c216": {
       "type": "rich-text",
       "settings": {
@@ -338,53 +389,6 @@
         "paddingmobile": "40px 0px 40px 0px",
         "marginsection": "0px 0px 0px 0px",
         "marginmobile": "0px 0px 0px 0px"
-      }
-    },
-    "1e04ea1d-fcaa-48a4-9b36-62344d508849": {
-      "type": "parallax-banner",
-      "blocks": {
-        "83897ed0-76f5-408a-bfaf-429b0c45b4c5": {
-          "type": "sub_title",
-          "settings": {
-            "subtitle": "THE MATERIALS"
-          }
-        },
-        "30314b3c-e1a1-468e-b2d5-399f32e2bbda": {
-          "type": "heading",
-          "settings": {
-            "title": "Made in Italy and Spain",
-            "size_text": "h1"
-          }
-        },
-        "dd148053-296c-4c9b-99a6-63c2328328fe": {
-          "type": "paragraph",
-          "settings": {
-            "subtext": "We work exclusively with tanneries in Italy, France and Spain. For each supplier we look for specific characteristics that will ensure that the material selected corresponds in every respect to the products we wish to manufacture."
-          }
-        }
-      },
-      "block_order": [
-        "83897ed0-76f5-408a-bfaf-429b0c45b4c5",
-        "30314b3c-e1a1-468e-b2d5-399f32e2bbda",
-        "dd148053-296c-4c9b-99a6-63c2328328fe"
-      ],
-      "settings": {
-        "animation": "fade",
-        "setwidth": "full",
-        "bgsection": "#ffffff",
-        "parrallax_enable": false,
-        "height_section": "550",
-        "height_section_mobile": "450",
-        "align": "center",
-        "position_text": "mid-center",
-        "bg_box": "#ffffff",
-        "opacity_bgbox": 0,
-        "title_color": "#ffffff",
-        "bg_overlay": "#000000",
-        "gradient_bg": "",
-        "opacity_bg_overlay": 0.4,
-        "paddingsection": "0px 0px 0px 0px",
-        "marginsection": "0px 0px 0px 0px"
       }
     },
     "70b7f2d2-4c12-4305-88bd-da89e2d18d5b": {
@@ -637,8 +641,8 @@
     "main",
     "product-requently",
     "product-content",
+    "image_text_product_tH6xKx",
     "93495e3d-f562-4706-aa2e-14cf6b83c216",
-    "1e04ea1d-fcaa-48a4-9b36-62344d508849",
     "70b7f2d2-4c12-4305-88bd-da89e2d18d5b",
     "bcb1cba3-80fc-49a2-a033-40cf0618e9c8",
     "product-recommendations",
