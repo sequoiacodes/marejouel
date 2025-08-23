@@ -688,7 +688,7 @@
               "show_overlay": true,
               "gradient_overlay": true,
               "bg_overlay": "#000000",
-              "opacity_overlay": 0.8,
+              "opacity_overlay": 0.4,
               "slide_toptitle": "say yes to a never ending summer",
               "slide_toptitle_color": "#000000",
               "slide_title": "The di mare collection",
