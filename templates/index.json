@@ -27,7 +27,7 @@
             "opacity_bg": 0,
             "style_btn": "btn-outline btn-outline-white",
             "button_text": "shop now",
-            "button_link": "",
+            "button_link": "shopify://collections/best-seller-top",
             "vertical": "bottom",
             "horizontal": "center",
             "text_align": "center"
@@ -69,7 +69,7 @@
             "opacity_bg": 0,
             "style_btn": "btn-outline btn-outline-white",
             "button_text": "shop now",
-            "button_link": "",
+            "button_link": "shopify://collections/best-seller-bottom",
             "vertical": "bottom",
             "horizontal": "center",
             "text_align": "center"
