@@ -11,7 +11,7 @@
 -%}
 {% style %}
   .hover:hover{
-    background:var(--header-background) !important;
+    background:var(--header-background) !important;    {%  comment %}Background chnage when hover header{% endcomment %}
   }
 {% endstyle %}
 {% render 'header-oncss', layout_header: layout_header, header_border_color: header_border_color, type_sticky: type_sticky %}
@@ -44,7 +44,7 @@
   <div class="header-bottom py-2 py-lg-0 ">
     <div class="">
       <div class="d-flex row-header align-items-center">
-        
+        {% comment %} last one we using now  {% endcomment %}
         {%- liquid
           case layout_header
           when 'logo-center-navigation-center'
@@ -55,9 +55,10 @@
             render 'header-logo-center-split', container : container, enable_menu_vertical: enable_menu_vertical, sl_menu_vertical: sl_menu_vertical, main_linklist: main_linklist, blocks: blocks
           when 'logo-center-navigation-drawer' 
             render 'header-logo-center-drawer', container : container
-          else
+          else  
+            
             render 'header-logo-left' , container : container, layout_header : layout_header, enable_menu_vertical: enable_menu_vertical, sl_menu_vertical: sl_menu_vertical, main_linklist: main_linklist, blocks: blocks
-          endcase
+          endcase  
         -%}
       </div>
     </div>
