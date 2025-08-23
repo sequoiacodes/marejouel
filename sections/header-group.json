@@ -249,7 +249,7 @@
         "logo_white": "shopify://shop_images/logo.png",
         "logo_max_width": 150,
         "enable_transparent": true,
-        "hover_transparent": false,
+        "hover_transparent": true,
         "enable_white": false,
         "setwidth": "container",
         "layout_header": "logo-left-navigation-center",
