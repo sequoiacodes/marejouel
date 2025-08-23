@@ -9,7 +9,11 @@
   assign main_linklist = section.settings.main_linklist
   assign blocks = section.blocks
 -%}
-
+{% style %}
+  .hover:hover{
+    background:red !important;
+  }
+{% endstyle %}
 {% render 'header-oncss', layout_header: layout_header, header_border_color: header_border_color, type_sticky: type_sticky %}
 <!-- header.liquid -->
 <header class="hover {% if section.settings.menu_active == 'thick-line' %} thick-lineactive {% endif %} {{ layout_header }} size-header-{{ height_header }} section-{{ section.id }} site-header page-element is-moved-by-drawer 
