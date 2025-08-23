@@ -585,7 +585,7 @@
       "name": "Testimonials Split",
       "settings": {
         "animation": "",
-        "setwidth": "container",
+        "setwidth": "full",
         "bgsection": "#ffffff",
         "title_top": "let’s hear from our clients",
         "title": "testimonials",
