@@ -173,10 +173,7 @@
       {% if block.settings.content != blank %}
         <div class="ai-flex-layout__content-{{ ai_gen_id }}">
           {{ block.settings.content }}
-        </div>
-      {% endif %}
-    </div>
-    <div style="justify-content:start; width:100%;" class="d-flex  align-items-center p-4">
+           <div style="justify-content:start; width:100%;" class="d-flex  align-items-center p-4">
         <a href="{{ block.settings.btnurl }}" 
            class=" {% if block.settings.btnurl != '/' %}btn btn-theme {% endif %}  {{ section.settings.style_btn }}" 
            target="_blank" 
@@ -184,6 +181,10 @@
          {{ block.settings.btntitle }}
         </a>
       </div>
+        </div>
+      {% endif %}
+    </div>
+   
   </div>
 </div>
 
