@@ -63,7 +63,10 @@
         </h3>
       {%- endif -%}
       {%- if section.settings.des != blank -%}
-        <div class="font-family-2 mb-5 txt-body-70 text-{{ section.settings.align-heading }}" data-aos="{{ section.settings.animation }}" data-aos-duration="800">{{ section.settings.des }}</div>
+        {% comment %}
+          font-family-2
+        {% endcomment %}
+        <div class="subtop mb-5 txt-body-70 text-{{ section.settings.align-heading }}" data-aos="{{ section.settings.animation }}" data-aos-duration="800">{{ section.settings.des }}</div>
       {%- endif -%}
     </div>
     {% if btn %}
@@ -82,7 +85,7 @@
     </h3>
   {%- endif -%}
   {%- if section.settings.des != blank -%}
-    <p class="subtop mb-5 txt-body-70">{{ section.settings.des }}</p>
+    <p class="font-family-2 mb-5 txt-body-70">{{ section.settings.des }}</p>
   {%- endif -%}
 {%- endif -%}
 
