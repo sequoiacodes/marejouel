@@ -509,6 +509,68 @@
         "marginmobile": "0px 0px 0px 0px"
       }
     },
+    "bcb1cba3-80fc-49a2-a033-40cf0618e9c8": {
+      "type": "faq-accordion",
+      "blocks": {
+        "faq_ph9TbF": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Where is Mare Jouel based?",
+            "faq_des": "<p>We're proudly based in the USA, inspired by the island life of Key Biscayne and handmade with love in Colombia.<br/><br/></p>"
+          }
+        },
+        "template--14684877652053__bcb1cba3-80fc-49a2-a033-40cf0618e9c8-16659371170e440ef7-0": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "What sizes do you offer?",
+            "faq_des": "<p>We currently offer sizes S, M, and L. You can find exact measurements in our<a href=\"https://marejouel.com/pages/size-guide\" target=\"_blank\" title=\"Size Guide\"><span style=\"text-decoration:underline\">Size Guide</span></a>. Most of our bottoms are adjustable for a better fit.<br/><br/></p>"
+          }
+        },
+        "template--14684877652053__bcb1cba3-80fc-49a2-a033-40cf0618e9c8-16659371170e440ef7-1": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "When will I receive my item?",
+            "faq_des": "<p>When we have received your order, you will automatically receive an e-mail confirming your order. Orders made before 2 PM (CET) will be picked, packed and shipped the same day. Delivery time is usually 2-4 working days with DHL Express.</p>"
+          }
+        },
+        "template--14684877652053__bcb1cba3-80fc-49a2-a033-40cf0618e9c8-16659371170e440ef7-2": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Can I change or return my item?",
+            "faq_des": "<p>If you want to change a product into another model, strap color etc., please contact us so we are able to reserve the new item in our stock immediately. You are always entitled to an exchange or refund within 30 days after you have received your package, as long as the item has not been used.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_ph9TbF",
+        "template--14684877652053__bcb1cba3-80fc-49a2-a033-40cf0618e9c8-16659371170e440ef7-0",
+        "template--14684877652053__bcb1cba3-80fc-49a2-a033-40cf0618e9c8-16659371170e440ef7-1",
+        "template--14684877652053__bcb1cba3-80fc-49a2-a033-40cf0618e9c8-16659371170e440ef7-2"
+      ],
+      "settings": {
+        "animation": "",
+        "faq_color": "#000000",
+        "setwidth": "container",
+        "bgsection": "#ffffff",
+        "e_size": "auto",
+        "e_repeat": "no-repeat",
+        "e_pos": "center center",
+        "title_top": "",
+        "title": "FAQs",
+        "des": "Have a question ? We are here to help.",
+        "align-heading": "center",
+        "title_size": "h6",
+        "e_first_open": false,
+        "e_reverse": true,
+        "e_small": true,
+        "left_html": "",
+        "e_right": false,
+        "paddingsection": "80px 0px 0px 0px",
+        "paddingmobile": "60px 0px 60px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
     "c5690cdb-c04d-45fd-9c6c-cfee011363ca": {
       "type": "service",
       "blocks": {
@@ -581,68 +643,6 @@
         "marginmobile": "0px 0px 0px 0px"
       }
     },
-    "bcb1cba3-80fc-49a2-a033-40cf0618e9c8": {
-      "type": "faq-accordion",
-      "blocks": {
-        "faq_ph9TbF": {
-          "type": "faq",
-          "settings": {
-            "faq_title": "Where is Mare Jouel based?",
-            "faq_des": "<p>We're proudly based in the USA, inspired by the island life of Key Biscayne and handmade with love in Colombia.<br/><br/></p>"
-          }
-        },
-        "template--14684877652053__bcb1cba3-80fc-49a2-a033-40cf0618e9c8-16659371170e440ef7-0": {
-          "type": "faq",
-          "settings": {
-            "faq_title": "What sizes do you offer?",
-            "faq_des": "<p>We currently offer sizes S, M, and L. You can find exact measurements in our<a href=\"https://marejouel.com/pages/size-guide\" target=\"_blank\" title=\"Size Guide\"><span style=\"text-decoration:underline\">Size Guide</span></a>. Most of our bottoms are adjustable for a better fit.<br/><br/></p>"
-          }
-        },
-        "template--14684877652053__bcb1cba3-80fc-49a2-a033-40cf0618e9c8-16659371170e440ef7-1": {
-          "type": "faq",
-          "settings": {
-            "faq_title": "When will I receive my item?",
-            "faq_des": "<p>When we have received your order, you will automatically receive an e-mail confirming your order. Orders made before 2 PM (CET) will be picked, packed and shipped the same day. Delivery time is usually 2-4 working days with DHL Express.</p>"
-          }
-        },
-        "template--14684877652053__bcb1cba3-80fc-49a2-a033-40cf0618e9c8-16659371170e440ef7-2": {
-          "type": "faq",
-          "settings": {
-            "faq_title": "Can I change or return my item?",
-            "faq_des": "<p>If you want to change a product into another model, strap color etc., please contact us so we are able to reserve the new item in our stock immediately. You are always entitled to an exchange or refund within 30 days after you have received your package, as long as the item has not been used.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "faq_ph9TbF",
-        "template--14684877652053__bcb1cba3-80fc-49a2-a033-40cf0618e9c8-16659371170e440ef7-0",
-        "template--14684877652053__bcb1cba3-80fc-49a2-a033-40cf0618e9c8-16659371170e440ef7-1",
-        "template--14684877652053__bcb1cba3-80fc-49a2-a033-40cf0618e9c8-16659371170e440ef7-2"
-      ],
-      "settings": {
-        "animation": "",
-        "faq_color": "#000000",
-        "setwidth": "container",
-        "bgsection": "#ffffff",
-        "e_size": "auto",
-        "e_repeat": "no-repeat",
-        "e_pos": "center center",
-        "title_top": "",
-        "title": "FAQs",
-        "des": "Have a question ? We are here to help.",
-        "align-heading": "center",
-        "title_size": "h6",
-        "e_first_open": false,
-        "e_reverse": true,
-        "e_small": true,
-        "left_html": "",
-        "e_right": false,
-        "paddingsection": "80px 0px 0px 0px",
-        "paddingmobile": "60px 0px 60px 0px",
-        "marginsection": "0px 0px 0px 0px",
-        "marginmobile": "0px 0px 0px 0px"
-      }
-    },
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
@@ -699,10 +699,10 @@
     "93495e3d-f562-4706-aa2e-14cf6b83c216",
     "1e04ea1d-fcaa-48a4-9b36-62344d508849",
     "70b7f2d2-4c12-4305-88bd-da89e2d18d5b",
-    "c5690cdb-c04d-45fd-9c6c-cfee011363ca",
     "bcb1cba3-80fc-49a2-a033-40cf0618e9c8",
     "product-recommendations",
     "be561305-5bee-4018-a668-c8770086ba5b",
-    "product-recent"
+    "product-recent",
+    "c5690cdb-c04d-45fd-9c6c-cfee011363ca"
   ]
 }
