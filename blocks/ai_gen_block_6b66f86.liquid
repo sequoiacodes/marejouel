@@ -1,8 +1,4 @@
-{% doc %}
-  @prompt
-    Create a flexible layout section with a parent container containing two child divs arranged using flexbox with no gap between them. The first child div should display a photo/image with customizable height and width settings. The second child div should contain text elements (subheading, main heading, and content area with background image) with justify-content center alignment. Make the layout fully responsive, allow merchants to customize all text content and images, and ensure both divs are seamlessly joined without spacing. Include settings for image dimensions and text alignment options., where is the pading of parent div, make the child div are right and left image and text, add the justify in the text field
 
-{% enddoc %}
 {% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
 
 {% style %}
@@ -180,7 +176,7 @@
         </div>
       {% endif %}
     </div>
-    <div class="d-flex justify-content-center align-items-center p-4">
+    <div class="d-flex justify-content-left align-items-center p-4">
         <a href="{{ block.settings.btnurl }}" 
            class=" {% if block.settings.btnurl != '/' %}btn btn-theme {% endif %}  {{ section.settings.style_btn }}" 
            target="_blank" 
