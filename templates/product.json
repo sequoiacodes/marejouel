@@ -297,7 +297,7 @@
     "product-content": {
       "type": "product-content",
       "blocks": {
-        "6889c9ba-caef-4edd-9757-6711505cb095": {
+        "description_3wCtgw": {
           "type": "description",
           "settings": {
             "title_tab": "Description"
@@ -306,8 +306,8 @@
         "b69a53cf-5bc1-4b18-add3-92af436f966c": {
           "type": "content",
           "settings": {
-            "title_tab": "Material",
-            "answer_content": "",
+            "title_tab": "Materrial",
+            "answer_content": "<p>hello nepal whjkhsdaf sdfjhdsafjhdf fjdkh<strong>fsadkjh</strong></p>",
             "page": "material"
           }
         },
@@ -327,7 +327,7 @@
         }
       },
       "block_order": [
-        "6889c9ba-caef-4edd-9757-6711505cb095",
+        "description_3wCtgw",
         "b69a53cf-5bc1-4b18-add3-92af436f966c",
         "147e9960-c5fe-44f4-8469-9583a9752a0a",
         "2e69c5c0-ab83-4cda-9c38-1aaab6fdf1cc"
@@ -336,7 +336,7 @@
         "animation": "fade-up",
         "setwidth": "container",
         "tab_size": "large",
-        "enable_left": false,
+        "enable_left": true,
         "paddingsection": "48px 0px 40px 0px",
         "paddingmobile": "32px 0px 32px 0px",
         "marginsection": "0px 0px 0px 0px",
@@ -386,8 +386,8 @@
         "topsub_color": "black",
         "style_btn": "btn-theme",
         "setwidth": "container",
-        "bgsection": "#f4efe9",
-        "gradient_bg": "linear-gradient(180deg, rgba(114, 255, 179, 0) 1%, rgba(250, 249, 230, 1) 98%)",
+        "bgsection": "#000000",
+        "gradient_bg": "linear-gradient(180deg, rgba(114, 255, 179, 0), rgba(250, 249, 230, 1) 98%)",
         "title_color": "#000000",
         "title_top": "ddsdsd",
         "title": "hello",
